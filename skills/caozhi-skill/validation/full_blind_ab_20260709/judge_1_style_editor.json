@@ -1,0 +1,159 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "B反差更冷，现场和账更顺"
+    },
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.5,
+      "reason": "A有示范句，更像可复用改法"
+    },
+    {
+      "id": "t03",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 7.5,
+      "reason": "A标题更有反差和短促钩子"
+    },
+    {
+      "id": "t04",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "B更有地域现场和翻面逻辑"
+    },
+    {
+      "id": "t05",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 7.5,
+      "reason": "A冷判断更狠，事实边界更稳"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 7.5,
+      "b_overall": 8.0,
+      "reason": "B诊断更聚焦，改法更落地"
+    },
+    {
+      "id": "t07",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A槽点层次更完整，结尾更冷"
+    },
+    {
+      "id": "t08",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.5,
+      "reason": "A保留槽点意识更强"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A选题预判更有路线感"
+    },
+    {
+      "id": "t10",
+      "winner": "B",
+      "a_overall": 7.5,
+      "b_overall": 8.5,
+      "reason": "B风险边界更严，不硬写"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A路线差异更清楚，少套题"
+    },
+    {
+      "id": "t12",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A有反差改写，更像诊断稿"
+    },
+    {
+      "id": "t13",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "B结构更有槽值式翻面"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A贴合材料，比较更有效"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 7.5,
+      "b_overall": 8.5,
+      "reason": "B新题更少套路，情绪更准"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 7.5,
+      "b_overall": 8.0,
+      "reason": "B示例判断更具体有现场"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 7.5,
+      "b_overall": 8.5,
+      "reason": "B反差更深，陪伴缺口成立"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 7.5,
+      "reason": "A三题差异更明显，冷感更足"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A去味且守住事实边界"
+    },
+    {
+      "id": "t20",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.0,
+      "reason": "A分类更贴原味指纹"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "B先路由再大纲更完整"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 7.5,
+      "reason": "A恢复短段反差，边界清楚"
+    }
+  ]
+}

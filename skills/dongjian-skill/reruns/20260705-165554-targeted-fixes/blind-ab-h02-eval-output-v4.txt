@@ -1,0 +1,1 @@
+{"id":"H02","winner":"B","winner_confidence":8,"a_overall":7,"b_overall":8.5,"a_non_template":6.5,"b_non_template":8,"a_style":7,"b_style":8.5,"a_fact_reliability":9,"b_fact_reliability":9,"reason":"B更准确写出了付出者委屈与家人被控制、被压抑之间的双边误读和关系反噬，叙述更自然有洞见；A虽完整但更像常见三段式情感文，判断较模板化。"}

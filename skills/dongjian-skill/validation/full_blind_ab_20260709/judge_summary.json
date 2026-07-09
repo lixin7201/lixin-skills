@@ -1,0 +1,288 @@
+[
+  {
+    "id": "T01",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.0,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1_style_editor:A A结构推进和动作更足",
+      "judge_2_fact_process:A A分节推进和行动收束更完整",
+      "judge_3_skeptical_reader:A A结构和行动收束更足"
+    ]
+  },
+  {
+    "id": "T02",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:A A留痕确认边界更稳",
+      "judge_2_fact_process:A A事实留痕与职场动作更扎实",
+      "judge_3_skeptical_reader:A A留痕确认边界更具体"
+    ]
+  },
+  {
+    "id": "T03",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 6.67,
+    "reasons": [
+      "judge_1_style_editor:B B短促有判断力",
+      "judge_2_fact_process:B B标题更短更有判断力",
+      "judge_3_skeptical_reader:B B标题更短更有判断"
+    ]
+  },
+  {
+    "id": "T04",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.0,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:B B场景到判断更完整",
+      "judge_2_fact_process:B B场景更具体进入更快",
+      "judge_3_skeptical_reader:A A入题快且不解释概念"
+    ]
+  },
+  {
+    "id": "T05",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.0,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:A A收束稳不喊口号",
+      "judge_2_fact_process:B B低谷动作和心气收束更准",
+      "judge_3_skeptical_reader:B B姿态更稳更有动作"
+    ]
+  },
+  {
+    "id": "T06",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B诊断更贴原味问题",
+      "judge_2_fact_process:B B诊断更贴风格机制",
+      "judge_3_skeptical_reader:B B诊断入口和动作更准"
+    ]
+  },
+  {
+    "id": "T07",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:A A关系链和分节更足",
+      "judge_2_fact_process:A A关系处境和分节行动更足",
+      "judge_3_skeptical_reader:A A关系链和分节更完整"
+    ]
+  },
+  {
+    "id": "T08",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 5.67,
+    "reasons": [
+      "judge_1_style_editor:B B是真压缩成稿",
+      "judge_2_fact_process:B B真像短稿，A像压缩说明",
+      "judge_3_skeptical_reader:B B真压成短稿而非说明"
+    ]
+  },
+  {
+    "id": "T09",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B事实边界和动作更稳",
+      "judge_2_fact_process:B B事实边界和权益保护更稳",
+      "judge_3_skeptical_reader:B B边界稳且留痕动作强"
+    ]
+  },
+  {
+    "id": "T10",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.67,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:B B克制且不补事实",
+      "judge_2_fact_process:B B更克制，安全提醒更完整",
+      "judge_3_skeptical_reader:A A未成年人安全边界更全"
+    ]
+  },
+  {
+    "id": "T11",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.33,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:B B双角度区分更清",
+      "judge_2_fact_process:B B两个角度区分更清楚",
+      "judge_3_skeptical_reader:B B两个角度区分更清"
+    ]
+  },
+  {
+    "id": "T12",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B反模式识别更准",
+      "judge_2_fact_process:B B反模式识别更具体有锋芒",
+      "judge_3_skeptical_reader:B B反模式识别更具体"
+    ]
+  },
+  {
+    "id": "T13",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A材料展开更像洞见",
+      "judge_2_fact_process:A A强材料展开和行动链更完整",
+      "judge_3_skeptical_reader:A A材料细节和推进更完整"
+    ]
+  },
+  {
+    "id": "T14",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B写出关系变冷过程",
+      "judge_2_fact_process:B B抓住控制到沉默的变化",
+      "judge_3_skeptical_reader:B B抓住控制到沉默变化"
+    ]
+  },
+  {
+    "id": "T15",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 7.67,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:A A结构和行动链更完整",
+      "judge_2_fact_process:B B避开原句且不冒充过拟合",
+      "judge_3_skeptical_reader:A A处境判断行动链更足"
+    ]
+  },
+  {
+    "id": "T16",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B能识别模板假像",
+      "judge_2_fact_process:B B自评更懂非模板化边界",
+      "judge_3_skeptical_reader:B B自判模板风险更准"
+    ]
+  },
+  {
+    "id": "T17",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A三题处境更扎实",
+      "judge_2_fact_process:A A三题标题开头更像洞见",
+      "judge_3_skeptical_reader:B B跨题材变化更自然"
+    ]
+  },
+  {
+    "id": "T18",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B反模板改法更具体",
+      "judge_2_fact_process:B B模板诊断和改法更精确",
+      "judge_3_skeptical_reader:B B反模板改法更贴材料"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.33,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:A A保留故事顺序和行动",
+      "judge_2_fact_process:A A去味后故事链保留更好",
+      "judge_3_skeptical_reader:A A去味后故事链保留更好"
+    ]
+  },
+  {
+    "id": "t20",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.33,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B分类理由更精确",
+      "judge_2_fact_process:B B四类辨析最稳最完整",
+      "judge_3_skeptical_reader:B B四类识别更精准"
+    ]
+  },
+  {
+    "id": "t21",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.33,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A大纲动作落点更实",
+      "judge_2_fact_process:A A框架迁移到动作更具体",
+      "judge_3_skeptical_reader:A A主角度和大纲更可执行"
+    ]
+  },
+  {
+    "id": "t22",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B恢复通勤原味更强",
+      "judge_2_fact_process:B B恢复通勤处境和行动更足",
+      "judge_3_skeptical_reader:B B恢复处境和选择权更稳"
+    ]
+  }
+]

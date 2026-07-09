@@ -1,0 +1,112 @@
+[
+  {
+    "id": "draft-001",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "rewrite-001",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "business-001",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "boundary-001",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "org-001",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t06",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t07",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t08",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t09",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t10",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t11",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t12",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t13",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t14",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t15",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t16",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t17",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t18",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t19",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t20",
+    "A": "with_skill",
+    "B": "baseline"
+  },
+  {
+    "id": "t21",
+    "A": "baseline",
+    "B": "with_skill"
+  },
+  {
+    "id": "t22",
+    "A": "baseline",
+    "B": "with_skill"
+  }
+]

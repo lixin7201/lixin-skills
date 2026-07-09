@@ -1,0 +1,5 @@
+{"id":"H02","winner":"B","winner_confidence":6,"a_overall":7,"b_overall":8,"a_non_template":7,"b_non_template":7,"a_style":7,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B的开头判断更有冲击，付出、怨气、控制、误会的链条更完整，但“结尾”元标签略扣模板感。"}
+{"id":"H03","winner":"B","winner_confidence":7,"a_overall":6,"b_overall":8,"a_non_template":6,"b_non_template":8,"a_style":6,"b_style":8,"a_fact_reliability":9,"b_fact_reliability":9,"reason":"B更贴合原题新闻入口，又明确不猜测未经证实前因后果，判断、边界和行动建议都更自然；A改题避险过度，洞察变泛。"}
+{"id":"H04","winner":"A","winner_confidence":8,"a_overall":8,"b_overall":6,"a_non_template":8,"b_non_template":5,"a_style":8,"b_style":6,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"A兑现50条且分类完整，细节更生活化，结尾也有洞见式回收；B把50条塞进三段，条目较泛，模板感更重。"}
+{"id":"H05","winner":"B","winner_confidence":8,"a_overall":7,"b_overall":9,"a_non_template":6,"b_non_template":8,"a_style":7,"b_style":9,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B围绕单位场景给出具体动作和风险判断，节奏、例子、证据意识更像洞见式职场文；A结构稳但更像通用三段论。"}
+{"summary":{"a_wins":1,"b_wins":3,"ties":0,"notes":"B整体更善于从题目场景中生发判断和行动链条；A在清单稿H04胜出，因为兑现承诺更充分、生活细节更密，模板化程度更低。"}}

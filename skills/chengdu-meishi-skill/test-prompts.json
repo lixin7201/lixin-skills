@@ -1,0 +1,199 @@
+[
+  {
+    "id": "t01",
+    "prompt": "用成都美食风格写一篇社区老店合集，素材有8家店名、片区、招牌菜、营业时间。",
+    "input_materials": "强素材：多店、地点、菜品、营业时间齐全。",
+    "route_expected": "账号总风格 + 街区地图/城市记忆稿 + Mango",
+    "expected_style_traits": [
+      "多店分段",
+      "每家一个强理由",
+      "Tips清楚"
+    ],
+    "forbidden_outputs": [
+      "编造价格",
+      "冒充编辑部真实经历"
+    ],
+    "scoring_focus": [
+      "路由",
+      "结构",
+      "事实边界"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "按阿曾线写一家桥下烧烤，只有店名、招牌和去过三次的体验。",
+    "input_materials": "中素材：缺地址和营业时间。",
+    "route_expected": "账号总风格 + 人物老店/烟火故事稿 + 阿曾",
+    "expected_style_traits": [
+      "强钩子",
+      "现场感",
+      "缺口提醒"
+    ],
+    "forbidden_outputs": [
+      "补地址",
+      "补排队时长"
+    ],
+    "scoring_focus": [
+      "小编线",
+      "素材缺口"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "给一家新开烤肉店写商业活动稿，用户给了优惠规则和菜品。",
+    "input_materials": "强素材：优惠规则、菜品、时间齐全。",
+    "route_expected": "账号总风格 + 商家探店/活动稿 + 凯文",
+    "expected_style_traits": [
+      "优惠规则清楚",
+      "体验不变广告腔"
+    ],
+    "forbidden_outputs": [
+      "全城都在吃"
+    ],
+    "scoring_focus": [
+      "商业边界",
+      "年轻化语气"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "把一篇普通探店稿改得更像成都美食。",
+    "input_materials": "原稿缺现场、缺点单建议。",
+    "route_expected": "账号总风格 + 综合探店稿",
+    "expected_style_traits": [
+      "先诊断再改稿"
+    ],
+    "forbidden_outputs": [
+      "只说更有烟火气"
+    ],
+    "scoring_focus": [
+      "诊断具体性"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "优化10个标题，素材是温江一家老面馆。",
+    "input_materials": "店名、片区、招牌面、开店年限。",
+    "route_expected": "账号总风格 + 人物老店/烟火故事稿",
+    "expected_style_traits": [
+      "标题有地名/单品/反差"
+    ],
+    "forbidden_outputs": [
+      "复制原文标题"
+    ],
+    "scoring_focus": [
+      "标题DNA"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "写一个开头，主题是成都周边小城一日吃逛。",
+    "input_materials": "有城市、交通时间、5个食物点。",
+    "route_expected": "账号总风格 + 街区地图/城市记忆稿 + 初一",
+    "expected_style_traits": [
+      "路线感",
+      "读者收益"
+    ],
+    "forbidden_outputs": [
+      "旅游宣传腔"
+    ],
+    "scoring_focus": [
+      "开头"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "把一篇3000字稿压缩成800字微信短稿。",
+    "input_materials": "完整稿件，保留店名和Tips。",
+    "route_expected": "账号总风格 + 原类型",
+    "expected_style_traits": [
+      "保留对象和行动信息"
+    ],
+    "forbidden_outputs": [
+      "删掉Tips"
+    ],
+    "scoring_focus": [
+      "压缩"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "素材只有一家店名和一句“朋友说好吃”，能不能写完整稿？",
+    "input_materials": "弱素材。",
+    "route_expected": "素材不足分支",
+    "expected_style_traits": [
+      "不写长稿",
+      "列补充问题"
+    ],
+    "forbidden_outputs": [
+      "编菜品和故事"
+    ],
+    "scoring_focus": [
+      "失败处理"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "写食品安全争议相关提醒。",
+    "input_materials": "用户给了截图但无官方来源。",
+    "route_expected": "高风险事实分支",
+    "expected_style_traits": [
+      "只写已确认",
+      "不定责"
+    ],
+    "forbidden_outputs": [
+      "曝光定责",
+      "煽动攻击"
+    ],
+    "scoring_focus": [
+      "敏感事实"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "同一批火锅素材，分别写成商家活动稿和单品深挖稿。",
+    "input_materials": "有优惠、菜品、口味描述。",
+    "route_expected": "双路线对比",
+    "expected_style_traits": [
+      "同材两角度明显不同"
+    ],
+    "forbidden_outputs": [
+      "两篇结构一样"
+    ],
+    "scoring_focus": [
+      "路由差异"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "哪里不像成都美食？请诊断这篇稿。",
+    "input_materials": "标题空泛、正文像广告、缺现场。",
+    "route_expected": "诊断流程",
+    "expected_style_traits": [
+      "表格诊断",
+      "给改法和改后稿"
+    ],
+    "forbidden_outputs": [
+      "泛泛说更口语"
+    ],
+    "scoring_focus": [
+      "哪里不像"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "按发吃报社栏目线写一次便利店新品测评。",
+    "input_materials": "有5款产品、价格、试吃评价。",
+    "route_expected": "账号总风格 + 测评指南/清单稿 + 发吃报社",
+    "expected_style_traits": [
+      "测评规则",
+      "推荐/避雷"
+    ],
+    "forbidden_outputs": [
+      "冒充报社身份"
+    ],
+    "scoring_focus": [
+      "栏目线"
+    ]
+  }
+]

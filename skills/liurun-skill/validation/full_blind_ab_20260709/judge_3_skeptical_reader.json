@@ -1,0 +1,159 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "draft-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B责任链和指标更完整"
+    },
+    {
+      "id": "rewrite-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B交易账和案例更稳"
+    },
+    {
+      "id": "business-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B更克制且交易结构清"
+    },
+    {
+      "id": "boundary-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B事实边界更完整"
+    },
+    {
+      "id": "org-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B组织责任链更自然"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B诊断更像机制拆解"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B有场景和责任链"
+    },
+    {
+      "id": "t08",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B压缩后框架更完整"
+    },
+    {
+      "id": "t09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B惩罚空泛更到位"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A行业影响框架更像"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A两角度区分更锐"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B按账和动作更实"
+    },
+    {
+      "id": "t13",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A概念和四表更可复用"
+    },
+    {
+      "id": "t14",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B拆账拆责任更准"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B冒用事实风险更敏感"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A作为评委更合规"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B交易结构更清晰"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A两版骨架差异更大"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A去味后仍有成稿"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B分类标准更稳"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A主角度命名更强"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B成本账和责任链更原味"
+    }
+  ]
+}

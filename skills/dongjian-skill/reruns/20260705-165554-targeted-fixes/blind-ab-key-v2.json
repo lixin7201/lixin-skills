@@ -1,0 +1,18 @@
+{
+  "H02": {
+    "A": "baseline",
+    "B": "skill"
+  },
+  "H03": {
+    "A": "skill",
+    "B": "baseline"
+  },
+  "H04": {
+    "A": "baseline",
+    "B": "skill"
+  },
+  "H05": {
+    "A": "skill",
+    "B": "baseline"
+  }
+}

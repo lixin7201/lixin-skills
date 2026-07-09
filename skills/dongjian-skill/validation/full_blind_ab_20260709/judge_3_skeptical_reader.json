@@ -1,0 +1,159 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "T01",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A结构和行动收束更足"
+    },
+    {
+      "id": "T02",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A留痕确认边界更具体"
+    },
+    {
+      "id": "T03",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B标题更短更有判断"
+    },
+    {
+      "id": "T04",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A入题快且不解释概念"
+    },
+    {
+      "id": "T05",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B姿态更稳更有动作"
+    },
+    {
+      "id": "T06",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B诊断入口和动作更准"
+    },
+    {
+      "id": "T07",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A关系链和分节更完整"
+    },
+    {
+      "id": "T08",
+      "winner": "B",
+      "a_overall": 5.0,
+      "b_overall": 8.0,
+      "reason": "B真压成短稿而非说明"
+    },
+    {
+      "id": "T09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B边界稳且留痕动作强"
+    },
+    {
+      "id": "T10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A未成年人安全边界更全"
+    },
+    {
+      "id": "T11",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B两个角度区分更清"
+    },
+    {
+      "id": "T12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B反模式识别更具体"
+    },
+    {
+      "id": "T13",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A材料细节和推进更完整"
+    },
+    {
+      "id": "T14",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B抓住控制到沉默变化"
+    },
+    {
+      "id": "T15",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A处境判断行动链更足"
+    },
+    {
+      "id": "T16",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B自判模板风险更准"
+    },
+    {
+      "id": "T17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B跨题材变化更自然"
+    },
+    {
+      "id": "T18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B反模板改法更贴材料"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A去味后故事链保留更好"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B四类识别更精准"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A主角度和大纲更可执行"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B恢复处境和选择权更稳"
+    }
+  ]
+}

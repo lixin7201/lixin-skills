@@ -1,0 +1,288 @@
+[
+  {
+    "id": "draft-001",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:B 链条定义更准，少冒充",
+      "judge_2_fact_process:B B链条和指标更完整",
+      "judge_3_skeptical_reader:B B责任链和指标更完整"
+    ]
+  },
+  {
+    "id": "rewrite-001",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.47,
+    "baseline_avg": 8.47,
+    "reasons": [
+      "judge_1_style_editor:A 概念更稳，成本追问更密",
+      "judge_2_fact_process:A A成本后台辨析更锋利",
+      "judge_3_skeptical_reader:B B交易账和案例更稳"
+    ]
+  },
+  {
+    "id": "business-001",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.63,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:A 场景复购机制更完整",
+      "judge_2_fact_process:B B交易结构更紧凑克制",
+      "judge_3_skeptical_reader:B B更克制且交易结构清"
+    ]
+  },
+  {
+    "id": "boundary-001",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.87,
+    "baseline_avg": 8.3,
+    "reasons": [
+      "judge_1_style_editor:B 事实边界更清，框架更准",
+      "judge_2_fact_process:B B事实边界和框架更稳",
+      "judge_3_skeptical_reader:B B事实边界更完整"
+    ]
+  },
+  {
+    "id": "org-001",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.77,
+    "baseline_avg": 8.17,
+    "reasons": [
+      "judge_1_style_editor:B 责任链更强，节奏更像",
+      "judge_2_fact_process:B B责任链机制更清楚",
+      "judge_3_skeptical_reader:B B组织责任链更自然"
+    ]
+  },
+  {
+    "id": "t06",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.7,
+    "baseline_avg": 8.07,
+    "reasons": [
+      "judge_1_style_editor:B 诊断更贴机制与交易",
+      "judge_2_fact_process:B B诊断更像拆机制",
+      "judge_3_skeptical_reader:B B诊断更像机制拆解"
+    ]
+  },
+  {
+    "id": "t07",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.63,
+    "baseline_avg": 8.07,
+    "reasons": [
+      "judge_1_style_editor:B 责任链主线更鲜明",
+      "judge_2_fact_process:B B责任链主轴更强",
+      "judge_3_skeptical_reader:B B有场景和责任链"
+    ]
+  },
+  {
+    "id": "t08",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.1,
+    "baseline_avg": 8.7,
+    "reasons": [
+      "judge_1_style_editor:B 分工边界更细更稳",
+      "judge_2_fact_process:B B判断标准更可复用",
+      "judge_3_skeptical_reader:B B压缩后框架更完整"
+    ]
+  },
+  {
+    "id": "t09",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.8,
+    "baseline_avg": 8.27,
+    "reasons": [
+      "judge_1_style_editor:B 补素材维度更商业化",
+      "judge_2_fact_process:B B成本类型补问更准",
+      "judge_3_skeptical_reader:B B惩罚空泛更到位"
+    ]
+  },
+  {
+    "id": "t10",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.87,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:A 行业影响框架更深入",
+      "judge_2_fact_process:A A行业影响框架更深",
+      "judge_3_skeptical_reader:A A行业影响框架更像"
+    ]
+  },
+  {
+    "id": "t11",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.27,
+    "reasons": [
+      "judge_1_style_editor:A 两角度差异更清楚",
+      "judge_2_fact_process:A A两角度差异更鲜明",
+      "judge_3_skeptical_reader:A A两角度区分更锐"
+    ]
+  },
+  {
+    "id": "t12",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.17,
+    "baseline_avg": 8.8,
+    "reasons": [
+      "judge_1_style_editor:B 账、风险、动作更全",
+      "judge_2_fact_process:B B按账和动作诊断更全",
+      "judge_3_skeptical_reader:B B按账和动作更实"
+    ]
+  },
+  {
+    "id": "t13",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.87,
+    "baseline_avg": 8.3,
+    "reasons": [
+      "judge_1_style_editor:A 四张表更可复用",
+      "judge_2_fact_process:A A四张表方法更刘润",
+      "judge_3_skeptical_reader:A A概念和四表更可复用"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.47,
+    "baseline_avg": 8.53,
+    "reasons": [
+      "judge_1_style_editor:A 差距拆解更有命名",
+      "judge_2_fact_process:A A差距拆得更有层次",
+      "judge_3_skeptical_reader:B B拆账拆责任更准"
+    ]
+  },
+  {
+    "id": "t15",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.23,
+    "reasons": [
+      "judge_1_style_editor:B 冒用事实风险更敏感",
+      "judge_2_fact_process:B B冒用事实风险更敏感",
+      "judge_3_skeptical_reader:B B冒用事实风险更敏感"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 7.77,
+    "baseline_avg": 8.13,
+    "reasons": [
+      "judge_1_style_editor:B 判别更直接，维度更实",
+      "judge_2_fact_process:A A不预设胜方更合题",
+      "judge_3_skeptical_reader:A A作为评委更合规"
+    ]
+  },
+  {
+    "id": "t17",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.2,
+    "reasons": [
+      "judge_1_style_editor:B 交易结构更自然克制",
+      "judge_2_fact_process:B B交易结构更自然完整",
+      "judge_3_skeptical_reader:B B交易结构更清晰"
+    ]
+  },
+  {
+    "id": "t18",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.67,
+    "baseline_avg": 8.37,
+    "reasons": [
+      "judge_1_style_editor:A 两版骨架差异更明显",
+      "judge_2_fact_process:B B两版骨架差异更大",
+      "judge_3_skeptical_reader:A A两版骨架差异更大"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.2,
+    "baseline_avg": 8.73,
+    "reasons": [
+      "judge_1_style_editor:A 既去味又保留机制",
+      "judge_2_fact_process:A A给出成稿且保机制",
+      "judge_3_skeptical_reader:A A去味后仍有成稿"
+    ]
+  },
+  {
+    "id": "t20",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.23,
+    "baseline_avg": 8.77,
+    "reasons": [
+      "judge_1_style_editor:B 分类更稳，警报更准",
+      "judge_2_fact_process:B B分类边界更稳",
+      "judge_3_skeptical_reader:B B分类标准更稳"
+    ]
+  },
+  {
+    "id": "t21",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.3,
+    "baseline_avg": 8.9,
+    "reasons": [
+      "judge_1_style_editor:A 主角度命名更有力",
+      "judge_2_fact_process:A A成本转移概念更强",
+      "judge_3_skeptical_reader:A A主角度命名更强"
+    ]
+  },
+  {
+    "id": "t22",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.23,
+    "reasons": [
+      "judge_1_style_editor:B 原味恢复更克制完整",
+      "judge_2_fact_process:B B原味恢复更有命名",
+      "judge_3_skeptical_reader:B B成本账和责任链更原味"
+    ]
+  }
+]

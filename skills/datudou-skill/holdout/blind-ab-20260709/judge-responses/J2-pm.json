@@ -1,0 +1,94 @@
+{
+  "judge": "J2",
+  "items": [
+    {
+      "id": "h01",
+      "winner": "B",
+      "a_score": 6,
+      "b_score": 8,
+      "reason": "B账本更细且有北京家庭坐标",
+      "weak_dimension": "A北京坐标弱"
+    },
+    {
+      "id": "h02",
+      "winner": "B",
+      "a_score": 6,
+      "b_score": 9,
+      "reason": "B有北京房区通勤和教育账",
+      "weak_dimension": "A偏泛教育评论"
+    },
+    {
+      "id": "h03",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 9,
+      "reason": "B把北京生存账算到家庭托举",
+      "weak_dimension": "A坐标略泛"
+    },
+    {
+      "id": "h04",
+      "winner": "A",
+      "a_score": 8,
+      "b_score": 7,
+      "reason": "A车牌放进北京家庭账本更硬",
+      "weak_dimension": "B略温柔顺滑"
+    },
+    {
+      "id": "h05",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 9,
+      "reason": "B北京中年支出和现金流更具体",
+      "weak_dimension": "A北京坐标缺失"
+    },
+    {
+      "id": "h06",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 8,
+      "reason": "B三件事都落普通家庭风险账",
+      "weak_dimension": "A北京坐标弱"
+    },
+    {
+      "id": "h07",
+      "winner": "A",
+      "a_score": 8,
+      "b_score": 6,
+      "reason": "A有北京家长和长期低损耗判断",
+      "weak_dimension": "B更像通用育儿文"
+    },
+    {
+      "id": "h08",
+      "winner": "A",
+      "a_score": 9,
+      "b_score": 7,
+      "reason": "A车房差异和月供陷阱更像账本",
+      "weak_dimension": "B结尾偏公号"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_score": 8,
+      "b_score": 9,
+      "reason": "B判别口径更完整且边界更准",
+      "weak_dimension": ""
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_score": 9,
+      "b_score": 8,
+      "reason": "A主判断更冷且北京学区退路明确",
+      "weak_dimension": "B结构略工整"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_score": 8,
+      "b_score": 9,
+      "reason": "B口语更自然冷感更足",
+      "weak_dimension": ""
+    }
+  ],
+  "agent": "pm"
+}

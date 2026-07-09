@@ -1,0 +1,202 @@
+[
+  {
+    "rank": 1,
+    "interaction_score": 96.91,
+    "date": "2026-04-13",
+    "title": "分享一个我用了2年的深度研究Prompt，半小时帮你搞懂任何陌生领域。",
+    "article_type": "教程/清单/工具包",
+    "topics": [
+      "编程Agent/Skills/OpenClaw",
+      "大模型/推理"
+    ],
+    "chars": 3010,
+    "images": 12,
+    "阅读": 100000,
+    "点赞": 12000,
+    "转发": 48000,
+    "喜欢": 6217,
+    "留言": 442,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20260413_分享一个我用了2年的深度研究Prompt，半小时帮你搞懂任何陌生领域。.md",
+    "sha256": "dea70195d07fa91e17b39870feaa58545e48fbb25abf718e46e4127c99252fae"
+  },
+  {
+    "rank": 21,
+    "interaction_score": 91.25,
+    "date": "2026-06-10",
+    "title": "Claude Fable 5正式发布 - 王者归航。",
+    "article_type": "实测/评测",
+    "topics": [
+      "编程Agent/Skills/OpenClaw",
+      "AI视频/影视"
+    ],
+    "chars": 3623,
+    "images": 24,
+    "阅读": 100000,
+    "点赞": 4624,
+    "转发": 15000,
+    "喜欢": 1899,
+    "留言": 532,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20260609_Claude Fable 5正式发布 - 王者归航。.md",
+    "sha256": "b6cf1dfe1cd383192970dc38a71f7b24f6f8aa32f6962aec6017d2a344c5fc9c"
+  },
+  {
+    "rank": 51,
+    "interaction_score": 88.14,
+    "date": "2026-05-25",
+    "title": "AI时代的人才，我觉得最重要的是这6点特质。",
+    "article_type": "教程/清单/工具包",
+    "topics": [
+      "编程Agent/Skills/OpenClaw",
+      "AI生图/设计"
+    ],
+    "chars": 5157,
+    "images": 8,
+    "阅读": 71000,
+    "点赞": 3797,
+    "转发": 7856,
+    "喜欢": 1637,
+    "留言": 505,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20260525_AI时代的人才，我觉得最重要的是这6点特质。.md",
+    "sha256": "2e28326b1eb34d52fc1758c84c50808cb97265ff668a026842442b41b233c415"
+  },
+  {
+    "rank": 91,
+    "interaction_score": 85.82,
+    "date": "2025-05-14",
+    "title": "腾讯悄悄出了个插件版“Cursor”，还跟微信小程序打通了。",
+    "article_type": "新品/行业快讯",
+    "topics": [
+      "编程Agent/Skills/OpenClaw",
+      "产品/应用/工具"
+    ],
+    "chars": 2510,
+    "images": 24,
+    "阅读": 100000,
+    "点赞": 1696,
+    "转发": 9802,
+    "喜欢": 873,
+    "留言": 183,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20250514_腾讯悄悄出了个插件版“Cursor”，还跟微信小程序打通了。.md",
+    "sha256": "63169a98d2c7101c1da1111a30d3784a43737392988373265704f002883ed617"
+  },
+  {
+    "rank": 141,
+    "interaction_score": 82.96,
+    "date": "2024-01-10",
+    "title": "MagnificAI的爆火之下 - AI时代，伟大的公司只需要2个人",
+    "article_type": "教程/清单/工具包",
+    "topics": [
+      "AI生图/设计",
+      "AI视频/影视"
+    ],
+    "chars": 1366,
+    "images": 13,
+    "阅读": 100000,
+    "点赞": 910,
+    "转发": 10000,
+    "喜欢": 323,
+    "留言": 133,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20240110_MagnificAI的爆火之下 - AI时代，伟大的公司只需要2个人.md",
+    "sha256": "90bbde67379e60d00cde37aab68f0404397b285dc7ce40b7f5a729b9d68719ab"
+  },
+  {
+    "rank": 201,
+    "interaction_score": 79.59,
+    "date": "2024-10-11",
+    "title": "Kimi悄悄上线\\\"探索版\\\"，这下我真的想扔掉搜索引擎了。",
+    "article_type": "实测/评测",
+    "topics": [
+      "大模型/推理",
+      "产品/应用/工具"
+    ],
+    "chars": 2514,
+    "images": 16,
+    "阅读": 67000,
+    "点赞": 918,
+    "转发": 4925,
+    "喜欢": 243,
+    "留言": 106,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20241010_Kimi悄悄上线_探索版_，这下我真的想扔掉搜索引擎了。.md",
+    "sha256": "9ba745c99dbe279d16895a26b5c984fec7048abcd7048e1d7d83b6afba54c72c"
+  },
+  {
+    "rank": 271,
+    "interaction_score": 77.0,
+    "date": "2025-10-23",
+    "title": "只有0.9B的PaddleOCR-VL，却是现在最强的OCR模型。",
+    "article_type": "教程/清单/工具包",
+    "topics": [
+      "AI生图/设计",
+      "大模型/推理"
+    ],
+    "chars": 2450,
+    "images": 20,
+    "阅读": 34000,
+    "点赞": 770,
+    "转发": 3000,
+    "喜欢": 289,
+    "留言": 179,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20251023_只有0.9B的PaddleOCR-VL，却是现在最强的OCR模型。.md",
+    "sha256": "1a49acab021dee7b0741b400546c049c9dd74f60852014ccdf3fc2d834cebf7e"
+  },
+  {
+    "rank": 342,
+    "interaction_score": 74.54,
+    "date": "2025-09-15",
+    "title": "淘宝悄悄上线了AI导购，懒人购物原来可以这么爽。",
+    "article_type": "实测/评测",
+    "topics": [
+      "AI视频/影视",
+      "产品/应用/工具"
+    ],
+    "chars": 2790,
+    "images": 18,
+    "阅读": 29000,
+    "点赞": 631,
+    "转发": 2529,
+    "喜欢": 183,
+    "留言": 111,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20250915_淘宝悄悄上线了AI导购，懒人购物原来可以这么爽。.md",
+    "sha256": "56090df03fd82824a6b22d935e55c1c04846f76a32ea0b54973a8dfcd054995d"
+  },
+  {
+    "rank": 413,
+    "interaction_score": 70.55,
+    "date": "2024-10-21",
+    "title": "10秒钟复刻AI付航吐槽一切，这就是现在最好的TTS声音克隆。",
+    "article_type": "教程/清单/工具包",
+    "topics": [
+      "AI音频/音乐",
+      "产品/应用/工具"
+    ],
+    "chars": 1810,
+    "images": 11,
+    "阅读": 23000,
+    "点赞": 397,
+    "转发": 1477,
+    "喜欢": 95,
+    "留言": 84,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20241021_10秒钟复刻AI付航吐槽一切，这就是现在最好的TTS声音克隆。.md",
+    "sha256": "7c2f8e8d8a35f16b436ebd4c5d269f4b7b86694bdb858857f04e9a971b07bcc4"
+  },
+  {
+    "rank": 454,
+    "interaction_score": 68.19,
+    "date": "2024-09-25",
+    "title": "詹姆斯 · 卡梅隆官宣加入Stability AI，好莱坞要向AI投降了。",
+    "article_type": "新品/行业快讯",
+    "topics": [
+      "AI视频/影视",
+      "AI音频/音乐"
+    ],
+    "chars": 1710,
+    "images": 5,
+    "阅读": 22000,
+    "点赞": 224,
+    "转发": 1738,
+    "喜欢": 77,
+    "留言": 37,
+    "path": "/Users/lixin/Documents/学习/重点学习公众号/数字生命卡兹克/20240925_詹姆斯 · 卡梅隆官宣加入Stability AI，好莱坞要向AI投降了。.md",
+    "sha256": "37e7bdbccb436710d0c4e00263ed5fa62c300b934c50c8c0e7d14d8d3a2f57eb"
+  }
+]

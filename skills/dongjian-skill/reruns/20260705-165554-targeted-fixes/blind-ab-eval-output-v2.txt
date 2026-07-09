@@ -1,0 +1,5 @@
+{"id":"H02","winner":"B","winner_confidence":7,"a_overall":7,"b_overall":8,"a_non_template":6,"b_non_template":7,"a_style":7,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B对“付出—委屈—控制—反噬”的链条拆得更细，句子有推进感，A也稳但更像通用三段式家庭关系稿。"}
+{"id":"H03","winner":"A","winner_confidence":8,"a_overall":8,"b_overall":6,"a_non_template":8,"b_non_template":6,"a_style":8,"b_style":6,"a_fact_reliability":9,"b_fact_reliability":8,"reason":"A紧扣原题事件且克制处理未核实细节，把法律底线和家庭暴力风险讲清楚；B改题后避开“第一句话”承诺，且有较多泛化推断。"}
+{"id":"H04","winner":"B","winner_confidence":7,"a_overall":7,"b_overall":8,"a_non_template":7,"b_non_template":8,"a_style":7,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B完整兑现50条清单且分类更自然，条目更具体可执行，A也给够数量但第三部分堆叠过长，结构略显凑数。"}
+{"id":"H05","winner":"A","winner_confidence":8,"a_overall":8,"b_overall":6,"a_non_template":8,"b_non_template":6,"a_style":8,"b_style":6,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"A有具体职场动作和自保细节，如确认、反馈、留痕、优先级调整，B更顺口但判断停在常见职场鸡汤层面。"}
+{"summary":{"a_wins":2,"b_wins":2,"ties":0,"notes":"A在事件型和职场方法稿里更能落到具体边界与动作；B在家庭关系抽象题和清单稿里节奏更顺、兑现更完整。整体都比较安全，但部分稿件仍有明显公式化三段结构。"}}

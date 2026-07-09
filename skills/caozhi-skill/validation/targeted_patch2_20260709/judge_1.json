@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A对象现场更重，边界更稳，成稿更完整"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B具体对象承重更强，现场细节和冷判断更像"
+    }
+  ]
+}

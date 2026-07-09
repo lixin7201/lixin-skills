@@ -1,0 +1,159 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "draft-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "B链条和指标更完整"
+    },
+    {
+      "id": "rewrite-001",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.3,
+      "reason": "A成本后台辨析更锋利"
+    },
+    {
+      "id": "business-001",
+      "winner": "B",
+      "a_overall": 8.3,
+      "b_overall": 8.7,
+      "reason": "B交易结构更紧凑克制"
+    },
+    {
+      "id": "boundary-001",
+      "winner": "B",
+      "a_overall": 8.5,
+      "b_overall": 8.8,
+      "reason": "B事实边界和框架更稳"
+    },
+    {
+      "id": "org-001",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.7,
+      "reason": "B责任链机制更清楚"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.6,
+      "reason": "B诊断更像拆机制"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.5,
+      "reason": "B责任链主轴更强"
+    },
+    {
+      "id": "t08",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.6,
+      "reason": "B判断标准更可复用"
+    },
+    {
+      "id": "t09",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.7,
+      "reason": "B成本类型补问更准"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.5,
+      "reason": "A行业影响框架更深"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.5,
+      "reason": "A两角度差异更鲜明"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 8.3,
+      "b_overall": 8.8,
+      "reason": "B按账和动作诊断更全"
+    },
+    {
+      "id": "t13",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.5,
+      "reason": "A四张表方法更刘润"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.4,
+      "reason": "A差距拆得更有层次"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.8,
+      "reason": "B冒用事实风险更敏感"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 8.6,
+      "b_overall": 8.1,
+      "reason": "A不预设胜方更合题"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.8,
+      "reason": "B交易结构更自然完整"
+    },
+    {
+      "id": "t18",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.7,
+      "reason": "B两版骨架差异更大"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 8.7,
+      "b_overall": 8.4,
+      "reason": "A给出成稿且保机制"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.5,
+      "b_overall": 8.7,
+      "reason": "B分类边界更稳"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 8.9,
+      "b_overall": 8.5,
+      "reason": "A成本转移概念更强"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 8.5,
+      "b_overall": 8.8,
+      "reason": "B原味恢复更有命名"
+    }
+  ]
+}

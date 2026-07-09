@@ -1,0 +1,288 @@
+[
+  {
+    "id": "t01",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B反差更冷，现场和账更顺",
+      "judge_2_fact_process:B 现场更足，冷判断更像",
+      "judge_3_skeptical_reader:B 更有反差和现场感"
+    ]
+  },
+  {
+    "id": "t02",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.0,
+    "baseline_avg": 7.83,
+    "reasons": [
+      "judge_1_style_editor:A A有示范句，更像可复用改法",
+      "judge_2_fact_process:B 边界更稳，不硬示范",
+      "judge_3_skeptical_reader:A 示范句更贴槽值"
+    ]
+  },
+  {
+    "id": "t03",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.5,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:A A标题更有反差和短促钩子",
+      "judge_2_fact_process:A 标题更有反差和钩子",
+      "judge_3_skeptical_reader:A 标题更有冷槽点"
+    ]
+  },
+  {
+    "id": "t04",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B更有地域现场和翻面逻辑",
+      "judge_2_fact_process:B 地域现场和反差更强",
+      "judge_3_skeptical_reader:B 反差更强且不补事实"
+    ]
+  },
+  {
+    "id": "t05",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.5,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:A A冷判断更狠，事实边界更稳",
+      "judge_2_fact_process:A 冷判断更锋利有余味",
+      "judge_3_skeptical_reader:A 结尾更冷更有刺"
+    ]
+  },
+  {
+    "id": "t06",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.5,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:B B诊断更聚焦，改法更落地",
+      "judge_2_fact_process:B 诊断更聚焦可执行",
+      "judge_3_skeptical_reader:B 诊断更具体少模板"
+    ]
+  },
+  {
+    "id": "t07",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A槽点层次更完整，结尾更冷",
+      "judge_2_fact_process:A 槽点层次更完整",
+      "judge_3_skeptical_reader:A 结构完整槽点更足"
+    ]
+  },
+  {
+    "id": "t08",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:A A保留槽点意识更强",
+      "judge_2_fact_process:A 任务完成度和方法更强",
+      "judge_3_skeptical_reader:A 保留槽值压缩法"
+    ]
+  },
+  {
+    "id": "t09",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A选题预判更有路线感",
+      "judge_2_fact_process:A 选题预判框架更细",
+      "judge_3_skeptical_reader:A 选题判断更可复用"
+    ]
+  },
+  {
+    "id": "t10",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.5,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:B B风险边界更严，不硬写",
+      "judge_2_fact_process:B 高风险边界更克制",
+      "judge_3_skeptical_reader:B 高风险边界更稳"
+    ]
+  },
+  {
+    "id": "t11",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.0,
+    "baseline_avg": 8.17,
+    "reasons": [
+      "judge_1_style_editor:A A路线差异更清楚，少套题",
+      "judge_2_fact_process:A 路线迁移更清楚",
+      "judge_3_skeptical_reader:B 双路线更像成稿"
+    ]
+  },
+  {
+    "id": "t12",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A有反差改写，更像诊断稿",
+      "judge_2_fact_process:A 问题拆解更像槽值",
+      "judge_3_skeptical_reader:A 改法有强反差示范"
+    ]
+  },
+  {
+    "id": "t13",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B结构更有槽值式翻面",
+      "judge_2_fact_process:B 反差叙事更完整",
+      "judge_3_skeptical_reader:B 更像新稿不过拟合"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 6.67,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:A A贴合材料，比较更有效",
+      "judge_2_fact_process:A 贴合材料且比较有效",
+      "judge_3_skeptical_reader:A 贴任务且有对照"
+    ]
+  },
+  {
+    "id": "t15",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.5,
+    "baseline_avg": 8.5,
+    "reasons": [
+      "judge_1_style_editor:B B新题更少套路，情绪更准",
+      "judge_2_fact_process:B 新题不过拟合更自然",
+      "judge_3_skeptical_reader:B 新题更自然少套壳"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 7.67,
+    "baseline_avg": 8.17,
+    "reasons": [
+      "judge_1_style_editor:B B示例判断更具体有现场",
+      "judge_2_fact_process:A 不补题，边界更干净",
+      "judge_3_skeptical_reader:A 不硬造AB更稳"
+    ]
+  },
+  {
+    "id": "t17",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 7.83,
+    "reasons": [
+      "judge_1_style_editor:B B反差更深，陪伴缺口成立",
+      "judge_2_fact_process:B 家庭缺口判断更有力",
+      "judge_3_skeptical_reader:B 洞察更深节奏更冷"
+    ]
+  },
+  {
+    "id": "t18",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:A A三题差异更明显，冷感更足",
+      "judge_2_fact_process:A 三题变化和槽点更足",
+      "judge_3_skeptical_reader:A 三题材变化更明显"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.67,
+    "baseline_avg": 8.5,
+    "reasons": [
+      "judge_1_style_editor:A A去味且守住事实边界",
+      "judge_2_fact_process:A 保留事实边界更准",
+      "judge_3_skeptical_reader:A 更守去味和边界"
+    ]
+  },
+  {
+    "id": "t20",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.5,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:A A分类更贴原味指纹",
+      "judge_2_fact_process:A 分类更贴原味指纹",
+      "judge_3_skeptical_reader:A 分类更贴原味样本"
+    ]
+  },
+  {
+    "id": "t21",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B B先路由再大纲更完整",
+      "judge_2_fact_process:B 路线判断和大纲更完整",
+      "judge_3_skeptical_reader:B 路线判断更完整"
+    ]
+  },
+  {
+    "id": "t22",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.83,
+    "baseline_avg": 7.5,
+    "reasons": [
+      "judge_1_style_editor:A A恢复短段反差，边界清楚",
+      "judge_2_fact_process:A 恢复短段反差更明显",
+      "judge_3_skeptical_reader:A 恢复原味且边界清楚"
+    ]
+  }
+]

@@ -1,0 +1,552 @@
+[
+  {
+    "id": "t01",
+    "name": "new draft writing",
+    "prompt": "new draft writing：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t02",
+    "name": "rewrite",
+    "prompt": "rewrite：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t03",
+    "name": "title optimization",
+    "prompt": "title optimization：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t04",
+    "name": "opening optimization",
+    "prompt": "opening optimization：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t05",
+    "name": "ending optimization",
+    "prompt": "ending optimization：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t06",
+    "name": "review diagnosis",
+    "prompt": "review diagnosis：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t07",
+    "name": "expansion",
+    "prompt": "expansion：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t08",
+    "name": "compression",
+    "prompt": "compression：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t09",
+    "name": "insufficient material",
+    "prompt": "insufficient material：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t10",
+    "name": "sensitive facts",
+    "prompt": "sensitive facts：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t11",
+    "name": "same material two angles",
+    "prompt": "same material two angles：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t12",
+    "name": "where unlike",
+    "prompt": "where unlike：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t13",
+    "name": "strong material positive control",
+    "prompt": "strong material positive control：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t14",
+    "name": "no-skill baseline comparison",
+    "prompt": "no-skill baseline comparison：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t15",
+    "name": "style leakage check",
+    "prompt": "style leakage check：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t16",
+    "name": "blind A/B judge comparison",
+    "prompt": "blind A/B judge comparison：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t17",
+    "name": "cross-topic generalization",
+    "prompt": "cross-topic generalization：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t18",
+    "name": "anti-template variation",
+    "prompt": "anti-template variation：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t19",
+    "name": "de-AI preservation",
+    "prompt": "de-AI preservation：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t20",
+    "name": "original-flavor contrast",
+    "prompt": "original-flavor contrast：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t21",
+    "name": "thinking-frame transfer",
+    "prompt": "thinking-frame transfer：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t22",
+    "name": "protected-quirk preservation",
+    "prompt": "protected-quirk preservation：使用用户提供材料完成任务。",
+    "route_expected": "auto",
+    "input_materials": "由用户提供，必须先建事实台账",
+    "expected_style_traits": [
+      "事实先行",
+      "商业变量",
+      "类型路线清楚",
+      "克制判断"
+    ],
+    "forbidden_outputs": [
+      "冒充记者",
+      "复制原文",
+      "编造数据",
+      "生产链路泄漏"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "original flavor",
+      "de-AI preservation"
+    ]
+  }
+]

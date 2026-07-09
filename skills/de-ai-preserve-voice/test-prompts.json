@@ -1,0 +1,44 @@
+[
+  {
+    "id": "deai-banfo-01",
+    "skill": "banfo-skill",
+    "prompt": "把一篇半佛式消费品拆解稿去 AI 味，但保留机制反转、主物件承重和普通人关系。",
+    "must_preserve": ["机制反转", "具体物件", "事实边界", "半佛式短段落但不过度碎段"],
+    "must_not": ["改成普通议论文", "删除所有反转句", "新增亲历", "每句话都拆成独立段"]
+  },
+  {
+    "id": "deai-kazike-01",
+    "skill": "kazike-skill",
+    "prompt": "把一篇 AI 工具体验稿去 AI 味，但不能编造亲测、截图结果或朋友反馈。",
+    "must_preserve": ["现场入口", "步骤证据", "普通人用途", "坑点"],
+    "must_not": ["假装实测", "把技术判断改成鸡汤", "删掉产品限制"]
+  },
+  {
+    "id": "deai-liurun-01",
+    "skill": "liurun-skill",
+    "prompt": "把刘润式商业分析稿去 AI 味，但保留问题-本质-机制-方法和必要的“不是 A，而是 B”。",
+    "must_preserve": ["第一人称讲述", "机制拆解", "概念辨析", "边界提醒", "刘润式短段节奏但不过度碎段"],
+    "must_not": ["一刀切删除二元辨析", "改成段子文", "新增刘润亲历", "把解释链拆成一串短行"]
+  },
+  {
+    "id": "deai-dongjian-01",
+    "skill": "dongjian-skill",
+    "prompt": "把洞见式人生观点稿去 AI 味，但保留故事-判断-行动链和数字分节。",
+    "must_preserve": ["洞见式清醒判断", "数字分节", "普通人行动", "结尾姿态", "故事段稍长、判断段较短"],
+    "must_not": ["改成泛泛鸡汤", "删掉清单承诺", "编造故事细节", "把故事拆成过密短段"]
+  },
+  {
+    "id": "deai-local-account-01",
+    "skill": "chengde-skill/dayibin-wechat-writing-gene-skill/chengdu-meishi-skill",
+    "prompt": "把本地公众号稿去 AI 味，但不补本地地点、价格、路线、评论、采访和官方回复。",
+    "must_preserve": ["本地读者关系", "类型 DNA", "事实台账", "小编线证据等级"],
+    "must_not": ["伪本地化", "把待核验写成事实", "平均所有小编风格"]
+  },
+  {
+    "id": "deai-lyrics-01",
+    "skill": "fang-wenshan-lyrics-skill",
+    "prompt": "把歌词去 AI 味，但保留支线、主物件、副歌命名、可唱性和 Suno 生产包。",
+    "must_preserve": ["主支线", "主物件推进", "副歌钩子", "气口", "出曲方向"],
+    "must_not": ["改成散文", "删除复沓押韵", "堆烟雨红尘"]
+  }
+]

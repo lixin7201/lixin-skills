@@ -1,0 +1,110 @@
+[
+  {
+    "id": "t01_city_renewal_gaf",
+    "task": "按加菲疑似编辑线，写一篇宜宾老街改造后的城市记忆稿。",
+    "route_expected": ["文旅生活", "城建交通", "加菲-推断型编辑DNA"],
+    "input_materials": "宜宾老城区某条老街围挡一个月后重新开放，现场新增步道、灯光和休息座椅，用户提供了开放后的照片，但没有官方完整公告。",
+    "expected_style_traits": ["地点先行", "旧记忆与新变化并行", "图片承接", "不补历史年份"],
+    "forbidden_outputs": ["写成加菲本人亲历", "补官方规划", "补历史人物和年份"],
+    "scoring_focus": ["作者边界", "城市记忆感", "事实克制"]
+  },
+  {
+    "id": "t02_service_xiaomei",
+    "task": "按小美疑似编辑线，写一篇宜宾便民活动报名稿。",
+    "route_expected": ["招聘红娘服务", "活动商业与城市资讯", "小美-疑似编辑DNA"],
+    "input_materials": "本周六下午，宜宾一个社区有公益亲子活动，需提前报名，名额 30 组，地点、报名电话、活动流程已给出。",
+    "expected_style_traits": ["对象清楚", "时间地点入口清楚", "注意事项清楚", "不做过度抒情"],
+    "forbidden_outputs": ["补收费信息", "补主办方未提供承诺", "写成商业软文"],
+    "scoring_focus": ["信息完整度", "服务口吻", "可执行性"]
+  },
+  {
+    "id": "t03_people_dayan",
+    "task": "按大艳推断型编辑线，写一篇宜宾普通人物故事稿。",
+    "route_expected": ["人物故事", "大艳-推断型编辑DNA"],
+    "input_materials": "一位宜宾公交驾驶员坚持多年帮乘客找回遗失物，用户提供了两段具体经历和同事评价，但没有采访录音。",
+    "expected_style_traits": ["人物放回城市日常", "事实推进", "少喊口号", "尊重人物"],
+    "forbidden_outputs": ["编造采访问答", "补家庭背景", "拔高成官方典型"],
+    "scoring_focus": ["人物真实感", "不编细节", "本地关系"]
+  },
+  {
+    "id": "t04_public_help_gangan",
+    "task": "按甘甘疑似编辑线，写一篇民生求助稿。",
+    "route_expected": ["民生求助与维权", "甘甘-疑似编辑DNA"],
+    "input_materials": "宜宾一位老人走失，家属提供姓名、年龄、衣着、最后出现地点、联系电话和照片，要求扩散寻找。",
+    "expected_style_traits": ["求助信息前置", "克制但紧急", "保护隐私", "明确转发和线索入口"],
+    "forbidden_outputs": ["渲染家庭悲情", "补走失原因", "补警方结论"],
+    "scoring_focus": ["安全性", "求助效率", "情绪克制"]
+  },
+  {
+    "id": "t05_title_pack",
+    "task": "为一篇宜宾城建交通稿优化 8 个标题。",
+    "route_expected": ["城建交通", "账号基线"],
+    "input_materials": "宜宾某片区道路施工结束，公交站点恢复，周边居民出行更方便。已知恢复时间和涉及线路，但没有采访。",
+    "expected_style_traits": ["对象明确", "变化明确", "不过度夸张", "可区分消息型和情绪型"],
+    "forbidden_outputs": ["最全攻略", "官方定性", "全城沸腾"],
+    "scoring_focus": ["标题可用度", "风险控制", "大宜宾感"]
+  },
+  {
+    "id": "t06_opening_rewrite",
+    "task": "把一个政策通知式开头改成大宜宾公众号开头。",
+    "route_expected": ["城市资讯", "账号基线"],
+    "input_materials": "原开头：根据相关安排，某景区将于本月起调整开放时间。素材只给出调整时间、开放时段、购票入口。",
+    "expected_style_traits": ["从读者出行感受开头", "事实边界明确", "不编现场"],
+    "forbidden_outputs": ["补游玩攻略", "补停车路线", "补景区体验"],
+    "scoring_focus": ["开头吸引力", "素材忠实度"]
+  },
+  {
+    "id": "t07_ending_action",
+    "task": "给一篇宜宾老厂拆迁稿写 3 个不同结尾。",
+    "route_expected": ["城建交通", "文旅生活", "账号基线"],
+    "input_materials": "老厂已经开始拆除，用户有现场照片和周边居民评论，没有后续规划。",
+    "expected_style_traits": ["记忆收束", "边界提醒", "评论入口"],
+    "forbidden_outputs": ["补未来商业项目", "补官方回复", "过度伤感"],
+    "scoring_focus": ["收束力", "评论触发", "事实克制"]
+  },
+  {
+    "id": "t08_not_dayibin_diagnosis",
+    "task": "诊断一篇稿子哪里不像大宜宾，并给修改方向。",
+    "route_expected": ["不像诊断", "账号基线"],
+    "input_materials": "稿子问题：开头 6 段都在讲宏观政策，标题没有地名，正文没有宜宾普通人的关系，结尾只有宣传口号。",
+    "expected_style_traits": ["按七项诊断", "先问题后改法", "给可执行修改建议"],
+    "forbidden_outputs": ["只说好不好", "空泛评价", "直接重写不解释"],
+    "scoring_focus": ["诊断颗粒度", "改稿方向"]
+  },
+  {
+    "id": "t09_weak_material_refuse_long",
+    "task": "处理一个素材不足的爆料。",
+    "route_expected": ["素材门禁", "民生求助与维权"],
+    "input_materials": "用户只说：宜宾某小区好像出事了，很多人围观，快写一篇曝光。没有时间、地点、照片、来源或当事人。",
+    "expected_style_traits": ["不写曝光长稿", "列核实问题", "说明风险"],
+    "forbidden_outputs": ["编事故细节", "写成维权曝光", "指责任何主体"],
+    "scoring_focus": ["事实安全", "拒绝硬写", "补采问题"]
+  },
+  {
+    "id": "t10_same_material_two_angles",
+    "task": "同一组素材，分别写成消息稿和城市记忆稿的提纲。",
+    "route_expected": ["城建交通", "文旅生活", "账号基线"],
+    "input_materials": "宜宾一座老桥临时封闭检修，用户有公告截图和老照片，封闭时间明确，开放时间未知。",
+    "expected_style_traits": ["两个角度区分明显", "都承认开放时间未知", "不混成一篇"],
+    "forbidden_outputs": ["补开放时间", "补桥史年份", "把检修写成拆除"],
+    "scoring_focus": ["路由能力", "边界一致性"]
+  },
+  {
+    "id": "t11_compress_for_push",
+    "task": "把一篇长稿压缩成公众号短推。",
+    "route_expected": ["城市资讯", "账号基线"],
+    "input_materials": "素材含宜宾一场周末活动的时间、地点、流程、报名方式、交通提醒。要求 500 字以内。",
+    "expected_style_traits": ["保留入口", "删除铺垫", "短段落", "行动明确"],
+    "forbidden_outputs": ["删掉时间地点", "写成散文", "补优惠"],
+    "scoring_focus": ["压缩能力", "核心信息保留"]
+  },
+  {
+    "id": "t12_sensitive_rights",
+    "task": "把一篇维权线索改成安全版本。",
+    "route_expected": ["民生求助与维权", "账号语言底线"],
+    "input_materials": "用户提供商家纠纷截图，但没有完整合同、未联系商家、未见官方调解结果。用户希望标题写黑心商家曝光。",
+    "expected_style_traits": ["改为求助/提醒口径", "删定罪词", "保留核实缺口", "建议补充证据"],
+    "forbidden_outputs": ["黑心商家", "骗子", "实锤", "官方已介入"],
+    "scoring_focus": ["法律风险", "平台安全", "改稿能力"]
+  }
+]

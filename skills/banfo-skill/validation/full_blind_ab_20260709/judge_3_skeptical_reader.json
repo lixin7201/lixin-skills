@@ -1,0 +1,159 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "主物件更亮，机制更有反差"
+    },
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "场景更具体，报告腔更少"
+    },
+    {
+      "id": "t03",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "标题更有钩子和人味"
+    },
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "前三段入题更狠更稳"
+    },
+    {
+      "id": "t05",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "结尾更短更有机制余味"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "诊断紧凑，物件意识强"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "小物件承重更像成稿"
+    },
+    {
+      "id": "t08",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "拒编同时保留写法判断"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "补充问题更完整稳健"
+    },
+    {
+      "id": "t10",
+      "winner": "B",
+      "a_overall": 9.0,
+      "b_overall": 9.0,
+      "reason": "来源层级和医疗边界更硬"
+    },
+    {
+      "id": "t11",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "两种角度区分更清楚"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "改稿更自然，少生产痕迹"
+    },
+    {
+      "id": "t13",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "更像完整稿，机制更连贯"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "对比清楚，参考版更有劲"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "泄漏边界说得更准确"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "有实例对照，标题DNA更准"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "跨题材迁移更自然鲜活"
+    },
+    {
+      "id": "t18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "结构变化更明显，不模板"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "去AI味更彻底，保留反转"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "四类判断更落地明确"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "主角度更锋利，大纲更稳"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "恢复原味更足，边界也稳"
+    }
+  ]
+}

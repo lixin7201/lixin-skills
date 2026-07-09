@@ -1,0 +1,47 @@
+[
+  {
+    "id": "draft-001",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "rewrite-001",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t08",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t12",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t14",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t16",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t19",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t20",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t21",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  }
+]

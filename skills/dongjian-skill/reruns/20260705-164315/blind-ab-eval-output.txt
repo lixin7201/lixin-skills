@@ -1,0 +1,60 @@
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left plugin install index in place because shared SQLite state has  │
+│    conflicting plugin install metadata for: acpx, brave, feishu        │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+◇  Config warnings ───────────────────────────────────────────────────────╮
+│                                                                         │
+│  - channels.feishu.allowFrom: channels.feishu.dmPolicy="allowlist" but  │
+│    channels.feishu.allowFrom is empty; all DMs will be dropped. Add at  │
+│    least one sender ID to channels.feishu.allowFrom or change           │
+│    channels.feishu.dmPolicy.                                            │
+│                                                                         │
+├─────────────────────────────────────────────────────────────────────────╯
+[state-migrations] Legacy state migration warnings:
+- Left plugin install index in place because shared SQLite state has conflicting plugin install metadata for: acpx, brave, feishu
+- Left migrated task registry sidecar in place because archive already exists: /Users/lixin/.openclaw/tasks/runs.sqlite.migrated
+│
+◇  Doctor warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - Left plugin install index in place because shared SQLite state has    │
+│    conflicting plugin install metadata for: acpx, brave, feishu          │
+│  - Left migrated task registry sidecar in place because archive already  │
+│    exists: /Users/lixin/.openclaw/tasks/runs.sqlite.migrated             │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: acpx (/Users/lixin/.openclaw/npm/node_modules/@openclaw/acpx/dist/index.js), brave (/Users/lixin/.openclaw/npm/node_modules/@openclaw/brave-plugin/dist/index.js), codex (/Users/lixin/.openclaw/npm/projects/openclaw-codex-8902d781d4/node_modules/@openclaw/codex/dist/index.js), feishu (/Users/lixin/.openclaw/npm/node_modules/@openclaw/feishu/dist/index.js), kimi (/Users/lixin/.openclaw/npm/projects/openclaw-kimi-provider-9241ab9f01/node_modules/@openclaw/kimi-provider/dist/index.js), openclaw-weixin (/Users/lixin/.openclaw/npm/node_modules/@tencent-weixin/openclaw-weixin/dist/index.js). Set plugins.allow to explicit trusted ids.
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/brainstorming resolved=~/.openclaw/workspace/.agents/skills/brainstorming
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/dispatching-parallel-agents resolved=~/.openclaw/workspace/.agents/skills/dispatching-parallel-agents
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/executing-plans resolved=~/.openclaw/workspace/.agents/skills/executing-plans
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/finishing-a-development-branch resolved=~/.openclaw/workspace/.agents/skills/finishing-a-development-branch
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/receiving-code-review resolved=~/.openclaw/workspace/.agents/skills/receiving-code-review
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/requesting-code-review resolved=~/.openclaw/workspace/.agents/skills/requesting-code-review
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/subagent-driven-development resolved=~/.openclaw/workspace/.agents/skills/subagent-driven-development
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/systematic-debugging resolved=~/.openclaw/workspace/.agents/skills/systematic-debugging
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/test-driven-development resolved=~/.openclaw/workspace/.agents/skills/test-driven-development
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/using-git-worktrees resolved=~/.openclaw/workspace/.agents/skills/using-git-worktrees
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/using-superpowers resolved=~/.openclaw/workspace/.agents/skills/using-superpowers
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/verification-before-completion resolved=~/.openclaw/workspace/.agents/skills/verification-before-completion
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/writing-plans resolved=~/.openclaw/workspace/.agents/skills/writing-plans
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/writing-skills resolved=~/.openclaw/workspace/.agents/skills/writing-skills
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: acpx (/Users/lixin/.openclaw/npm/node_modules/@openclaw/acpx/dist/index.js), brave (/Users/lixin/.openclaw/npm/node_modules/@openclaw/brave-plugin/dist/index.js), codex (/Users/lixin/.openclaw/npm/projects/openclaw-codex-8902d781d4/node_modules/@openclaw/codex/dist/index.js), feishu (/Users/lixin/.openclaw/npm/node_modules/@openclaw/feishu/dist/index.js), kimi (/Users/lixin/.openclaw/npm/projects/openclaw-kimi-provider-9241ab9f01/node_modules/@openclaw/kimi-provider/dist/index.js), openclaw-weixin (/Users/lixin/.openclaw/npm/node_modules/@tencent-weixin/openclaw-weixin/dist/index.js). Set plugins.allow to explicit trusted ids.
+[agent/embedded] workspace bootstrap file AGENTS.md is 11367 chars (limit 6000); truncating in injected context
+[agent/embedded] workspace bootstrap file TOOLS.md is 6472 chars (limit 6000); truncating in injected context
+[agent/embedded] workspace bootstrap file MEMORY.md is 16332 chars (limit 2683); truncating in injected context
+[agent/embedded] codex app-server one-shot cleanup retired shared client
+{"id":"H01","winner":"B","winner_confidence":7,"a_overall":7,"b_overall":8,"a_non_template":6,"b_non_template":7,"a_style":7,"b_style":8,"a_fact_reliability":9,"b_fact_reliability":9,"reason":"B的标题和开头更有抓力，秩序、体面、行动三层推进更自然，A也稳但更像通用三段式劝诫。"}
+{"id":"H02","winner":"B","winner_confidence":8,"a_overall":7,"b_overall":8,"a_non_template":6,"b_non_template":8,"a_style":7,"b_style":8,"a_fact_reliability":9,"b_fact_reliability":9,"reason":"B能把过度付出如何反噬关系讲出心理链条和关系错位，A观点正确但句式和段落推进更模板。"}
+{"id":"H03","winner":"B","winner_confidence":6,"a_overall":7,"b_overall":8,"a_non_template":7,"b_non_template":8,"a_style":7,"b_style":8,"a_fact_reliability":8,"b_fact_reliability":9,"reason":"B刻意回避未核实细节并把新闻转成边界和法律意识的判断，A也安全但对具体事件贴得更近、风险略高。"}
+{"id":"H04","winner":"B","winner_confidence":8,"a_overall":6,"b_overall":8,"a_non_template":7,"b_non_template":6,"a_style":7,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B虽然清单感更强但完整兑现50条，适合收藏型选题；A只写21条且改成短文，和题目承诺不匹配。"}
+{"id":"H05","winner":"B","winner_confidence":6,"a_overall":8,"b_overall":8,"a_non_template":7,"b_non_template":7,"a_style":8,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B的职场边界、留痕、风险意识更具体，A结尾更有洞见味但整体锋利度稍弱。"}
+{"id":"H06","winner":"B","winner_confidence":7,"a_overall":8,"b_overall":8,"a_non_template":7,"b_non_template":8,"a_style":8,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B从讲苦、等理解到拿回行动权，情绪转折更像洞见式表达，A完整但更像标准议论文。"}
+{"id":"H07","winner":"B","winner_confidence":8,"a_overall":7,"b_overall":8,"a_non_template":6,"b_non_template":8,"a_style":7,"b_style":8,"a_fact_reliability":8,"b_fact_reliability":9,"reason":"B没有借作文扩写细节，而是抓住孩子表达和家庭回应，语言更克制也更贴近亲子洞察。"}
+{"id":"H08","winner":"B","winner_confidence":7,"a_overall":8,"b_overall":8,"a_non_template":7,"b_non_template":8,"a_style":8,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B把烂工作里的现实压力、能力迁移和离开期限讲得更有层次，A稳但“忍耐策略”略显常规。"}
+{"id":"H09","winner":"B","winner_confidence":6,"a_overall":8,"b_overall":8,"a_non_template":7,"b_non_template":8,"a_style":8,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B的消费、人际、生活三层更贴中年人的真实疲惫，A也完整但“1%”落点更像漂亮总结。"}
+{"id":"H10","winner":"B","winner_confidence":7,"a_overall":7,"b_overall":8,"a_non_template":6,"b_non_template":8,"a_style":7,"b_style":8,"a_fact_reliability":10,"b_fact_reliability":10,"reason":"B把标题里的戏剧性收束成关系里的清醒和边界，A金句密度高但更容易落入情感号套话。"}
+{"summary":{"a_wins":0,"b_wins":10,"ties":0,"notes":"B整体更像“洞见”的判断链条：从生活现象切入，落到边界、秩序、行动和自保；A普遍安全稳妥，但多处有机械三段论和通用劝诫感。"}}
+[agent] run 44c0c187-05c6-47d8-9e22-607a8c9df929 ended with stopReason=stop

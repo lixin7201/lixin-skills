@@ -1,0 +1,651 @@
+│
+◇  Doctor warnings ──────────────────────────────────────────────────────╮
+│                                                                        │
+│  - Left plugin install index in place because shared SQLite state has  │
+│    conflicting plugin install metadata for: acpx, brave, feishu        │
+│                                                                        │
+├────────────────────────────────────────────────────────────────────────╯
+│
+◇  Config warnings ───────────────────────────────────────────────────────╮
+│                                                                         │
+│  - channels.feishu.allowFrom: channels.feishu.dmPolicy="allowlist" but  │
+│    channels.feishu.allowFrom is empty; all DMs will be dropped. Add at  │
+│    least one sender ID to channels.feishu.allowFrom or change           │
+│    channels.feishu.dmPolicy.                                            │
+│                                                                         │
+├─────────────────────────────────────────────────────────────────────────╯
+[state-migrations] Legacy state migration warnings:
+- Left plugin install index in place because shared SQLite state has conflicting plugin install metadata for: acpx, brave, feishu
+- Left migrated task registry sidecar in place because archive already exists: /Users/lixin/.openclaw/tasks/runs.sqlite.migrated
+│
+◇  Doctor warnings ────────────────────────────────────────────────────────╮
+│                                                                          │
+│  - Left plugin install index in place because shared SQLite state has    │
+│    conflicting plugin install metadata for: acpx, brave, feishu          │
+│  - Left migrated task registry sidecar in place because archive already  │
+│    exists: /Users/lixin/.openclaw/tasks/runs.sqlite.migrated             │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: acpx (/Users/lixin/.openclaw/npm/node_modules/@openclaw/acpx/dist/index.js), brave (/Users/lixin/.openclaw/npm/node_modules/@openclaw/brave-plugin/dist/index.js), codex (/Users/lixin/.openclaw/npm/projects/openclaw-codex-8902d781d4/node_modules/@openclaw/codex/dist/index.js), feishu (/Users/lixin/.openclaw/npm/node_modules/@openclaw/feishu/dist/index.js), kimi (/Users/lixin/.openclaw/npm/projects/openclaw-kimi-provider-9241ab9f01/node_modules/@openclaw/kimi-provider/dist/index.js), openclaw-weixin (/Users/lixin/.openclaw/npm/node_modules/@tencent-weixin/openclaw-weixin/dist/index.js). Set plugins.allow to explicit trusted ids.
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/brainstorming resolved=~/.openclaw/workspace/.agents/skills/brainstorming
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/dispatching-parallel-agents resolved=~/.openclaw/workspace/.agents/skills/dispatching-parallel-agents
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/executing-plans resolved=~/.openclaw/workspace/.agents/skills/executing-plans
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/finishing-a-development-branch resolved=~/.openclaw/workspace/.agents/skills/finishing-a-development-branch
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/receiving-code-review resolved=~/.openclaw/workspace/.agents/skills/receiving-code-review
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/requesting-code-review resolved=~/.openclaw/workspace/.agents/skills/requesting-code-review
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/subagent-driven-development resolved=~/.openclaw/workspace/.agents/skills/subagent-driven-development
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/systematic-debugging resolved=~/.openclaw/workspace/.agents/skills/systematic-debugging
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/test-driven-development resolved=~/.openclaw/workspace/.agents/skills/test-driven-development
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/using-git-worktrees resolved=~/.openclaw/workspace/.agents/skills/using-git-worktrees
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/using-superpowers resolved=~/.openclaw/workspace/.agents/skills/using-superpowers
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/verification-before-completion resolved=~/.openclaw/workspace/.agents/skills/verification-before-completion
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/writing-plans resolved=~/.openclaw/workspace/.agents/skills/writing-plans
+[skills] Skipping escaped skill path outside its configured root: source=openclaw-workspace root=~/.openclaw/workspace/skills reason=symlink-escape requested=~/.openclaw/workspace/skills/writing-skills resolved=~/.openclaw/workspace/.agents/skills/writing-skills
+[plugins] plugins.allow is empty; discovered non-bundled plugins may auto-load: acpx (/Users/lixin/.openclaw/npm/node_modules/@openclaw/acpx/dist/index.js), brave (/Users/lixin/.openclaw/npm/node_modules/@openclaw/brave-plugin/dist/index.js), codex (/Users/lixin/.openclaw/npm/projects/openclaw-codex-8902d781d4/node_modules/@openclaw/codex/dist/index.js), feishu (/Users/lixin/.openclaw/npm/node_modules/@openclaw/feishu/dist/index.js), kimi (/Users/lixin/.openclaw/npm/projects/openclaw-kimi-provider-9241ab9f01/node_modules/@openclaw/kimi-provider/dist/index.js), openclaw-weixin (/Users/lixin/.openclaw/npm/node_modules/@tencent-weixin/openclaw-weixin/dist/index.js). Set plugins.allow to explicit trusted ids.
+[agent/embedded] workspace bootstrap file AGENTS.md is 11367 chars (limit 6000); truncating in injected context
+[agent/embedded] workspace bootstrap file TOOLS.md is 6472 chars (limit 6000); truncating in injected context
+[agent/embedded] workspace bootstrap file MEMORY.md is 16332 chars (limit 2683); truncating in injected context
+[agent/embedded] codex app-server one-shot cleanup retired shared client
+H01｜人可以穷，但不要有穷相
+
+一个人暂时没钱，不丢人。
+
+真正让人担心的，不是账户上的数字少，而是整个人被困境压弯以后，开始失去秩序，失去体面，也失去改变的心气。
+
+穷是一种处境，穷相却是一种习惯。
+
+处境可以慢慢改，习惯一旦长进骨头里，人就会在每一个选择里继续把自己推向更窄的地方。
+
+01
+
+所谓穷相，最明显的不是穿得旧、吃得简单，而是眼里只剩眼前。
+
+一顿饭要占便宜，一件小事要算到尽，一点亏都不能吃，一点责任都不想担。久而久之，人就会把所有关系都过成交易，把所有机会都看成风险。
+
+生活越紧，越要有基本的秩序。
+
+钱少，就把账记清；收入低，就把技能补上；暂时买不起，就承认买不起，而不是靠攀比、借贷和虚荣撑场面。
+
+真正的体面，不是装出来的富有，而是在困难里还能稳住自己的分寸。
+
+02
+
+很多人越穷越乱，不是因为他没有机会，而是因为他把所有力气都花在情绪里。
+
+抱怨命不好，埋怨别人不帮忙，羡慕别人来钱快，最后一天过去了，什么也没有改变。
+
+金钱困境最怕的，就是人先垮掉。
+
+你可以焦虑，但不能只焦虑；你可以羡慕，但不能只羡慕。把房间收拾干净，把身体照顾好，把欠账列出来，把能做的事一件件推进。
+
+一个人开始恢复秩序，钱未必马上变多，但人生已经不再继续下沉。
+
+03
+
+穷的时候，更要守住心气。
+
+不要因为暂时低谷，就讨好所有人；不要因为缺钱，就放弃原则；不要因为别人过得好，就把自己活成怨气。
+
+世界不会因为你可怜就自动让路，但会给那些还能行动的人一点空间。
+
+真正能翻身的人，往往不是最聪明的人，而是不把自己交给困境的人。
+
+他知道慢没关系，少没关系，起点低也没关系。只要今天比昨天多做一点，账目比昨天清楚一点，能力比昨天扎实一点，日子就有缝隙可钻。
+
+结尾
+
+人可以穷一阵子，但不要让穷相跟一辈子。
+
+没钱时，守住秩序；低谷时，守住体面；难熬时，守住行动。
+
+因为一个人真正的富有，往往不是从赚到第一笔钱开始，而是从他不再被贫穷定义的那一刻开始。
+
+---H01-END---
+
+H02｜为什么付出最多的人，反倒成了全家最恨的人？
+
+很多家庭里，最委屈的那个人，常常也是最不被理解的那个人。
+
+他操心最多，干活最多，忍让最多，最后却换来一句：都是你自愿的。
+
+这听起来很残忍，却是很多关系的真相。
+
+过度付出，如果没有边界，最后不会换来感激，只会养出依赖、挑剔和怨恨。
+
+01
+
+家庭里最容易出问题的，不是没人付出，而是有人付出得太多。
+
+一个人把所有事都揽在身上，家务他做，钱他贴，矛盾他忍，情绪他吞。刚开始，家人可能会感动，时间久了，大家就会把这一切当成理所当然。
+
+你累了，他们觉得你变了；你拒绝了，他们觉得你冷血；你不再兜底了，他们反而怪你不负责任。
+
+很多关系的失衡，正是从“我多做一点没关系”开始的。
+
+你一次次退让，别人就一次次前进。最后你站到墙角，还以为这是亲情。
+
+02
+
+付出最多的人为什么会被恨？
+
+因为他往往也积攒了最多委屈。
+
+他嘴上说没事，脸上却写满不甘；他表面继续照顾，心里却越来越冷。于是付出里混进了埋怨，关心里带上了控制，牺牲里藏着期待。
+
+他希望别人懂他的苦，可别人只感受到他的怨。
+
+他以为自己是在爱家，家人却觉得他在用付出索要回报。
+
+这就是很多家庭最深的误会：一个人觉得自己掏空了所有，另一个人却觉得自己天天被压迫。
+
+03
+
+真正健康的家庭，不需要一个人永远牺牲。
+
+家是共同生活的地方，不是某个人的长期战场。能做的事，要分出去；说不出口的累，要说出来；不能答应的要求，要早点拒绝。
+
+边界不是冷漠，而是让关系不至于变形。
+
+你不必把自己活成全家的保姆、钱包、垃圾桶和情绪出口。你越是没有底线，别人越不知道你的底线在哪里。
+
+爱一个家，也要把自己算进去。
+
+结尾
+
+付出本身没有错，错的是没有边界的付出。
+
+一个人若总是用委屈维持关系，最后关系不会更亲，心只会更远。
+
+家庭最好的样子，不是谁欠谁、谁忍谁，而是每个人都承担一点，每个人都被看见一点。爱不是一个人撑住所有，而是一家人都别把好人逼到寒心。
+
+---H02-END---
+
+H03｜极端家庭冲突背后，最该看见的不是震惊，而是警醒
+
+看到年迈母亲与成年子女发生极端冲突的新闻，很多人的第一反应是愤怒。
+
+愤怒当然应该有。伤害老人，无论放在什么关系里，都不能被轻飘飘地解释成“家务事”。
+
+但愤怒之后，更应该警醒。
+
+一个家庭走到撕裂的地步，往往不是某一天突然坏掉，而是很多年里，边界一次次失守，问题一次次被纵容，最后酿成无法回头的后果。
+
+01
+
+亲情最怕被误解成无限包容。
+
+有些父母对子女一忍再忍，觉得孩子再大也是孩子；有些子女对父母一味索取，觉得血缘就是底气。一个不设限，一个不知止，久而久之，关系就不再是爱，而成了互相消耗。
+
+亲人之间，也必须有底线。
+
+不能因为是儿子，就可以逃避责任；不能因为是母亲，就永远替对方兜底；不能因为是一家人，就把伤害压成沉默。
+
+很多家庭悲剧的开端，都是一句“算了”。
+
+可是有些事，越算了，越不会结束。
+
+02
+
+长期失衡的关系，会让人失去对后果的敬畏。
+
+一个人习惯了被原谅，就容易把别人的忍让当成软弱；习惯了不承担，就容易把责任推给所有人；习惯了在家里发泄，就可能忘记，再亲的人也不是情绪的承受器。
+
+家庭不是法外之地。
+
+冲突可以沟通，矛盾可以调解，困难可以求助，但暴力永远不是出路。只要越过了伤害的红线，就不再只是亲情问题，也会成为法律问题。
+
+这不是冷血，而是最基本的秩序。
+
+03
+
+更值得反思的是，很多老人一生都在替孩子让路。
+
+孩子小的时候怕他吃苦，孩子大了怕他受挫，孩子犯错了又怕他承担不起。父母以为自己是在保护，结果可能让孩子一辈子没有学会负责。
+
+真正的爱，不是无条件托底，而是让对方知道边界在哪里。
+
+能帮的帮，不能帮的拒绝；该疼的疼，该管的管；该报警时报警，该求助时求助。
+
+亲情如果没有原则，最后受伤最深的，往往就是最心软的人。
+
+结尾
+
+极端冲突让人痛心，但它提醒我们：家人之间，也要有规则，有边界，有法律意识。
+
+不要把纵容当慈爱，不要把忍耐当美德，不要把家丑不可外扬当成逃避问题的借口。
+
+真正的亲情，不是把伤害藏起来，而是在一切还来得及的时候，守住底线，阻止失控。
+
+---H03-END---
+
+H04｜新的一年，叫醒自己的50条行动清单
+
+新的一年，不一定非要立宏大的目标。
+
+很多时候，一个人真正的改变，不是从喊口号开始，而是从把生活重新整理一遍开始。
+
+少一点空想，多一点行动；少一点内耗，多一点秩序。下面这50条，送给想重新出发的你。
+
+01
+
+先把生活过顺。
+
+1. 早睡一点，别把疲惫拖成常态。  
+2. 起床后先整理床铺。  
+3. 每天喝够水。  
+4. 少刷无意义短内容。  
+5. 房间乱了马上收。  
+6. 饭好好吃，别总凑合。  
+7. 每周运动几次，轻一点也行。  
+8. 定期体检，不拿身体赌运气。  
+9. 睡前别带着情绪复盘人生。  
+10. 学会让自己安静十分钟。
+
+生活秩序一稳，人就不容易被小事拖垮。
+
+02
+
+再把情绪管住。
+
+11. 不在愤怒时做决定。  
+12. 不在低谷时否定一生。  
+13. 别把别人的脸色当判决书。  
+14. 不解释给不想懂你的人听。  
+15. 少比较，多复盘。  
+16. 委屈要说，但别逢人就倒。  
+17. 接受有些人只能陪一段路。  
+18. 别用讨好换关系。  
+19. 对消耗你的人保持距离。  
+20. 每天做一件让自己有掌控感的事。
+
+情绪稳定不是没脾气，而是不把自己交出去。
+
+03
+
+最后把行动落地。
+
+21. 记账。  
+22. 少冲动消费。  
+23. 保留一笔备用钱。  
+24. 学一项能变现的技能。  
+25. 拒绝无效社交。  
+26. 重要的事提前做。  
+27. 收到消息不必秒回，但要靠谱回应。  
+28. 每周清理一次待办。  
+29. 不懂就问，不会就学。  
+30. 别拖延到最后一刻。  
+31. 做事留痕。  
+32. 说话留余地。  
+33. 对家人多一点耐心。  
+34. 对自己少一点苛责。  
+35. 不借钱维持面子。  
+36. 不熬夜证明努力。  
+37. 不把计划写得太满。  
+38. 每月读点有用的东西。  
+39. 远离总让你失控的人。  
+40. 坚持复盘钱、身体、关系和工作。  
+41. 承认普通，但别放弃成长。  
+42. 接受慢慢来。  
+43. 别总等状态好了再开始。  
+44. 先完成，再完美。  
+45. 把难事拆小。  
+46. 每天推进一点。  
+47. 少立人设，多做实事。  
+48. 允许自己休息。  
+49. 记住自己真正想要什么。  
+50. 从今天开始，不从明天开始。
+
+结尾
+
+新的一年，最该叫醒的不是野心，而是行动。
+
+把日子过稳，把情绪放平，把钱管住，把身体照顾好，把该做的事一点点做完。
+
+你不需要突然变成另一个人。你只需要从今天起，少消耗一点，多行动一点，慢慢把自己从混乱里带出来。
+
+---H04-END---
+
+H05｜人在单位：事别拖、话别多、人别作
+
+人在单位，最重要的不是显得多聪明，而是让人觉得你靠谱。
+
+很多职场麻烦，归根到底就三件事：事拖出了问题，话说出了是非，人作出了风险。
+
+单位不是家，也不是朋友圈。这里有合作，有利益，有规则，也有看不见的边界。越早明白这一点，越少吃亏。
+
+01
+
+事别拖，是最基本的职业体面。
+
+你可以能力一般，但不能事事没回音；你可以做得慢一点，但不能拖到别人替你收拾。很多人失去信任，不是因为犯了多大的错，而是因为每次交代给他的事，都让人不放心。
+
+收到任务，先确认；遇到困难，早反馈；需要延期，提前说；做完之后，有交付。
+
+这几步看起来简单，却能筛掉很多不靠谱的人。
+
+单位里最怕的不是不会，而是不说。你沉默，别人就只能猜；你拖着，风险就会放大。最后问题爆出来，没人会记得你有多难，只会记得你不可靠。
+
+02
+
+话别多，是成年人该有的分寸。
+
+职场里，有些话说出去，就收不回来。
+
+别随便评价领导，别背后议论同事，别把别人的隐私当谈资，别在情绪上头时发长消息。你以为只是吐槽，别人听到的可能是立场；你以为只是玩笑，传出去可能就变了味。
+
+真正成熟的人，说话有边界。
+
+该汇报时讲重点，该沟通时讲事实，该拒绝时讲清楚，少一点情绪，多一点证据。
+
+话少不是怂，是给自己留空间。很多时候，你少说一句，就少一分被误解、被利用、被卷入是非的风险。
+
+03
+
+人别作，是最好的自保。
+
+所谓作，不是有个性，而是不懂场合。
+
+一点小事就甩脸色，稍微受委屈就公开发作，做了点成绩就到处炫耀，遇到责任就急着甩锅。这样的人，短期看似痛快，长期一定会被边缘化。
+
+单位里，没有人有义务一直包容你的情绪。
+
+你可以争取利益，但别胡搅蛮缠；你可以表达不满，但别失控；你可以保护自己，但别把所有人都当敌人。
+
+稳定，是职场里很稀缺的能力。
+
+结尾
+
+人在单位，别把简单事复杂化。
+
+事别拖，别人才能信你；话别多，是非才绕开你；人别作，路才不会越走越窄。
+
+真正厉害的人，不一定锋芒毕露，但一定节奏稳、边界清、情绪定。把这三点做好，至少能让你在复杂环境里少摔很多跤。
+
+---H05-END---
+
+H06｜普通人变强的开始：停止弱者叙事
+
+很多人不是不努力，而是太习惯用“我没办法”解释一切。
+
+我出身普通，所以不行；我运气不好，所以没机会；我没人帮，所以只能这样。
+
+这些话听起来都合理，甚至都可能是真的。但问题是，如果你一直讲这样的故事，你就会慢慢相信自己只能这样。
+
+普通人变强的第一步，不是突然逆袭，而是停止弱者叙事。
+
+01
+
+弱者叙事最可怕的地方，是它会让人获得一种廉价的安慰。
+
+只要把失败归因于外界，就不用面对自己的懒散、拖延、逃避和混乱。只要说一句“没办法”，就可以暂时不用行动。
+
+可是生活不会因为你解释得通，就自动变好。
+
+你可以承认起点低，但不能把起点当终点；你可以承认资源少，但不能把资源少当成放弃的理由。
+
+很多时候，真正困住人的不是现实，而是他对现实的叙述方式。
+
+02
+
+停止弱者叙事，不是让你否认痛苦。
+
+普通人的难，当然是真的。房贷、工作、家庭、健康、人情，每一样都可能压得人喘不过气。
+
+但你要分清楚：诉苦可以释放情绪，却不能替你解决问题；抱怨可以获得共鸣，却不能让你拥有能力。
+
+真正有用的问题不是“为什么我这么惨”，而是“接下来我能做什么”。
+
+能不能少刷一点手机，学一个技能；能不能把账理清，减少冲动消费；能不能把拖了很久的事先推进一步。
+
+行动越具体，人越有力量。
+
+03
+
+一个人开始变强，通常不是因为突然自信，而是因为他不再沉迷解释。
+
+遇到问题，他先找方法；受到委屈，他先稳住自己；被人看轻，他不急着证明，而是把精力放回事情本身。
+
+他知道喊苦没有错，但不能只喊苦。
+
+成年人最大的清醒，是承认世界不一定公平，但自己仍然要负责。你不能决定手里拿到什么牌，却能决定这一局怎么打。
+
+停止弱者叙事，就是把人生的方向盘从抱怨里拿回来。
+
+结尾
+
+普通人变强，不需要一开始就很厉害。
+
+先停止反复讲述自己的无力，停止把所有问题都交给命运，停止用受害感消耗行动力。
+
+你可以慢，可以难，可以暂时没有结果，但只要你还在做选择、做改变、做推进，你就已经不是原地等待的人。
+
+强大，就是从不再把自己说成无能为力开始。
+
+---H06-END---
+
+H07｜看了那篇感动全网的高中生作文，我才知道该如何养出“报恩”的孩子
+
+一篇高中生作文之所以能打动很多人，未必是因为文字多华丽，而是因为里面有一种很珍贵的东西：孩子真的看见了父母。
+
+他能感受到家的不易，也能把爱说出来。
+
+很多父母都希望养出懂事、感恩、有担当的孩子。但孩子的感恩，不是靠说教逼出来的，而是在一次次被尊重、被回应、被好好对待中长出来的。
+
+01
+
+想养出“报恩”的孩子，先别把孩子当成欠债的人。
+
+有些父母常说：我为你付出这么多，你以后要有良心。话不是全错，但说多了，爱就变成了压力。
+
+孩子会觉得，自己不是被爱着，而是在背负一笔永远还不清的债。
+
+真正好的亲子关系，不是父母天天强调牺牲，而是让孩子在日常里感受到：这个家有辛苦，也有温度；父母有付出，也有边界；爱不是控制，而是托举。
+
+孩子被温柔对待过，才更容易学会温柔地回应世界。
+
+02
+
+孩子会不会感恩，很大程度上取决于他有没有机会表达。
+
+很多家庭里，孩子一开口，父母就打断；孩子一解释，父母就否定；孩子有情绪，父母就说矫情。
+
+久而久之，孩子不说了，也不靠近了。
+
+一个能写出真情的孩子，背后往往有被允许感受的空间。他知道自己的话有人听，自己的情绪不丢人，自己的观察有价值。
+
+父母最该做的，不是替孩子安排好每一句话，而是认真听他说完。
+
+当孩子被看见，他才会学着看见别人。
+
+03
+
+感恩不是表演，而是关系的自然回声。
+
+你希望孩子体谅父母，就要让他参与真实生活；你希望孩子懂责任，就要给他承担小事的机会；你希望孩子有爱，就不要在家里只讲成绩、排名和输赢。
+
+教育不是把孩子塑造成完美作品，而是陪他长成一个心里有光、眼里有人、手上有事的人。
+
+父母也要记得，别把所有希望都压在孩子身上。你活得稳定、清醒、有边界，本身就是给孩子最好的示范。
+
+结尾
+
+所谓“报恩”的孩子，不是长大后必须回报多少，而是他心里有情，知道珍惜，也愿意承担。
+
+这样的孩子，不是骂出来的，不是逼出来的，更不是用亏欠感绑出来的。
+
+他是在被尊重的家庭里，慢慢学会尊重；在被爱过的岁月里，慢慢懂得爱人。
+
+好的教育，最终不是让孩子怕你，而是让孩子多年以后想起家，心里依然是暖的。
+
+---H07-END---
+
+H08｜人和人的差距，从忍耐一份“烂工作”开始
+
+一份烂工作，最容易让人产生两种冲动。
+
+一种是立刻逃走，觉得多待一天都是浪费；一种是彻底摆烂，反正环境不好，自己也没必要认真。
+
+但人与人的差距，往往就在这里拉开。
+
+真正成熟的人，不会美化烂工作，也不会轻易被烂工作毁掉。他会一边忍耐，一边学习；一边自保，一边准备离开。
+
+01
+
+烂工作最大的伤害，不只是累，而是让人失去秩序。
+
+事情杂乱，沟通低效，责任不清，情绪消耗严重。时间久了，人很容易变得麻木、暴躁、敷衍，甚至怀疑自己是不是就只配这样。
+
+这时候最重要的，不是天天骂工作，而是先稳住自己。
+
+把该做的事列清楚，把责任边界留痕，把能学到的东西记下来，把消耗你的人和事分开处理。
+
+你可以不喜欢这份工作，但不要把自己也过成混乱。
+
+02
+
+忍耐不是逆来顺受，而是有策略地保存实力。
+
+有些人一遇到不顺就辞职，结果下一份工作还是同样的问题；有些人一直忍，却什么准备也不做，最后被困在原地。
+
+真正有效的忍耐，是带着目标的。
+
+你要知道自己在忍什么，为什么忍，忍到什么时候。是为了攒钱，还是为了练能力；是为了等机会，还是为了补短板。
+
+如果一份工作很烂，那就至少从里面拿走一样东西：经验、技能、行业判断、抗压能力，或者下一次避坑的眼光。
+
+别白白受苦。
+
+03
+
+烂工作里，最能看出一个人的底层能力。
+
+有人在混乱里更混乱，有人在混乱里练出清醒；有人把怨气传给所有人，有人把情绪收回来做自己的事；有人只会等环境变好，有人开始悄悄准备简历、作品和下一步。
+
+忍耐一份烂工作，不是让你热爱痛苦，而是让你学会在不理想的环境里保持行动。
+
+成年人最稀缺的能力，就是不被环境完全带走。
+
+结尾
+
+如果你正在经历一份烂工作，别急着否定自己。
+
+该争取的争取，该拒绝的拒绝，该记录的记录，该学习的学习。不要用抱怨消耗掉全部力气，也不要把忍耐变成长期麻木。
+
+真正拉开差距的，不是有没有遇到烂工作，而是你有没有在烂工作里守住自己，并为更好的出路做准备。
+
+---H08-END---
+
+H09｜中年人的极简，是只过1%的生活
+
+人到中年，越来越明白一个道理：生活不是拥有得越多越好，而是留下来的东西越准越好。
+
+年轻时，总想什么都要，什么都试，什么都不能错过。到了中年才发现，真正让人疲惫的，不是缺少选择，而是选择太多、关系太杂、欲望太满。
+
+中年人的极简，不是清苦，而是只过最重要的1%。
+
+01
+
+先极简消费。
+
+很多东西买下来的瞬间很快乐，放进生活里却只剩负担。衣柜塞满了，还是觉得没衣服穿；柜子堆满了，心里却更乱。
+
+中年以后，花钱最该问的不是“便不便宜”，而是“我真的需要吗”。
+
+少为情绪买单，少为面子买单，少为别人眼光买单。把钱花在身体、学习、家人、长期安全感上，比买一堆很快失去新鲜感的东西更值得。
+
+消费一简单，心就轻了。
+
+02
+
+再极简关系。
+
+中年人的精力很贵，不能再随便交给无效社交。
+
+有些饭局，去了只是陪笑；有些关系，维持只是消耗；有些人，每次见完都让你心里发堵。到了这个年纪，要学会承认：不是所有人都值得深交，不是所有场合都必须出现。
+
+真正好的关系，不需要你拼命解释，不需要你长期讨好，也不会让你反复内耗。
+
+把时间留给舒服的人，留给家人，留给自己。关系少一点，反而更真一点。
+
+03
+
+最后极简精力。
+
+中年最怕的，是每天忙得团团转，却没有一件事真正重要。
+
+手机里消息不断，脑子里念头不断，手上事情不断，最后人被切成碎片，连安静吃顿饭都难。
+
+极简生活的核心，是重新排序。
+
+什么最重要，什么可以放下；什么必须亲自做，什么可以拒绝；什么是长期价值，什么只是短暂热闹。
+
+一个人能把精力收回来，就能把人生一点点收回来。
+
+结尾
+
+中年人的极简，不是把生活过得空荡荡，而是把不重要的东西清出去，让重要的东西有位置。
+
+少买，少耗，少解释，少迎合。
+
+只过那1%的生活：健康的身体，稳定的情绪，干净的关系，能托底的钱，以及一颗不再乱追的心。
+
+人到中年，越简单，越有力量。
+
+---H09-END---
+
+H10｜这世间最大的荒唐：无情人在演有情人，有情人修了无情道
+
+很多关系里，最荒唐的不是没人动情，而是动情的人最后学会了沉默，无情的人却最会表演深情。
+
+一个人嘴上说在乎，行动里全是忽视；一个人从不说爱，却把所有委屈都吞下。时间久了，真正有情的人寒了心，真正无情的人却占尽了便宜。
+
+这世间很多错位，都是从这里开始的。
+
+01
+
+无情人最擅长演有情。
+
+他会说好听的话，会在需要你的时候表现得真诚，会在你想离开时突然示弱。可一到关键时刻，他永远先顾自己。
+
+你难过，他嫌你麻烦；你需要回应，他说你想太多；你认真沟通，他开始逃避；你终于失望，他又怪你变了。
+
+这样的人，不是不懂爱，而是不愿承担爱的责任。
+
+他享受被照顾，被理解，被等待，却不愿付出同等的真心。你以为自己遇到的是慢热，其实可能只是冷漠披了一件温柔的外衣。
+
+02
+
+有情人为什么会修成无情道？
+
+因为心不是一天凉的。
+
+一开始，他也热烈，也相信，也愿意解释和等待。后来失望多了，话就少了；委屈久了，眼神就淡了；一次次伸出去的手落空，人就慢慢学会了收回来。
+
+所谓无情，不过是有情被消耗后的自保。
+
+不是不想爱了，而是不敢再把自己交给一个没有回应的人；不是变冷了，而是终于明白，不能用自己的真心去填别人的无底洞。
+
+清醒，有时候就是从心疼自己开始的。
+
+03
+
+关系里最重要的，不是听他说什么，而是看他怎么做。
+
+真正有情的人，不会只在嘴上热闹。他会尊重你的感受，回应你的期待，珍惜你的付出，也会在矛盾里愿意面对问题。
+
+如果一段关系让你长期怀疑自己、消耗自己、压低自己，那就该停下来看看：你爱的到底是这个人，还是自己想象出来的那份深情。
+
+别在表演里寻找真心，别在冷漠里证明价值。
+
+有些人不值得你反复受伤。
+
+结尾
+
+世间最大的荒唐，是无情人在台上演得深情款款，有情人在台下把自己修得百毒不侵。
+
+但人终究要学会清醒。
+
+真心可以给，但不能给到失去自己；感情可以重，但不能重到没有边界。愿你有情，却不糊涂；温柔，却不软弱；爱人之前，也懂得好好护住自己。
+
+---H10-END---
+[agent] run 23102637-86e8-4012-8aaf-2692f46032a3 ended with stopReason=stop

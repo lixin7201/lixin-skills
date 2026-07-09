@@ -1,0 +1,94 @@
+{
+  "judge": "J3",
+  "items": [
+    {
+      "id": "h01",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 8,
+      "reason": "北京家庭账本更实",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h02",
+      "winner": "B",
+      "a_score": 6,
+      "b_score": 9,
+      "reason": "北京教育房产更具体",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h03",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 8,
+      "reason": "长期账和绑定更清楚",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h04",
+      "winner": "A",
+      "a_score": 8,
+      "b_score": 7,
+      "reason": "车牌家庭成本更全",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h05",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 8,
+      "reason": "北京中年支出更硬",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h06",
+      "winner": "B",
+      "a_score": 7,
+      "b_score": 8,
+      "reason": "三件事都落到账本",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h07",
+      "winner": "A",
+      "a_score": 8,
+      "b_score": 7,
+      "reason": "北京英语投入边界更像",
+      "weak_dimension": ""
+    },
+    {
+      "id": "h08",
+      "winner": "A",
+      "a_score": 8,
+      "b_score": 7,
+      "reason": "车房类比账本更深",
+      "weak_dimension": ""
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_score": 8,
+      "b_score": 9,
+      "reason": "判别标准更有边界",
+      "weak_dimension": ""
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_score": 9,
+      "b_score": 8,
+      "reason": "判断链和退路更像",
+      "weak_dimension": ""
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_score": 9,
+      "b_score": 8,
+      "reason": "自然段账本更稳",
+      "weak_dimension": ""
+    }
+  ],
+  "agent": "dev"
+}

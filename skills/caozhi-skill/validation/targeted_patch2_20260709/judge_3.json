@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A有表格、现场和边界，成稿感更强"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B对象具体、现场足，冷判断更像槽值"
+    }
+  ]
+}

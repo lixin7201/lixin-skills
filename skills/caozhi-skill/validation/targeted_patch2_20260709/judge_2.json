@@ -1,0 +1,18 @@
+{
+  "results": [
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A有完整对照样稿和事实边界，现场更扎实"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B成稿更完整具体，冷判断和边界都稳"
+    }
+  ]
+}

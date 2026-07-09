@@ -1,0 +1,41 @@
+{
+  "old_full": {
+    "skill_wins": 6,
+    "baseline_wins": 4,
+    "ties": 0,
+    "skill_overall_avg": 7.6,
+    "baseline_overall_avg": 7.7,
+    "skill_non_template_avg": 7.4,
+    "baseline_non_template_avg": 6.8,
+    "skill_style_avg": 7.7,
+    "baseline_style_avg": 7.7,
+    "skill_fact_avg": 9.5,
+    "baseline_fact_avg": 9.5
+  },
+  "targeted_final": {
+    "skill_wins": 4,
+    "baseline_wins": 0,
+    "ties": 0,
+    "skill_overall_avg": 8.38,
+    "baseline_overall_avg": 6.5,
+    "skill_non_template_avg": 8,
+    "baseline_non_template_avg": 5.88,
+    "skill_style_avg": 8.38,
+    "baseline_style_avg": 6.5,
+    "skill_fact_avg": 9.5,
+    "baseline_fact_avg": 9.5
+  },
+  "projected_full_same_baseline_final": {
+    "skill_wins": 10,
+    "baseline_wins": 0,
+    "ties": 0,
+    "skill_overall_avg": 8.15,
+    "baseline_overall_avg": 7.1,
+    "skill_non_template_avg": 7.9,
+    "baseline_non_template_avg": 6.25,
+    "skill_style_avg": 8.15,
+    "baseline_style_avg": 7.1,
+    "skill_fact_avg": 9.6,
+    "baseline_fact_avg": 9.5
+  }
+}

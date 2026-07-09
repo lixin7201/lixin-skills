@@ -1,0 +1,159 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "T01",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A分节推进和行动收束更完整"
+    },
+    {
+      "id": "T02",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A事实留痕与职场动作更扎实"
+    },
+    {
+      "id": "T03",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B标题更短更有判断力"
+    },
+    {
+      "id": "T04",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B场景更具体进入更快"
+    },
+    {
+      "id": "T05",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B低谷动作和心气收束更准"
+    },
+    {
+      "id": "T06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B诊断更贴风格机制"
+    },
+    {
+      "id": "T07",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A关系处境和分节行动更足"
+    },
+    {
+      "id": "T08",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B真像短稿，A像压缩说明"
+    },
+    {
+      "id": "T09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B事实边界和权益保护更稳"
+    },
+    {
+      "id": "T10",
+      "winner": "B",
+      "a_overall": 9.0,
+      "b_overall": 9.0,
+      "reason": "B更克制，安全提醒更完整"
+    },
+    {
+      "id": "T11",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B两个角度区分更清楚"
+    },
+    {
+      "id": "T12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B反模式识别更具体有锋芒"
+    },
+    {
+      "id": "T13",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A强材料展开和行动链更完整"
+    },
+    {
+      "id": "T14",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B抓住控制到沉默的变化"
+    },
+    {
+      "id": "T15",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B避开原句且不冒充过拟合"
+    },
+    {
+      "id": "T16",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B自评更懂非模板化边界"
+    },
+    {
+      "id": "T17",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A三题标题开头更像洞见"
+    },
+    {
+      "id": "T18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B模板诊断和改法更精确"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A去味后故事链保留更好"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 10.0,
+      "reason": "B四类辨析最稳最完整"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 10.0,
+      "b_overall": 8.0,
+      "reason": "A框架迁移到动作更具体"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B恢复通勤处境和行动更足"
+    }
+  ]
+}

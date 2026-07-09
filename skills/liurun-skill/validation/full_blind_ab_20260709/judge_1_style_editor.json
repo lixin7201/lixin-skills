@@ -1,0 +1,159 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "draft-001",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "链条定义更准，少冒充"
+    },
+    {
+      "id": "rewrite-001",
+      "winner": "A",
+      "a_overall": 8.6,
+      "b_overall": 8.1,
+      "reason": "概念更稳，成本追问更密"
+    },
+    {
+      "id": "business-001",
+      "winner": "A",
+      "a_overall": 8.7,
+      "b_overall": 8.2,
+      "reason": "场景复购机制更完整"
+    },
+    {
+      "id": "boundary-001",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.8,
+      "reason": "事实边界更清，框架更准"
+    },
+    {
+      "id": "org-001",
+      "winner": "B",
+      "a_overall": 8.1,
+      "b_overall": 8.6,
+      "reason": "责任链更强，节奏更像"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.5,
+      "reason": "诊断更贴机制与交易"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 8.4,
+      "reason": "责任链主线更鲜明"
+    },
+    {
+      "id": "t08",
+      "winner": "B",
+      "a_overall": 8.1,
+      "b_overall": 8.5,
+      "reason": "分工边界更细更稳"
+    },
+    {
+      "id": "t09",
+      "winner": "B",
+      "a_overall": 8.4,
+      "b_overall": 8.7,
+      "reason": "补素材维度更商业化"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.5,
+      "reason": "行业影响框架更深入"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.7,
+      "b_overall": 8.3,
+      "reason": "两角度差异更清楚"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.6,
+      "reason": "账、风险、动作更全"
+    },
+    {
+      "id": "t13",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.4,
+      "reason": "四张表更可复用"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.6,
+      "b_overall": 8.2,
+      "reason": "差距拆解更有命名"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.3,
+      "b_overall": 8.7,
+      "reason": "冒用事实风险更敏感"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 7.8,
+      "b_overall": 8.2,
+      "reason": "判别更直接，维度更实"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.7,
+      "reason": "交易结构更自然克制"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 8.6,
+      "b_overall": 8.4,
+      "reason": "两版骨架差异更明显"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 8.5,
+      "b_overall": 8.2,
+      "reason": "既去味又保留机制"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.6,
+      "reason": "分类更稳，警报更准"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 8.8,
+      "b_overall": 8.4,
+      "reason": "主角度命名更有力"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 8.2,
+      "b_overall": 8.7,
+      "reason": "原味恢复更克制完整"
+    }
+  ]
+}

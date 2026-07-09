@@ -1,0 +1,159 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B物件机制人味更足"
+    },
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A去报告腔更彻底"
+    },
+    {
+      "id": "t03",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B标题更有反差"
+    },
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A入题快且边界稳"
+    },
+    {
+      "id": "t05",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B结尾更有机制余味"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B诊断更集中有物件"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B小物件英雄化更强"
+    },
+    {
+      "id": "t08",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A拒绝硬压更守边界"
+    },
+    {
+      "id": "t09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B补问更完整更稳"
+    },
+    {
+      "id": "t10",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B来源层级更清楚"
+    },
+    {
+      "id": "t11",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B角度区分更鲜明"
+    },
+    {
+      "id": "t12",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A诊断改稿边界更全"
+    },
+    {
+      "id": "t13",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B先标题且不补事实"
+    },
+    {
+      "id": "t14",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B差异说明更可复用"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B承认无法真比对"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A用例具体判断更准"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B跨题材迁移更自然"
+    },
+    {
+      "id": "t18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B结构变化更明显"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B去味后更像成稿"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B四类判别更直接"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B主角度更稳更轻"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A恢复原味且边界稳"
+    }
+  ]
+}

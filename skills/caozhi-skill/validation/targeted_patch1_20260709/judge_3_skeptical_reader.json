@@ -1,0 +1,54 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 7.0,
+      "b_overall": 5.0,
+      "reason": "A有短样和冷判断，B偏流程清单"
+    },
+    {
+      "id": "t06",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A诊断后给示范句，更像可复用写法"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A两条路由区分更明显，有现场感"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A具体到通勤鞋，B仍偏抽象品牌"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B更像打工人现场，边界也稳"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 7.0,
+      "b_overall": 6.0,
+      "reason": "A判断示例更完整，反差拆解更清楚"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B先给改后稿，具体对象更强"
+    }
+  ]
+}

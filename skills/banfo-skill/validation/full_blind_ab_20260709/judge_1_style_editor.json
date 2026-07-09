@@ -1,0 +1,159 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "主物件强，机制和人味更足"
+    },
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "槽点具体，普通人关系更稳"
+    },
+    {
+      "id": "t03",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "标题更有反差和可拆口"
+    },
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "入题快，老车主关系更准"
+    },
+    {
+      "id": "t05",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "成本搬家和边界更有劲"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "诊断集中，物件意识更强"
+    },
+    {
+      "id": "t07",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "小物件英雄化更原味"
+    },
+    {
+      "id": "t08",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "拒编同时方法更像短评"
+    },
+    {
+      "id": "t09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "拒写干净，风险提示更自然"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "医疗事实门更分层具体"
+    },
+    {
+      "id": "t11",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "两种角度差异更清楚"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "改稿更短促，机制反转更好"
+    },
+    {
+      "id": "t13",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "成稿感强且不补数字"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "对比锋利，公告翻译有味"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "泄漏边界声明更完整"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "标题判断有物件和机制"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "跨题迁移更像现场拆解"
+    },
+    {
+      "id": "t18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "三种开头结构差异更稳"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "去AI味更自然，保机制"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "分类准确，标准完整克制"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "主角度更准，边界更稳"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "恢复原味但不补事实"
+    }
+  ]
+}

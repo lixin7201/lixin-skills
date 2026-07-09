@@ -1,0 +1,441 @@
+[
+  {
+    "id": "t01",
+    "prompt": "使用 app-skill，按大宜宾 APP 风格写一条关于宜宾某路段临时交通管制的 APP 稿。素材含官方通告、管制时间、绕行建议。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "城建交通更新",
+    "expected_style_traits": [
+      "事实清楚",
+      "绕行行动",
+      "评论补充"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "使用 app-skill，按练团长路线写一条城市内环线规划解读。素材只有规划范围、线路和建设目标。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "城建交通更新 + 练团长",
+    "expected_style_traits": [
+      "城市判断",
+      "不编通车时间"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "使用 app-skill，按流浪啊路线写一条 APP 等级/社区玩法互动帖。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "综合本地新闻 + 流浪啊",
+    "expected_style_traits": [
+      "社区感",
+      "步骤",
+      "评论口"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "使用 app-skill，按泡泡呀路线写一条室内公共场所控烟讨论帖。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "民生服务提醒 + 泡泡呀",
+    "expected_style_traits": [
+      "生活感受",
+      "两面讨论",
+      "具体场景评论"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "使用 app-skill，按采采呀路线写一条暴雨导致高速站口关闭的持续更新。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "突发应急安全 + 采采呀",
+    "expected_style_traits": [
+      "更新时间",
+      "来源",
+      "安全提醒"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "使用 app-skill，按双双呀路线写一条网友投诉 APP 使用问题的帮助帖。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "网友曝光热议 + 双双呀",
+    "expected_style_traits": [
+      "协助路径",
+      "联系方式占位",
+      "不甩锅"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "使用 app-skill，按大宜宾-梦竹路线整理 5 个招聘岗位。素材含岗位、薪资、地点、报名方式。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "招聘求职信息 + 大宜宾-梦竹",
+    "expected_style_traits": [
+      "清单化",
+      "不编待遇"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "使用 app-skill，按大宜宾雯雯路线改写一条新华社政策消息为 APP 信息帖。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "政务公告党建 + 大宜宾雯雯",
+    "expected_style_traits": [
+      "来源优先",
+      "稳妥"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "使用 app-skill，给一条网友曝光商家退款纠纷稿诊断哪里不像，并给改后稿。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "诊断",
+    "expected_style_traits": [
+      "事实边界",
+      "待核实"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "使用 app-skill，为一条宜宾景区打卡素材写 10 个标题。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "标题优化",
+    "expected_style_traits": [
+      "本地对象",
+      "不编优惠"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "使用 app-skill，把一条 AI 味很重的 APP 稿去 AI 味，保留练团长路线和事实。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "de-AI preservation",
+    "expected_style_traits": [
+      "去生产链路",
+      "保留路线"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "素材只有“某小区电梯又坏了”，使用 app-skill 判断能不能写完整稿。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "弱素材",
+    "expected_style_traits": [
+      "降级",
+      "补充问题"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "同一份外卖补贴素材，分别给泡泡呀和大宜宾雯雯两版开头。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "route A/B",
+    "expected_style_traits": [
+      "路线差异"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "使用 app-skill，写一条公益求助帖。素材含病情、家庭情况、收款渠道待核实。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "公益求助人物",
+    "expected_style_traits": [
+      "不煽情过度",
+      "渠道待核实"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "使用 app-skill，压缩一条 1200 字公告成 500 字 APP 服务提醒。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "压缩",
+    "expected_style_traits": [
+      "用户动作"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "使用 app-skill，扩展一条交通事故安全提醒，但不能编伤亡。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "扩展",
+    "expected_style_traits": [
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "使用 app-skill，检查这篇稿子有没有复制原文和冒充小编。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "合规检查",
+    "expected_style_traits": [
+      "非冒充",
+      "不复制"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "使用 app-skill，用同一素材写两个不同角度：网友讨论版和服务提醒版。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "same material two angles",
+    "expected_style_traits": [
+      "非模板变化"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "使用 app-skill，做盲测判断：A稿和B稿哪个更像大宜宾 APP，并说明原因。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "blind A/B",
+    "expected_style_traits": [
+      "像不像判别器"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "使用 app-skill，判断一条体育比赛抢票素材是否应排除为活动帖，若排除则只给运营短帖建议。",
+    "input_materials": "用户提供事实材料；不得使用 holdout 原文。",
+    "route_expected": "活动帖边界",
+    "expected_style_traits": [
+      "活动过滤"
+    ],
+    "forbidden_outputs": [
+      "复制原文",
+      "冒充真实小编",
+      "编造事实",
+      "泄漏生产链路"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "fact reliability",
+      "APP comment action",
+      "non-template variation"
+    ]
+  }
+]

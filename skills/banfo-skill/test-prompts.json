@@ -1,0 +1,388 @@
+[
+  {
+    "id": "t01",
+    "task": "写新稿",
+    "prompt": "给素材：某连锁便利店开始把夜间自习、临时办公和便宜咖啡组合成新服务。写一篇半佛式参考稿。",
+    "input_materials": "给素材：某连锁便利店开始把夜间自习、临时办公和便宜咖啡组合成新服务。写一篇半佛式参考稿。",
+    "expected_style_traits": [
+      "对象明确",
+      "从消费场景拆商业机制"
+    ],
+    "forbidden_outputs": [
+      "不得伪造门店数据"
+    ],
+    "scoring_focus": [
+      "对象明确",
+      "从消费场景拆商业机制",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t02",
+    "task": "改稿",
+    "prompt": "把一篇报告腔品牌分析改成半佛式参考稿：某酒店把免费水、洗衣和会员权益做得很重。",
+    "input_materials": "把一篇报告腔品牌分析改成半佛式参考稿：某酒店把免费水、洗衣和会员权益做得很重。",
+    "expected_style_traits": [
+      "删报告腔",
+      "补普通人关系"
+    ],
+    "forbidden_outputs": [
+      "不得说自己住过"
+    ],
+    "scoring_focus": [
+      "删报告腔",
+      "补普通人关系",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t03",
+    "task": "标题优化",
+    "prompt": "为“某咖啡品牌靠低价套餐吸引打工人”起 12 个半佛式标题。",
+    "input_materials": "为“某咖啡品牌靠低价套餐吸引打工人”起 12 个半佛式标题。",
+    "expected_style_traits": [
+      "对象+判断",
+      "不重复公式"
+    ],
+    "forbidden_outputs": [
+      "不得借用原文标题"
+    ],
+    "scoring_focus": [
+      "对象+判断",
+      "不重复公式",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t04",
+    "task": "开头优化",
+    "prompt": "把宏观背景式开头改成半佛式开头：某新能源车品牌降价引发行业讨论。",
+    "input_materials": "把宏观背景式开头改成半佛式开头：某新能源车品牌降价引发行业讨论。",
+    "expected_style_traits": [
+      "三段内入题"
+    ],
+    "forbidden_outputs": [
+      "不得编销量"
+    ],
+    "scoring_focus": [
+      "三段内入题",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t05",
+    "task": "结尾优化",
+    "prompt": "给一篇外卖平台补贴战文章写 3 个半佛式结尾。",
+    "input_materials": "给一篇外卖平台补贴战文章写 3 个半佛式结尾。",
+    "expected_style_traits": [
+      "边界",
+      "普通人关系"
+    ],
+    "forbidden_outputs": [
+      "不得升华鸡汤"
+    ],
+    "scoring_focus": [
+      "边界",
+      "普通人关系",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t06",
+    "task": "review diagnosis",
+    "prompt": "诊断一篇稿子哪里不像半佛：标题是《从宏观视角看即时零售的发展趋势》。",
+    "input_materials": "诊断一篇稿子哪里不像半佛：标题是《从宏观视角看即时零售的发展趋势》。",
+    "expected_style_traits": [
+      "指出报告腔问题"
+    ],
+    "forbidden_outputs": [
+      "不得只说更犀利"
+    ],
+    "scoring_focus": [
+      "指出报告腔问题",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t07",
+    "task": "扩写",
+    "prompt": "把 300 字素材扩成 1800 字：一款普通插座因为安全设计减少了很多家庭风险。",
+    "input_materials": "把 300 字素材扩成 1800 字：一款普通插座因为安全设计减少了很多家庭风险。",
+    "expected_style_traits": [
+      "小物件英雄化",
+      "机制拆解"
+    ],
+    "forbidden_outputs": [
+      "不得伪造事故"
+    ],
+    "scoring_focus": [
+      "小物件英雄化",
+      "机制拆解",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t08",
+    "task": "压缩",
+    "prompt": "把 3000 字商业稿压成 900 字半佛式短评。",
+    "input_materials": "把 3000 字商业稿压成 900 字半佛式短评。",
+    "expected_style_traits": [
+      "保留主判断"
+    ],
+    "forbidden_outputs": [
+      "不得丢事实边界"
+    ],
+    "scoring_focus": [
+      "保留主判断",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t09",
+    "task": "素材不足",
+    "prompt": "用户只说：某品牌最近很离谱，写一篇半佛式文章。",
+    "input_materials": "用户只说：某品牌最近很离谱，写一篇半佛式文章。",
+    "expected_style_traits": [
+      "拒绝硬写",
+      "列补充问题"
+    ],
+    "forbidden_outputs": [
+      "不得编事实"
+    ],
+    "scoring_focus": [
+      "拒绝硬写",
+      "列补充问题",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t10",
+    "task": "敏感事实",
+    "prompt": "素材涉及医疗广告夸大疗效。写前先做事实门。",
+    "input_materials": "素材涉及医疗广告夸大疗效。写前先做事实门。",
+    "expected_style_traits": [
+      "风险边界"
+    ],
+    "forbidden_outputs": [
+      "不得给医疗结论"
+    ],
+    "scoring_focus": [
+      "风险边界",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t11",
+    "task": "same material two angles",
+    "prompt": "同一组素材分别写成消费体验角度和商业机制角度。",
+    "input_materials": "同一组素材分别写成消费体验角度和商业机制角度。",
+    "expected_style_traits": [
+      "角度区分"
+    ],
+    "forbidden_outputs": [
+      "不得同结构套模板"
+    ],
+    "scoring_focus": [
+      "角度区分",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t12",
+    "task": "哪里不像",
+    "prompt": "用户问：这段为什么不像半佛？给诊断和修改稿。",
+    "input_materials": "用户问：这段为什么不像半佛？给诊断和修改稿。",
+    "expected_style_traits": [
+      "具体维度"
+    ],
+    "forbidden_outputs": [
+      "不得空泛"
+    ],
+    "scoring_focus": [
+      "具体维度",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t13",
+    "task": "positive control",
+    "prompt": "强素材：有产品价格、截图、用户评论、官方公告。写完整稿。",
+    "input_materials": "强素材：有产品价格、截图、用户评论、官方公告。写完整稿。",
+    "expected_style_traits": [
+      "可成稿"
+    ],
+    "forbidden_outputs": [
+      "不得忽略素材"
+    ],
+    "scoring_focus": [
+      "可成稿",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t14",
+    "task": "baseline comparison",
+    "prompt": "同一素材先写普通公众号版，再写半佛式参考版并说明差异。",
+    "input_materials": "同一素材先写普通公众号版，再写半佛式参考版并说明差异。",
+    "expected_style_traits": [
+      "对比清晰"
+    ],
+    "forbidden_outputs": [
+      "不得冒充"
+    ],
+    "scoring_focus": [
+      "对比清晰",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t15",
+    "task": "leakage check",
+    "prompt": "检查生成稿是否含训练原文固定句。",
+    "input_materials": "检查生成稿是否含训练原文固定句。",
+    "expected_style_traits": [
+      "泄漏识别"
+    ],
+    "forbidden_outputs": [
+      "不得保留疑似原句"
+    ],
+    "scoring_focus": [
+      "泄漏识别",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t16",
+    "task": "blind A/B",
+    "prompt": "给两版标题，判断哪版更半佛并说明原因。",
+    "input_materials": "给两版标题，判断哪版更半佛并说明原因。",
+    "expected_style_traits": [
+      "标题 DNA"
+    ],
+    "forbidden_outputs": [
+      "不得只按情绪强度"
+    ],
+    "scoring_focus": [
+      "标题 DNA",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t17",
+    "task": "cross-topic",
+    "prompt": "用半佛式写一个非消费话题：大学生实习租房踩坑。",
+    "input_materials": "用半佛式写一个非消费话题：大学生实习租房踩坑。",
+    "expected_style_traits": [
+      "跨题材迁移"
+    ],
+    "forbidden_outputs": [
+      "不得套消费品模板"
+    ],
+    "scoring_focus": [
+      "跨题材迁移",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t18",
+    "task": "anti-template",
+    "prompt": "连续写三个不同选题的开头，要求结构不同。",
+    "input_materials": "连续写三个不同选题的开头，要求结构不同。",
+    "expected_style_traits": [
+      "反模板变化"
+    ],
+    "forbidden_outputs": [
+      "不得三篇同开头"
+    ],
+    "scoring_focus": [
+      "反模板变化",
+      "事实边界",
+      "非冒充"
+    ]
+  },
+  {
+    "id": "t19",
+    "task": "de-AI preservation",
+    "prompt": "把一段 AI 味重的半佛式草稿去味，保留主物件、机制反转和普通人关系。",
+    "input_materials": "草稿包含：根据素材、本文将、综上所述、商业模式创新。",
+    "expected_style_traits": [
+      "去来源泄漏",
+      "保留机制反转"
+    ],
+    "forbidden_outputs": [
+      "磨成商业报告"
+    ],
+    "scoring_focus": [
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t20",
+    "task": "original-flavor contrast",
+    "prompt": "原味对照：四段里哪段最像半佛，哪段泛 AI，哪段过度润色，哪段过拟合假像？",
+    "input_materials": "四段合成文本围绕“便利店夜间自习位”，分别包含主物件机制、报告腔、温柔鸡汤、口头槽点堆砌。",
+    "expected_style_traits": [
+      "原味对照",
+      "不只看吐槽词"
+    ],
+    "forbidden_outputs": [
+      "把段子堆砌判成最像"
+    ],
+    "scoring_focus": [
+      "original-flavor contrast"
+    ]
+  },
+  {
+    "id": "t21",
+    "task": "thinking-frame transfer",
+    "prompt": "同一材料，先判断半佛式主角度，再写大纲。",
+    "input_materials": "材料：某酒店把免费洗衣、饮水和会员权益做重，用户好评但成本上升。",
+    "expected_style_traits": [
+      "主物件",
+      "成本供需",
+      "普通人关系"
+    ],
+    "forbidden_outputs": [
+      "直接写完整稿",
+      "伪造体验"
+    ],
+    "scoring_focus": [
+      "thinking-frame transfer"
+    ]
+  },
+  {
+    "id": "t22",
+    "task": "protected-quirk preservation",
+    "prompt": "把被润得太顺的稿改回半佛式，只恢复有证据的原味。",
+    "input_materials": "润色稿：便利店以温暖服务承接城市夜归人的学习需求，体现了商业创新的温度。",
+    "expected_style_traits": [
+      "恢复主物件",
+      "机制反转",
+      "去鸡汤"
+    ],
+    "forbidden_outputs": [
+      "硬塞离谱魔幻",
+      "伪造后台"
+    ],
+    "scoring_focus": [
+      "protected-quirk preservation"
+    ]
+  }
+]

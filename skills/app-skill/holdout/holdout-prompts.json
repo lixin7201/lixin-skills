@@ -1,0 +1,254 @@
+[
+  {
+    "id": "h01",
+    "tid": "834489",
+    "author": "流浪啊",
+    "article_type": "情感婚恋互动",
+    "prompt": "使用 app-skill，按 流浪啊 路线写一条 情感婚恋互动 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h02",
+    "tid": "790919",
+    "author": "流浪啊",
+    "article_type": "网友曝光热议",
+    "prompt": "使用 app-skill，按 流浪啊 路线写一条 网友曝光热议 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h03",
+    "tid": "719728",
+    "author": "流浪啊",
+    "article_type": "突发应急安全",
+    "prompt": "使用 app-skill，按 流浪啊 路线写一条 突发应急安全 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h04",
+    "tid": "927472",
+    "author": "大宜宾雯雯",
+    "article_type": "公益求助人物",
+    "prompt": "使用 app-skill，按 大宜宾雯雯 路线写一条 公益求助人物 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h05",
+    "tid": "903906",
+    "author": "大宜宾雯雯",
+    "article_type": "政务公告党建",
+    "prompt": "使用 app-skill，按 大宜宾雯雯 路线写一条 政务公告党建 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h06",
+    "tid": "904376",
+    "author": "大宜宾雯雯",
+    "article_type": "综合本地新闻",
+    "prompt": "使用 app-skill，按 大宜宾雯雯 路线写一条 综合本地新闻 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h07",
+    "tid": "774785",
+    "author": "练团长",
+    "article_type": "城建交通更新",
+    "prompt": "使用 app-skill，按 练团长 路线写一条 城建交通更新 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h08",
+    "tid": "340409",
+    "author": "练团长",
+    "article_type": "综合本地新闻",
+    "prompt": "使用 app-skill，按 练团长 路线写一条 综合本地新闻 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h09",
+    "tid": "727966",
+    "author": "练团长",
+    "article_type": "突发应急安全",
+    "prompt": "使用 app-skill，按 练团长 路线写一条 突发应急安全 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h10",
+    "tid": "944647",
+    "author": "泡泡呀",
+    "article_type": "突发应急安全",
+    "prompt": "使用 app-skill，按 泡泡呀 路线写一条 突发应急安全 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h11",
+    "tid": "937023",
+    "author": "泡泡呀",
+    "article_type": "公益求助人物",
+    "prompt": "使用 app-skill，按 泡泡呀 路线写一条 公益求助人物 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h12",
+    "tid": "939281",
+    "author": "泡泡呀",
+    "article_type": "民生服务提醒",
+    "prompt": "使用 app-skill，按 泡泡呀 路线写一条 民生服务提醒 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h13",
+    "tid": "716385",
+    "author": "采采呀",
+    "article_type": "综合本地新闻",
+    "prompt": "使用 app-skill，按 采采呀 路线写一条 综合本地新闻 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h14",
+    "tid": "769535",
+    "author": "采采呀",
+    "article_type": "突发应急安全",
+    "prompt": "使用 app-skill，按 采采呀 路线写一条 突发应急安全 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h15",
+    "tid": "747006",
+    "author": "采采呀",
+    "article_type": "城建交通更新",
+    "prompt": "使用 app-skill，按 采采呀 路线写一条 城建交通更新 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h16",
+    "tid": "790981",
+    "author": "双双呀",
+    "article_type": "综合本地新闻",
+    "prompt": "使用 app-skill，按 双双呀 路线写一条 综合本地新闻 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h17",
+    "tid": "832198",
+    "author": "双双呀",
+    "article_type": "网友曝光热议",
+    "prompt": "使用 app-skill，按 双双呀 路线写一条 网友曝光热议 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h18",
+    "tid": "816159",
+    "author": "双双呀",
+    "article_type": "城建交通更新",
+    "prompt": "使用 app-skill，按 双双呀 路线写一条 城建交通更新 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h19",
+    "tid": "877737",
+    "author": "大宜宾-梦竹",
+    "article_type": "政务公告党建",
+    "prompt": "使用 app-skill，按 大宜宾-梦竹 路线写一条 政务公告党建 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h20",
+    "tid": "867545",
+    "author": "大宜宾-梦竹",
+    "article_type": "招聘求职信息",
+    "prompt": "使用 app-skill，按 大宜宾-梦竹 路线写一条 招聘求职信息 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  },
+  {
+    "id": "h21",
+    "tid": "867297",
+    "author": "大宜宾-梦竹",
+    "article_type": "城建交通更新",
+    "prompt": "使用 app-skill，按 大宜宾-梦竹 路线写一条 城建交通更新 APP 稿。只使用用户另行提供的事实材料，不读取 holdout 原文。",
+    "forbidden": [
+      "原文标题",
+      "原文段落",
+      "holdout 原文句子"
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A边界更硬，主物件更早承重"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A拒写更果断，机制方向也给到"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A事实门更完整且普通人关系更强"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B不伪装有原文，诊断格式更稳"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A两版对比更完整，节奏更像"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B拒绝无题判断，边界更正确"
+    },
+    {
+      "id": "t17",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A结构链更清楚，合同物件更稳"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A三题结构差异更明显，机制更足"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B直接给成稿，物件和原味保护更好"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 8.0,
+      "reason": "A更短更准，恢复原味不补事实"
+    }
+  ]
+}

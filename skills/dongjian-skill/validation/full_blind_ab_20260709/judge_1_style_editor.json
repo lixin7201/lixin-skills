@@ -1,0 +1,159 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "T01",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A结构推进和动作更足"
+    },
+    {
+      "id": "T02",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A留痕确认边界更稳"
+    },
+    {
+      "id": "T03",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B短促有判断力"
+    },
+    {
+      "id": "T04",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B场景到判断更完整"
+    },
+    {
+      "id": "T05",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A收束稳不喊口号"
+    },
+    {
+      "id": "T06",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B诊断更贴原味问题"
+    },
+    {
+      "id": "T07",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A关系链和分节更足"
+    },
+    {
+      "id": "T08",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B是真压缩成稿"
+    },
+    {
+      "id": "T09",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B事实边界和动作更稳"
+    },
+    {
+      "id": "T10",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B克制且不补事实"
+    },
+    {
+      "id": "T11",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B双角度区分更清"
+    },
+    {
+      "id": "T12",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B反模式识别更准"
+    },
+    {
+      "id": "T13",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A材料展开更像洞见"
+    },
+    {
+      "id": "T14",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B写出关系变冷过程"
+    },
+    {
+      "id": "T15",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A结构和行动链更完整"
+    },
+    {
+      "id": "T16",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B能识别模板假像"
+    },
+    {
+      "id": "T17",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A三题处境更扎实"
+    },
+    {
+      "id": "T18",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B反模板改法更具体"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A保留故事顺序和行动"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "B分类理由更精确"
+    },
+    {
+      "id": "t21",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A大纲动作落点更实"
+    },
+    {
+      "id": "t22",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 9.0,
+      "reason": "B恢复通勤原味更强"
+    }
+  ]
+}

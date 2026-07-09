@@ -1,0 +1,68 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "draft-001",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A更克制成稿，成本中心收束好"
+    },
+    {
+      "id": "rewrite-001",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B交易账更完整，低价机制更清楚"
+    },
+    {
+      "id": "t08",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A保留成本结构与能力栈边界"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B逐项诊断更贴原味指纹"
+    },
+    {
+      "id": "t14",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B差距拆到指标和责任链"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 5.0,
+      "b_overall": 6.0,
+      "reason": "B可用维度更清楚但仍偏流程说明"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B去AI味同时保留成本转移机制"
+    },
+    {
+      "id": "t20",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B先分类结论，解释更符合题目"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B责任链、角色、指标更完整"
+    }
+  ]
+}

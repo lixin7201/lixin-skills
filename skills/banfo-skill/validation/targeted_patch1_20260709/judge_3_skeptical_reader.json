@@ -1,0 +1,75 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A主物件更快，边界更硬"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A拒写更准，有半佛风险判断"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A事实门更完整，普通人关系更强"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B承认缺原文，边界更稳"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A两版差异清楚，成稿更像"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 8.0,
+      "reason": "B不补题干标题，边界更稳"
+    },
+    {
+      "id": "t17",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 8.0,
+      "reason": "A机制链更完整，建议更落地"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A三题结构真不同且入机制"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B先给改后稿，物件保留好"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 8.0,
+      "reason": "A更短更稳，未补无证事实"
+    }
+  ]
+}

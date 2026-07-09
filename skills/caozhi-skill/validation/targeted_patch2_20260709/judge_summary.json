@@ -1,0 +1,28 @@
+[
+  {
+    "id": "t14",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1:A A对象现场更重，边界更稳，成稿更完整",
+      "judge_2:A A有完整对照样稿和事实边界，现场更扎实",
+      "judge_3:A A有表格、现场和边界，成稿感更强"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1:B B具体对象承重更强，现场细节和冷判断更像",
+      "judge_2:B B成稿更完整具体，冷判断和边界都稳",
+      "judge_3:B B对象具体、现场足，冷判断更像槽值"
+    ]
+  }
+]

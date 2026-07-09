@@ -1,0 +1,360 @@
+[
+  {
+    "id": "t01",
+    "prompt": "根据主题党日活动素材写一篇工作简报。素材含时间、地点、参加人员、活动流程、下一步方向。",
+    "input_materials": "synthetic only",
+    "route_expected": "日常活动开展",
+    "expected_style_traits": [
+      "事实导语",
+      "活动过程",
+      "党建意义",
+      "下一步"
+    ],
+    "forbidden_outputs": [
+      "复制源文",
+      "编造领导表态"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "paragraph rhythm",
+      "fact reliability"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "把领导调研素材写成党建宣传稿。素材中只确认领导认真听取汇报，没有确认高度评价。",
+    "input_materials": "synthetic only",
+    "route_expected": "领导宣传",
+    "expected_style_traits": [
+      "职务准确",
+      "参观汇报",
+      "克制承接"
+    ],
+    "forbidden_outputs": [
+      "重要指示",
+      "高度赞扬"
+    ],
+    "scoring_focus": [
+      "sensitive facts",
+      "non-invention"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "把读书分享会素材写成简报，含3位分享人和书目/主题。",
+    "input_materials": "synthetic only",
+    "route_expected": "读书分享会、精英研学会",
+    "expected_style_traits": [
+      "分享人逐一提炼",
+      "岗位转化",
+      "以学促干"
+    ],
+    "forbidden_outputs": [
+      "只写收获满满"
+    ],
+    "scoring_focus": [
+      "material hierarchy"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "根据荣获先进基层党组织素材写喜报。",
+    "input_materials": "synthetic only",
+    "route_expected": "获奖宣传",
+    "expected_style_traits": [
+      "荣誉事实前置",
+      "长期积累",
+      "珍惜荣誉再出发"
+    ],
+    "forbidden_outputs": [
+      "夸大荣誉等级"
+    ],
+    "scoring_focus": [
+      "honor accuracy",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "根据党建工作会议材料写一篇书面发言稿，重点讲党建与业务融合。",
+    "input_materials": "synthetic only",
+    "route_expected": "发言稿",
+    "expected_style_traits": [
+      "背景痛点",
+      "主要做法",
+      "成效启示"
+    ],
+    "forbidden_outputs": [
+      "500字简报化"
+    ],
+    "scoring_focus": [
+      "long-form structure"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "同一素材写10个标题，分稳妥政务、党建对仗、传播增强、简洁直给四组并推荐1个。",
+    "input_materials": "synthetic only",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "分组",
+      "推荐",
+      "主体+动作"
+    ],
+    "forbidden_outputs": [
+      "10个同义替换"
+    ],
+    "scoring_focus": [
+      "title variation"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "诊断一篇党建稿哪里不像练团子党支部党建稿，并输出改后稿。",
+    "input_materials": "synthetic flawed draft",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "评分表",
+      "逐项改法",
+      "改后稿"
+    ],
+    "forbidden_outputs": [
+      "只说更有温度"
+    ],
+    "scoring_focus": [
+      "diagnosis usefulness"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "素材只有一句“支部开展党建活动”，请处理。",
+    "input_materials": "weak",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "不硬写",
+      "最多5个问题"
+    ],
+    "forbidden_outputs": [
+      "编造活动流程"
+    ],
+    "scoring_focus": [
+      "insufficient material"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "素材中领导职务和荣誉等级待核实，写一版安全稿。",
+    "input_materials": "partial facts",
+    "route_expected": "领导宣传/获奖宣传",
+    "expected_style_traits": [
+      "待核实标记",
+      "降级表述"
+    ],
+    "forbidden_outputs": [
+      "确认未确认事实"
+    ],
+    "scoring_focus": [
+      "fact reliability"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "对一篇已写好的党建稿去AI味，但保留正式党建文体。",
+    "input_materials": "AI-ish draft",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "删除源材料泄露",
+      "保留正式表达"
+    ],
+    "forbidden_outputs": [
+      "改成散文化公众号"
+    ],
+    "scoring_focus": [
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一素材分别路由为日常活动开展和获奖宣传，输出差异说明。",
+    "input_materials": "synthetic dual-use",
+    "route_expected": "multi-route",
+    "expected_style_traits": [
+      "路由差异",
+      "角度差异"
+    ],
+    "forbidden_outputs": [
+      "两版同模板"
+    ],
+    "scoring_focus": [
+      "route contrast"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "blind A/B judge comparison：同题比较带skill稿和无skill稿。",
+    "input_materials": "synthetic only",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "盲评维度"
+    ],
+    "forbidden_outputs": [
+      "自报标签"
+    ],
+    "scoring_focus": [
+      "blind comparison"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "跨主题泛化：新兴领域党建+公益服务素材写稿。",
+    "input_materials": "new topic",
+    "route_expected": "日常活动开展",
+    "expected_style_traits": [
+      "党建业务融合",
+      "服务民生"
+    ],
+    "forbidden_outputs": [
+      "模板套壳"
+    ],
+    "scoring_focus": [
+      "generalization"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "反模板检查：连续写3个不同活动开头，不能同一骨架。",
+    "input_materials": "three synthetic events",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "开头差异"
+    ],
+    "forbidden_outputs": [
+      "三篇都为深入为进一步"
+    ],
+    "scoring_focus": [
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "优化一篇党建稿开头，让前两段更像目标语料。",
+    "input_materials": "draft opening",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "事实导语",
+      "组织站位"
+    ],
+    "forbidden_outputs": [
+      "空泛抒情开头"
+    ],
+    "scoring_focus": [
+      "opening similarity"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "优化结尾，保留下一步但去掉空话。",
+    "input_materials": "draft ending",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "下一步+具体动作"
+    ],
+    "forbidden_outputs": [
+      "未来可期"
+    ],
+    "scoring_focus": [
+      "ending similarity"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "把1200字发言稿压缩成600字简报。",
+    "input_materials": "synthetic long material",
+    "route_expected": "发言稿->日常活动开展",
+    "expected_style_traits": [
+      "保留事实",
+      "降级结构"
+    ],
+    "forbidden_outputs": [
+      "丢掉核心数据"
+    ],
+    "scoring_focus": [
+      "compression"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "把短活动要点扩成完整简报，缺的信息标待核实。",
+    "input_materials": "bullet facts",
+    "route_expected": "日常活动开展",
+    "expected_style_traits": [
+      "扩写但不编造"
+    ],
+    "forbidden_outputs": [
+      "新增人物数据"
+    ],
+    "scoring_focus": [
+      "expansion"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "原味对比：判断目标味/AI味/过度polished/过拟合四个版本。",
+    "input_materials": "contrastive drafts",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "区分理由"
+    ],
+    "forbidden_outputs": [
+      "只按流畅度判断"
+    ],
+    "scoring_focus": [
+      "original-flavor contrast"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "思维框架迁移：判断选题角度和材料层级是否像目标语料。",
+    "input_materials": "new material outline",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "党建动作->业务落点->民生意义"
+    ],
+    "forbidden_outputs": [
+      "只看词像不像"
+    ],
+    "scoring_focus": [
+      "thinking-frame transfer"
+    ]
+  },
+  {
+    "id": "t21",
+    "prompt": "保护原味：把一篇过度润色的稿子恢复成目标党建稿口径。",
+    "input_materials": "over-polished draft",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "恢复正式称谓和党建链条"
+    ],
+    "forbidden_outputs": [
+      "复制原文"
+    ],
+    "scoring_focus": [
+      "protected quirk preservation"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "结构回归：检查一篇稿的段落节奏、推进链和类型是否匹配。",
+    "input_materials": "draft",
+    "route_expected": "all",
+    "expected_style_traits": [
+      "结构指标诊断"
+    ],
+    "forbidden_outputs": [
+      "只给主观评价"
+    ],
+    "scoring_focus": [
+      "structure metric regression"
+    ]
+  }
+]

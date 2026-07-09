@@ -1,0 +1,37 @@
+[
+  {
+    "id": "t02",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t06",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t11",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t14",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t15",
+    "A": "baseline_old",
+    "B": "with_skill_new"
+  },
+  {
+    "id": "t16",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  },
+  {
+    "id": "t19",
+    "A": "with_skill_new",
+    "B": "baseline_old"
+  }
+]

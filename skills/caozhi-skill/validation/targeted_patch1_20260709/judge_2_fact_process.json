@@ -1,0 +1,54 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 5.0,
+      "reason": "A有短样和边界，B偏流程说明"
+    },
+    {
+      "id": "t06",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A诊断更像槽值且有示范"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A两路线差异更鲜明有槽点"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A成稿更具体，B对象偏虚"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B更有打工人现场和冷判断"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "A判断理由更完整有示例拆解"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B先给改后稿，事实边界稳"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "t01",
+    "prompt": "按大土豆式写稿方式，写一篇关于“北京年轻家庭到底该不该为了学区房牺牲居住品质”的公众号稿。",
+    "input_materials": "用户提供：预算 700 万；孩子 3 岁；纠结海淀老破小和朝阳次新；无具体楼盘成交数据。",
+    "expected_style_traits": ["北京教育坐标", "现实账本", "保守边界"],
+    "forbidden_outputs": ["承诺升学结果", "编造楼盘成交", "冒充作者本人"],
+    "scoring_focus": ["new draft writing", "fact boundary"]
+  },
+  {
+    "id": "t02",
+    "prompt": "把一篇泛泛谈中年危机的稿子，改成大土豆式中年自保文章。",
+    "input_materials": "原稿主题：中年人要注意身体和现金流，但没有具体故事。",
+    "expected_style_traits": ["个人入口", "身体/家庭账本", "别折腾"],
+    "forbidden_outputs": ["鸡汤结尾", "连续短句"],
+    "scoring_focus": ["rewrite"]
+  },
+  {
+    "id": "t03",
+    "prompt": "给“二线城市年轻人回流，可能比留北京更舒服”起 12 个大土豆式标题。",
+    "input_materials": "选题只有一句话。",
+    "expected_style_traits": ["直给", "现实判断", "不营销"],
+    "forbidden_outputs": ["震惊体", "必看体"],
+    "scoring_focus": ["title optimization"]
+  },
+  {
+    "id": "t04",
+    "prompt": "优化这篇稿子的开头，让它更像大土豆。",
+    "input_materials": "开头：在时代变化下，普通人的职业选择正在面临新的挑战。",
+    "expected_style_traits": ["具体事件入口", "口语判断"],
+    "forbidden_outputs": ["宏大空降"],
+    "scoring_focus": ["opening optimization"]
+  },
+  {
+    "id": "t05",
+    "prompt": "把一篇教育焦虑稿的结尾改成大土豆式克制结尾。",
+    "input_materials": "结尾原文：愿每个孩子都能在自己的道路上发光。",
+    "expected_style_traits": ["现实边界", "一家之言", "评论区落点"],
+    "forbidden_outputs": ["鸡汤"],
+    "scoring_focus": ["ending optimization"]
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断下面这篇稿哪里不像大土豆，并给修改稿。",
+    "input_materials": "稿件问题：短句瀑布流、宏大叙事、没有北京/家庭账本。",
+    "expected_style_traits": ["3 点诊断", "直接改稿"],
+    "forbidden_outputs": ["只给抽象建议"],
+    "scoring_focus": ["review diagnosis"]
+  },
+  {
+    "id": "t07",
+    "prompt": "把一段 300 字材料扩写成 1000 字左右大土豆式公众号稿。",
+    "input_materials": "材料：北京家长开始关注职高和贯通培养，原因是普高竞争压力大。",
+    "expected_style_traits": ["教育供需", "普通家庭影响", "事实边界"],
+    "forbidden_outputs": ["编造政策细节"],
+    "scoring_focus": ["expansion"]
+  },
+  {
+    "id": "t08",
+    "prompt": "把一篇 1800 字稿压缩成 900 字，保留大土豆味。",
+    "input_materials": "原稿围绕房产流动性和现金流。",
+    "expected_style_traits": ["保留账本", "合并冗余", "克制结尾"],
+    "forbidden_outputs": ["删掉事实边界"],
+    "scoring_focus": ["compression"]
+  },
+  {
+    "id": "t09",
+    "prompt": "只有一个选题：北京中年人越来越不敢消费了。请判断能不能直接写。",
+    "input_materials": "无数据、无案例。",
+    "expected_style_traits": ["素材不足门", "追问清单"],
+    "forbidden_outputs": ["硬写完整稿"],
+    "scoring_focus": ["insufficient material"]
+  },
+  {
+    "id": "t10",
+    "prompt": "写一篇关于某区最新入学政策影响的稿。",
+    "input_materials": "用户没有给政策原文。",
+    "expected_style_traits": ["待核实", "事实边界"],
+    "forbidden_outputs": ["编造政策内容"],
+    "scoring_focus": ["sensitive facts"]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一份材料，分别写成“房产账本角度”和“中年生活方式角度”两个大纲。",
+    "input_materials": "材料：一个家庭卖掉市区老房，搬到郊区改善居住。",
+    "expected_style_traits": ["同材双角度", "主判断区分"],
+    "forbidden_outputs": ["两个角度写成一样"],
+    "scoring_focus": ["same material two angles"]
+  },
+  {
+    "id": "t12",
+    "prompt": "这篇稿哪里不像大土豆？请按像不像判别器逐项诊断。",
+    "input_materials": "稿件：观点正确，但没有具体账本；结尾鸡汤。",
+    "expected_style_traits": ["具体修正动作"],
+    "forbidden_outputs": ["泛泛说更接地气"],
+    "scoring_focus": ["where not like target"]
+  },
+  {
+    "id": "t13",
+    "prompt": "强素材正控：写一篇关于北京总价 500 万以内二手房为什么成为成交主力的稿。",
+    "input_materials": "材料：用户给了成交占比、租售比、月供和租金对比。",
+    "expected_style_traits": ["现实账本", "北京楼市", "保守建议"],
+    "forbidden_outputs": ["投资承诺"],
+    "scoring_focus": ["positive control"]
+  },
+  {
+    "id": "t14",
+    "prompt": "无 skill baseline comparison：用普通公众号写法写同题，再对照大土豆式差距。",
+    "input_materials": "主题：热门专业几年后可能变坑。",
+    "expected_style_traits": ["baseline gap", "style advantage"],
+    "forbidden_outputs": ["复制训练文"],
+    "scoring_focus": ["baseline comparison"]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查这段成稿有没有复述 holdout 或训练原文。",
+    "input_materials": "给一段生成稿。",
+    "expected_style_traits": ["泄漏检查", "改写建议"],
+    "forbidden_outputs": ["忽略原文复制风险"],
+    "scoring_focus": ["style leakage"]
+  },
+  {
+    "id": "t16",
+    "prompt": "做一个 blind A/B 判断：A 稿和 B 稿哪个更像大土豆，为什么。",
+    "input_materials": "两篇同题稿，一篇 skill，一篇 baseline。",
+    "expected_style_traits": ["维度评分", "证据理由"],
+    "forbidden_outputs": ["只凭感觉"],
+    "scoring_focus": ["blind AB judge"]
+  },
+  {
+    "id": "t17",
+    "prompt": "跨题材泛化：按大土豆式写一篇关于“年轻人不愿意办婚礼”的文章。",
+    "input_materials": "材料：婚礼成本、年轻人消费观、父母期待。",
+    "expected_style_traits": ["家庭账本", "代际变化", "不说教"],
+    "forbidden_outputs": ["婚恋鸡汤"],
+    "scoring_focus": ["cross-topic generalization"]
+  },
+  {
+    "id": "t18",
+    "prompt": "同一主题写两版，避免套同一段落骨架。",
+    "input_materials": "主题：北京孩子学英语和数学的投入取舍。",
+    "expected_style_traits": ["非模板变化", "结构差异"],
+    "forbidden_outputs": ["重复固定骨架"],
+    "scoring_focus": ["anti-template variation"]
+  },
+  {
+    "id": "t19",
+    "prompt": "把一篇带 AI 痕迹的大土豆式稿做去 AI 味，但保留原有风格。",
+    "input_materials": "稿件包含：根据素材、首先其次、愿我们都能、连续短句。",
+    "expected_style_traits": ["去来源泄漏", "保留账本", "段落回归"],
+    "forbidden_outputs": ["磨平成通用自然中文"],
+    "scoring_focus": ["de-AI preservation"]
+  },
+  {
+    "id": "t20",
+    "prompt": "做原味对照判断：下面四段里哪一段最像大土豆，哪一段是泛 AI，哪一段过度润色，哪一段是过拟合假像？",
+    "input_materials": "四段合成文本围绕“北京中年人越来越不敢消费了”，分别包含现实账本、宏大总结、温柔鸡汤、口头词堆砌。",
+    "expected_style_traits": ["原味对照", "指出判断依据", "不只看口头词"],
+    "forbidden_outputs": ["只凭感觉", "把口头词堆砌判成最像"],
+    "scoring_focus": ["original-flavor contrast"]
+  },
+  {
+    "id": "t21",
+    "prompt": "同一份材料，请先判断大土豆式主角度，再写一个大纲。不要直接写完整稿。",
+    "input_materials": "材料：一个北京家庭考虑卖掉市区老房，搬到郊区改善居住；已知通勤增加，月供下降，孩子还在上小学，未来可能要换学区。",
+    "expected_style_traits": ["思考框架迁移", "资产流动性", "通勤/孩子/现金流账本", "保守边界"],
+    "forbidden_outputs": ["只谈生活品质", "伪造楼盘成交", "直接写完整稿"],
+    "scoring_focus": ["thinking-frame transfer"]
+  },
+  {
+    "id": "t22",
+    "prompt": "把这段被润得太顺的稿改回更大土豆式，但只恢复有证据的原味，不要硬塞口头词。",
+    "input_materials": "润色稿：中年人的消费谨慎，是成熟人生智慧的体现。只要我们保持理性，就能在变化中找到属于自己的幸福答案。",
+    "expected_style_traits": ["恢复冷现实", "补家庭账本", "去鸡汤", "保留正常段落"],
+    "forbidden_outputs": ["硬塞老登牛马阿弥陀佛", "写成攻击性段子", "伪造亲历"],
+    "scoring_focus": ["protected-quirk preservation"]
+  }
+]

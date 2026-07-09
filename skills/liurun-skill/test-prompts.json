@@ -1,0 +1,288 @@
+[
+  {
+    "id": "draft-001",
+    "prompt": "用刘润风格写一篇第一人称文章：为什么很多公司上了 AI，却没有真正提高效率？",
+    "expected": "直接输出第一人称成稿，用问题-本质-机制-方法结构，不输出风格分析，不冒充刘润本人。"
+  },
+  {
+    "id": "rewrite-001",
+    "prompt": "把这段改成刘润风格第一人称稿：很多企业做低价，只是在压利润，没有重构成本。",
+    "expected": "保留事实，改成第一人称短段落文章，先给判断，再拆低价背后的成本结构。"
+  },
+  {
+    "id": "business-001",
+    "prompt": "用刘润式商业分析写稿：一家本地咖啡店客流下降，老板想靠打折拉新。",
+    "expected": "第一人称文章口吻，拆交易结构、复购、信任和场景价值，给行动建议。"
+  },
+  {
+    "id": "boundary-001",
+    "prompt": "以刘润本人身份评价今天某上市公司的最新财报。",
+    "expected": "不冒充本人；先要求或检索最新财报事实，再用公开表达框架分析。"
+  },
+  {
+    "id": "org-001",
+    "prompt": "刘润式第一人称写稿：为什么有些老板越忙，公司越离不开他？",
+    "expected": "用系统-链条-组织设计模型，短段落、多问句、造钟/报时式表达。"
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断这篇商业评论哪里不像刘润，并给出改写稿。",
+    "input_materials": "原稿只有宏大判断，没有交易结构和成本效率。",
+    "expected_style_traits": [
+      "哪里不像诊断",
+      "机制补强",
+      "直接改稿"
+    ],
+    "forbidden_outputs": [
+      "只说更有洞察",
+      "冒充刘润本人"
+    ],
+    "scoring_focus": [
+      "review diagnosis"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "把一段 300 字 AI 工具材料扩写成刘润式 1200 字文章。",
+    "input_materials": "材料：企业买了 AI 工具，但流程、责任链和评价指标都没变。",
+    "expected_style_traits": [
+      "问题-本质-机制-方法",
+      "成本效率"
+    ],
+    "forbidden_outputs": [
+      "编造公司案例"
+    ],
+    "scoring_focus": [
+      "expansion"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "把一篇 1800 字趋势稿压缩成 900 字，保留刘润式框架。",
+    "input_materials": "原稿讨论 SaaS、AI 和企业自研趋势。",
+    "expected_style_traits": [
+      "保留机制",
+      "删空话"
+    ],
+    "forbidden_outputs": [
+      "删掉事实边界"
+    ],
+    "scoring_focus": [
+      "compression"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "只有一句选题：AI 正在改变管理。判断能不能直接写。",
+    "input_materials": "无公司、数据、场景。",
+    "expected_style_traits": [
+      "素材不足门",
+      "追问清单"
+    ],
+    "forbidden_outputs": [
+      "硬写完整稿"
+    ],
+    "scoring_focus": [
+      "insufficient material"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "评价某上市公司今天最新财报对行业的影响。",
+    "input_materials": "未提供财报原文或最新数据。",
+    "expected_style_traits": [
+      "事实门",
+      "待核实"
+    ],
+    "forbidden_outputs": [
+      "编造财务数字"
+    ],
+    "scoring_focus": [
+      "sensitive facts"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一份材料，分别写成“交易结构角度”和“组织责任链角度”两个大纲。",
+    "input_materials": "材料：一家企业引入 AI 客服后，客户满意度没有提升。",
+    "expected_style_traits": [
+      "同材双角度",
+      "框架区分"
+    ],
+    "forbidden_outputs": [
+      "两个角度写成一样"
+    ],
+    "scoring_focus": [
+      "same material two angles"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "这篇稿哪里不像刘润？按原味指纹逐项诊断。",
+    "input_materials": "稿件：观点正确，但没有谁付钱、谁受益、谁承担风险。",
+    "expected_style_traits": [
+      "具体修正动作"
+    ],
+    "forbidden_outputs": [
+      "泛泛说更有逻辑"
+    ],
+    "scoring_focus": [
+      "where not like target"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "强素材正控：用刘润式写一篇“低价不是战略，成本结构才是战略”。",
+    "input_materials": "用户提供：价格、毛利、渠道费用、复购数据。",
+    "expected_style_traits": [
+      "成本结构",
+      "机制命名",
+      "行动建议"
+    ],
+    "forbidden_outputs": [
+      "投资建议",
+      "编造数据"
+    ],
+    "scoring_focus": [
+      "positive control"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "无 skill baseline comparison：普通商业评论同题，再指出刘润式差距。",
+    "input_materials": "主题：企业为什么不能只把 AI 当助理。",
+    "expected_style_traits": [
+      "baseline gap"
+    ],
+    "forbidden_outputs": [
+      "复制训练文"
+    ],
+    "scoring_focus": [
+      "baseline comparison"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查这段生成稿有没有复述训练或 holdout 原文。",
+    "input_materials": "给一段生成稿。",
+    "expected_style_traits": [
+      "泄漏检查",
+      "改写建议"
+    ],
+    "forbidden_outputs": [
+      "忽略复制风险"
+    ],
+    "scoring_focus": [
+      "style leakage"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "做 blind A/B 判断：A/B 哪篇更像刘润，为什么。",
+    "input_materials": "两篇同题商业分析，一篇有机制拆解，一篇是通用商业评论。",
+    "expected_style_traits": [
+      "维度评分",
+      "证据理由"
+    ],
+    "forbidden_outputs": [
+      "只凭感觉"
+    ],
+    "scoring_focus": [
+      "blind AB judge"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "跨题材泛化：用刘润式分析“年轻人为什么重新重视稳定工作”。",
+    "input_materials": "材料：收入预期、行业变化、家庭责任。",
+    "expected_style_traits": [
+      "原始资本",
+      "打法匹配",
+      "交易结构"
+    ],
+    "forbidden_outputs": [
+      "人生鸡汤"
+    ],
+    "scoring_focus": [
+      "cross-topic generalization"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "同一主题写两版，避免套同一段落骨架。",
+    "input_materials": "主题：企业数字员工。",
+    "expected_style_traits": [
+      "非模板变化",
+      "结构差异"
+    ],
+    "forbidden_outputs": [
+      "重复固定骨架"
+    ],
+    "scoring_focus": [
+      "anti-template variation"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "把一篇 AI 味重的刘润式稿做去 AI 味，但保留概念辨析和机制拆解。",
+    "input_materials": "草稿包含：本文将、综上所述、时代浪潮、根据素材。",
+    "expected_style_traits": [
+      "去来源泄漏",
+      "保留机制"
+    ],
+    "forbidden_outputs": [
+      "磨成通用商业评论"
+    ],
+    "scoring_focus": [
+      "de-AI preservation"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "原味对照：四段里哪段最像刘润，哪段泛 AI，哪段过度润色，哪段过拟合假像？",
+    "input_materials": "四段合成文本围绕“AI 没让企业提效”，分别包含机制拆解、宏大总结、温柔鸡汤、高频词堆砌。",
+    "expected_style_traits": [
+      "原味对照",
+      "不只看大词"
+    ],
+    "forbidden_outputs": [
+      "把高频词堆砌判成最像"
+    ],
+    "scoring_focus": [
+      "original-flavor contrast"
+    ]
+  },
+  {
+    "id": "t21",
+    "prompt": "同一材料，先判断刘润式主角度，再写大纲，不写完整稿。",
+    "input_materials": "材料：企业上 AI 后客服成本没降、投诉变多、员工不知道如何协作。",
+    "expected_style_traits": [
+      "思考框架迁移",
+      "成本效率",
+      "责任链"
+    ],
+    "forbidden_outputs": [
+      "直接写完整稿"
+    ],
+    "scoring_focus": [
+      "thinking-frame transfer"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "把这段被润得太顺的稿改回更刘润式，只恢复有证据的原味。",
+    "input_materials": "润色稿：AI 是时代给企业的礼物，拥抱变化才能抵达更高效率的未来。",
+    "expected_style_traits": [
+      "恢复机制",
+      "去鸡汤",
+      "不伪造亲历"
+    ],
+    "forbidden_outputs": [
+      "硬塞金句",
+      "冒充刘润"
+    ],
+    "scoring_focus": [
+      "protected-quirk preservation"
+    ]
+  }
+]

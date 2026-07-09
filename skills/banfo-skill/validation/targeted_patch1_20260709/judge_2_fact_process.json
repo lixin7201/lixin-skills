@@ -1,0 +1,75 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "t04",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A主物件更强且边界更硬"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A拒写更准，机制方向也给到"
+    },
+    {
+      "id": "t10",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A风险门更完整，普通人关系更好"
+    },
+    {
+      "id": "t12",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B承认缺原文，诊断格式更稳"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "A说明素材缺失且两版差异清楚"
+    },
+    {
+      "id": "t16",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B不硬判未知标题，边界更稳"
+    },
+    {
+      "id": "t17",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A规则成本链更完整，建议更落地"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A三题结构差异更明显且机制足"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 6.0,
+      "b_overall": 9.0,
+      "reason": "B先给成稿，物件承重更鲜活"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "A恢复原味克制，边界说明清楚"
+    }
+  ]
+}

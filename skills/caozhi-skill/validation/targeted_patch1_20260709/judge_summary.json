@@ -1,0 +1,93 @@
+[
+  {
+    "id": "t02",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 7.33,
+    "baseline_avg": 5.0,
+    "reasons": [
+      "judge_1_style_editor:A A有示范句和事实边界，更像槽值",
+      "judge_2_fact_process:A A有短样和边界，B偏流程说明",
+      "judge_3_skeptical_reader:A A有短样和冷判断，B偏流程清单"
+    ]
+  },
+  {
+    "id": "t06",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.0,
+    "baseline_avg": 6.0,
+    "reasons": [
+      "judge_1_style_editor:A A诊断有冷感示范，节奏更接近",
+      "judge_2_fact_process:A A诊断更像槽值且有示范",
+      "judge_3_skeptical_reader:A A诊断后给示范句，更像可复用写法"
+    ]
+  },
+  {
+    "id": "t11",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.0,
+    "baseline_avg": 6.33,
+    "reasons": [
+      "judge_1_style_editor:A A双路线差异清楚，语言更有槽点",
+      "judge_2_fact_process:A A两路线差异更鲜明有槽点",
+      "judge_3_skeptical_reader:A A两条路由区分更明显，有现场感"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "baseline_old",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 6.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A有具体通勤鞋现场，非模板感强",
+      "judge_2_fact_process:A A成稿更具体，B对象偏虚",
+      "judge_3_skeptical_reader:A A具体到通勤鞋，B仍偏抽象品牌"
+    ]
+  },
+  {
+    "id": "t15",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B打工人现场更准，结尾冷判断更稳",
+      "judge_2_fact_process:B B更有打工人现场和冷判断",
+      "judge_3_skeptical_reader:B B更像打工人现场，边界也稳"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 7.33,
+    "baseline_avg": 6.33,
+    "reasons": [
+      "judge_1_style_editor:A A给出明确判例，标题反差更完整",
+      "judge_2_fact_process:A A判断理由更完整有示例拆解",
+      "judge_3_skeptical_reader:A A判断示例更完整，反差拆解更清楚"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "baseline_old",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 7.0,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:B B先成稿再边界，去味且不磨平",
+      "judge_2_fact_process:B B先给改后稿，事实边界稳",
+      "judge_3_skeptical_reader:B B先给改后稿，具体对象更强"
+    ]
+  }
+]

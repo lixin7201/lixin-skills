@@ -1,0 +1,159 @@
+{
+  "judge": "judge_3_skeptical_reader",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "更有反差和现场感"
+    },
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "示范句更贴槽值"
+    },
+    {
+      "id": "t03",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "标题更有冷槽点"
+    },
+    {
+      "id": "t04",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "反差更强且不补事实"
+    },
+    {
+      "id": "t05",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "结尾更冷更有刺"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "诊断更具体少模板"
+    },
+    {
+      "id": "t07",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "结构完整槽点更足"
+    },
+    {
+      "id": "t08",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "保留槽值压缩法"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "选题判断更可复用"
+    },
+    {
+      "id": "t10",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "高风险边界更稳"
+    },
+    {
+      "id": "t11",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "双路线更像成稿"
+    },
+    {
+      "id": "t12",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "改法有强反差示范"
+    },
+    {
+      "id": "t13",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "更像新稿不过拟合"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "贴任务且有对照"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "新题更自然少套壳"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "不硬造AB更稳"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "洞察更深节奏更冷"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "三题材变化更明显"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "更守去味和边界"
+    },
+    {
+      "id": "t20",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 7.0,
+      "reason": "分类更贴原味样本"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "路线判断更完整"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "恢复原味且边界清楚"
+    }
+  ]
+}

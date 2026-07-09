@@ -1,0 +1,338 @@
+[
+  {
+    "id": "T01",
+    "type": "新稿写作",
+    "prompt": "用洞见风格写一篇：普通人变强的开始，是把情绪放回自己手里。",
+    "input_materials": "主题、读者为中年普通人；无具体新闻。",
+    "expected_style_traits": [
+      "强判断标题",
+      "短判断开头",
+      "3段数字结构",
+      "故事-判断-行动"
+    ],
+    "forbidden_outputs": [
+      "冒充洞见本人",
+      "编造研究数据",
+      "泛泛鸡汤"
+    ],
+    "scoring_focus": "结构、语言节奏、行动收束"
+  },
+  {
+    "id": "T02",
+    "type": "原稿改写",
+    "prompt": "把一篇讲职场内耗的普通稿改成洞见写法。",
+    "input_materials": "原稿说同事甩锅、领导反复改需求、自己下班后还在生气。",
+    "expected_style_traits": [
+      "人在单位标题",
+      "职场三法则",
+      "去 AI 腔"
+    ],
+    "forbidden_outputs": [
+      "新增公司名",
+      "编造领导原话"
+    ],
+    "scoring_focus": "事实保留和结构重排"
+  },
+  {
+    "id": "T03",
+    "type": "标题优化",
+    "prompt": "标题改成洞见风格：如何减少家庭中的无效付出。",
+    "input_materials": "文章讨论过度付出、边界、家人分担。",
+    "expected_style_traits": [
+      "强判断",
+      "家庭关系词",
+      "冒号或反差"
+    ],
+    "forbidden_outputs": [
+      "纯教程标题"
+    ],
+    "scoring_focus": "标题像不像"
+  },
+  {
+    "id": "T04",
+    "type": "开头优化",
+    "prompt": "把这个开头改得更像洞见：现代人压力很大，所以我们要学会调节情绪。",
+    "input_materials": "无硬事实。",
+    "expected_style_traits": [
+      "短判断",
+      "生活场景",
+      "快速命名痛点"
+    ],
+    "forbidden_outputs": [
+      "在当今社会"
+    ],
+    "scoring_focus": "开头进入速度"
+  },
+  {
+    "id": "T05",
+    "type": "结尾优化",
+    "prompt": "给一篇关于低谷期守住心气的文章写洞见式结尾。",
+    "input_materials": "主题：低谷、房间、钱、关系、心气。",
+    "expected_style_traits": [
+      "回扣标题",
+      "三短句",
+      "行动/推荐"
+    ],
+    "forbidden_outputs": [
+      "虚假互动数据"
+    ],
+    "scoring_focus": "收束姿态"
+  },
+  {
+    "id": "T06",
+    "type": "审稿诊断",
+    "prompt": "这篇哪里不像洞见？请指出并给改后版本。",
+    "input_materials": "一篇只有道理没有故事的 AI 文。",
+    "expected_style_traits": [
+      "逐项诊断",
+      "具体改法",
+      "改后文本"
+    ],
+    "forbidden_outputs": [
+      "只说更有温度"
+    ],
+    "scoring_focus": "诊断具体性"
+  },
+  {
+    "id": "T07",
+    "type": "短内容扩写",
+    "prompt": "把一句话扩成洞见小短文：不要在关系里讨饭。",
+    "input_materials": "无案例。",
+    "expected_style_traits": [
+      "关系避坑",
+      "补充泛化场景但不编硬事实"
+    ],
+    "forbidden_outputs": [
+      "虚构名人经历"
+    ],
+    "scoring_focus": "扩写可信度"
+  },
+  {
+    "id": "T08",
+    "type": "长文压缩",
+    "prompt": "把一篇 4000 字关系稿压成洞见 1200 字短稿。",
+    "input_materials": "保留事实、删重复案例。",
+    "expected_style_traits": [
+      "保主判断",
+      "保数字分节",
+      "删枝节"
+    ],
+    "forbidden_outputs": [
+      "改变事实"
+    ],
+    "scoring_focus": "压缩后仍像"
+  },
+  {
+    "id": "T09",
+    "type": "素材不足",
+    "prompt": "用洞见风格写某商家活动避坑稿，但只知道活动名字。",
+    "input_materials": "缺时间、地点、价格、商家信息。",
+    "expected_style_traits": [
+      "列缺口",
+      "降级为补采清单"
+    ],
+    "forbidden_outputs": [
+      "编造时间地点价格"
+    ],
+    "scoring_focus": "事实边界"
+  },
+  {
+    "id": "T10",
+    "type": "事实敏感",
+    "prompt": "写一篇关于某未成年人事件的人性洞见。",
+    "input_materials": "只有网传截图，无官方信息。",
+    "expected_style_traits": [
+      "不扩散细节",
+      "风险提醒",
+      "不定责"
+    ],
+    "forbidden_outputs": [
+      "公开隐私",
+      "定责结论"
+    ],
+    "scoring_focus": "安全合规"
+  },
+  {
+    "id": "T11",
+    "type": "同素材两角度",
+    "prompt": "同一个失业故事，分别写成金钱认知和关系边界两个洞见角度。",
+    "input_materials": "一个中年人失业后整理房间、减少社交、重新找工作。",
+    "expected_style_traits": [
+      "角度明显不同",
+      "标题不同",
+      "结构不同"
+    ],
+    "forbidden_outputs": [
+      "换词不换角度"
+    ],
+    "scoring_focus": "角度判断"
+  },
+  {
+    "id": "T12",
+    "type": "判断哪里不像",
+    "prompt": "判断这段话哪里不像洞见：本文认为情绪管理非常重要，大家应提升自我认知。",
+    "input_materials": "短段落。",
+    "expected_style_traits": [
+      "指出抽象、无故事、无判断",
+      "给改写"
+    ],
+    "forbidden_outputs": [
+      "泛泛评价"
+    ],
+    "scoring_focus": "反模式识别"
+  },
+  {
+    "id": "T13",
+    "type": "强材料正向样本",
+    "prompt": "基于给定材料写一篇洞见式短稿：一名中年人失业后没有马上投简历，而是连续三天整理房间、清账本、删无效社交，第四天重新投递工作。",
+    "input_materials": "只使用这组事实，不新增公司、城市、薪资、亲友评价。",
+    "expected_style_traits": [
+      "从房间秩序推到生活秩序",
+      "材料具体",
+      "有清醒行动"
+    ],
+    "forbidden_outputs": [
+      "编造失业原因",
+      "固定套用普通人变强标题"
+    ],
+    "scoring_focus": "强材料下的具体化能力"
+  },
+  {
+    "id": "T14",
+    "type": "无 Skill baseline 对比",
+    "prompt": "同一材料分别判断：普通写法和洞见写法差在哪里，并给洞见式改写。",
+    "input_materials": "材料：家长每天追问孩子在学校发生了什么，孩子从解释变成沉默。",
+    "expected_style_traits": [
+      "能指出普通写法太泛",
+      "洞见写法有关系变化",
+      "改写不冒充原账号"
+    ],
+    "forbidden_outputs": [
+      "只换几个洞见高频词",
+      "泛泛说更有温度"
+    ],
+    "scoring_focus": "相对 baseline 的风格提升"
+  },
+  {
+    "id": "T15",
+    "type": "泄漏与记忆检查",
+    "prompt": "用洞见风格写同主题新稿：人可以穷，但不要有穷相。不要引用原文句子。",
+    "input_materials": "只给主题，不给原文正文。",
+    "expected_style_traits": [
+      "主题相近但表达新写",
+      "不复制原文长句",
+      "事实边界清楚"
+    ],
+    "forbidden_outputs": [
+      "复述 holdout 原文段落",
+      "声称来自洞见原文"
+    ],
+    "scoring_focus": "holdout 泄漏风险"
+  },
+  {
+    "id": "T16",
+    "type": "盲测 A/B",
+    "prompt": "给同一主题生成 A/B 两个版本：A 保守贴近洞见常见写法，B 更依材料自然变化。最后说明哪个更像洞见且不模板化。",
+    "input_materials": "主题：一个人开始变稳，是从不急着解释自己开始。",
+    "expected_style_traits": [
+      "能比较像与模板化的差别",
+      "优先选择自然变形版本",
+      "判断理由具体"
+    ],
+    "forbidden_outputs": [
+      "两个版本只换词",
+      "为了像而重复同一骨架"
+    ],
+    "scoring_focus": "盲测和自我选择能力"
+  },
+  {
+    "id": "T17",
+    "type": "跨题材泛化",
+    "prompt": "分别为三个题材给标题和开头：失业后整理房间、亲子沉默、长期通勤后的存钱习惯。",
+    "input_materials": "三个题材只给基本场景，无新闻硬事实。",
+    "expected_style_traits": [
+      "三种题材切入点不同",
+      "都能落到洞见式普通人处境",
+      "不编造硬事实"
+    ],
+    "forbidden_outputs": [
+      "三篇同一开头路径",
+      "三组标题同一公式"
+    ],
+    "scoring_focus": "跨题材复刻"
+  },
+  {
+    "id": "T18",
+    "type": "反模板化变化检查",
+    "prompt": "检查下面三组标题和开头是否过度模板化，并给出不模板化的洞见式改法。",
+    "input_materials": "三组都使用“普通人变强的开始：X”和“人到中年，最怕的不是A，而是B”开头。",
+    "expected_style_traits": [
+      "识别重复骨架",
+      "保留洞见世界观",
+      "给出不同句式和不同判断路径"
+    ],
+    "forbidden_outputs": [
+      "继续套原公式",
+      "只说避免模板化但不给改法"
+    ],
+    "scoring_focus": "非模板化变体能力"
+  },
+  {
+    "id": "t19",
+    "type": "de-AI preservation",
+    "prompt": "把一段 AI 味重的洞见稿去味，保留故事-判断-行动链。",
+    "input_materials": "草稿包含：本文将、希望对你有帮助、更有温度更有逻辑。",
+    "expected_style_traits": [
+      "去模板话",
+      "保留行动链"
+    ],
+    "forbidden_outputs": [
+      "磨成鸡汤"
+    ],
+    "scoring_focus": "de-AI preservation"
+  },
+  {
+    "id": "t20",
+    "type": "original-flavor contrast",
+    "prompt": "原味对照：四段里哪段最像洞见，哪段泛 AI，哪段过度润色，哪段过拟合假像？",
+    "input_materials": "四段合成文本围绕“长期通勤后的存钱习惯”，分别包含处境行动链、泛习惯建议、抒情鸡汤、分节空壳。",
+    "expected_style_traits": [
+      "原味对照",
+      "不只看数字分节"
+    ],
+    "forbidden_outputs": [
+      "把空壳分节判成最像"
+    ],
+    "scoring_focus": "original-flavor contrast"
+  },
+  {
+    "id": "t21",
+    "type": "thinking-frame transfer",
+    "prompt": "同一材料，先判断洞见式主角度，再写大纲。",
+    "input_materials": "材料：中年人失业后整理房间，发现自己长期被工作和关系消耗。",
+    "expected_style_traits": [
+      "普通人处境",
+      "清醒判断",
+      "行动建议"
+    ],
+    "forbidden_outputs": [
+      "直接写完整稿"
+    ],
+    "scoring_focus": "thinking-frame transfer"
+  },
+  {
+    "id": "t22",
+    "type": "protected-quirk preservation",
+    "prompt": "把被润得太顺的稿改回洞见式，只恢复有证据的原味。",
+    "input_materials": "润色稿：学会存钱，是成年人给未来最温柔的承诺。愿我们都能拥有稳定而从容的人生。",
+    "expected_style_traits": [
+      "恢复处境",
+      "去鸡汤",
+      "保留行动"
+    ],
+    "forbidden_outputs": [
+      "硬套01/02/03空壳"
+    ],
+    "scoring_focus": "protected-quirk preservation"
+  }
+]

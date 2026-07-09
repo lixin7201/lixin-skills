@@ -1,0 +1,12 @@
+id,kind,title,A_source,B_source,skill_votes,baseline_votes,tie_votes,majority
+h01,holdout,夫妻之道,baseline,skill,3,0,0,skill
+h02,holdout,教育格局在发生巨变,baseline,skill,3,0,0,skill
+h03,holdout,为什么年轻人不愿意留在北京了？,baseline,skill,3,0,0,skill
+h04,holdout,终于有车牌了,skill,baseline,3,0,0,skill
+h05,holdout,提前退休,baseline,skill,3,0,0,skill
+h06,holdout,最近三个月，三件反常识的事,baseline,skill,3,0,0,skill
+h07,holdout,写一篇育儿经，关于英语,skill,baseline,3,0,0,skill
+h08,holdout,车市跟楼市现在有的一拼了,skill,baseline,3,0,0,skill
+t20,original_flavor,t20,skill,baseline,0,3,0,baseline
+t21,original_flavor,t21,skill,baseline,3,0,0,skill
+t22,original_flavor,t22,baseline,skill,1,2,0,baseline

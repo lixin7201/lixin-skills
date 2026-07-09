@@ -1,0 +1,159 @@
+{
+  "judge": "judge_2_fact_process",
+  "results": [
+    {
+      "id": "t01",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "现场更足，冷判断更像"
+    },
+    {
+      "id": "t02",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "边界更稳，不硬示范"
+    },
+    {
+      "id": "t03",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "标题更有反差和钩子"
+    },
+    {
+      "id": "t04",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "地域现场和反差更强"
+    },
+    {
+      "id": "t05",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "冷判断更锋利有余味"
+    },
+    {
+      "id": "t06",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "诊断更聚焦可执行"
+    },
+    {
+      "id": "t07",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "槽点层次更完整"
+    },
+    {
+      "id": "t08",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "任务完成度和方法更强"
+    },
+    {
+      "id": "t09",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "选题预判框架更细"
+    },
+    {
+      "id": "t10",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "高风险边界更克制"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "路线迁移更清楚"
+    },
+    {
+      "id": "t12",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "问题拆解更像槽值"
+    },
+    {
+      "id": "t13",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "反差叙事更完整"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 7.0,
+      "reason": "贴合材料且比较有效"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "新题不过拟合更自然"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "不补题，边界更干净"
+    },
+    {
+      "id": "t17",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "家庭缺口判断更有力"
+    },
+    {
+      "id": "t18",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "三题变化和槽点更足"
+    },
+    {
+      "id": "t19",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "保留事实边界更准"
+    },
+    {
+      "id": "t20",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "分类更贴原味指纹"
+    },
+    {
+      "id": "t21",
+      "winner": "B",
+      "a_overall": 8.0,
+      "b_overall": 9.0,
+      "reason": "路线判断和大纲更完整"
+    },
+    {
+      "id": "t22",
+      "winner": "A",
+      "a_overall": 9.0,
+      "b_overall": 8.0,
+      "reason": "恢复短段反差更明显"
+    }
+  ]
+}

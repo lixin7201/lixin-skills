@@ -1,0 +1,54 @@
+{
+  "judge": "judge_1_style_editor",
+  "results": [
+    {
+      "id": "t02",
+      "winner": "A",
+      "a_overall": 7.0,
+      "b_overall": 5.0,
+      "reason": "A有示范句和事实边界，更像槽值"
+    },
+    {
+      "id": "t06",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A诊断有冷感示范，节奏更接近"
+    },
+    {
+      "id": "t11",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A双路线差异清楚，语言更有槽点"
+    },
+    {
+      "id": "t14",
+      "winner": "A",
+      "a_overall": 8.0,
+      "b_overall": 6.0,
+      "reason": "A有具体通勤鞋现场，非模板感强"
+    },
+    {
+      "id": "t15",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B打工人现场更准，结尾冷判断更稳"
+    },
+    {
+      "id": "t16",
+      "winner": "A",
+      "a_overall": 7.0,
+      "b_overall": 6.0,
+      "reason": "A给出明确判例，标题反差更完整"
+    },
+    {
+      "id": "t19",
+      "winner": "B",
+      "a_overall": 7.0,
+      "b_overall": 8.0,
+      "reason": "B先成稿再边界，去味且不磨平"
+    }
+  ]
+}

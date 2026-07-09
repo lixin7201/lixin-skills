@@ -1,0 +1,119 @@
+[
+  {
+    "id": "draft-001",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:A A责任指标更硬，结尾更机制化",
+      "judge_2_fact_process:A A责任指标更硬，少镜子金句",
+      "judge_3_skeptical_reader:A A更克制成稿，成本中心收束好"
+    ]
+  },
+  {
+    "id": "rewrite-001",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B交易账更完整，边界更稳",
+      "judge_2_fact_process:B B账更完整，有风险边界",
+      "judge_3_skeptical_reader:B B交易账更完整，低价机制更清楚"
+    ]
+  },
+  {
+    "id": "t08",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.0,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1_style_editor:A A更像压缩框架，成本结构主线清楚",
+      "judge_2_fact_process:A A抓成本结构和能力栈",
+      "judge_3_skeptical_reader:A A保留成本结构与能力栈边界"
+    ]
+  },
+  {
+    "id": "t12",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.17,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:B B逐项更贴指纹，责任指标更全",
+      "judge_2_fact_process:B B逐项更贴原味指纹",
+      "judge_3_skeptical_reader:B B逐项诊断更贴原味指纹"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:B B分类清楚，差距拆得更可验收",
+      "judge_2_fact_process:B B责任链指标更完整",
+      "judge_3_skeptical_reader:B B差距拆到指标和责任链"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "baseline_old",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 5.0,
+    "baseline_avg": 6.17,
+    "reasons": [
+      "judge_1_style_editor:B B较像评委标准，A太流程说明",
+      "judge_2_fact_process:B B更像评判框架但仍未直判",
+      "judge_3_skeptical_reader:B B可用维度更清楚但仍偏流程说明"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.17,
+    "baseline_avg": 7.17,
+    "reasons": [
+      "judge_1_style_editor:B B去AI味同时保住账和机制",
+      "judge_2_fact_process:B B保留机制且去味解释稳",
+      "judge_3_skeptical_reader:B B去AI味同时保留成本转移机制"
+    ]
+  },
+  {
+    "id": "t20",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 6.33,
+    "reasons": [
+      "judge_1_style_editor:B B先分类结论，符合对照题要求",
+      "judge_2_fact_process:B B先分类，符合题目要求",
+      "judge_3_skeptical_reader:B B先分类结论，解释更符合题目"
+    ]
+  },
+  {
+    "id": "t21",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.67,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:B B责任链更完整，角色指标边界更稳",
+      "judge_2_fact_process:B B主角度、责任链、指标最全",
+      "judge_3_skeptical_reader:B B责任链、角色、指标更完整"
+    ]
+  }
+]

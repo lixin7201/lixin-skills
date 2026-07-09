@@ -1,0 +1,288 @@
+[
+  {
+    "id": "t01",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 主物件强，机制和人味更足",
+      "judge_2_fact_process:B B物件机制人味更足",
+      "judge_3_skeptical_reader:B 主物件更亮，机制更有反差"
+    ]
+  },
+  {
+    "id": "t02",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A 槽点具体，普通人关系更稳",
+      "judge_2_fact_process:A A去报告腔更彻底",
+      "judge_3_skeptical_reader:A 场景更具体，报告腔更少"
+    ]
+  },
+  {
+    "id": "t03",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 标题更有反差和可拆口",
+      "judge_2_fact_process:B B标题更有反差",
+      "judge_3_skeptical_reader:B 标题更有钩子和人味"
+    ]
+  },
+  {
+    "id": "t04",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:A 入题快，老车主关系更准",
+      "judge_2_fact_process:A A入题快且边界稳",
+      "judge_3_skeptical_reader:A 前三段入题更狠更稳"
+    ]
+  },
+  {
+    "id": "t05",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 成本搬家和边界更有劲",
+      "judge_2_fact_process:B B结尾更有机制余味",
+      "judge_3_skeptical_reader:B 结尾更短更有机制余味"
+    ]
+  },
+  {
+    "id": "t06",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 诊断集中，物件意识更强",
+      "judge_2_fact_process:B B诊断更集中有物件",
+      "judge_3_skeptical_reader:B 诊断紧凑，物件意识强"
+    ]
+  },
+  {
+    "id": "t07",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1_style_editor:B 小物件英雄化更原味",
+      "judge_2_fact_process:B B小物件英雄化更强",
+      "judge_3_skeptical_reader:B 小物件承重更像成稿"
+    ]
+  },
+  {
+    "id": "t08",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:B 拒编同时方法更像短评",
+      "judge_2_fact_process:A A拒绝硬压更守边界",
+      "judge_3_skeptical_reader:B 拒编同时保留写法判断"
+    ]
+  },
+  {
+    "id": "t09",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:B 拒写干净，风险提示更自然",
+      "judge_2_fact_process:B B补问更完整更稳",
+      "judge_3_skeptical_reader:A 补充问题更完整稳健"
+    ]
+  },
+  {
+    "id": "t10",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.67,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:A 医疗事实门更分层具体",
+      "judge_2_fact_process:B B来源层级更清楚",
+      "judge_3_skeptical_reader:B 来源层级和医疗边界更硬"
+    ]
+  },
+  {
+    "id": "t11",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 两种角度差异更清楚",
+      "judge_2_fact_process:B B角度区分更鲜明",
+      "judge_3_skeptical_reader:B 两种角度区分更清楚"
+    ]
+  },
+  {
+    "id": "t12",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:B 改稿更短促，机制反转更好",
+      "judge_2_fact_process:A A诊断改稿边界更全",
+      "judge_3_skeptical_reader:B 改稿更自然，少生产痕迹"
+    ]
+  },
+  {
+    "id": "t13",
+    "majority": "with_skill",
+    "skill_votes": 2,
+    "baseline_votes": 1,
+    "skill_avg": 8.67,
+    "baseline_avg": 8.33,
+    "reasons": [
+      "judge_1_style_editor:B 成稿感强且不补数字",
+      "judge_2_fact_process:B B先标题且不补事实",
+      "judge_3_skeptical_reader:A 更像完整稿，机制更连贯"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:A 对比锋利，公告翻译有味",
+      "judge_2_fact_process:B B差异说明更可复用",
+      "judge_3_skeptical_reader:A 对比清楚，参考版更有劲"
+    ]
+  },
+  {
+    "id": "t15",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 泄漏边界声明更完整",
+      "judge_2_fact_process:B B承认无法真比对",
+      "judge_3_skeptical_reader:B 泄漏边界说得更准确"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:A 标题判断有物件和机制",
+      "judge_2_fact_process:A A用例具体判断更准",
+      "judge_3_skeptical_reader:A 有实例对照，标题DNA更准"
+    ]
+  },
+  {
+    "id": "t17",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:B 跨题迁移更像现场拆解",
+      "judge_2_fact_process:B B跨题材迁移更自然",
+      "judge_3_skeptical_reader:B 跨题材迁移更自然鲜活"
+    ]
+  },
+  {
+    "id": "t18",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:B 三种开头结构差异更稳",
+      "judge_2_fact_process:B B结构变化更明显",
+      "judge_3_skeptical_reader:B 结构变化更明显，不模板"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "baseline",
+    "skill_votes": 0,
+    "baseline_votes": 3,
+    "skill_avg": 8.0,
+    "baseline_avg": 9.0,
+    "reasons": [
+      "judge_1_style_editor:B 去AI味更自然，保机制",
+      "judge_2_fact_process:B B去味后更像成稿",
+      "judge_3_skeptical_reader:B 去AI味更彻底，保留反转"
+    ]
+  },
+  {
+    "id": "t20",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 分类准确，标准完整克制",
+      "judge_2_fact_process:B B四类判别更直接",
+      "judge_3_skeptical_reader:B 四类判断更落地明确"
+    ]
+  },
+  {
+    "id": "t21",
+    "majority": "with_skill",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:B 主角度更准，边界更稳",
+      "judge_2_fact_process:B B主角度更稳更轻",
+      "judge_3_skeptical_reader:B 主角度更锋利，大纲更稳"
+    ]
+  },
+  {
+    "id": "t22",
+    "majority": "baseline",
+    "skill_votes": 1,
+    "baseline_votes": 2,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.67,
+    "reasons": [
+      "judge_1_style_editor:B 恢复原味但不补事实",
+      "judge_2_fact_process:A A恢复原味且边界稳",
+      "judge_3_skeptical_reader:A 恢复原味更足，边界也稳"
+    ]
+  }
+]

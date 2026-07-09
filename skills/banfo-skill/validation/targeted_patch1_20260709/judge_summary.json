@@ -1,0 +1,132 @@
+[
+  {
+    "id": "t04",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:A A边界更硬，主物件更早承重",
+      "judge_2_fact_process:A A主物件更强且边界更硬",
+      "judge_3_skeptical_reader:A A主物件更快，边界更硬"
+    ]
+  },
+  {
+    "id": "t09",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A拒写更果断，机制方向也给到",
+      "judge_2_fact_process:A A拒写更准，机制方向也给到",
+      "judge_3_skeptical_reader:A A拒写更准，有半佛风险判断"
+    ]
+  },
+  {
+    "id": "t10",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A事实门更完整且普通人关系更强",
+      "judge_2_fact_process:A A风险门更完整，普通人关系更好",
+      "judge_3_skeptical_reader:A A事实门更完整，普通人关系更强"
+    ]
+  },
+  {
+    "id": "t12",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 6.0,
+    "reasons": [
+      "judge_1_style_editor:B B不伪装有原文，诊断格式更稳",
+      "judge_2_fact_process:B B承认缺原文，诊断格式更稳",
+      "judge_3_skeptical_reader:B B承认缺原文，边界更稳"
+    ]
+  },
+  {
+    "id": "t14",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.0,
+    "reasons": [
+      "judge_1_style_editor:A A两版对比更完整，节奏更像",
+      "judge_2_fact_process:A A说明素材缺失且两版差异清楚",
+      "judge_3_skeptical_reader:A A两版差异清楚，成稿更像"
+    ]
+  },
+  {
+    "id": "t16",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 6.0,
+    "reasons": [
+      "judge_1_style_editor:B B拒绝无题判断，边界更正确",
+      "judge_2_fact_process:B B不硬判未知标题，边界更稳",
+      "judge_3_skeptical_reader:B B不补题干标题，边界更稳"
+    ]
+  },
+  {
+    "id": "t17",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 7.67,
+    "reasons": [
+      "judge_1_style_editor:A A结构链更清楚，合同物件更稳",
+      "judge_2_fact_process:A A规则成本链更完整，建议更落地",
+      "judge_3_skeptical_reader:A A机制链更完整，建议更落地"
+    ]
+  },
+  {
+    "id": "t18",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.67,
+    "baseline_avg": 7.33,
+    "reasons": [
+      "judge_1_style_editor:A A三题结构差异更明显，机制更足",
+      "judge_2_fact_process:A A三题结构差异更明显且机制足",
+      "judge_3_skeptical_reader:A A三题结构真不同且入机制"
+    ]
+  },
+  {
+    "id": "t19",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 9.0,
+    "baseline_avg": 6.0,
+    "reasons": [
+      "judge_1_style_editor:B B直接给成稿，物件和原味保护更好",
+      "judge_2_fact_process:B B先给成稿，物件承重更鲜活",
+      "judge_3_skeptical_reader:B B先给改后稿，物件保留好"
+    ]
+  },
+  {
+    "id": "t22",
+    "majority": "with_skill_new",
+    "skill_votes": 3,
+    "baseline_votes": 0,
+    "skill_avg": 8.33,
+    "baseline_avg": 8.0,
+    "reasons": [
+      "judge_1_style_editor:A A更短更准，恢复原味不补事实",
+      "judge_2_fact_process:A A恢复原味克制，边界说明清楚",
+      "judge_3_skeptical_reader:A A更短更稳，未补无证事实"
+    ]
+  }
+]

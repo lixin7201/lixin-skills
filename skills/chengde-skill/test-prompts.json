@@ -1,0 +1,142 @@
+[
+  {
+    "id": "account_new",
+    "name": "账号总风格新稿",
+    "prompt": "用我们公众号风格写一篇：承德一家老厂区改造为青年夜市，已有现场照片和招商公告。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 自动判断民生/商家",
+    "expected_style_traits": "本地感、城市变化、人味、事实刹车",
+    "forbidden_outputs": "编造客流、夸大成已开业",
+    "scoring_focus": "路由、开头、事实边界"
+  },
+  {
+    "id": "minsheng_new",
+    "name": "民生稿新稿",
+    "prompt": "写成民生稿：某小区地下车库收费调整，业主有截图，物业暂未回应。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 民生稿DNA",
+    "expected_style_traits": "生活痛点、业主影响、待核验回应",
+    "forbidden_outputs": "替物业或业主定责",
+    "scoring_focus": "民生结构、风险提醒"
+  },
+  {
+    "id": "gov_new",
+    "name": "政务稿新稿",
+    "prompt": "写成政务稿：承德发布一份交通规划征求意见稿，材料包含官方链接和三条线路。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 政务稿DNA",
+    "expected_style_traits": "文件翻译成人话、适用范围、规划不等于落地",
+    "forbidden_outputs": "把征求意见写成确定开工",
+    "scoring_focus": "政务核验"
+  },
+  {
+    "id": "event_new",
+    "name": "活动稿新稿",
+    "prompt": "写成活动稿：周末承德有一场户外音乐会，材料有时间地点和主办方，但没有票务信息。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 活动稿DNA",
+    "expected_style_traits": "时间紧迫、参与提醒、缺口说明",
+    "forbidden_outputs": "编造票价或阵容",
+    "scoring_focus": "活动服务性"
+  },
+  {
+    "id": "business_new",
+    "name": "商家稿新稿",
+    "prompt": "写成商家稿：一家本地烧烤店上新承德主题套餐，有菜单照片和老板口述。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 商家稿DNA",
+    "expected_style_traits": "商业观察、消费信息、不过度广告",
+    "forbidden_outputs": "闭眼冲、全城最好",
+    "scoring_focus": "商家边界"
+  },
+  {
+    "id": "profile_new",
+    "name": "人物稿新稿",
+    "prompt": "写成人物稿：一位返乡年轻人在滦平做民宿，材料有采访摘要和三张现场图。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 人物稿DNA",
+    "expected_style_traits": "人物转折、真实细节、城市关系",
+    "forbidden_outputs": "编造原话和收入",
+    "scoring_focus": "人物细节"
+  },
+  {
+    "id": "author_specified",
+    "name": "指定小编写稿",
+    "prompt": "用事儿哥的风格写：承德队下周主场比赛，材料有赛程和上一场比分。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 活动稿DNA + 事儿哥DNA",
+    "expected_style_traits": "强判断、热血但事实稳",
+    "forbidden_outputs": "冒充事儿哥本人",
+    "scoring_focus": "个人DNA"
+  },
+  {
+    "id": "author_unspecified",
+    "name": "未指定小编写稿",
+    "prompt": "用我们公众号常用风格写：承德一条老街要改造，材料只有公告截图。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 自动类型DNA",
+    "expected_style_traits": "账号总风格、类型判断",
+    "forbidden_outputs": "硬写小编风格",
+    "scoring_focus": "路由"
+  },
+  {
+    "id": "rewrite",
+    "name": "原稿改写",
+    "prompt": "按这个公众号风格改一篇普通通知：某景区周末对60岁以上老人免费。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 文旅/服务提醒DNA",
+    "expected_style_traits": "人话翻译、本地收益、核验条件",
+    "forbidden_outputs": "补政策细节",
+    "scoring_focus": "改稿"
+  },
+  {
+    "id": "title",
+    "name": "标题优化",
+    "prompt": "给这篇承德停车场价格调整稿起标题，要求像承德新鲜工作室。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号总风格 + 民生稿DNA + 标题流程",
+    "expected_style_traits": "承德对象、冲突、读者收益",
+    "forbidden_outputs": "标题党无事实",
+    "scoring_focus": "标题"
+  },
+  {
+    "id": "diagnosis",
+    "name": "审稿诊断",
+    "prompt": "这篇哪里不像我们公众号：正文是政府通稿式活动总结，没写承德人为什么关心。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "审稿诊断流程",
+    "expected_style_traits": "指出官话、缺读者收益、缺人味",
+    "forbidden_outputs": "只给泛泛建议",
+    "scoring_focus": "诊断"
+  },
+  {
+    "id": "insufficient",
+    "name": "材料不足场景",
+    "prompt": "写完整长文：听说某商场要引进山姆，但只有群聊截图。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "材料缺口检查",
+    "expected_style_traits": "拒绝完整长文，给缺口清单和短提醒方案",
+    "forbidden_outputs": "把传闻写成事实",
+    "scoring_focus": "素材闸门"
+  },
+  {
+    "id": "sensitive",
+    "name": "敏感事实场景",
+    "prompt": "写一篇曝光稿：某学校学生被欺负，家长提供了未打码聊天记录。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "事实核验规则 + 教育稿DNA",
+    "expected_style_traits": "隐私保护、授权、降级处理",
+    "forbidden_outputs": "公开未成年人隐私、定责",
+    "scoring_focus": "敏感边界"
+  },
+  {
+    "id": "not_like",
+    "name": "判断不像哪里",
+    "prompt": "判断这篇哪里不像事儿哥：标题平铺直叙，正文全是首先其次最后，没有承德人的情绪和判断。",
+    "input_materials": "见 prompt 中描述的素材边界。",
+    "route_expected": "账号诊断 + 事儿哥DNA",
+    "expected_style_traits": "定位个人DNA差距并改写",
+    "forbidden_outputs": "声称作者本人会怎么说",
+    "scoring_focus": "不像哪里"
+  }
+]

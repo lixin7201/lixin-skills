@@ -1,0 +1,575 @@
+[
+  {
+    "id": "t01",
+    "name": "new draft writing",
+    "prompt": "使用 caozhi-skill，基于我给的材料写一篇槽值风格新稿：某连锁咖啡品牌大幅降价后客流上涨但利润承压。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t02",
+    "name": "rewrite",
+    "prompt": "使用 caozhi-skill，把这篇平铺直叙的品牌稿改得更像槽值，但不要补事实。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t03",
+    "name": "title optimization",
+    "prompt": "使用 caozhi-skill，给一篇讲“年轻人迷上周三请假”的稿子写10个标题。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "社会情绪/打工人生活",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t04",
+    "name": "opening optimization",
+    "prompt": "使用 caozhi-skill，重写开头，让“某地文旅突然爆火”的选题前三段更抓人。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "地域文化/城市迷因",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t05",
+    "name": "ending optimization",
+    "prompt": "使用 caozhi-skill，把这篇娱乐人物稿结尾改成槽值式冷判断，不要鸡汤。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "娱乐影视/人物舆论",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t06",
+    "name": "review diagnosis",
+    "prompt": "使用 caozhi-skill，诊断这篇稿哪里不像槽值，并给改法。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t07",
+    "name": "expansion",
+    "prompt": "使用 caozhi-skill，把一个短选题扩成完整提纲：为什么年轻人开始讨厌“精致生活”博主。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "身体审美/亲密关系",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t08",
+    "name": "compression",
+    "prompt": "使用 caozhi-skill，把一篇3000字稿压成800字槽值短稿，保留槽点和事实。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t09",
+    "name": "insufficient material",
+    "prompt": "使用 caozhi-skill，只有一句话：想写某饮料品牌翻红。请先判断能不能写。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t10",
+    "name": "sensitive facts",
+    "prompt": "使用 caozhi-skill，写涉及食品安全争议的品牌稿，只能使用我给的官方通报。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "公共教育/事件纪念",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t11",
+    "name": "same material two angles",
+    "prompt": "使用 caozhi-skill，同一组材料分别写消费品牌角度和打工人情绪角度。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t12",
+    "name": "where not target",
+    "prompt": "使用 caozhi-skill，看这段话哪里不像槽值：首先我们要关注当代年轻人的消费趋势...",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t13",
+    "name": "positive control",
+    "prompt": "使用 caozhi-skill，基于强素材写一篇“第一批买高价通勤鞋的人，已经开始后悔了”。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t14",
+    "name": "baseline comparison",
+    "prompt": "同一材料分别普通写法和 caozhi-skill 写法输出，用表格比较。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t15",
+    "name": "style leakage check",
+    "prompt": "使用 caozhi-skill 写新题，不得复用任何槽值原文标题或句子。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t16",
+    "name": "blind ab route",
+    "prompt": "给两版标题，判断哪版更像槽值并说明原因。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t17",
+    "name": "cross topic",
+    "prompt": "使用 caozhi-skill 写一个不在训练语料里的新话题：AI 陪伴玩具为什么突然卖爆。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t18",
+    "name": "anti template variation",
+    "prompt": "连续写三个不同题材标题和开头，不能重复同一个句式骨架。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t19",
+    "name": "de-ai preservation",
+    "prompt": "使用 caozhi-skill，把一段 AI 味重的草稿去味，同时保留槽值的短段、反差和事实边界。",
+    "input_materials": "由用户提供事实材料；没有事实时必须列待核实。",
+    "route_expected": "综合热点/观点拆解",
+    "expected_style_traits": [
+      "具体对象",
+      "反差标题",
+      "事实链",
+      "平台/生活现场",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "冒充槽值官方",
+      "复制原文",
+      "编造数据",
+      "公文腔",
+      "鸡汤结尾"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "style fidelity",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t20",
+    "name": "original flavor contrast",
+    "prompt": "原味对照：四段里哪段最像槽值，哪段泛 AI，哪段过度润色，哪段过拟合假像？",
+    "input_materials": "四段合成文本围绕“咖啡品牌降价但利润承压”，分别包含反差事实链、商业报告、温柔总结、热词堆砌。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "反差标题",
+      "事实链",
+      "冷判断"
+    ],
+    "forbidden_outputs": [
+      "把热词堆砌判成最像",
+      "编造数据"
+    ],
+    "scoring_focus": [
+      "original-flavor contrast",
+      "route correctness"
+    ]
+  },
+  {
+    "id": "t21",
+    "name": "thinking frame transfer",
+    "prompt": "同一材料，先判断槽值式主路线和文稿类型，再写大纲。",
+    "input_materials": "材料：某城市文旅账号用本地老梗翻红，外地游客吐槽看不懂，本地人反而很买账。",
+    "route_expected": "地域文化/城市迷因",
+    "expected_style_traits": [
+      "路由正确",
+      "地域反差",
+      "生活现场"
+    ],
+    "forbidden_outputs": [
+      "直接写完整稿",
+      "编造热搜"
+    ],
+    "scoring_focus": [
+      "thinking-frame transfer",
+      "route correctness"
+    ]
+  },
+  {
+    "id": "t22",
+    "name": "protected quirk preservation",
+    "prompt": "把被润得太顺的稿改回槽值式，只恢复有证据的原味。",
+    "input_materials": "润色稿：咖啡价格回归理性，体现年轻消费者更加成熟务实的消费观。",
+    "route_expected": "消费品牌/商业拆解",
+    "expected_style_traits": [
+      "恢复反差",
+      "短段冷判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "硬塞网友炸了",
+      "编造价格"
+    ],
+    "scoring_focus": [
+      "protected-quirk preservation",
+      "fact reliability"
+    ]
+  }
+]

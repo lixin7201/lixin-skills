@@ -1,0 +1,78 @@
+{
+  "created_at": "2026-07-09",
+  "policy": "frozen before DNA writing; body excluded from generated DNA",
+  "items": [
+    {
+      "file": "20260327_夫妻之道.md",
+      "title": "夫妻之道",
+      "date": "2026-03-27 14:35",
+      "article_type": "人情/社会观察",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260327_夫妻之道.md",
+      "sha256": "db92034a69a3aa10fa2bdb49a068fbaa2532114963108be429f87081d6d5edd0",
+      "interaction_score": 89.36
+    },
+    {
+      "file": "20260415_教育格局在发生巨变.md",
+      "title": "教育格局在发生巨变",
+      "date": "2026-04-15 13:23",
+      "article_type": "教育/育儿",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260415_教育格局在发生巨变.md",
+      "sha256": "f5c3fd0c3631309e5780e66281782896ca2a234bf9f79b48dae33b6dadde8774",
+      "interaction_score": 88.95
+    },
+    {
+      "file": "20260522_为什么年轻人不愿意留在北京了？.md",
+      "title": "为什么年轻人不愿意留在北京了？",
+      "date": "2026-05-22 14:18",
+      "article_type": "中年/生活方式",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260522_为什么年轻人不愿意留在北京了？.md",
+      "sha256": "259c1aa1b9b4258d2b487dafb04f49854f037c9a4a1561ac5e72090c6a839902",
+      "interaction_score": 95.39
+    },
+    {
+      "file": "20260526_终于有车牌了.md",
+      "title": "终于有车牌了",
+      "date": "2026-05-26 13:51",
+      "article_type": "房产/资产",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260526_终于有车牌了.md",
+      "sha256": "ef059c2b41e79eac349860ed44fcffb1c6cc50569cf30860a2d24bac38b4d0bd",
+      "interaction_score": 88.88
+    },
+    {
+      "file": "20260604_提前退休.md",
+      "title": "提前退休",
+      "date": "2026-06-04 14:56",
+      "article_type": "中年/生活方式",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260604_提前退休.md",
+      "sha256": "60c7c0be7a2ec07c26bb1c41a72eb9a2b9f27f215620f710abdcdd703d3fc5fa",
+      "interaction_score": 89.99
+    },
+    {
+      "file": "20260608_最近三个月，三件反常识的事.md",
+      "title": "最近三个月，三件反常识的事",
+      "date": "2026-06-08 14:02",
+      "article_type": "随笔/杂感",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260608_最近三个月，三件反常识的事.md",
+      "sha256": "e8db3168f6df6228b65207bdfdd793bd8d0ae54f937bfdeb5f9eeb2b0928b938",
+      "interaction_score": 92.24
+    },
+    {
+      "file": "20260609_写一篇育儿经，关于英语.md",
+      "title": "写一篇育儿经，关于英语",
+      "date": "2026-06-09 12:00",
+      "article_type": "教育/育儿",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260609_写一篇育儿经，关于英语.md",
+      "sha256": "d01392ed89e61e5c17ec7d3039883e353c84fff02730d2eb023f905090c9ba0d",
+      "interaction_score": 90.21
+    },
+    {
+      "file": "20260706_车市跟楼市现在有的一拼了.md",
+      "title": "车市跟楼市现在有的一拼了",
+      "date": "2026-07-06 12:00",
+      "article_type": "房产/资产",
+      "path": "/Users/lixin/Documents/学习/重点学习公众号/BJ 大土豆/20260706_车市跟楼市现在有的一拼了.md",
+      "sha256": "d63b5a6193aba1d9c2128dec186499c5e09e91838ebb9ec2e083fa6346ce1e7e",
+      "interaction_score": 92.44
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "H01",
+    "skill_label": "B",
+    "baseline_label": "A"
+  },
+  {
+    "id": "H02",
+    "skill_label": "A",
+    "baseline_label": "B"
+  },
+  {
+    "id": "H03",
+    "skill_label": "A",
+    "baseline_label": "B"
+  },
+  {
+    "id": "H04",
+    "skill_label": "A",
+    "baseline_label": "B"
+  },
+  {
+    "id": "H05",
+    "skill_label": "A",
+    "baseline_label": "B"
+  },
+  {
+    "id": "H06",
+    "skill_label": "B",
+    "baseline_label": "A"
+  },
+  {
+    "id": "H07",
+    "skill_label": "B",
+    "baseline_label": "A"
+  },
+  {
+    "id": "H08",
+    "skill_label": "B",
+    "baseline_label": "A"
+  },
+  {
+    "id": "H09",
+    "skill_label": "B",
+    "baseline_label": "A"
+  },
+  {
+    "id": "H10",
+    "skill_label": "B",
+    "baseline_label": "A"
+  }
+]

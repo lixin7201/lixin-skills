@@ -19,11 +19,14 @@
 - `dongjian-skill`
 - `fang-wenshan-lyrics-skill`
 - `find-redskills`
+- `darwin-skill`
+- `huashu-nuwa`
 - `kazike-skill`
 - `liurun-skill`
 - `redskill-preference`
 - `wechat-writing-skill`
 - `writing-dna-skill`
+- `writing-style-distiller`
 
 ## 说明
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Writing Style Distiller"
+  short_description: "Distill authors, accounts, and editor styles into writing skills"
+  default_prompt: "Use $writing-style-distiller to distill this author or account into a reusable writing skill."

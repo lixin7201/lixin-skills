@@ -17,6 +17,7 @@
 - `datudou-skill`
 - `de-ai-preserve-voice`
 - `dongjian-skill`
+- `dashiai-ppt`
 - `fang-wenshan-lyrics-skill`
 - `find-redskills`
 - `darwin-skill`

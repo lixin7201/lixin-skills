@@ -3,6 +3,8 @@
 .env.*
 node_modules/
 dist/
+!skills/dashiai-ppt/project/dist/
+!skills/dashiai-ppt/project/dist/**
 __pycache__/
 *.pyc
 *.zip

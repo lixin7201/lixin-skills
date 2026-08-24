@@ -1,0 +1,49 @@
+{
+  "skill": "gameful-motivation-transfer",
+  "title": "游戏心态动机转移",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "gameful-motivation-transfer:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我必须整理一批资料，但太枯燥，一想到就拖延。",
+      "expected": "gameful-motivation-transfer",
+      "rationale": "合理枯燥任务可换框。"
+    },
+    {
+      "id": "gameful-motivation-transfer:trigger-02",
+      "type": "should_trigger",
+      "prompt": "跑1500米时我总觉得痛苦，想换一种注意力玩法。",
+      "expected": "gameful-motivation-transfer",
+      "rationale": "书中典型运动动机转移。"
+    },
+    {
+      "id": "gameful-motivation-transfer:trigger-03",
+      "type": "should_trigger",
+      "prompt": "练字很无聊，但我想把它设计成小关卡坚持一段时间。",
+      "expected": "gameful-motivation-transfer",
+      "rationale": "重复练习游戏化。"
+    },
+    {
+      "id": "gameful-motivation-transfer:not-01",
+      "type": "should_not_trigger",
+      "prompt": "打卡系统让我只想快点结束任务维持连续天数。",
+      "expected": "record-over-checkin-motivation-guard",
+      "rationale": "打卡异化优先处理。"
+    },
+    {
+      "id": "gameful-motivation-transfer:not-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我设计一款完整闯关游戏。",
+      "expected": "none",
+      "rationale": "产品/游戏设计请求。"
+    },
+    {
+      "id": "gameful-motivation-transfer:edge-01",
+      "type": "edge",
+      "prompt": "老板让我长期加班到凌晨，我能把它游戏化撑过去吗？",
+      "expected": "none",
+      "rationale": "不合理有害任务不适用。"
+    }
+  ]
+}

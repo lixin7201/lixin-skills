@@ -1,0 +1,49 @@
+{
+  "skill": "ambiguity-to-clarity-decomposition",
+  "title": "模糊三域清晰化",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "ambiguity-to-clarity-decomposition:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我说不清为什么害怕换工作，越想越乱，只觉得不能再拖。",
+      "expected": "ambiguity-to-clarity-decomposition",
+      "rationale": "问题呈现为混合模糊。"
+    },
+    {
+      "id": "ambiguity-to-clarity-decomposition:trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个项目目标、情绪、下一步都糊成一团，开会越开越烦。",
+      "expected": "ambiguity-to-clarity-decomposition",
+      "rationale": "明确需要三域拆解。"
+    },
+    {
+      "id": "ambiguity-to-clarity-decomposition:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我只知道要写文章，但不知道写给谁、解决什么、怎么判断写好了。",
+      "expected": "ambiguity-to-clarity-decomposition",
+      "rationale": "写作起步模糊。"
+    },
+    {
+      "id": "ambiguity-to-clarity-decomposition:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经知道今天要写两小时，只是自由时间总被刷手机吃掉。",
+      "expected": "written-clarity-action-planner",
+      "rationale": "任务清楚，重点是行动安排。"
+    },
+    {
+      "id": "ambiguity-to-clarity-decomposition:not-02",
+      "type": "should_not_trigger",
+      "prompt": "请解释书里潜意识和显意识的区别。",
+      "expected": "none",
+      "rationale": "概念解释请求。"
+    },
+    {
+      "id": "ambiguity-to-clarity-decomposition:edge-01",
+      "type": "edge",
+      "prompt": "朋友只是想吐槽，并没有要我帮他解决问题，我该拆事实情绪行动吗？",
+      "expected": "none",
+      "rationale": "未获得授权，不进入工具。"
+    }
+  ]
+}

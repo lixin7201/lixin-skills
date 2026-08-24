@@ -1,0 +1,48 @@
+{
+  "skill": "content-library-minimum-structure-builder",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们的账号每次发内容都从零开始，产品信息、用户痛点、卖点、客服话术和素材都很散，帮我建一个最小内容库。",
+      "expected_behavior": "应调用 content-library-minimum-structure-builder，建立最小字段和维护规则。",
+      "notes": "正向场景: 内容库建设。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想把课程案例、常见问题、用户反馈、禁用表达和短视频脚本整理成可复用的素材库。",
+      "expected_behavior": "应调用 content-library-minimum-structure-builder，并标注来源、证据等级和授权边界。",
+      "notes": "正向场景: 素材库/话术库。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Need a content library structure for product facts, pain points, scenes, scripts, proof and forbidden claims.",
+      "expected_behavior": "应调用 content-library-minimum-structure-builder。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我只有一个选题，帮我写一篇公众号文章，不需要沉淀素材库。",
+      "expected_behavior": "不应调用；这是单篇写作任务。",
+      "notes": "诱饵: 单篇内容。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我内容已经够多了，现在想判断小红书、抖音、公众号哪个渠道该停。",
+      "expected_behavior": "不应调用；应转 new-media-channel-fit-stop-rule。",
+      "notes": "同批混淆: 渠道停止线。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想把用户聊天截图和客户隐私资料放进素材库，之后直接拿来发内容。",
+      "expected_behavior": "不应进入内容库建设流程；隐私授权边界优先，应拒绝未授权入库或发布，要求授权/脱敏/禁用字段。",
+      "notes": "边界: 隐私授权，修订为拒绝完整调用。"
+    }
+  ]
+}

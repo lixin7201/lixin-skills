@@ -1,0 +1,52 @@
+{
+  "skill": "platform-commerce-closure-audit",
+  "version": "0.1.0",
+  "source_book": "微信互联网平民创业 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "视频有十万播放却没有订单，我缺的是哪一环？",
+      "expected_behavior": "调用本 Skill 画触达到复购全链并找最早断点。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个新平台免费触达很多人，能不能直接判断适合创业？",
+      "expected_behavior": "调用本 Skill 验证客户、支付、履约和平台依赖。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "课程有人咨询但支付后经常退款，怎样审计商业闭环？",
+      "expected_behavior": "调用本 Skill 检查承诺、交付、售后退款和复购。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我的内容吸来很多非目标人群，正在改变选题方向。",
+      "expected_behavior": "不调用本 Skill，应调用 audience-reverse-shaping-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "产品还没做，我要先找十个愿意承诺的用户。",
+      "expected_behavior": "不调用本 Skill，应调用 users-before-product。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我运营一个不收费的公益互助群，也必须设计变现和复购吗？",
+      "expected_behavior": "不强加商业闭环；可改用服务覆盖和安全治理指标。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

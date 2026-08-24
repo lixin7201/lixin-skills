@@ -1,0 +1,49 @@
+{
+  "skill": "felt-trigger-association-learning",
+  "title": "触动关联学习法",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "felt-trigger-association-learning:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我读书时有一句话特别打我，但不知道怎么从触动变成自己的行动。",
+      "expected": "felt-trigger-association-learning",
+      "rationale": "触动转行动。"
+    },
+    {
+      "id": "felt-trigger-association-learning:trigger-02",
+      "type": "should_trigger",
+      "prompt": "今天会议里客户一句抱怨让我一直想，我想把它沉淀成创业洞察。",
+      "expected": "felt-trigger-association-learning",
+      "rationale": "真实触动与创业洞察。"
+    },
+    {
+      "id": "felt-trigger-association-learning:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我收藏了很多内容，写文章时却想不起来，怎么让素材和自己有关？",
+      "expected": "felt-trigger-association-learning",
+      "rationale": "素材关联问题。"
+    },
+    {
+      "id": "felt-trigger-association-learning:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经知道这个触动要写成文章，现在需要找读者反馈。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "已进入作品反馈阶段。"
+    },
+    {
+      "id": "felt-trigger-association-learning:not-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我找十本个人成长书单。",
+      "expected": "none",
+      "rationale": "资源检索请求。"
+    },
+    {
+      "id": "felt-trigger-association-learning:edge-01",
+      "type": "edge",
+      "prompt": "我被一个标题触动但不想立刻相信，想先降温、核验事实，再看它和我的真实问题有什么关联。",
+      "expected": "felt-trigger-association-learning",
+      "rationale": "触发触动关联，但必须先降温核验，不得直接上升为人生原则。"
+    }
+  ]
+}

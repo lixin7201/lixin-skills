@@ -1,0 +1,73 @@
+{
+  "skill": "issue-hypothesis-logic-tree-loop",
+  "version": "0.2.0",
+  "source_book": "麦肯锡工作法：个人竞争力提升50%的7堂课 — 大岛祥誉；第15批麦肯锡七步旧PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们最近销售额连续三个月下降，团队都说销售不努力，我不想直接加KPI，想先拆一下真正议题和验证假设。",
+      "expected_behavior": "应激活 issue-hypothesis-logic-tree-loop，先把销售下降改写成议题，再画逻辑树、提出1-3个关键假设和验证动作。",
+      "notes": "正面场景：复杂经营问题，现象、原因和方案混在一起。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "新产品留存变差，有人说是功能太少，有人说是价格问题。帮我用 issue tree 和 hypothesis-driven 的方式决定先查什么。",
+      "expected_behavior": "应激活 issue-hypothesis-logic-tree-loop，拆分留存影响分支并筛选关键假设。",
+      "notes": "正面场景：产品问题有多个解释，需要验证路径。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "创业项目增长停了，我需要一棵逻辑树，把获客、转化、复购、价格和渠道拆开，然后定验证优先级。",
+      "expected_behavior": "应激活 issue-hypothesis-logic-tree-loop，输出逻辑树、关键假设、证据计划和停止条件。",
+      "notes": "正面场景：创业增长诊断。"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我想按麦肯锡七步写一个主导性问题，再从逻辑树叶节点拆工作计划，明确哪些假设会被数据推翻。",
+      "expected_behavior": "应激活本 skill，选择逻辑树类型，从叶节点生成假设、资料来源、负责人、截止时间和推翻信号。",
+      "notes": "第十五批新增: 主导问题、叶节点工作计划、可推翻假设。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经有一条事实：竞品昨天上线了低价套餐。帮我写空雨伞，判断这说明什么和下一步怎么办。",
+      "expected_behavior": "不应激活本 skill，应激活 sky-rain-umbrella-action-chain。",
+      "notes": "跨 skill 诱饵：事实到行动短链路。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "AI总结说这个行业明年会爆发，我想确认这个数据靠谱不靠谱、原始来源在哪里。",
+      "expected_behavior": "不应激活本 skill，应激活 primary-source-fact-grounding。",
+      "notes": "跨 skill 诱饵：事实来源核验。"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "我还不知道该用逻辑树、鱼骨图还是8D，你先帮我选一个问题解决工具。",
+      "expected_behavior": "不应激活本 skill，应先激活 problem-analysis-tool-router。",
+      "notes": "第十五批新增: 工具选择应先路由。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "老板让我今晚就给一个结论，数据权限还没开。我能不能先用假设驱动给方案？",
+      "expected_behavior": "可激活本 skill，但必须标明假设是暂定、列验证缺口，并在证据不足时不输出强结论。",
+      "notes": "边界：时间压力和证据缺口。"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我已经分析到足够做决策了，但还想把每个分支都查到完美再汇报。",
+      "expected_behavior": "应激活本 skill，但要使用够精确停止条件，停止低价值过度分析。",
+      "notes": "第十五批新增: 够精确停止。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含 sky-rain-umbrella-action-chain 与 primary-source-fact-grounding 的跨 skill 混淆诱饵。"
+}

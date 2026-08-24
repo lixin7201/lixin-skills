@@ -1,0 +1,52 @@
+{
+  "skill": "okr-fit-preflight",
+  "version": "0.1.0",
+  "source_book": "OKR工作管理法培训PPT — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "客服团队每天主要是按流程接单回复，老板想上 OKR 提积极性。你帮我判断适不适合？",
+      "expected_behavior": "应激活 okr-fit-preflight，并优先判断工作类型、文化前提、KPI/PDCA 替代和试点条件。",
+      "notes": "OKR 适用性预检典型场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们公司战略总落不下去，部门墙也严重，但大家怕 OKR 最后变成 KPI。导入前该查什么？",
+      "expected_behavior": "应激活本 skill，检查组织问题、文化前提、高层先行、透明容错和 KPI 化风险。",
+      "notes": "组织导入前提和风险判断。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "研发新产品这种 0 到 1 的工作，是不是比销售日常执行更适合 OKR？",
+      "expected_behavior": "应激活本 skill，用推算型/探索型分流说明适用性。",
+      "notes": "直接出现 0-1、OKR 适配问题。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "O: 提升客户体验。KR: 平均通话 6 分钟内结束。帮我改写一下这个 OKR。",
+      "expected_behavior": "不应激活本 skill，应激活 okr-smart-kr-quality-guard。",
+      "notes": "跨 skill 混淆诱饵: 已在写 O/KR 质量。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "内容发布流程老漏配图和错别字，我想做 PDCA 标准化。",
+      "expected_behavior": "不应激活本 skill，应激活 firefighting-to-standard-improvement-loop。",
+      "notes": "跨 skill 混淆诱饵: 稳定流程改进。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "老板已经决定全员上 OKR，而且跟奖金强绑定，我只是想让它别太痛苦。",
+      "expected_behavior": "应谨慎触发本 skill，输出高风险预警、不可强推条件和降级/试点建议，而不是直接帮写 OKR。",
+      "notes": "边界: 决策已定但存在严重 KPI 化和惩罚绑定风险。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含同批 OKR 质量护栏和 PDCA 作为诱饵。"
+}

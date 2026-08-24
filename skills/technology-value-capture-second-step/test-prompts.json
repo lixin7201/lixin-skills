@@ -1,0 +1,17 @@
+{
+  "skill": "technology-value-capture-second-step",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"AI 客服能省 60% 工时，但同行可能都降价，节省的钱最后会落在谁手里？","expected_behavior":"应激活本 Skill，量化价值创造、画价值流并测试捕获机制和持续期。","notes":"技术收益归属。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"我们的工具给客户创造很大价值，却一直赚不到钱，是价值创造和价值捕获哪里断了？","expected_behavior":"应激活本 Skill，分开客户价值、社会价值和企业回报。","notes":"价值大但利润弱。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"自动化方案能降本，我在自建和采购之间选择，想把供应商收费、员工溢价和竞争降价都算进去。","expected_behavior":"应激活本 Skill，比较不同参与者的捕获路径与敏感变量。","notes":"采购/自建归属。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"SaaS 报表收入增长但退款和递延交付没算，请做账实对账。","expected_behavior":"不应激活本 Skill，应激活 accounting-economic-reality-reconciliation。","notes":"跨 Skill 诱饵：数字对账。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"要扩到 30 个城市，规模采购红利和官僚时延怎么一起算？","expected_behavior":"不应激活本 Skill，应激活 scale-advantage-disease-audit。","notes":"跨 Skill 诱饵：规模双向。"},
+    {"id":"edge-01","type":"edge_case","prompt":"图片压缩库 A 比 B 快 20%，帮我选一个实现网站缩略图。","expected_behavior":"不应激活；这是低影响技术选型，除非用户进一步询问商业价值归属。","notes":"技术词不等于价值捕获。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

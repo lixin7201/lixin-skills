@@ -1,0 +1,16 @@
+{
+  "skill": "authority-command-verification-gate",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"领导让我跳过备份直接做不可逆迁移，我认为明显不安全，但他说出了问题他负责。","expected_behavior":"应激活本 Skill，回读、独立核验、停止不可逆操作并按正式路径升级。","notes":"高风险异常指令。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"专家口头说剂量缩写没问题，但记录和常识冲突，我该怎么澄清而不是机械照做？","expected_behavior":"应激活本 Skill，复述对象和单位并使用专业正式核验；不自行给医疗结论。","notes":"专业权威与明显异常。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"大客户要求我绕过审批导出全量用户数据，销售说客户最大必须听，怎么办？","expected_behavior":"应激活本 Skill，检查授权、数据合规、不可逆性并留痕升级。","notes":"客户权威与越权。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"拍卖现场有专家背书、群体起哄和倒计时，我越拍越不想输。","expected_behavior":"不应激活本 Skill，应激活 lollapalooza-bias-stack-audit。","notes":"跨 Skill 诱饵：多偏差叠加。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"同事说周五前交稿，但没说格式和验收标准，我需要普通复述确认。","expected_behavior":"不应激活本 Skill；这是一般沟通闭环，不存在权威或高影响异常指令。","notes":"普通沟通诱饵。"},
+    {"id":"edge-01","type":"edge_case","prompt":"火灾现场指挥员按既定应急预案要求立即撤离，我暂时没看到他掌握的全部信息。","expected_behavior":"不应因本 Skill 延误合法应急指挥；除非出现明确异常，先按预案撤离，事后复盘信息与指令。","notes":"应急指挥边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}

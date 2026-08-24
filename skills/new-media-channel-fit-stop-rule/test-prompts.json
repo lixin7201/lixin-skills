@@ -1,0 +1,48 @@
+{
+  "skill": "new-media-channel-fit-stop-rule",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想做小红书、抖音、公众号和视频号，但团队只有两个人，不知道先选哪个，也怕几个月没效果还一直耗着。",
+      "expected_behavior": "应调用 new-media-channel-fit-stop-rule，选择主渠道并设置3-6个月停止线。",
+      "notes": "正向场景: 多平台取舍。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们公众号做了4个月没效果，抖音也没起量，能不能帮我判断该继续、调整还是停掉？",
+      "expected_behavior": "应调用 new-media-channel-fit-stop-rule，做渠道归因和保留/调整/停止决策。",
+      "notes": "正向场景: 停止条件。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Can you run a new media channel fit audit and define stop rules for the next 3 months?",
+      "expected_behavior": "应调用 new-media-channel-fit-stop-rule。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查抖音本周广告后台规则和算法推荐机制有哪些变化。",
+      "expected_behavior": "不应调用；应转 platform-playbook-currentness-audit。",
+      "notes": "邻近混淆: 平台当前规则。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我还没有产品信息、卖点、用户痛点和素材，先帮我搭内容库。",
+      "expected_behavior": "不应调用；应转 content-library-minimum-structure-builder。",
+      "notes": "同批混淆: 内容供给不足。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "老板要求全域都做，不设预算上限，也不想设停止条件，只想让我证明每个平台都值得做。",
+      "expected_behavior": "应触发边界，拒绝无停止线的全域铺开，要求预算、人效、指标和退出条件。",
+      "notes": "边界: 无停止线和权力压力。"
+    }
+  ]
+}

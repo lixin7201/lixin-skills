@@ -1,0 +1,51 @@
+{
+  "skill": "customer-journey-touchpoint-diagnosis",
+  "version": "0.1.0",
+  "source_book": "分章节P1-04 市场营销战略 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的训练营报名率低，不知道该改标题、投放、价格还是客服，帮我看用户旅程哪里掉了。",
+      "expected_behavior": "应激活本 skill，按 5A 旅程定位触点掉点。",
+      "notes": "转化掉点诊断"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "门店会员复购差，我想从认知、问询、行动、拥护几个阶段检查触点。",
+      "expected_behavior": "应激活本 skill，画旅程并提出触点改进动作。",
+      "notes": "复购旅程"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Map the customer journey and touchpoint drop-offs before we change the landing page.",
+      "expected_behavior": "应激活本 skill，先诊断旅程再决定改动。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我看到一个TikTok Shop打法，想判断能不能照搬到我们业务。",
+      "expected_behavior": "不应激活本 skill，应激活 platform-playbook-currentness-audit。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们想把抖音用户导到企微社群，先看私域是否适合。",
+      "expected_behavior": "不应激活本 skill，应激活 private-domain-fit-boundary-audit。",
+      "notes": "同批私域诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "没有任何用户数据，我想凭经验画一张精细用户旅程。",
+      "expected_behavior": "应要求补用户证据或将旅程标为假设，不直接给确定结论。",
+      "notes": "证据边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

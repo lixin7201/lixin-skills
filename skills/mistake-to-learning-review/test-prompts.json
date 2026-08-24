@@ -1,0 +1,52 @@
+{
+  "skill": "mistake-to-learning-review",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我第一次做付费课程失败了，没人报名，我觉得自己很差，帮我复盘。",
+      "expected_behavior": "应激活本 skill，降身份化并提炼下一次实验。",
+      "notes": "写作/创业失败复盘。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我投资亏了一笔钱，想知道能从错误里学到什么。",
+      "expected_behavior": "应激活本 skill，同时注意不提供投资建议。",
+      "notes": "亏损复盘。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我上周发了20条销售私信，被很多人拒绝，想复盘到底学到什么。",
+      "expected_behavior": "应激活本 skill，把拒绝结果转成事实、规则和下一次实验。",
+      "notes": "被拒绝后的错误学习复盘。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我想做一个高风险操作，反正失败能学习。",
+      "expected_behavior": "不应激活为鼓励行动；应先用 control-prior-leverage-check。",
+      "notes": "鲁莽诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断这笔债务是否会拖垮我。",
+      "expected_behavior": "不应激活本 skill，应激活 good-bad-debt-screen。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这次失败有一半是外部平台规则变化，一半是我准备不足。",
+      "expected_behavior": "应调用本 skill，区分可控与不可控并提炼可控规则。",
+      "notes": "混合原因边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

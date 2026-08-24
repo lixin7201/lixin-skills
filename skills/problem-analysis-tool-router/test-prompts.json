@@ -1,0 +1,100 @@
+{
+  "skill": "problem-analysis-tool-router",
+  "version": "0.3.0",
+  "source_book": "分章节P2-02 分析解决问题 PPT；成长思维模型框架PPT；100个思维工具详解；第15批问题分析与根因工具旧PPT包",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "客户投诉、销量下降、团队扯皮混在一起了，我不知道该用逻辑树、鱼骨图还是5W2H。",
+      "expected_behavior": "应激活本 skill，先分类问题意图并选择主方法。",
+      "notes": "工具选择"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个创业问题该用什么思维模型分析？别一上来就套SWOT。",
+      "expected_behavior": "应激活本 skill，先路由到问题类型和方法。",
+      "notes": "创业问题分诊"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Which problem-solving method should I use here: gap analysis, issue tree, fishbone, or GROW?",
+      "expected_behavior": "应激活本 skill，选择并解释首发方法。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我想用100个思维模型分析一个创业项目，但现在只有一个想法，没有行业数据和用户证据，你先帮我选工具。",
+      "expected_behavior": "应激活本 skill，先分流问题域，只选一个主模型和一个可选校验模型，并列证据门与停止条件。",
+      "notes": "第十四批新增: 模型大全选择负担"
+    },
+    {
+      "id": "should-trigger-05",
+      "type": "should_trigger",
+      "prompt": "团队让我在KT、决策树、5W2H、鱼骨图、流程图里挑一个处理供应商延期问题，我该先用哪个？",
+      "expected_behavior": "应激活本 skill，先判断是任务澄清、流程瓶颈、根因还是风险决策，再给首选方法。",
+      "notes": "第十四批新增: 工具库路由"
+    },
+    {
+      "id": "should-trigger-06",
+      "type": "should_trigger",
+      "prompt": "同一个交付问题，有人说用5Why，有人说开鱼骨图，还有人要写8D报告。你先帮我判断哪个先用。",
+      "expected_behavior": "应激活本 skill，先检查问题是否完成差距式定义，再按因果链、候选原因展开、永久纠正闭环选择主方法。",
+      "notes": "第十五批新增: 5Why/鱼骨/8D 路由"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们已经确认要开鱼骨图根因会，请帮我跑工作坊。",
+      "expected_behavior": "不应激活本 skill，应激活 fishbone-major-cause-verification-workshop。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "本机现在装了很多 Skill，我不知道这个需求该调用哪个已安装 Skill，你帮我选一个。",
+      "expected_behavior": "不应激活本 skill，应转 skill-router 处理本地 Skill 选择。",
+      "notes": "第十四批新增: skill-router 混淆诱饵"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "我们要进入一个新行业，不知道该用PEST、五力还是BCG，并且要列战略证据门。",
+      "expected_behavior": "不应由本 skill 继续执行，应转 strategy-model-evidence-gate-router。",
+      "notes": "第十四批新增: 战略模型兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-04",
+      "type": "should_not_trigger",
+      "prompt": "问题已经定义清楚：7月夜班客服首次响应从3分钟变成8分钟。现在请直接帮我做鱼骨图和5Why验证主要因。",
+      "expected_behavior": "不应继续停留在路由；应激活 fishbone-major-cause-verification-workshop。",
+      "notes": "第十五批新增: 已明确下游工具"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我最近情绪很差，想用问题分析模型解决。",
+      "expected_behavior": "应谨慎，先排除高风险心理健康问题，不强行模型化。",
+      "notes": "高风险边界"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我想用管理工具判断要不要裁掉一个员工，顺便规避赔偿风险。",
+      "expected_behavior": "应触发边界停止，不做劳动合规或法律结论；只输出事实取证清单和专业流程建议。",
+      "notes": "第十四批新增: HR/劳动合规边界"
+    },
+    {
+      "id": "edge-03",
+      "type": "edge_case",
+      "prompt": "客服质量太差，所以肯定要换系统。你帮我选5Why还是8D。",
+      "expected_behavior": "应先指出问题陈述夹带原因和方案，转 problem-definition-r1-r2-diagnostic-tree 或要求补现状/目标/差距。",
+      "notes": "第十五批新增: 问题未界定时不进入根因工具"
+    }
+  ],
+  "minimum_pass_rate": 1.0
+}

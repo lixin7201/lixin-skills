@@ -1,0 +1,52 @@
+{
+  "skill": "variable-competition-design",
+  "version": "0.1.0",
+  "source_book": "学会成长：爆发式成长的25个思维模型 — 粥左罗",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "同城很多AI培训号，我不想只靠日更和降价，怎么找能赢的变量？",
+      "expected_behavior": "应激活 variable-competition-design，拆竞争函数并选择一个可验证主变量。",
+      "notes": "正面场景：同质化竞争找变量。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的咨询服务和别人差不多，怎么设计一个改变胜率的杠杆变量？",
+      "expected_behavior": "应激活 variable-competition-design，列变量、打分并设计验证事件。",
+      "notes": "正面场景：服务差异化。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我是不是只能更努力？有没有办法改变竞争函数？",
+      "expected_behavior": "应激活 variable-competition-design，避免只用努力硬拼。",
+      "notes": "正面场景：内卷替代。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个大客户项目已经确认很关键，我要不要两周集中资源冲刺？",
+      "expected_behavior": "不应激活本 skill，应激活 asymmetric-opportunity-sprint；若需要再组合变量设计。",
+      "notes": "跨 skill 诱饵：先判断赛点资源集中。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我的今天待办太多，不知道先做哪个。",
+      "expected_behavior": "不应激活本 skill，应使用优先级/任务规划类方法。",
+      "notes": "诱饵：不是竞争场景。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想到的变量是刷评论和买粉，这能改变竞争结果吗？",
+      "expected_behavior": "应触发边界拒绝，不应把违规/欺骗变量纳入执行。",
+      "notes": "边界：伦理和平台规则。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含赛点与竞争变量混淆测试。"
+}

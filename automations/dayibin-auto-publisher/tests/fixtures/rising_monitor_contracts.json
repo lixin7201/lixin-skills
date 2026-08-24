@@ -1,0 +1,44 @@
+{
+  "fixture_origin": "synthetic",
+  "synthetic": true,
+  "live_response": false,
+  "description": "Minimal redacted T0 fixtures for plan matching, content metrics, and anonymous comment handling.",
+  "plan_list": {
+    "code": 0,
+    "data": [
+      {
+        "id": "synthetic-group",
+        "name": "默认分组",
+        "children": [
+          {
+            "id": "synthetic-plan-id",
+            "name": "宜宾热点监控",
+            "word": "宜宾",
+            "status": 1
+          }
+        ]
+      }
+    ]
+  },
+  "content_item": {
+    "unique_id": "synthetic-post-1",
+    "title": "宜宾李庄活动上新",
+    "content": "李庄古镇有新活动",
+    "platform": "douyin",
+    "url": "https://example.invalid/post/1",
+    "like_count": 3,
+    "comment_count": 4,
+    "share_count": 0
+  },
+  "comment_item": {
+    "unique_id": "synthetic-comment-1",
+    "content": "想知道停车方便不",
+    "nickname": "[removed]",
+    "user_id": "[removed]",
+    "avatar": "[removed]"
+  },
+  "empty_content_boundary": {
+    "status": "CALIBRATION_ONLY",
+    "reason": "A live latest-page read can return zero usable original items; this must not trigger backfill or history crawling."
+  }
+}

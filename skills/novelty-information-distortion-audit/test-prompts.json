@@ -1,0 +1,52 @@
+{
+  "skill": "novelty-information-distortion-audit",
+  "version": "0.1.0",
+  "source_book": "专注的真相 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个行业消息突然爆火，所有群都在转，我要不要马上改产品方向？",
+      "expected_behavior": "调用 novelty-information-distortion-audit，分离新鲜与重要并回查信息生成链。",
+      "notes": "热点改方向。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的信息流里每个人都说这个城市在衰退，这能代表真实吗？",
+      "expected_behavior": "调用 novelty-information-distortion-audit，检查编辑、算法、社交展示和基准样本。",
+      "notes": "在线样本失真。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "竞品刚发了一个看起来很新的概念，我有 FOMO，怎么判断重要性？",
+      "expected_behavior": "调用 novelty-information-distortion-audit，先写它改变的前提再决定观察或实验。",
+      "notes": "新鲜度偏误。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我确认这些消息都是真的，但一天被它们占满，帮我重新分配注意力。",
+      "expected_behavior": "不调用本 Skill，应调用同批 attention-allocation-ledger。",
+      "notes": "同批兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "团队都反对我的产品想法，我想判断少数意见是否真的更正确。",
+      "expected_behavior": "不调用本 Skill，应调用 correctness-nonconsensus-evidence-matrix。",
+      "notes": "非共识矩阵诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "官方安全公告说我们正在使用的依赖有远程漏洞，还很新，要不要先等等？",
+      "expected_behavior": "调用审计但迅速确认一手公告与暴露面；可靠高风险证据成立时立即进入安全响应，不因反新鲜偏误拖延。",
+      "notes": "高时效安全边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "seven-s-hard-soft-change-balance-audit",
+  "version": "0.1.0",
+  "source_book": "分章节P1-06 组织团队管理 — 职场智库",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "公司战略已经调整了，但组织结构、制度流程、人才能力和团队文化都没跟上，部门之间还是各自为政，帮我用 7S 看看错位在哪里。",
+      "expected_behavior": "应调用 seven-s-hard-soft-change-balance-audit，分硬件 3S 和软件 4S 建立错位台账。",
+      "notes": "正向场景: 战略落地与组织软硬错位。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们新设了一个增长部门，但销售、产品、运营都不配合，制度也没有改，大家都说是执行力差。",
+      "expected_behavior": "应调用 seven-s-hard-soft-change-balance-audit，避免单点归因，检查结构、系统、风格、员工、技能和共同价值观。",
+      "notes": "正向场景: 跨部门协作错位。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Need a 7S hard-soft alignment audit for an org change. Strategy is clear but culture, staff skills and systems are blocking execution.",
+      "expected_behavior": "应调用 seven-s-hard-soft-change-balance-audit。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我只是要给一个新人安排任务，不知道该指令式、教练式、支持式还是授权式。",
+      "expected_behavior": "不应调用本 skill，应调用 delegation-readiness-leadership-style-check。",
+      "notes": "诱饵: 单人授权/领导方式。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们还不知道行业进入该用 PEST、SWOT 还是五力模型，先帮我选一个战略分析工具。",
+      "expected_behavior": "不应调用本 skill，应调用 strategy-model-evidence-gate-router。",
+      "notes": "同批混淆: 战略模型证据门。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我是基层员工，觉得公司文化保守、制度不合理，但没有权限推动组织改革，想直接设计一套 7S 改造方案。",
+      "expected_behavior": "不应给组织改造命令；可用 7S 作为观察和沟通取证框架，输出低权限行动和升级边界。",
+      "notes": "边界: 无权限组织诊断。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含同批 sibling skill。"
+}

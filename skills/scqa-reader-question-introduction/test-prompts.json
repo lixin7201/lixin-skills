@@ -1,0 +1,52 @@
+{
+  "skill": "scqa-reader-question-introduction",
+  "version": "0.1.0",
+  "source_book": "金字塔原理：麦肯锡40年经典培训教材 — 芭芭拉·明托",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要写一封邮件说服团队暂停一个功能，开头怎么用背景、冲突、问题、答案写出来？",
+      "expected_behavior": "应激活 scqa-reader-question-introduction，构造 S/C/Q/A 并给出自然邮件开头。",
+      "notes": "明确要求 SCQA 开头。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这份提案一上来就列服务模块，客户看不出为什么要读，帮我重写序言。",
+      "expected_behavior": "应激活 scqa-reader-question-introduction，从客户已知背景和冲突引出疑问与答案。",
+      "notes": "提案序言问题。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "帮我把流程改造报告开场写得像咨询报告，先讲旧流程问题和新流程可能性。",
+      "expected_behavior": "应激活 scqa-reader-question-introduction，用旧流程、新冲突、读者问题和答案组织开场。",
+      "notes": "流程改造序言场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我这组 bullet 里有原因、措施、风险混在一起，帮我检查是不是 MECE。",
+      "expected_behavior": "不应激活本 skill，应激活 horizontal-grouping-logic-check。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这篇文章改得更口语一点，不需要改结构。",
+      "expected_behavior": "不应激活本 skill，因为只是风格润色。",
+      "notes": "纯润色诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我不知道读者到底是否认可这个背景，但想先写个 SCQA 开头。",
+      "expected_behavior": "应谨慎触发；先要求确认读者已知背景或改用更稳共同事实，再写 SCQA。",
+      "notes": "边界：S 不能放读者不知道或不信的内容。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含序言正例、同书兄弟 skill 诱饵和读者背景不稳的边界。"
+}

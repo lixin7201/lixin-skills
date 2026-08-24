@@ -1,0 +1,52 @@
+{
+  "skill": "advisor-source-quadrant-audit",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个理财顾问建议我买他推荐的产品，我听不懂但他说很稳，怎么判断？",
+      "expected_behavior": "应激活本 skill，拆建议、审利益和证据。",
+      "notes": "顾问审计。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "朋友创业成功了，劝我也辞职创业，我该听吗？",
+      "expected_behavior": "应激活本 skill，审来源象限和适用条件。",
+      "notes": "熟人建议。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "课程老师说普通人都该做私域，我想判断这是不是销售话术。",
+      "expected_behavior": "应激活本 skill，区分事实、观点和利益。",
+      "notes": "课程建议。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请帮我找一位注册税务师。",
+      "expected_behavior": "不应激活本 skill；这是服务检索。",
+      "notes": "外部检索诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个网络营销组织的培训和退出机制靠谱吗？",
+      "expected_behavior": "不应激活本 skill，应激活 business-education-due-diligence。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这个顾问有利益冲突，但他提供的数据很完整。",
+      "expected_behavior": "应调用本 skill，把数据和建议分离，独立验证后再小额行动。",
+      "notes": "部分可信边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

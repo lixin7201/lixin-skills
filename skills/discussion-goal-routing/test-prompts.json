@@ -1,0 +1,52 @@
+{
+  "skill": "discussion-goal-routing",
+  "version": "0.1.0",
+  "source_book": "七年就是一辈子 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "群聊里有人坚持错误数据，大家已经开始互相讽刺，我还要继续吗？",
+      "expected_behavior": "调用 discussion-goal-routing，判断求真还是争胜并选择证据化、退出或升级。",
+      "notes": "群聊冲突。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我和合伙人表面在谈方案，其实都在证明自己更聪明，怎么重构对话？",
+      "expected_behavior": "调用 discussion-goal-routing，重新声明共同决定目标和仲裁规则。",
+      "notes": "身份争胜。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "争议涉及合规风险，对方却说别争论了，我应该退出还是留痕升级？",
+      "expected_behavior": "调用 discussion-goal-routing，触发责任升级而非普通退出。",
+      "notes": "合规边界。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "对方说方案不可靠但没说明原因，我想先准确复述他的担忧。",
+      "expected_behavior": "不调用本 Skill，应调用 accurate-restatement-feedback-loop。",
+      "notes": "反馈澄清诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "供应商问题已经确认，但我没有合同权限，应该转交给谁？",
+      "expected_behavior": "不调用本 Skill，应调用同书 problem-ownership-routing。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "对方没有求真意愿，但他的错误决定会造成安全事故，我能直接退出吗？",
+      "expected_behavior": "不进入无效争辩，但必须留痕、采取授权范围内保护并升级安全责任。",
+      "notes": "安全异议边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

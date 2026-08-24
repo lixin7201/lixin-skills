@@ -1,0 +1,51 @@
+{
+  "skill": "claim-reason-fact-reception-audit",
+  "version": "0.1.0",
+  "source_book": "有效训练你的结构化思维 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "客户说我们价格高所以不会续费，但我觉得他话里有问题，帮我拆一下哪些是事实、理由和结论。",
+      "expected_behavior": "应激活本 skill，拆出结论、理由、事实和追问项。",
+      "notes": "输入侧观点审计"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "老板的汇报听起来很顺，我想知道这段论证哪里该追问。",
+      "expected_behavior": "应激活本 skill，检查证明链并标出事实缺口。",
+      "notes": "汇报可信度判断"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Please audit this claim/reason/fact chain before I accept the recommendation.",
+      "expected_behavior": "应激活本 skill，用 claim/reason/fact 审计链条。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这个销售方案写成一个有价值主张的开场。",
+      "expected_behavior": "不应激活本 skill，应激活 scrtv-value-proposition-brief。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这份网页数据来源真假帮我逐条核验原始来源。",
+      "expected_behavior": "不应激活本 skill，应转 primary-source-fact-grounding。",
+      "notes": "原始资料核验诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我只想知道金字塔原理怎么写汇报。",
+      "expected_behavior": "通常不激活本 skill；这是输出结构问题。",
+      "notes": "边界: 输入审计 vs 输出表达"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

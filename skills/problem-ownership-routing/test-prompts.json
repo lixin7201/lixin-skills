@@ -1,0 +1,52 @@
+{
+  "skill": "problem-ownership-routing",
+  "version": "0.1.0",
+  "source_book": "七年就是一辈子 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "同事一直抱怨供应商，但合同权限不在我这里，我该接手、协助还是升级？",
+      "expected_behavior": "调用 problem-ownership-routing，建立责任—权限—能力矩阵并选择路由。",
+      "notes": "典型工作归属。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "客户的问题会影响项目，但我无权承诺退款，下一步该交给谁？",
+      "expected_behavior": "调用 problem-ownership-routing，区分协助、转交和有时限的升级。",
+      "notes": "客户权限边界。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这是个谁都解决不了的公共问题，我个人应该投入到什么程度？",
+      "expected_behavior": "调用 problem-ownership-routing，把根除目标改为有界改善并明确公共责任节点。",
+      "notes": "永存公共问题。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "群聊里双方都只想赢，我要判断继续讨论还是退出。",
+      "expected_behavior": "不调用本 Skill，应调用同书 discussion-goal-routing。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我负责调试，但三小时没有新信息，应该继续深挖还是换路径？",
+      "expected_behavior": "不调用本 Skill，应调用 explore-exploit-mode-switch。",
+      "notes": "同批兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我不是安全事故负责人，但现场存在立即伤害风险，可以只转发给负责人就不管了吗？",
+      "expected_behavior": "应调用但触发安全例外；先做授权范围内紧急保护、留痕并升级，不能仅归还责任。",
+      "notes": "安全报告义务。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

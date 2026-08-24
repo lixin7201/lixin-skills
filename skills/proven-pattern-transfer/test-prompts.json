@@ -1,0 +1,48 @@
+{
+  "skill": "proven-pattern-transfer",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "有什么成功做法可以先模仿",
+      "expected_behavior": "调用 proven-pattern-transfer；先执行“选择已验证样本”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "竞品方法能不能搬过来",
+      "expected_behavior": "调用 proven-pattern-transfer；先执行“选择已验证样本”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样学高手但不照抄",
+      "expected_behavior": "调用 proven-pattern-transfer；先执行“选择已验证样本”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 proven-pattern-transfer 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这次做成了，怎么沉淀成方法",
+      "expected_behavior": "不调用 proven-pattern-transfer；应优先调用同书兄弟 Skill personal-method-ipo",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "请完全模仿这位作者的文风写一篇文章",
+      "expected_behavior": "不调用 proven-pattern-transfer：这是风格仿写，不是迁移已验证的问题解决机制",
+      "notes": "模糊边界"
+    }
+  ]
+}

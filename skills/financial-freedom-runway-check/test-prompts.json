@@ -1,0 +1,52 @@
+{
+  "skill": "financial-freedom-runway-check",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想裸辞做一年自媒体，手上现金和房租固定支出怎么算才知道能不能撑？",
+      "expected_behavior": "应激活本 skill，计算自由月数和停止线。",
+      "notes": "辞职转型 runway 判断。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我现在被动收入每月8000，家庭必要支出15000，离财务自由还差什么？",
+      "expected_behavior": "应激活本 skill，做覆盖率和缺口拆解。",
+      "notes": "财务自由阈值。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我收入很高但没有安全感，想知道是不是因为现金流不自由。",
+      "expected_behavior": "应激活本 skill，比较主动收入依赖与自由月数。",
+      "notes": "高收入不等于自由。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "富爸爸作者是不是1994年退休的？",
+      "expected_behavior": "不应激活本 skill；这是事实查询。",
+      "notes": "信息查询诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断买这套房是资产还是负债。",
+      "expected_behavior": "不应激活本 skill，应激活 asset-liability-cashflow-audit。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我自由月数只有3个月，但有一个学习机会可能改变收入。",
+      "expected_behavior": "可调用本 skill 设安全边界，并建议把学习拆成低现金消耗的小实验。",
+      "notes": "机会与 runway 冲突。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

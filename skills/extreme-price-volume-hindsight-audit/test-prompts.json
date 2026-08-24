@@ -1,0 +1,52 @@
+{
+  "skill": "extreme-price-volume-hindsight-audit",
+  "version": "0.1.0",
+  "source_book": "韭菜的自我修养 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "看图才发现最高点很明显，我为什么当时没全卖？",
+      "expected_behavior": "调用本 Skill 冻结当时信息并检查极值可识别性。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有人说自己大仓位全卖在顶又全买在底，怎样核验？",
+      "expected_behavior": "调用本 Skill 检查成交量深度滑点和连续两次判断。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队用事后最佳价格批评交易员，怎样做公平复盘？",
+      "expected_behavior": "调用本 Skill 评价当时论文仓位和执行过程。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个行业跨两个牛熊周期仍增长，趋势证据够吗？",
+      "expected_behavior": "不调用本 Skill，应调用 multi-cycle-trend-evidence-gate。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我现在因暴涨想追进去，怎样先拦截？",
+      "expected_behavior": "不调用本 Skill，应调用 investment-decision-firewall。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "交易员明确违反了事前仓位上限，但结果碰巧更好，后见偏差是否说明不用追责？",
+      "expected_behavior": "不；后见审计不抹去已定义的风险违规，应按过程和治理处理。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

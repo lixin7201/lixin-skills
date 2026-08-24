@@ -1,0 +1,17 @@
+{
+  "skill": "inversion-ruin-path-preflight",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"周末要做不可逆数据库迁移，先别讲收益，帮我列一次会让公司停摆的路径和取消门。","expected_behavior":"应激活本 Skill，定义毁灭、反推失败链、设置备份/双检/取消门。","notes":"不可逆高后果操作。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"我要上线高价训练营，最怕退款挤兑、支持崩掉和口碑破产，先做 pre-mortem。","expected_behavior":"应激活本 Skill，聚焦不可逆失败、缓冲、预警和停止条件。","notes":"创业交付毁灭路径。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"新业务依赖一个大客户和一名核心工程师，怎样先检查一次出局风险？","expected_behavior":"应激活本 Skill，识别单点故障、恢复能力和剩余风险接受者。","notes":"单点故障。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"我对医疗 AI 完全不懂，该不该先承认在能力圈外？","expected_behavior":"不应以本 Skill 为主，应激活 circle-of-competence-boundary-test。","notes":"跨 Skill 诱饵：理解资格。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"直播间倒计时、权威背书和群友晒单让我很想付款，帮我拆偏差叠加。","expected_behavior":"不应激活本 Skill，应激活 lollapalooza-bias-stack-audit。","notes":"跨 Skill 诱饵：心理组合。"},
+    {"id":"edge-01","type":"edge_case","prompt":"我准备花半小时试一个可随时删除的笔记插件，也要做完整毁灭路径预检吗？","expected_behavior":"不应做完整审计；低成本可逆实验只需最小备份和退出点。","notes":"可逆低损失边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

@@ -1,0 +1,52 @@
+{
+  "skill": "inbox-to-next-action-triage",
+  "version": "0.1.0",
+  "source_book": "GTD时间管理：实用案例详解 — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我脑子里有十几件事：写文章、找客户、缴费、回消息、做课程、买东西，不知道从哪开始。帮我清空大脑。",
+      "expected_behavior": "应激活 inbox-to-next-action-triage，并把事项收集、判断可执行性、改写下一步行动、分流到行动系统。",
+      "notes": "典型 GTD 收集箱场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的待办清单混着项目、灵感、今天要做、等别人回复和以后可能做的事，能帮我按 GTD 分一下吗？",
+      "expected_behavior": "应激活本 skill，输出项目、下一步行动、等待、延后、不可执行等分类。",
+      "notes": "清单混杂分流。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我写了'做课程'和'开发客户'，但每次看到都不想动。帮我改成下一步行动。",
+      "expected_behavior": "应激活本 skill，把模糊项目改写为具体可见的下一步行动。",
+      "notes": "next action 触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我想判断今年到底该不该创业，还是继续上班。",
+      "expected_behavior": "不应激活本 skill，应转长期决策、目标取舍或个人战略类 Skill。",
+      "notes": "诱饵: 人生/战略取舍。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经选好任务了，但开工前总被手机打断，想保护深度工作和休息节奏。",
+      "expected_behavior": "不应激活本 skill，应激活 focus-rest-energy-cycle。",
+      "notes": "跨 skill 混淆诱饵: 专注/能量节律。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我的清单很乱，但其实是老板每天临时加任务，我不能拒绝，这种情况 GTD 能解决吗？",
+      "expected_behavior": "应谨慎触发本 skill，只做低风险分流，同时提示这可能是资源/授权/组织问题，不能只靠个人整理。",
+      "notes": "边界: 任务过载来自组织结构。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含深度工作节律作为相邻诱饵。"
+}

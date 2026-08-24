@@ -1,0 +1,785 @@
+[
+  {
+    "name": "宜宾热点-本地采集-08:00",
+    "description": "仅运行 yibin-monitor 本地采集并写本地数据库；禁用飞书、Bitable、Web JSON 与任何外发。",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 8 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/bin/bash",
+        "${HOME}/yibin-monitor/run_scheduled_job.sh",
+        "08:00"
+      ],
+      "cwd": "${HOME}/yibin-monitor",
+      "env": {
+        "HOTSPOT_SCHEDULER_OWNER": "openclaw"
+      },
+      "noOutputTimeoutSeconds": 600,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 2700
+    },
+    "delivery": {
+      "mode": "none"
+    },
+    "failureAlert": false
+  },
+  {
+    "name": "capability-evolver-每周",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 10 * * 1",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "请执行 capability-evolver skill：审查当前所有技能和工作流，识别改进机会，生成进化报告并写入 memory 文件。",
+      "timeoutSeconds": 300
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "feishu"
+    }
+  },
+  {
+    "name": "weekly-wechat-agent-memory-review",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 10 * * 1",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "每周记忆周检提醒：请运行微信员工记忆沉淀检查，读取 `memory/weekly-wechat-agent-review-*.md` 最新结果；必要时先执行 `python3 tools/wechat_agent_memory_audit.py --write-memory --write-report` 刷新本周数据。然后在本周总结中补充：1）哪些微信员工本周有真实使用；2）哪些人新增了可沉淀的偏好/习惯/任务；3）哪些共性信息值得反哺知识库/skill/workflow；4）练团长 workspace / memory 是否有值得升级老板 skill 的新内容；若没有，明确写“本周无值得吸收的新沉淀”。这是每周固定检查。"
+    }
+  },
+  {
+    "name": "dayibin-daily-topic-pool",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 8 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "提醒：现在是每日 08:00，请执行 dayibin-daily-topic-pool 任务。不要新建第二套流程，继续使用同一个文件 docs/dayibin-daily-topic-system/candidates/YYYY-MM-DD-pool.md。执行前必须先读取昨日 rejected/YYYY-MM-DD-feedback.md（如有），然后强制重新读取以下文件（禁止用缓存，按最新内容）：1) docs/dayibin-daily-topic-system/templates/openclaw-daily-topic-generation-v2.6-top5-xiaohongshu-prompt.md 2) docs/dayibin-daily-topic-system/audience-preference-profile.md 3) docs/dayibin-daily-topic-system/reports/daily/最新-audience-insights.md 4) docs/dayibin-daily-topic-system/topic-memory-and-no-repeat-pool.md 5) docs/dayibin-daily-topic-system/selection-log.md 6) docs/dayibin-daily-topic-system/dayibin-posting-log.md。严格按模板执行：静态候选保持20-25条，静态推荐保持15条；不允许因为质量规则减少数量，低分题必须当场重写补强；静态推荐15条中必须保留2-4条情感互动题；每天至少3条候选必须来自大宜宾全站Top5热帖或评论区迁移；所有结果继续写入 docs/dayibin-daily-topic-system/candidates/YYYY-MM-DD-pool.md，并通过飞书私发李鑫告知文件路径和今日静态推荐亮点。"
+    }
+  },
+  {
+    "name": "dayibin-daily-topic-dynamic-addon",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "25 8 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "提醒：现在是每日 08:25，请执行 dayibin-daily-topic-dynamic-addon 任务。不要新建第二套流程，继续在同一个文件 docs/dayibin-daily-topic-system/candidates/YYYY-MM-DD-pool.md 内补写“栏目二：动态选题”。执行前必须强制重新读取：1) docs/dayibin-daily-topic-system/templates/openclaw-daily-topic-generation-v2.6-top5-xiaohongshu-prompt.md 2) docs/dayibin-daily-topic-system/audience-preference-profile.md 3) docs/dayibin-daily-topic-system/reports/daily/最新-audience-insights.md 4) docs/dayibin-daily-topic-system/candidates/YYYY-MM-DD-pool.md 5) docs/dayibin-daily-topic-system/topic-memory-and-no-repeat-pool.md 6) docs/dayibin-daily-topic-system/selection-log.md 7) docs/dayibin-daily-topic-system/dayibin-posting-log.md 8) docs/dayibin-daily-topic-system/comment-mining-and-emotion-topic-rules-2026-04-25.md 9) docs/hotspot-radar-dynamic-topic-expansion-rules-2026-04-18.md。目标：动态候选保持15条，动态推荐保持10条；不允许因为质量规则减少数量，低分题必须重写补强；动态推荐10条中必须保留1-2条情感互动题；每天至少3条候选要来自大宜宾全站Top5热帖或评论区迁移；每晚评论区沉淀出的2-3条线索必须优先考虑写入动态候选；最终继续写回同一个 docs/dayibin-daily-topic-system/candidates/YYYY-MM-DD-pool.md 文件，并通过飞书私发李鑫说明这是静态+动态合并候选包。"
+    }
+  },
+  {
+    "name": "dayibin-competitor-weekly-snapshot",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 9 * * 6",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "提醒：现在是每周六 09:00，请执行同行周采集任务。运行脚本：python3 ${OPENCLAW_WORKSPACE}/scripts/dayibin_competitor_weekly_snapshot.py。当前优先顺序：1) tongliaotuan 通辽团 2) yongchuan 永川 3) putian 莆田 4) jiangyou 江油 5) zigong 自贡；其余站点可作为补充。输出到 knowledge/competitors/weekly-snapshots/YYYY-MM-DD-{site}.json，并生成 weekly-reports/YYYY-MM-DD-weekly-report.md。完成后通过飞书私发李鑫（open_id: <FEISHU_USER_ID>）汇报：本次采集站点数、高互动帖子总数、各站前3名标题、报告路径。若某站无新结果，也要在汇报里明确。"
+    }
+  },
+  {
+    "name": "dayibin-competitor-live-weekly-snapshot",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 9 * * 6",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "执行同行周采集任务：\n\n运行命令：\npython3 ${OPENCLAW_WORKSPACE}/scripts/dayibin_competitor_live_weekly_snapshot.py --site tongliaotuan --site yongchuan --site putian --site jiangyou --site zigong --limit 20\n\n完成后飞书私发李鑫汇报：\n\n【同行周采集完成】\n\n已完成 5 个优先站点在线抓取：\n- 通辽团\n- 永川\n- 莆田\n- 江油\n- 自贡\n\n输出文件：\n- 周报：knowledge/competitors/live-weekly-reports/YYYY-MM-DD-live-weekly-report.md\n- 快照目录：knowledge/competitors/live-weekly-snapshots/\n\n请查收。",
+      "timeoutSeconds": 600
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "feishu"
+    }
+  },
+  {
+    "name": "dayibin-daily-review",
+    "description": "每日23:30生成确定性运营复盘；缺失互动指标明确N/A",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "30 23 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "sh",
+        "-lc",
+        "PYTHONPATH=src /opt/homebrew/bin/python3 -m dayibin_auto_publisher daily-operations-review --config config.json"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 300
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "feishu",
+      "to": "<CONFIGURE_TARGET>"
+    }
+  },
+  {
+    "name": "qianfan-daily-feishu-push",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "30 9 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "请执行千帆后台每日飞书群巡检推送任务。\n\n运行命令：\npython3 ${OPENCLAW_WORKSPACE}/scripts/qianfan_daily_feishu_push.py\n\n要求：\n1. 这是只读巡检 + 飞书群推送任务。\n2. 不要自动发帖、不要自动回复、不要自动审核通过或删除、不要创建 PK、不要发布播客、不要删除或启用/禁用网页。\n3. 如果脚本失败，只报告错误，不要改写脚本或扩大动作。\n4. 执行完成后简短返回：是否已推送、报告路径、是否有待人工确认事项。",
+      "thinking": "off",
+      "timeoutSeconds": 900
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "name": "github-trending-projects-every-3-days",
+    "enabled": true,
+    "agentId": "main",
+    "schedule": {
+      "kind": "every",
+      "everyMs": 259200000,
+      "anchorMs": 1782176400000
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "每 3 天执行一次 GitHub 热门项目雷达，面向李鑫推送。\n\n【重要：微信稳定推送规则】\n1. 不要把完整报告作为单条超长消息输出给 cron delivery。\n2. 本任务必须主动使用 message 工具分段发送到微信：\n   - channel/account：openclaw-weixin / accountId=<WECHAT_ACCOUNT_ID>\n   - target=<WECHAT_TARGET>\n   - bestEffort=true\n3. 每段控制在 800-1200 个中文字符以内，建议 4-6 段。\n4. 每段开头写清楚：GitHub 热门项目雷达 X/Y｜YYYY-MM-DD。\n5. 全部分段发送完成后，本任务最终输出只写一句：已分段推送 GitHub 热门项目雷达 X 段。不要再输出完整长报告，避免 cron 自动投递长消息。\n\n【任务目标】\n从 GitHub Trending（https://github.com/trending）以及 GitHub 热门项目相关来源中，挑选 10 个近期值得关注的热门项目，并总结成一份可直接阅读的中文报告。\n\n【格式参考】\n优先参考这份飞书文档的结构与表达方式：<FEISHU_DOC_URL>\n如果因飞书授权、网络或浏览器登录限制无法读取该文档，不要中断任务；改用“项目雷达日报/三日刊”结构输出。\n\n【采集要求】\n1. 优先打开/抓取 https://github.com/trending。\n2. 覆盖不同方向：AI Agent、开发工具、自动化、数据分析、内容生产、前端/后端、效率工具等；不要只选同一类项目。\n3. 每期选 10 个项目；优先选择最近热度高、增长快、对李鑫/大宜宾业务可能有启发的项目。\n4. 尽量记录项目名称、GitHub 链接、Stars、主要语言、项目一句话定位。\n5. 如果 GitHub Trending 抓取失败，使用 web_search 搜索近期 GitHub trending / popular repos / AI agent GitHub projects 作为兜底。\n\n【输出结构】\n标题：GitHub 热门项目雷达（三日刊）｜YYYY-MM-DD\n\n一、今日总览\n- 用 3-5 条 bullet 总结本期趋势：AI Agent、自动化、开发工具、内容生产等方向有什么变化。\n\n二、10 个热门项目\n每个项目按以下结构输出：\n1. 项目名 + 链接\n- 一句话定位：它是做什么的\n- 热度信息：Stars / 语言 / Trending 信息（能拿到多少写多少）\n- 核心亮点：2-3 条\n- 对李鑫/大宜宾的启发：必须写，不能只做技术摘要\n- 建议动作：收藏 / 试用 / 暂缓 / 可转化为内部工具 / 可写成选题\n\n三、最值得重点关注的 3 个\n- 从 10 个里选 3 个，说明为什么值得李鑫优先看。\n\n四、可转化为业务动作的机会\n- 至少给 3 条，围绕大宜宾内容生产、热点雷达、知识库、自动化、员工效率、AIBP 角色升级。\n\n五、下一步建议\n- 给出 1-3 个可执行的小动作。\n\n【风格要求】\n- 中文，直接，像给老板/业务负责人看的情报简报，不要写成程序员 README 摘要。\n- 不要堆术语；每个项目都要回答“这对我们有什么用”。\n- 避免空话，优先具体判断。",
+      "model": "lixingpt/gpt-5.5",
+      "thinking": "off",
+      "timeoutSeconds": 1200
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>",
+      "bestEffort": true
+    }
+  },
+  {
+    "name": "yibin-earthquake-patrol",
+    "description": "每分钟巡逻中国地震台网速报微博；微博新帖唯一触发；人间慢旅；自动Push已开启；低于4.0级仅显示标题且按事件稳定选用三种标题，4.0级及以上才加你感觉到了吗；Push复用WGS84道路级精准震中图；超过6小时可Push，6小时内仅震级至少高出1.0级时再Push；Push前校验帖子时间、地点、震级；零模型token",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 * * * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/usr/bin/python3",
+        "${OPENCLAW_WORKSPACE}/earthquake-patrol/earthquake_patrol.py",
+        "run"
+      ],
+      "cwd": "${OPENCLAW_WORKSPACE}/earthquake-patrol",
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 90
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    },
+    "failureAlert": {
+      "after": 1,
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "cooldownMs": 3600000,
+      "includeSkipped": false,
+      "mode": "announce",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>"
+    }
+  },
+  {
+    "declarationKey": "scys-growth-morning-openclaw-v2",
+    "displayName": "生财共同成长｜早间飞书链接",
+    "name": "scys-growth-morning-openclaw",
+    "description": "OpenClaw后台扫描生财：每日固定3篇历史精华+2篇近期新帖，中标逐篇深析，按个人事实库生成完整口才训练；仅由狐狸狐狸(oepnclaw2)创建并回读飞书；Telegram只投短摘要和一个链接；不创建Codex对话",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "30 7 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/usr/bin/python3",
+        "${OPENCLAW_REPO}/tools/scys_growth_runner.py",
+        "--mode",
+        "morning"
+      ],
+      "cwd": "${OPENCLAW_REPO}",
+      "noOutputTimeoutSeconds": 1500,
+      "outputMaxBytes": 10000,
+      "timeoutSeconds": 1800
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "telegram",
+      "to": "<CONFIGURE_TARGET>",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>",
+      "bestEffort": false
+    }
+  },
+  {
+    "declarationKey": "scys-growth-evening-openclaw-v2",
+    "displayName": "生财共同成长｜晚间一个问题",
+    "name": "scys-growth-evening-openclaw",
+    "description": "OpenClaw 后台主 Agent 整理当日碎片并同步候选事实；微信只问一个问题；不创建 Codex 对话",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 22 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/usr/bin/python3",
+        "${OPENCLAW_REPO}/tools/scys_growth_runner.py",
+        "--mode",
+        "evening"
+      ],
+      "cwd": "${OPENCLAW_REPO}",
+      "noOutputTimeoutSeconds": 1500,
+      "outputMaxBytes": 10000,
+      "timeoutSeconds": 1800
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>"
+    }
+  },
+  {
+    "declarationKey": "hotspot-radar-local-collection-1400-v1",
+    "displayName": "宜宾热点本地采集 14:00",
+    "name": "宜宾热点-本地采集-14:00",
+    "description": "仅运行 yibin-monitor 本地采集并写本地数据库；禁用飞书、Bitable、Web JSON 与任何外发。",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 14 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/bin/bash",
+        "${HOME}/yibin-monitor/run_scheduled_job.sh",
+        "14:00"
+      ],
+      "cwd": "${HOME}/yibin-monitor",
+      "env": {
+        "HOTSPOT_SCHEDULER_OWNER": "openclaw"
+      },
+      "noOutputTimeoutSeconds": 600,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 2700
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    },
+    "failureAlert": false
+  },
+  {
+    "declarationKey": "hotspot-radar-local-collection-2100-v1",
+    "displayName": "宜宾热点本地采集 21:00",
+    "name": "宜宾热点-本地采集-21:00",
+    "description": "仅运行 yibin-monitor 本地采集并写本地数据库；禁用飞书、Bitable、Web JSON 与任何外发。",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 21 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/bin/bash",
+        "${HOME}/yibin-monitor/run_scheduled_job.sh",
+        "21:00"
+      ],
+      "cwd": "${HOME}/yibin-monitor",
+      "env": {
+        "HOTSPOT_SCHEDULER_OWNER": "openclaw"
+      },
+      "noOutputTimeoutSeconds": 600,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 2700
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    },
+    "failureAlert": false
+  },
+  {
+    "declarationKey": "dayibin-app-auto-comment-dispatcher-v1",
+    "displayName": "大宜宾 APP 马甲自动评论 Dispatcher",
+    "name": "dayibin-app-auto-comment-dispatcher",
+    "description": "大宜宾 APP 低风险马甲自动评论：每15分钟检查 next_run_at；08:00-23:00 内按90-150分钟随机轮次；每轮单马甲0-3条，候选不足允许少发或不发，每日硬上限24；先读完整原帖，按生活细节观察者、宜宾实用派、干幽默观察者各自风格生成；qianfan预筛、查重、安全门、幂等和熔断已启用。",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "*/15 8-22 * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/opt/homebrew/bin/python3",
+        "-m",
+        "dayibin_auto_publisher",
+        "comment-dispatch",
+        "--config",
+        "${OPENCLAW_REPO}/dayibin-auto-publisher/config.json",
+        "--send"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "env": {
+        "PYTHONPATH": "${OPENCLAW_REPO}/dayibin-auto-publisher/src"
+      },
+      "noOutputTimeoutSeconds": 1200,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 1800
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "declarationKey": "dayibin-t0-rising-dispatcher-v1",
+    "displayName": "dayibin-t0-rising-dispatcher",
+    "name": "dayibin-t0-rising-dispatcher",
+    "description": "宜宾热点三通道监控：HOT_NOW / DAILY_VALUE / RISING_WATCH；CALIBRATION_NO_AUTO_PUBLISH",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "*/30 * * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/opt/homebrew/bin/python3",
+        "-m",
+        "dayibin_auto_publisher",
+        "rising-dispatch",
+        "--config",
+        "${OPENCLAW_REPO}/dayibin-auto-publisher/config.json",
+        "--collect-only"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "env": {
+        "PYTHONPATH": "${OPENCLAW_REPO}/dayibin-auto-publisher/src",
+        "PATH": "${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      },
+      "noOutputTimeoutSeconds": 900,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 1500
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "declarationKey": "dayibin-post-publish-review-dispatcher-v1",
+    "displayName": "dayibin-post-publish-review-dispatcher",
+    "name": "dayibin-post-publish-review-dispatcher",
+    "description": "统一处理大宜宾已发布帖子30分钟/2小时/24小时复盘队列；只读指标，不发布",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "*/10 * * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/opt/homebrew/bin/python3",
+        "-m",
+        "dayibin_auto_publisher",
+        "post-publish-review-dispatch",
+        "--config",
+        "${OPENCLAW_REPO}/dayibin-auto-publisher/config.json",
+        "--queue",
+        "${OPENCLAW_REPO}/dayibin-auto-publisher/data/post-publish-review-queue.json",
+        "--max-items",
+        "10"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "env": {
+        "PYTHONPATH": "${OPENCLAW_REPO}/dayibin-auto-publisher/src",
+        "PATH": "${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      },
+      "noOutputTimeoutSeconds": 180,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 300
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "declarationKey": "dayibin-production-publish-dispatcher",
+    "name": "dayibin-production-publish-dispatcher",
+    "description": "每5分钟检查持久化排期队列；一次最多发布一篇；无队列/未到时零调用",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "*/5 * * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "sh",
+        "-lc",
+        "PYTHONPATH=src /opt/homebrew/bin/python3 -m dayibin_auto_publisher publish-dispatch --config config.json"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 1200
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "declarationKey": "dayibin-public-service-fast-patrol-v1",
+    "displayName": "大宜宾公共服务快巡",
+    "name": "dayibin-public-service-fast-patrol",
+    "description": "独立公共服务巡逻调度；承载宜宾橙红气象预警与官方交通管制/封闭/绕行自动发帖；固定forever21；禁止Push；不得修改地震巡逻",
+    "enabled": true,
+    "schedule": {
+      "kind": "cron",
+      "expr": "15 * * * * *",
+      "tz": "Asia/Shanghai",
+      "staggerMs": 0
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "command",
+      "argv": [
+        "/opt/homebrew/bin/python3",
+        "-m",
+        "dayibin_auto_publisher",
+        "public-service-patrol",
+        "--config",
+        "${OPENCLAW_REPO}/dayibin-auto-publisher/config.json",
+        "--publish"
+      ],
+      "cwd": "${OPENCLAW_REPO}/dayibin-auto-publisher",
+      "env": {
+        "PYTHONPATH": "${OPENCLAW_REPO}/dayibin-auto-publisher/src",
+        "PATH": "${HOME}/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+      },
+      "noOutputTimeoutSeconds": 900,
+      "outputMaxBytes": 20000,
+      "timeoutSeconds": 1200
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "last"
+    }
+  },
+  {
+    "name": "宜宾热点-午12点",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 12 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "请执行宜宾热点监控 12:00 pipeline：cd ~/yibin-monitor && source venv/bin/activate && python3 run_and_push.py --digest-type 12:00",
+      "timeoutSeconds": 2700
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "feishu",
+      "to": "<CONFIGURE_TARGET>"
+    }
+  },
+  {
+    "name": "feishu-watchdog",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "every",
+      "everyMs": 120000,
+      "anchorMs": 1773829097672
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "这是 OpenClaw 飞书连通性自愈任务，只处理飞书掉线恢复。请严格执行：\n1. 先运行 `curl -s --max-time 5 https://open.feishu.cn/open-apis/bot/v3/info -o /dev/null -w '%{http_code}'`。\n2. 如果结果是 `000`，说明外网/DNS 还没恢复，直接结束，不做任何操作。\n3. 如果结果不是 `000`，检查 `~/.openclaw/logs/gateway.log` 最近 3 分钟是否出现以下任一关键词：`ENOTFOUND open.feishu.cn`、`[ws]', 'reconnect'`、`abort signal received`。\n4. 如果最近 3 分钟出现过上述任一关键词，立即调用 gateway restart 工具重启 OpenClaw gateway，让飞书连接快速恢复。\n5. 如果没有这些关键词，静默结束。\n6. 除非执行了重启，否则不要输出多余内容。",
+      "timeoutSeconds": 60
+    },
+    "delivery": {
+      "mode": "none"
+    }
+  },
+  {
+    "name": "大宜宾智能互动-工作日早班",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 9 * * 1-5",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "执行大宜宾热帖巡逻任务：智能筛选3个热帖，每个帖子回复5-10条高价值评论。使用账号：人间慢旅"
+    }
+  },
+  {
+    "name": "大宜宾智能互动-工作日午班",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "30 12 * * 1-5",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "执行大宜宾热帖巡逻任务：智能筛选2个热帖，每个帖子回复5-10条高价值评论。使用账号：与时光言和"
+    }
+  },
+  {
+    "name": "大宜宾智能互动-工作日晚班",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 18 * * 1-5",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "执行大宜宾热帖巡逻任务：智能筛选5个热帖，每个帖子回复5-10条高价值评论。使用账号：人间慢旅"
+    }
+  },
+  {
+    "name": "大宜宾智能互动-工作日夜班",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 21 * * 1-5",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "执行大宜宾热帖巡逻任务：智能筛选3个热帖，每个帖子回复5-10条高价值评论。使用账号：离心之巅"
+    }
+  },
+  {
+    "name": "大宜宾智能互动-周末上午",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 10 * * 0,6",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "main",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "systemEvent",
+      "text": "执行大宜宾热帖巡逻任务：智能筛选3个热帖，每个帖子回复5-10条高价值评论。使用账号：人间慢旅"
+    }
+  },
+  {
+    "name": "大宜宾回帖任务",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 7,12,18,21 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "执行大宜宾论坛回帖任务（dayibin-auto-reply skill）：\n\n1. 先读取 skills/dayibin-auto-reply/SKILL.md 了解最新操作规范\n2. 登录账号：人间慢旅\n3. 打开今日宜宾（fid=2）和民情民声（fid=93）板块\n4. 找5天内的新帖，0回复的暖贴，评论少的楼中楼挨个回\n5. 记住两种回复方式：\n   - 楼中楼：点 replyfloor_link_unfold_{pid}，在 fastpost_{pid}message 填内容，点 replyfloor_submit_{pid}\n   - 暖贴：点页面顶部「回复」，弹窗里 postmessage 填内容，点 postsubmit\n6. 每条间隔15秒\n7. 完成后汇报结果"
+    },
+    "delivery": {
+      "mode": "none",
+      "channel": "feishu",
+      "to": "<CONFIGURE_TARGET>"
+    }
+  },
+  {
+    "name": "daily-speaking-training-06",
+    "description": "每天早上 6 点生成以真实工作/生活/知识库为来源的表达训练卡；主轴为瞬间组织语言，窄题去重，并写回 speaking-training-state。",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 6 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "你是贾维斯。现在是每日 6 点表达/口才训练推送任务，请基于 ${OPENCLAW_WORKSPACE} 本地知识库和训练状态档案生成今天的训练卡，并通过本次 cron 的 announce delivery 发给李鑫微信。\n\n最高优先级：李鑫最想训练的是“瞬间组织语言表达能力”。这不是普通口才课，不是抽象题库，也不是脱离他的真实经验让他硬编答案。每天题目必须从他的真实工作、生活、知识库学习过的东西出发，让他有话可讲、有经验可调用、有场景可迁移。\n\n【2026-07-07 纠偏硬规则：真实语境优先】\n1. 题目优先来源：大宜宾真实业务、AI 工具落地、内容生产、选题判断、运营流程、团队协作、管理沟通、用户生活里的真实观察、当天或近期知识库学习材料。\n2. 不得再因为“AI / 大宜宾 / 内容生产 / 运营流程最近出现过”就一刀切排除熟悉区。去重只针对具体窄题、同一种开场句、同一种表达动作、同一个冲突结构。\n3. 每日题目必须让李鑫能基于自己工作或生活经验回答。如果题目让他完全不知道怎么回复，默认失败。\n4. 新鲜度来自“具体问题、角色关系、表达动作、输出目标”的变化，而不是强行换到陌生题材。\n5. 可以连续多天在熟悉业务区训练，但每天必须换一个具体切口。例如：AI 落地可以分别练向老板汇报优先级、说服同事做小版本、复盘自动化失败、解释工具价值、拒绝不成熟推广。\n\n【每天必须不一样】\n1. 生成前必须读取 memory/speaking-training-state.json，并检查 adaptiveState.usedTopics / recentTopicLedger / topicSelectionRule / preferredTopicSources / blockedRepeatedZones。\n2. 必须浏览最近 14 天 memory/YYYY-MM-DD.md 中和“表达训练”相关的记录；如果具体主题、场景、第一句话、训练问题和近 14 天相似，保留真实语境但换具体切口。\n3. 今日场景从 7 类轮换中选一个，避免连续重复同一类：\n   - A 工作会议临场发言\n   - B 向领导/老板汇报判断\n   - C 说服同事推进一件事\n   - D 拒绝/反驳/表达不同意见\n   - E 对外社交/饭局/陌生人介绍\n   - F 复盘一次失败或失误\n   - G 讲一个生活观察并提炼观点\n4. 每次生成后，必须更新 memory/speaking-training-state.json：currentDay +1；在 adaptiveState.usedTopics 或 recentTopicLedger 中记录日期、训练日、场景类型、主题、主攻问题、是否来自真实工作/生活/知识库。\n5. 如果无法写入状态文件，必须在最终推送里提醒“状态未写入”，不能假装已记住。\n\n【读取与容错】\n1. 优先读取：SOUL.md、USER.md、memory/当天和昨天.md、MEMORY.md、shared-context/THESIS.md、shared-context/FEEDBACK-LOG.md、shared-context/SIGNALS.md、knowledge/04-个人学习知识库/09-个人训练计划/30天表达口才训练计划.md、memory/speaking-training-state.json。\n2. 需要时再读取表达/幽默相关知识：knowledge/04-个人学习知识库/13-表达能力/02-个人表达训练/老愚进化笔记-表达训练方法.md、14天表达幽默短训计划.md、幽默表达知识卡片入口、低风险段子调用规则。\n3. 如果某个上下文文件不存在或读取失败，使用已读到的训练计划和 speaking-training-state 继续生成，不要让整个 cron 失败；只在状态写入失败时提醒用户。\n4. 不要输出内部读取过程，不要说你读取了哪些文件。\n\n【训练设计原则】\n1. 早上推送要像“训练卡”，不是长文档。\n2. 保留三段式训练骨架：即兴组织语言、结构化表达、复述转化；但即兴组织语言永远是主训练。\n3. 即兴组织语言必须给：具体题目、10秒准备、60-90秒表达、第一句话建议、关键词、避坑。\n4. 结构化表达只写关键词，不写完整稿，训练从逐字稿过渡到关键词卡。\n5. 复述转化优先让李鑫使用当天自己挑的1-2篇文章/飞书文档；没有材料时给一个短兜底素材，但兜底素材也要贴近他的工作/生活/知识库。\n6. 白天给2个碎片化微练，适合30秒到2分钟完成，必须能用语音输入法练。\n7. 每天只主攻一个问题，优先来自 speaking-training-state.json 的 tomorrowMainFocus 或 yesterdayMainIssue。\n8. 每天要有一个“新鲜度自检”：一句话说明今天和昨天不同在哪里。\n\n【幽默感训练规则】\n1. 每天加入一个 3-5 分钟“幽默微练”，但不能抢即兴组织语言主训练。\n2. 每天只练一个低风险机制：轻自嘲、反转、类比、重新定义、救场、正式场合低风险开场。\n3. 输出：今天机制、这是什么、举个例子、我怎么练、边界提醒。\n4. 幽默必须服务表达：让观点更好记、关系更松、现场更稳；如果削弱专业感，宁可不用。\n\n输出格式必须为：\n【第X天表达训练】\n\n今天主攻：...\n为什么练这个：...\n新鲜度自检：今天和昨天不同在...\n\n今日场景：...\n\n早上30分钟：\n1. 三观点热身（3分钟）\n请用三句话完成：事件本质 / 我的判断 / 下一步动作。\n\n2. 即兴组织语言（10分钟）\n题目：...\n准备：10秒\n时长：60-90秒\n第一句话建议：...\n关键词：...\n避坑：...\n\n3. 结构化表达（7分钟）\n题目：...\n结构：...\n要求：只写关键词，不写完整稿。\n\n4. 复述转化（7分钟）\n今日方式：优先用你今天挑的文章/飞书文档；没有就用下面短素材。\n复述结构：一句话核心观点 / 三个主要逻辑 / 最打动我的点 / 和我工作的关系 / 下一步怎么用。\n兜底素材：...\n\n5. 自评复盘（3分钟）\n只写：今天最卡的是...\n\n6. 幽默微练（不额外加时）\n今天机制：...\n这是什么：...\n举个例子：原表达 -> 幽默改写；说明为什么更轻松。\n我怎么练：...\n边界提醒：...\n\n碎片微练：\n- 练习1：...\n- 练习2：...\n\n提交格式：\n【第X天表达训练提交】\n一、即兴组织语言\n题目：...\n准备时间：10秒\n实际时长：__秒\n原始转写：...\n\n二、结构化表达\n题目：...\n准备时间：__分钟\n实际时长：__秒\n原始转写：...\n\n三、复述转化\n内容来源：飞书文档链接 / 文章链接 / 自选内容\n实际时长：__秒\n原始转写：...\n\n四、自评\n我自己觉得最卡的是：...\n核心观点__/5；结构__/5；废话__/5；案例__/5；听众收获__/5\n今天白天有没有做碎片练习：有/没有\n幽默微练：今天机制 / 我照着练的一句改写 / 风险自检\n\n忙的时候最低提交：即兴主训练转写 + 今天看的文章/飞书文档 + 最卡的地方；幽默微练可以只交“我照着练的一句改写”。\n\n今日只追求三件事：\n1. 10秒内敢开口。\n2. 第一口先给结论。\n3. 每段只讲一个意思。",
+      "timeoutSeconds": 600
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "bestEffort": true
+    }
+  },
+  {
+    "name": "aihot-daily-09",
+    "description": "每天早上 09:00 给李鑫推送过去 24 小时 AI 热点摘要，使用 aihot skill / AI HOT 公开 API。",
+    "enabled": false,
+    "agentId": "main",
+    "schedule": {
+      "kind": "cron",
+      "expr": "0 9 * * *",
+      "tz": "Asia/Shanghai"
+    },
+    "sessionTarget": "isolated",
+    "wakeMode": "now",
+    "payload": {
+      "kind": "agentTurn",
+      "message": "你是贾维斯。请给李鑫生成“过去 24 小时 AI 热点”微信推送。\n\n执行前先检查当前日期和时区（Asia/Shanghai），并优先使用本地已安装 skill `aihot` 的规则；如果 skill 未加载，直接用 AI HOT 公开 API 兜底。\n\n数据获取要求：\n1. User-Agent 固定使用：Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 aihot-skill/0.3.1\n2. 拉取 `/api/public/version` 做轻量自检，失败不打断。\n3. 拉取 `/api/public/hot-topics` 获取当前最热话题。\n4. 计算当前时间往前 24 小时对应的 UTC ISO `since`，拉取 `/api/public/items?mode=selected&since=<since>&take=80`。\n5. 如果最近 24 小时精选数据太少，用 `/api/public/items?mode=all&since=<since>&take=100` 补足；仍失败再用 `/api/public/daily` 兜底。\n\n输出要求：\n- 只输出适合微信阅读的中文简报，不要写 API 路径、curl、调试日志。\n- 标题用“早间 AI 热点｜过去 24 小时”。\n- 结构：\n  1. 一句话总览：过去 24 小时 AI 圈最重要的变化。\n  2. 最值得看 6-8 条：每条包含标题、1 句人话解释、来源、站内阅读链接（优先 permalink）。\n  3. 给李鑫的 3 个信号：从 AI Agent、内容生产、自动化/商业应用角度提炼可复用启发。\n  4. 今天可顺手关注：2-3 个关键词或公司。\n- 控制在 900 字以内，直接、密度高，别写废话。\n- 若 AI HOT Skill 有新版，只在末尾加一行温和更新提示；本地版本不低于线上时不要提更新。\n- 不要调用 message/聊天发送工具；你的最终回答会由 cron delivery 自动推送。",
+      "model": "openai/gpt-5.5",
+      "thinking": "medium",
+      "timeoutSeconds": 300
+    },
+    "delivery": {
+      "mode": "announce",
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>",
+      "bestEffort": true
+    },
+    "failureAlert": {
+      "after": 1,
+      "channel": "openclaw-weixin",
+      "to": "<CONFIGURE_TARGET>",
+      "cooldownMs": 86400000,
+      "includeSkipped": false,
+      "mode": "announce",
+      "accountId": "<CONFIGURE_ACCOUNT_ID>"
+    }
+  }
+]

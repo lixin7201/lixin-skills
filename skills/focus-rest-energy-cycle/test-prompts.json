@@ -1,0 +1,49 @@
+{
+  "skill": "focus-rest-energy-cycle",
+  "title": "专注休息能量循环",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "focus-rest-energy-cycle:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我考研每天坐十小时，但后半天基本发呆，还不敢休息。",
+      "expected": "focus-rest-energy-cycle",
+      "rationale": "硬扛导致低效。"
+    },
+    {
+      "id": "focus-rest-energy-cycle:trigger-02",
+      "type": "should_trigger",
+      "prompt": "写代码时我一休息就愧疚，最后反而报复性刷手机。",
+      "expected": "focus-rest-energy-cycle",
+      "rationale": "休息与专注关系失衡。"
+    },
+    {
+      "id": "focus-rest-energy-cycle:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想给写作安排深度块，但不知道休息怎么设计才不打断状态。",
+      "expected": "focus-rest-energy-cycle",
+      "rationale": "深度任务节律设计。"
+    },
+    {
+      "id": "focus-rest-energy-cycle:not-01",
+      "type": "should_not_trigger",
+      "prompt": "这个练习太难了，每次开始就崩溃，需要调任务难度。",
+      "expected": "stretch-zone-practice-loop",
+      "rationale": "主要是难度匹配。"
+    },
+    {
+      "id": "focus-rest-energy-cycle:not-02",
+      "type": "should_not_trigger",
+      "prompt": "推荐一款咖啡提升专注。",
+      "expected": "none",
+      "rationale": "消费推荐请求。"
+    },
+    {
+      "id": "focus-rest-energy-cycle:edge-01",
+      "type": "edge",
+      "prompt": "我已经长期失眠，还想靠番茄钟把效率拉满。",
+      "expected": "none",
+      "rationale": "健康边界，停止效率流程。"
+    }
+  ]
+}

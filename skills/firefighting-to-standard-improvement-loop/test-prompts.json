@@ -1,0 +1,73 @@
+{
+  "skill": "firefighting-to-standard-improvement-loop",
+  "version": "0.2.0",
+  "source_book": "PDCA循环工作方法培训PPT — 作者未标注；第15批问题分析与根因工具旧PPT包",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "客服这周第三次漏回客户了，每次都是提醒大家注意，下周又复发。帮我做成一个不再救火的改进闭环。",
+      "expected_behavior": "应激活 firefighting-to-standard-improvement-loop，并输出现状数据、主因、5W1H 对策、执行记录、检查、标准化和下一轮遗留问题。",
+      "notes": "典型稳定流程复发问题。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们内容发布流程总是错别字和漏图，想用 PDCA 做一次流程改进和 SOP 固化。",
+      "expected_behavior": "应激活本 skill，用 PDCA 把发布质量问题转成可测改进和 SOP。",
+      "notes": "明确出现 PDCA、流程改进、SOP。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "质检指标这两个月反复波动，我不想只批评执行人，想知道怎么找主因并验证改进有没有效果。",
+      "expected_behavior": "应激活本 skill，先做数据化现状和主因，再设计对策与效果检查。",
+      "notes": "质量管理与复发改进。"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "客户投诉这次已经先补偿止血了，但我想按8D区分临时措施、永久纠正和防止再发。",
+      "expected_behavior": "应激活本 skill，输出临时遏制、根因/漏检点、永久纠正、执行验证、防再发和复查日期。",
+      "notes": "第十五批新增: 8D 临时/永久/防再发闭环。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们要做一个全新的 AI 产品方向，现在不知道该选哪个市场切入。",
+      "expected_behavior": "不应激活本 skill，应转入探索型问题、战略选择或假设验证流程。",
+      "notes": "诱饵: 0-1 探索，不是稳定流程改进。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想给研发团队导入 OKR，但不知道这种团队适不适合，怕最后变成 KPI。",
+      "expected_behavior": "不应激活本 skill，应激活 okr-fit-preflight。",
+      "notes": "跨 skill 混淆诱饵: 应触发同批 OKR 适用性预检。"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "我们还没确认主要因，只是猜测员工不认真。你直接帮我写永久纠正SOP。",
+      "expected_behavior": "不应激活本 skill 直接标准化，应先激活 fishbone-major-cause-verification-workshop 验证主要因。",
+      "notes": "第十五批新增: 根因未验证不得标准化。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "线上系统刚刚宕机，还在影响用户。我能不能现在用 PDCA 慢慢分析？",
+      "expected_behavior": "应判断先应急止损和升级处置；事故稳定后再用本 skill 做流程改进复盘。",
+      "notes": "边界: 正在发生的高风险事故不能等待完整 PDCA 周期。"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我们加了一个人工兜底后问题少了，但这个兜底已经持续两个月，算不算完成8D？",
+      "expected_behavior": "应激活本 skill，但必须指出临时措施长期化不是完成，需验证永久纠正和退出条件。",
+      "notes": "第十五批新增: 临时措施长期化边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条应触发、2 条不应触发、1 条边界；should_not_trigger 必须全过。"
+}

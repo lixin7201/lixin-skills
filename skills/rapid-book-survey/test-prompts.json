@@ -1,0 +1,48 @@
+{
+  "skill": "rapid-book-survey",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一小时内看懂这本书值不值得读",
+      "expected_behavior": "调用 rapid-book-survey；先执行“初识来源”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "先帮我摸清这份报告",
+      "expected_behavior": "调用 rapid-book-survey；先执行“初识来源”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样把一本书快速读薄",
+      "expected_behavior": "调用 rapid-book-survey；先执行“初识来源”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 rapid-book-survey 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "没人教我怎么学会这个",
+      "expected_behavior": "不调用 rapid-book-survey；应优先调用同书兄弟 Skill active-learning-operating-system",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "请逐字核对这份合同有没有漏字",
+      "expected_behavior": "不调用 rapid-book-survey：逐字校勘不能用快速勘探替代",
+      "notes": "模糊边界"
+    }
+  ]
+}

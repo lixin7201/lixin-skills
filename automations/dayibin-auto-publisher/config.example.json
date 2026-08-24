@@ -1,0 +1,145 @@
+{
+  "source_db": "/Users/REPLACE_ME/.openclaw/workspace/hotspot-radar/data/v3/radar.db",
+  "data_dir": "data",
+  "agent": {
+    "id": "hotspot-writer",
+    "model": "openai/gpt-5.5",
+    "executable": "openclaw",
+    "timeout_seconds": 900
+  },
+  "snapshot": {
+    "lookback_hours": 48,
+    "min_body_chars": 120,
+    "max_items": 120
+  },
+  "selection": {
+    "max_items": 5
+  },
+  "publisher": {
+    "enabled": false,
+    "profiles": [
+      {
+        "id": "city",
+        "name": "宜宾路上见",
+        "persona": "关注交通、城市建设和公共服务变化",
+        "topics": ["交通", "城建", "公共服务"],
+        "voice": "结果前置、具体、直接说明对普通人的影响",
+        "vest_name": "",
+        "forum_id": "",
+        "type_name": ""
+      },
+      {
+        "id": "family",
+        "name": "带娃看宜宾",
+        "persona": "关注教育、亲子、健康和家庭生活",
+        "topics": ["教育", "亲子", "健康"],
+        "voice": "家长能接话，但不虚构自己的孩子或亲历",
+        "vest_name": "",
+        "forum_id": "",
+        "type_name": ""
+      },
+      {
+        "id": "business",
+        "name": "宜宾生意眼",
+        "persona": "关注商业、就业、消费和本地产业",
+        "topics": ["商业", "就业", "消费", "产业"],
+        "voice": "用事实和数字说明经营者与普通人的得失",
+        "vest_name": "",
+        "forum_id": "",
+        "type_name": ""
+      },
+      {
+        "id": "weekend",
+        "name": "周末去耍",
+        "persona": "关注文旅、美食、活动和城市文化",
+        "topics": ["文旅", "美食", "活动", "文化"],
+        "voice": "轻松、有用、告诉用户去哪里和注意什么",
+        "vest_name": "",
+        "forum_id": "",
+        "type_name": ""
+      },
+      {
+        "id": "discussion",
+        "name": "宜宾热议场",
+        "persona": "把有事实支撑的社会热点转成宜宾人愿意讨论的话题",
+        "topics": ["社会热点", "民生", "公共话题"],
+        "voice": "事实在前、观点清楚、保留争议边界",
+        "vest_name": "",
+        "forum_id": "",
+        "type_name": ""
+      }
+    ]
+  },
+  "production": {
+    "daily_soft_target": 10,
+    "daily_regular_min": 8,
+    "daily_regular_max": 12,
+    "daily_hard_cap": 15,
+    "max_pending_batches": 5,
+    "batch_max_items": 3,
+    "active_start": "08:20",
+    "active_end": "22:30",
+    "global_interval_min_minutes": 45,
+    "global_interval_max_minutes": 120,
+    "same_vest_interval_minutes": 150,
+    "dispatcher_check_minutes": 5
+  },
+  "hotspot_policy": {
+    "comment_count": 5,
+    "like_count": 20,
+    "share_count": 3,
+    "view_count": 1000,
+    "snapshot_points": 5,
+    "snapshot_interval_minutes": 30,
+    "rising_positive_intervals": 3,
+    "daily_lookback_hours": 72
+  },
+  "commenter": {
+    "enabled": false,
+    "all_profiles_each_round": false,
+    "profiles": [
+      {
+        "id": "observer",
+        "role": "社区观察员",
+        "instruction": "点出一个影响，再问一个具体问题",
+        "vest_name": "",
+        "vest_id": "",
+        "per_run_min": 6,
+        "per_run_max": 9,
+        "rotation_weight": 1
+      },
+      {
+        "id": "helper",
+        "role": "宜宾实用派",
+        "instruction": "补一条可核实信息或操作提醒",
+        "vest_name": "",
+        "vest_id": "",
+        "per_run_min": 6,
+        "per_run_max": 9,
+        "rotation_weight": 1
+      },
+      {
+        "id": "counterpoint",
+        "role": "克制不同意见",
+        "instruction": "承认对方合理处，再补一个不同变量",
+        "vest_name": "",
+        "vest_id": "",
+        "per_run_min": 6,
+        "per_run_max": 9,
+        "rotation_weight": 1
+      }
+    ],
+    "schedule": {
+      "active_start": "08:00",
+      "active_end": "23:00",
+      "interval_min_minutes": 90,
+      "interval_max_minutes": 150,
+      "daily_hard_cap": 72,
+      "check_every_minutes": 15
+    },
+    "selection": {"lookback_hours": 24, "fetch_max_items": 30, "score_threshold": 75},
+    "research": {"enabled": false, "max_posts_per_round": 3},
+    "history_patrol": {"enabled": false, "lookback_days": 14, "pages_per_round": 1, "new_posts_per_round": 1, "reply_enabled": false, "reply_comments_per_round": 2},
+    "publish": {"min_comment_interval_seconds": 31, "batch_pause_min_seconds": 60, "batch_pause_max_seconds": 180}
+  }
+}

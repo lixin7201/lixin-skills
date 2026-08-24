@@ -1,0 +1,52 @@
+{
+  "skill": "malicious-negotiation-tactic-defuser",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的谈判策略 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "对方说今天不签以后就没这个价，还不断加免费服务，怎么办？",
+      "expected_behavior": "应激活 malicious-negotiation-tactic-defuser，识别最后通牒和事后索取，暂停承诺并书面化条件。",
+      "notes": "正面场景：最后通牒和事后索取。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "供应商突然电话里让我确认复杂条件，我手边没有资料。",
+      "expected_behavior": "应激活 malicious-negotiation-tactic-defuser，使用电话奇袭暂停重约流程。",
+      "notes": "正面场景：电话奇袭。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对方要求很含糊，但一直催我先承诺，感觉被谈判战术扰乱了。",
+      "expected_behavior": "应激活 malicious-negotiation-tactic-defuser，命名战术、暂停、留痕、回标准。",
+      "notes": "正面场景：含糊要求施压。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "客户坚持预付款，但语气正常，我想先问背后的现金流或审批原因。",
+      "expected_behavior": "不应激活本 skill，应激活 negotiation-real-intent-listening。",
+      "notes": "跨 skill 诱饵：可合作的真实意图追问。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们谈了很久，我现在只是因为不想白费前面的时间而想成交。",
+      "expected_behavior": "不应激活本 skill，应激活 sunk-cost-batna-stop-check。",
+      "notes": "跨 skill 诱饵：沉没成本。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "对方报价很强硬，但愿意书面说明，也给我三天考虑时间。",
+      "expected_behavior": "不应或谨慎激活本 skill；强硬但透明不等于恶意战术。",
+      "notes": "边界：正常强硬谈判。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含真实意图和沉没成本诱饵。"
+}

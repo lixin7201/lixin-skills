@@ -1,0 +1,48 @@
+{
+  "skill": "value-trust-repeat-flywheel",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "客户为什么不复购",
+      "expected_behavior": "调用 value-trust-repeat-flywheel；先执行“定义可感知价值”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎样让价值形成信任飞轮",
+      "expected_behavior": "调用 value-trust-repeat-flywheel；先执行“定义可感知价值”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "一次服务怎么变长期关系",
+      "expected_behavior": "调用 value-trust-repeat-flywheel；先执行“定义可感知价值”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 value-trust-repeat-flywheel 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "产品还没做，先去哪找用户",
+      "expected_behavior": "不调用 value-trust-repeat-flywheel；应优先调用同书兄弟 Skill users-before-product",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "产品效果不好，帮我写一套催单话术",
+      "expected_behavior": "不调用 value-trust-repeat-flywheel：应先修复价值，不应以话术透支信任",
+      "notes": "模糊边界"
+    }
+  ]
+}

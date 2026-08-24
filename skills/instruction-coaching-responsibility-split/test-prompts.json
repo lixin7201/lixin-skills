@@ -1,0 +1,52 @@
+{
+  "skill": "instruction-coaching-responsibility-split",
+  "version": "0.1.0",
+  "source_book": "微信互联网平民创业 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "学员都说听懂了，但一周后没人真正执行，课程哪里出了问题？",
+      "expected_behavior": "调用本 Skill 分开理解验收与教练实践闭环。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想做知识产品，微课和社群分别应该承诺什么？",
+      "expected_behavior": "调用本 Skill 定义两层责任容量与边界。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "企业培训内容很多，但经理不知道谁负责课后反馈。",
+      "expected_behavior": "调用本 Skill 建立讲解和教练责任矩阵。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我是学习者，怎样用真实项目建立边学边做反馈闭环？",
+      "expected_behavior": "不调用本 Skill，应调用 active-learning-operating-system。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "课程有人看却在咨询支付交付之间大量流失，怎样查闭环？",
+      "expected_behavior": "不调用本 Skill，应调用 platform-commerce-closure-audit。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "一个十分钟安全说明会也需要长期教练社群吗？",
+      "expected_behavior": "不需要；若目标仅是理解与合规确认，讲解层和测验即可，按风险决定是否跟进。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

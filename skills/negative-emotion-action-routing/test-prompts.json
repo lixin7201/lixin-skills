@@ -1,0 +1,52 @@
+{
+  "skill": "negative-emotion-action-routing",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的思考习惯 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我被客户批评后又气又想删项目，应该怎么把情绪转成行动？",
+      "expected_behavior": "应激活 negative-emotion-action-routing，命名坏行动倾向并把愤怒转不快、接协商动作。",
+      "notes": "正面场景：愤怒到行动。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我晋升失败后很低落，想辞职，怎么把这种负面情绪处理成下一步？",
+      "expected_behavior": "应激活 negative-emotion-action-routing，把情绪低落转悲伤并连接休养/能力改进。",
+      "notes": "正面场景：晋升失败。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "创业失败后我觉得自己彻底完了，不想见任何人。",
+      "expected_behavior": "应激活 negative-emotion-action-routing，识别自我否定/贴标签并转悲伤、分享或反省。",
+      "notes": "正面场景：失败后坏负面情绪。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我明天演示前一直想绝不能失败，想改掉这种必须型思维。",
+      "expected_behavior": "不应激活本 skill，应激活 must-to-preferable-stress-reframe。",
+      "notes": "跨 skill 诱饵：必须型信念改写。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我被同事长期霸凌和威胁，领导让我提高抗压能力。",
+      "expected_behavior": "不应执行本 skill 自助流程；应提示组织治理、留痕、法律/安全支持。",
+      "notes": "诱饵：组织霸凌边界。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我很担心项目失败，但这种担心让我准备更充分，需要消除它吗？",
+      "expected_behavior": "边界判断：不需要消除；可轻量使用本 skill 确认担心是否连接正面行动。",
+      "notes": "边界：好的负面情绪。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含必须型改写诱饵和组织安全边界。"
+}

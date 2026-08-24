@@ -1,0 +1,52 @@
+{
+  "skill": "market-feedback-growth-loop",
+  "version": "0.1.0",
+  "source_book": "学会成长：爆发式成长的25个思维模型 — 粥左罗",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我学短视频剪辑一个月了，都是自己看教程，怎么判断我真的进步了？",
+      "expected_behavior": "应激活 market-feedback-growth-loop，要求发布最小作品并收集真实用户/同行/数据反馈。",
+      "notes": "正面场景：学习缺少外部反馈。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我写了很多文章但都存在本地，没有读者反馈，这算成长吗？",
+      "expected_behavior": "应激活 market-feedback-growth-loop，建立真实读者反馈和下一轮修改动作。",
+      "notes": "正面场景：写作无真实反馈。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我做了一个咨询服务样稿，想知道市场是否认可，怎么设计反馈 loop？",
+      "expected_behavior": "应激活 market-feedback-growth-loop，定义反馈源、最小可反馈作品和复盘标准。",
+      "notes": "正面场景：服务/市场反馈。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我没有作品集，想先把过去项目做成3个代表作放到主页。",
+      "expected_behavior": "不应激活本 skill，应激活 representative-work-asset-flywheel。",
+      "notes": "跨 skill 诱饵：先做作品资产，再谈反馈。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我刚开始学Python第一天，还没有任何能展示的东西。",
+      "expected_behavior": "不应激活本 skill，应先做基础练习或通用输出学习闭环。",
+      "notes": "诱饵：启蒙阶段无可反馈作品。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我的文章点赞很多，但没人咨询或复用我的方法，这种反馈算真实吗？",
+      "expected_behavior": "可激活本 skill，但应区分虚荣指标和能改变行动/市场结果的反馈。",
+      "notes": "边界：反馈质量判断。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含市场反馈和作品飞轮混淆测试。"
+}

@@ -1,0 +1,48 @@
+{
+  "skill": "valuation-triangulation",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这家公司大概值多少钱",
+      "expected_behavior": "调用 valuation-triangulation；先执行“清洗输入”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎样用多种方法交叉估值",
+      "expected_behavior": "调用 valuation-triangulation；先执行“清洗输入”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "资产底线和现金流上限怎么结合",
+      "expected_behavior": "调用 valuation-triangulation；先执行“清洗输入”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 valuation-triangulation 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我有一笔闲钱怎么分配",
+      "expected_behavior": "不调用 valuation-triangulation；应优先调用同书兄弟 Skill risk-budgeted-asset-allocation",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这家初创还没有产品和收入，给我一个精确估值",
+      "expected_behavior": "不调用 valuation-triangulation：数据不足时只能做情景与里程碑，不应伪造精确值",
+      "notes": "模糊边界"
+    }
+  ]
+}

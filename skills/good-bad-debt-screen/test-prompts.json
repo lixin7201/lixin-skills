@@ -1,0 +1,52 @@
+{
+  "skill": "good-bad-debt-screen",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想贷款买一台设备做副业，月供靠副业收入还，这算良性债务吗？",
+      "expected_behavior": "应激活本 skill，检查还款现金流和压力场景。",
+      "notes": "借债前筛选。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "朋友说低利率房贷都是好债务，我该怎么判断？",
+      "expected_behavior": "应激活本 skill，说明低利率不等于良性。",
+      "notes": "概念误判。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我准备用信用卡分期买课程，学完可能涨收入。",
+      "expected_behavior": "应激活本 skill，检验现金流、可逆性和最坏损失。",
+      "notes": "学习债务边界。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请推荐现在最低利率的贷款产品。",
+      "expected_behavior": "不应激活本 skill；需要实时金融产品查询和专业判断。",
+      "notes": "产品推荐诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经有5笔消费债，想按顺序清掉。",
+      "expected_behavior": "不应激活本 skill，应激活 bad-debt-rolldown-plan。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这笔债现在由租金覆盖，但租客走了我就要自己还。",
+      "expected_behavior": "应调用本 skill，并把空置压力测试作为判定关键。",
+      "notes": "候选良性可退化。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

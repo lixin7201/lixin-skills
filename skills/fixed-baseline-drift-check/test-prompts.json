@@ -1,0 +1,17 @@
+{
+  "skill": "fixed-baseline-drift-check",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"公众号每篇只比上一篇少一点研究，大家都说差不多，帮我拿最初合格版本看累计漂移。","expected_behavior":"应激活本 Skill，固定基线、做四栏比较、外推终点并设置阈值。","notes":"内容质量渐进恶化。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"项目验收线每个月都根据当前表现往下调一点，我担心 baseline drift。","expected_behavior":"应激活本 Skill，保留旧基线、记录变更理由和累计影响。","notes":"标准追随表现。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"客服响应每周只慢 2%，环比都不显眼，按这个速度半年后会怎样？","expected_behavior":"应激活本 Skill，比较绝对值、固定基线、累计变化和跨线时间。","notes":"小步趋势外推。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"今天服务突然宕机一次，帮我查具体根因。","expected_behavior":"不应激活本 Skill；这是单次故障诊断，不是渐进漂移。","notes":"非趋势诱饵。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"奖金只看回复数量，客服开始复制粘贴低质答案，制度怎么被玩坏？","expected_behavior":"不应激活本 Skill，应激活 incentive-caused-bias-audit。","notes":"跨 Skill 诱饵：激励游戏。"},
+    {"id":"edge-01","type":"edge_case","prompt":"产品目标已从专业用户改为新手，旧基线不再适用，但我也不想美化退步。","expected_behavior":"应有限调用：先版本化新基线并保留旧基线与变更理由，不能机械沿用或删除历史。","notes":"合法基线变更。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

@@ -1,0 +1,17 @@
+{
+  "skill": "accounting-economic-reality-reconciliation",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"公司利润增长 40%，现金却越来越紧，先把账面数字和收款、交付、退款义务对一遍。","expected_behavior":"应激活本 Skill，锁定口径并映射底层经营事件和现金义务。","notes":"典型账实背离。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"GMV 很漂亮，但退货、补贴和售后工时都没算，我要一张 economic reality reconciliation。","expected_behavior":"应激活本 Skill，列报告数字、差额、滞后和事实/假设。","notes":"平台指标失真。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"SaaS 预付合同暴涨，怎样判断是真增长还是把未来交付压力提前包装成当期成绩？","expected_behavior":"应激活本 Skill，对账收款、递延交付、续费、支持和退款。","notes":"收入与义务时点。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"销售提成让团队只卖旧产品，怎样审计 incentive bias？","expected_behavior":"不应激活本 Skill，应激活 incentive-caused-bias-audit。","notes":"跨 Skill 诱饵：奖励结构。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"AI 工具能节省 60% 工时，但这些收益最后会留给谁？","expected_behavior":"不应激活本 Skill，应激活 technology-value-capture-second-step。","notes":"跨 Skill 诱饵：价值归属。"},
+    {"id":"edge-01","type":"edge_case","prompt":"请判断这笔收入按最新会计准则应该何时确认，并给我正式审计意见。","expected_behavior":"不应越权给正式结论；指出需当前准则和专业会计/审计人员。","notes":"专业法定边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

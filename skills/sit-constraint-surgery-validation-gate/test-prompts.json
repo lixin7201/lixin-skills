@@ -1,0 +1,52 @@
+{
+  "skill": "sit-constraint-surgery-validation-gate",
+  "version": "0.1.0",
+  "source_book": "系统创新思维培训PPT — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们的知识库产品没什么新卖点了，不想再泛泛头脑风暴。请用 SIT 的减法、除法、乘法、任务统筹和属性依存，帮我系统生成几个新方案。",
+      "expected_behavior": "应激活 sit-constraint-surgery-validation-gate，先限定对象并拆组件/功能/任务/属性，再用五种结构手术生成候选并进入验证门。",
+      "notes": "正面场景：明确要求 SIT 五策略。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "门店想提升老客体验，大家第一反应都是买新系统。我想看看能不能先重组现有流程和角色，不加太多成本。",
+      "expected_behavior": "应激活 sit-constraint-surgery-validation-gate，尤其使用任务统筹策略，同时检查用户体验、成本、权限和验证动作。",
+      "notes": "正面场景：低成本服务流程创新。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我们这个实体产品删掉核心组件后好像废了，但我想试试 form-first 的思路，看能不能倒推出新用途和新定位。",
+      "expected_behavior": "应激活 sit-constraint-surgery-validation-gate，用减法策略和形式为先/功能次之生成候选，再做价值与可行性验证。",
+      "notes": "正面场景：减法与旧功能框架卡住。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "明天我想带10个人开一场头脑风暴会，主题是七夕活动创意，需要静默发散、KJ归类和优先级矩阵。",
+      "expected_behavior": "不应激活本 skill，应优先激活 creative-workshop-diverge-cluster-prioritize，因为这是创意会议流程设计。",
+      "notes": "跨 skill 混淆诱饵：同书/同批相邻创意 Skill。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们已经有3组用户访谈和A/B测试数据，现在要判断哪个方案上线，不需要再想新形态。",
+      "expected_behavior": "不应激活本 skill，应转向证据评估、市场反馈或决策分析，因为这不是候选生成阶段。",
+      "notes": "诱饵：已有真实证据，进入决策验证而非 SIT 发散。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想用 SIT 改造儿童用药提醒产品，比如变色、气味提示、任务转移给家长，能直接给执行方案吗？",
+      "expected_behavior": "可有限激活用于生成候选，但必须先提示儿童、医疗、用药安全和合规边界；不能直接给执行方案，只能输出低风险概念和专业审查/验证计划。",
+      "notes": "边界：高风险儿童医疗相关产品。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含相邻创意工作坊 Skill 混淆测试。"
+}

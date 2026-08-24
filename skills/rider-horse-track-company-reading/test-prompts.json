@@ -1,0 +1,48 @@
+{
+  "skill": "rider-horse-track-company-reading",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "怎样系统看懂一家公司",
+      "expected_behavior": "调用 rider-horse-track-company-reading；先执行“看骑师”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "骑师赛马赛道分别看什么",
+      "expected_behavior": "调用 rider-horse-track-company-reading；先执行“看骑师”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "帮我做公司基本面阅读",
+      "expected_behavior": "调用 rider-horse-track-company-reading；先执行“看骑师”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 rider-horse-track-company-reading 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这家公司大概值多少钱",
+      "expected_behavior": "不调用 rider-horse-track-company-reading；应优先调用同书兄弟 Skill valuation-triangulation",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "帮我算这家公司今年的毛利率",
+      "expected_behavior": "不调用 rider-horse-track-company-reading：这是单一指标计算，不需要完整三层公司阅读",
+      "notes": "模糊边界"
+    }
+  ]
+}

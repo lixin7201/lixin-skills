@@ -1,0 +1,52 @@
+{
+  "skill": "premature-reference-dual-speed-reading",
+  "version": "0.1.0",
+  "source_book": "自学是门手艺 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "API 规范前面一直引用后面才定义的术语，我第一章就卡住，应该怎么读？",
+      "expected_behavior": "调用 premature-reference-dual-speed-reading，先做脱盲粗读和过早引用表。",
+      "notes": "循环依赖文档。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我快速看了三遍技术书，写代码时总漏掉条件和否定词，怎么补？",
+      "expected_behavior": "调用 premature-reference-dual-speed-reading，对关键定义逐字精读并用测试验证。",
+      "notes": "永远粗读。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这份权威规范很大，我是不是应该先弄懂它的符号和语法图例？",
+      "expected_behavior": "调用 premature-reference-dual-speed-reading，先解码图例再按问题导航。",
+      "notes": "图例先行。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "没有任何课程教这个新框架，我该先查官方文档、社区还是找老师？",
+      "expected_behavior": "不调用本 Skill，应调用同书 decentralized-teacher-source-ladder。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我在决定一篇追热点教程值不值得写成长期内容。",
+      "expected_behavior": "不调用本 Skill，应调用 evergreen-content-fertility-filter。",
+      "notes": "内容筛选诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这是一份会决定巨额赔偿责任的合同，第一遍能不能先忽略看不懂的限定词？",
+      "expected_behavior": "不能使用脱盲粗读忽略关键条款；应首轮精确阅读并在需要时找合格法律支持。",
+      "notes": "法律精确性边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

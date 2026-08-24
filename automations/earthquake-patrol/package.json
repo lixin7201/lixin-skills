@@ -1,0 +1,10 @@
+{
+  "name": "dayibin-earthquake-patrol",
+  "private": true,
+  "version": "1.0.0",
+  "description": "CENC map screenshot helper for the zero-model Yibin earthquake patrol",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "playwright-core": "1.61.1"
+  }
+}

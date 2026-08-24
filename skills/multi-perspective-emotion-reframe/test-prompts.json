@@ -1,0 +1,49 @@
+{
+  "skill": "multi-perspective-emotion-reframe",
+  "title": "多视角情绪重构",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "multi-perspective-emotion-reframe:trigger-01",
+      "type": "should_trigger",
+      "prompt": "同事批评我的方案，我脑子里只剩他是不是看不起我，想立刻反击。",
+      "expected": "multi-perspective-emotion-reframe",
+      "rationale": "批评触发单一解释。"
+    },
+    {
+      "id": "multi-perspective-emotion-reframe:trigger-02",
+      "type": "should_trigger",
+      "prompt": "家人一句话让我很委屈，我想从多个角度看清事实和边界。",
+      "expected": "multi-perspective-emotion-reframe",
+      "rationale": "家庭情绪重构。"
+    },
+    {
+      "id": "multi-perspective-emotion-reframe:trigger-03",
+      "type": "should_trigger",
+      "prompt": "读者反馈刺痛我，我现在只想证明对方不懂。",
+      "expected": "multi-perspective-emotion-reframe",
+      "rationale": "写作反馈引发防御。"
+    },
+    {
+      "id": "multi-perspective-emotion-reframe:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我想写每日反思，把今天这件事沉淀成一个行动点。",
+      "expected": "daily-reflection-awareness-loop",
+      "rationale": "反思流程更适合。"
+    },
+    {
+      "id": "multi-perspective-emotion-reframe:not-02",
+      "type": "should_not_trigger",
+      "prompt": "有人威胁我线下找麻烦，我要不要先换位思考？",
+      "expected": "none",
+      "rationale": "安全风险，停止自我重构。"
+    },
+    {
+      "id": "multi-perspective-emotion-reframe:edge-01",
+      "type": "edge",
+      "prompt": "我只是想通过多角度证明对方一定错了。",
+      "expected": "none",
+      "rationale": "目标是赢和证明，不符合情绪重构目的。"
+    }
+  ]
+}

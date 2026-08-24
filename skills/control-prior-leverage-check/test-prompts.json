@@ -1,0 +1,52 @@
+{
+  "skill": "control-prior-leverage-check",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想加倍投广告卖课，ROI 还没稳定，怎么判断能不能放大？",
+      "expected_behavior": "应激活本 skill，检查控制面和小额压力测试。",
+      "notes": "广告杠杆。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "朋友让我合伙开店，我出钱他运营，我担心控制不了。",
+      "expected_behavior": "应激活本 skill，审计控制权和最大损失。",
+      "notes": "合伙杠杆。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想招很多兼职帮我做内容分发，怕质量失控。",
+      "expected_behavior": "应激活本 skill，检查人力杠杆和质量控制。",
+      "notes": "人力杠杆。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "什么是金融杠杆？给我讲概念。",
+      "expected_behavior": "不应激活本 skill；这是概念解释。",
+      "notes": "知识查询诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断信用卡分期买课程是不是好债。",
+      "expected_behavior": "不应激活本 skill，应激活 good-bad-debt-screen。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我能控制内容质量，但平台算法完全不可控，还要不要投钱？",
+      "expected_behavior": "应调用本 skill，结论通常是小额测试并降低平台依赖。",
+      "notes": "部分控制边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

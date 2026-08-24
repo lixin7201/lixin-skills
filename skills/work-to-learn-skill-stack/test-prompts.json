@@ -1,0 +1,52 @@
+{
+  "skill": "work-to-learn-skill-stack",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "有个岗位工资一般但能接触销售和客户，我想知道对创业有没有帮助。",
+      "expected_behavior": "应激活本 skill，比较现金与能力资产。",
+      "notes": "工作即学习场。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我现在做技术，想以后做产品和创业，该选什么项目练能力？",
+      "expected_behavior": "应激活本 skill，定义目标技能和训练场。",
+      "notes": "职业技能叠加。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个合作不赚钱但能让我学会分发和运营，值不值得？",
+      "expected_behavior": "应激活本 skill，设学习合同和退出条件。",
+      "notes": "项目学习价值。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下这家公司现在招不招人。",
+      "expected_behavior": "不应激活本 skill；这是外部信息查询。",
+      "notes": "事实查询诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我的文章写得好但卖不出去，怎么包装和分发？",
+      "expected_behavior": "不应激活本 skill，应激活 sales-marketing-second-skill。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我很想学销售，但家里现金流只够两个月。",
+      "expected_behavior": "应谨慎调用本 skill，并先要求做 freedom runway 检查。",
+      "notes": "学习机会与现金安全冲突。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

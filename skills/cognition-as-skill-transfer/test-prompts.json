@@ -1,0 +1,49 @@
+{
+  "skill": "cognition-as-skill-transfer",
+  "title": "认知当技能迁移训练",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "cognition-as-skill-transfer:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我知道复利很重要，也能讲出来，但每天还是只追求立刻见效。",
+      "expected": "cognition-as-skill-transfer",
+      "rationale": "知道但不会调用。"
+    },
+    {
+      "id": "cognition-as-skill-transfer:trigger-02",
+      "type": "should_trigger",
+      "prompt": "读完一本书我写了很多笔记，可遇到沟通冲突时行为完全没变。",
+      "expected": "cognition-as-skill-transfer",
+      "rationale": "认知未迁移到场景。"
+    },
+    {
+      "id": "cognition-as-skill-transfer:trigger-03",
+      "type": "should_trigger",
+      "prompt": "工作复盘发现问题不是不知道要反馈，而是每次现场都想不起来。",
+      "expected": "cognition-as-skill-transfer",
+      "rationale": "需要触发条件和动作脚本。"
+    },
+    {
+      "id": "cognition-as-skill-transfer:not-01",
+      "type": "should_not_trigger",
+      "prompt": "这个方法有依据，但做了几天没结果，我想设一个坚持阈值。",
+      "expected": "reasoned-threshold-action",
+      "rationale": "行动阈值问题。"
+    },
+    {
+      "id": "cognition-as-skill-transfer:not-02",
+      "type": "should_not_trigger",
+      "prompt": "请解释一下什么是元认知。",
+      "expected": "none",
+      "rationale": "概念解释请求。"
+    },
+    {
+      "id": "cognition-as-skill-transfer:edge-01",
+      "type": "edge",
+      "prompt": "我还没理解这个概念，只是觉得它很高级，能直接技能化吗？",
+      "expected": "none",
+      "rationale": "未理解前不训练。"
+    }
+  ]
+}

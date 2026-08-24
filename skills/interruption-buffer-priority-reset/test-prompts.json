@@ -1,0 +1,52 @@
+{
+  "skill": "interruption-buffer-priority-reset",
+  "version": "0.1.0",
+  "source_book": "时间管理方法技巧培训PPT — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我今天排好了计划，但上午同事插单、老板临时要材料、客户催回复，我的重要项目又被挤掉了。帮我重新排优先级和缓冲。",
+      "expected_behavior": "应激活 interruption-buffer-priority-reset，建立插单入口，区分即时响应/排队/委托/澄清/拒绝，校准缓冲并保护重要事项。",
+      "notes": "正面场景：计划被外部插单打乱。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的日程总是排满，一旦有临时会议就全崩，晚上只能加班补。怎么给schedule留buffer？",
+      "expected_behavior": "应激活 interruption-buffer-priority-reset，统计可控时间和历史插单比例，设置可校准缓冲，判断是否组织过载。",
+      "notes": "正面场景：满排日程缺缓冲。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "有个跨部门同事又让我帮忙做不属于我的事，我想拒绝但怕影响关系。能不能帮我基于目标、职责和优先级写个说明？",
+      "expected_behavior": "应激活 interruption-buffer-priority-reset，判断职责与优先级，给出排队/改期/拒绝/升级的沟通动作。",
+      "notes": "正面场景：插单和职责边界下的拒绝。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我脑子里有很多待办，项目、日程、委托事项都混在一起，想从收集箱整理成下一步行动。",
+      "expected_behavior": "不应激活本 skill，应优先激活 inbox-to-next-action-triage，因为这是GTD收集箱处理。",
+      "notes": "诱饵：应触发既有收集箱 Skill。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想安排90分钟深度工作，但容易累，想设计专注和主动休息节律。",
+      "expected_behavior": "不应激活本 skill，应优先激活 focus-rest-energy-cycle，因为问题是专注-恢复节律。",
+      "notes": "诱饵：应触发既有专注休息 Skill。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "客户系统发生严重故障，领导让我立刻处理，但这会打断我今天最重要的项目。",
+      "expected_behavior": "应有限激活本 skill 的高风险即时响应分流：安全/合规/重大客户事故优先，不应机械保护原计划；同时记录被挤掉事项和后续复位。",
+      "notes": "边界：高风险即时响应不受普通优先级保护。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含既有相邻 Skill 混淆测试。"
+}

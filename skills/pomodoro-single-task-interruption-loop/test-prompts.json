@@ -1,0 +1,62 @@
+{
+  "skill": "pomodoro-single-task-interruption-loop",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我这篇文章大纲拖了一上午，一开写就想查资料、回微信，想用番茄钟先推进一段。",
+      "expected_behavior": "应调用 pomodoro-single-task-interruption-loop，先切一个25分钟内可完成的写作动作，并区分内部念头和外部消息。",
+      "notes": "正向场景：拖延、写作、番茄钟、内部/外部中断。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "任务太大了，我估计要十几个番茄，不知道怎么拆，也怕自己完美主义又不开工。",
+      "expected_behavior": "应调用本 skill，用番茄估算与超过7个番茄拆分阈值，定义第一颗番茄动作。",
+      "notes": "正向场景：估算拆分和完美主义启动。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我开了25分钟专注，但同事老来问我事情，我脑子里也一直冒别的待办，这颗番茄到底怎么处理？",
+      "expected_behavior": "应调用本 skill，内部中断接受-记录-继续，外部中断告知-协商-计划-答复，必要时作废番茄。",
+      "notes": "正向场景：单个番茄内双重中断。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "今天老板连续插了三个临时任务，我的重要项目全被挤掉了，晚上要重新排明天计划。",
+      "expected_behavior": "不应调用本 skill；应优先使用 interruption-buffer-priority-reset 处理整天计划被插单冲击。",
+      "notes": "跨 skill 诱饵：外部插单与计划复位。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我连续工作三小时很累，休息又有罪恶感，想建立专注和主动休息节奏。",
+      "expected_behavior": "不应调用本 skill；应优先使用 focus-rest-energy-cycle。",
+      "notes": "跨 skill 诱饵：专注休息能量节律。"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "我待办、目标、情绪和学习都很乱，不知道到底该用GTD、OKR还是番茄。",
+      "expected_behavior": "不应直接调用本 skill；应先使用 self-management-method-router 做分诊。",
+      "notes": "跨 skill 诱饵：自我管理总分诊。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我是客服值班岗位，需要即时响应，但也想用番茄钟屏蔽消息专心写总结。",
+      "expected_behavior": "应先提示实时响应岗位边界，不可直接屏蔽；仅能在非值班窗口用本 skill。",
+      "notes": "边界：协作责任与即时响应。"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "老板想让全组每天上报番茄数量排名，这样是不是能提升效率？",
+      "expected_behavior": "不应作为执行 skill 使用；应输出反例边界，番茄数不能作为绩效排名。",
+      "notes": "边界：指标异化。"
+    }
+  ]
+}

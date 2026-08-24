@@ -1,0 +1,51 @@
+{
+  "skill": "delegation-readiness-leadership-style-check",
+  "version": "0.1.0",
+  "source_book": "分章节P2-05 领导力和执行力 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "新员工热情很高但不会做，我该放手让他成长还是盯紧一点？",
+      "expected_behavior": "应激活本 skill，判断能力/承诺并匹配指令式领导。",
+      "notes": "授权准备度"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "下属能力强但最近信心波动，我不知道该支持还是继续给具体指令。",
+      "expected_behavior": "应激活本 skill，匹配支持式领导和边界。",
+      "notes": "情境领导"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Assess delegation readiness and choose directive, coaching, supporting, or delegating style.",
+      "expected_behavior": "应激活本 skill，输出准备度和领导方式。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我讲了任务但对方复述出来和我想的不一样。",
+      "expected_behavior": "不应激活本 skill，应激活 communication-understanding-execution-loop。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我自己清单乱、拖延、学习没用，想先分流自我管理问题。",
+      "expected_behavior": "不应激活本 skill，应激活 self-management-method-router。",
+      "notes": "自我管理诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "目标不合理、资源也不给，但我想用授权模型让下属负责。",
+      "expected_behavior": "不应直接授权；应指出目标/资源/权限边界。",
+      "notes": "组织问题边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "familiarity-weighted-estimation",
+  "version": "0.1.0",
+  "source_book": "把时间当作朋友 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队第一次做数据库迁移，领导要我今天给准确上线日期。",
+      "expected_behavior": "调用本 Skill 拆分陌生项并给区间和重估节点。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我只估了开发三天，但新框架学习、联调和返工都没算。",
+      "expected_behavior": "调用本 Skill 分项预算学习试错集成和返工。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "外包项目一半做过、一半没做过，怎样避免又延期？",
+      "expected_behavior": "调用本 Skill 按单元标熟悉度并建立关键路径缓冲。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个项目的资源、完美度和改变速度假设现实吗？",
+      "expected_behavior": "不调用本 Skill，应调用 reality-constraint-premise-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "请帮我把这个大项目拆成依赖清晰的任务清单。",
+      "expected_behavior": "不调用本 Skill，应调用 planning-and-task-breakdown。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "服务器正在遭受攻击，我要先估算完整修复工期再隔离吗？",
+      "expected_behavior": "不调用常规估时阻碍处置；先按安全流程隔离，再对恢复阶段估时。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "surplus-budget-pay-yourself-first",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我每个月都月光，但想强制给自己的学习和资产账户留钱。",
+      "expected_behavior": "应激活本 skill，建立优先支出和安全底线。",
+      "notes": "预算盈余。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想把写作项目当资产养，每月应该怎么预算？",
+      "expected_behavior": "应激活本 skill，把学习/资产投入列为支出。",
+      "notes": "非财务资产建设。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "工资一到就被各种订阅和消费吃掉，怎么调整支出栏？",
+      "expected_behavior": "应激活本 skill，重排支出栏。",
+      "notes": "支出栏预测未来。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我这个月房租都不够，还要不要先拿钱投资？",
+      "expected_behavior": "不应机械激活本 skill；先处理现金危机。",
+      "notes": "安全边界诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断贷款买设备是不是良性债务。",
+      "expected_behavior": "不应激活本 skill，应激活 good-bad-debt-screen。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我有信用卡债，但也想建立应急金。",
+      "expected_behavior": "可调用本 skill 与 bad-debt-rolldown-plan 联合，先保最低安全垫再滚动还债。",
+      "notes": "预算与债务清理冲突。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

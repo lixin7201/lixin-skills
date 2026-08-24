@@ -1,0 +1,52 @@
+{
+  "skill": "reality-constraint-premise-audit",
+  "version": "0.1.0",
+  "source_book": "把时间当作朋友 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我打算三个月从零转行并达到资深水平，这个计划的前提靠谱吗？",
+      "expected_behavior": "调用本 Skill 展开五类现实约束并重写可执行版本。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "老板要求产品一次上线就完美，而且不能增加预算，帮我检查隐藏假设。",
+      "expected_behavior": "调用本 Skill 检查资源交换和可接受不完美。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "创业计划里很多信息都写成以后自然会知道，我该怎么审计？",
+      "expected_behavior": "调用本 Skill 标出未知、验证窗口与退出条件。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个新方向长期是否有真实需求和复利价值？",
+      "expected_behavior": "不调用本 Skill，应调用 compound-direction-canvas。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这是陌生技术项目，我应该承诺几周完成？",
+      "expected_behavior": "不调用本 Skill，应调用 familiarity-weighted-estimation。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我只是想用半天做个可撤销的小原型，也要先写五页现实审计吗？",
+      "expected_behavior": "不做重型审计；只快速检查损失上限和关键前提后开始试验。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

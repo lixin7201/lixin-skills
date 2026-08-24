@@ -1,0 +1,52 @@
+{
+  "skill": "production-distance-usefulness-audit",
+  "version": "0.1.0",
+  "source_book": "财富的真相 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想考一个很火的证书，但不知道它能不能真的改善我的工作产出，帮我判断。",
+      "expected_behavior": "调用 production-distance-usefulness-audit，先定义受益者、结果和证书到真实交付的距离。",
+      "notes": "学习投入与有效生产距离。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队每天都很忙，可我觉得所有人离客户越来越远，怎么审计？",
+      "expected_behavior": "调用 production-distance-usefulness-audit，绘制问题现场、反馈、产出和采用链。",
+      "notes": "工作价值链审计。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个创业点子我自己很喜欢，怎样证明它对别人真的有用？",
+      "expected_behavior": "调用 production-distance-usefulness-audit，要求小样本真实受益证据而非自我感觉。",
+      "notes": "创业需求验证。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我的一对一咨询已经排满，怎样把重复经验做成可重复销售的产品？",
+      "expected_behavior": "不调用本 Skill，应调用 personal-method-ipo 处理产品化。",
+      "notes": "既有 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我今天一直被群消息打断，帮我核算注意力应该投到哪里。",
+      "expected_behavior": "不调用本 Skill，应调用同批 attention-allocation-ledger。",
+      "notes": "同批兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我在做暂时没有付费客户的基础研究，是否说明它没有有效价值？",
+      "expected_behavior": "可谨慎调用但必须采用非价格受益证据，不能把无短期收入等同无价值。",
+      "notes": "公共价值与长期研究边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

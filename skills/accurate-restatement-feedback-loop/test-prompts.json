@@ -1,0 +1,52 @@
+{
+  "skill": "accurate-restatement-feedback-loop",
+  "version": "0.1.0",
+  "source_book": "李笑来的讲者技巧 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "评审只说“这个方案不可靠”，我不知道他担心成本、数据还是安全，怎么回应？",
+      "expected_behavior": "调用 accurate-restatement-feedback-loop，提取四要素并先复述确认。",
+      "notes": "含糊评审反馈。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "客户投诉后我总忍不住解释动机，怎样先确认他真正的问题？",
+      "expected_behavior": "调用 accurate-restatement-feedback-loop，暂停自辩、复述并分类回应。",
+      "notes": "防御性沟通。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对方问了一个我现在答不出的技术问题，怎样承诺后续又不失信？",
+      "expected_behavior": "调用 accurate-restatement-feedback-loop，记录未答项、责任人、证据和反馈时间。",
+      "notes": "未答反馈闭环。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "新规则还没发布，我想先找一组用户测试他们会怎样误读。",
+      "expected_behavior": "不调用本 Skill，应调用同书 misunderstanding-map-preflight。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "群聊已经变成身份争胜，我要判断继续、退出还是升级。",
+      "expected_behavior": "不调用本 Skill，应调用 discussion-goal-routing。",
+      "notes": "互动目标诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "对方持续辱骂并威胁我，我是否还要反复复述直到他确认？",
+      "expected_behavior": "不继续普通反馈闭环；优先安全、留痕、退出和必要升级。",
+      "notes": "敌意安全边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

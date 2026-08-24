@@ -1,0 +1,17 @@
+{
+  "skill": "multidisciplinary-model-lattice-check",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"我们要不要把客服全部换成 AI？现在方案只算了节省的人力成本，帮我换几个模型交叉检查。","expected_behavior":"应激活本 Skill，至少从可靠性、激励、客户信任、数据安全和切换成本产生可证伪预测。","notes":"跨职能高影响决策且明确单模型风险。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"产品团队只看增长，财务只看毛利，技术只看性能，三边结论冲突，怎么放在一张图里判断？","expected_behavior":"应激活本 Skill，分开模型、时间尺度、冲突和缺失证据。","notes":"多个学科模型冲突。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"我怀疑自己做内容战略时什么都用流量漏斗解释，能做一次 hammer tendency 检查吗？","expected_behavior":"应激活本 Skill，识别铁锤倾向并引入不同机制的相关模型。","notes":"专业工具挤压现实。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"这份跨境医疗合同我没看懂，但要不要今天就签？我是否超出能力圈？","expected_behavior":"不应以本 Skill 为主，应激活 circle-of-competence-boundary-test 并在专业边界停止。","notes":"跨 Skill 诱饵：能力资格优先。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"帮我查一下这个 API 的 timeout 参数默认值。","expected_behavior":"不应激活本 Skill，这是纯信息查询。","notes":"无决策结构。"},
+    {"id":"edge-01","type":"edge_case","prompt":"今晚吃面还是米饭？请用五个学科模型分析。","expected_behavior":"不应激活；即使用户点名多模型，低损失日常选择不值得使用完整审计。","notes":"防止过度调用。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 1 edge_case；诱饵容错为 0。"
+}
+

@@ -1,0 +1,48 @@
+{
+  "skill": "nearby-problem-income-loop",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "第一桶金从哪里开始",
+      "expected_behavior": "调用 nearby-problem-income-loop；先执行“扫描身边问题”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "身边有什么问题能变现",
+      "expected_behavior": "调用 nearby-problem-income-loop；先执行“扫描身边问题”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样先赚到第一笔客户收入",
+      "expected_behavior": "调用 nearby-problem-income-loop；先执行“扫描身边问题”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 nearby-problem-income-loop 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "怎样把赚的钱继续投资自己",
+      "expected_behavior": "不调用 nearby-problem-income-loop；应优先调用同书兄弟 Skill self-investment-flywheel",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我有成熟公司，要制定明年的全国渠道战略",
+      "expected_behavior": "不调用 nearby-problem-income-loop：这是规模化战略，不是第一笔收入验证",
+      "notes": "模糊边界"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "pyramid-structure-practice-coach",
+  "version": "0.1.0",
+  "source_book": "金字塔原理2：实战篇 — 芭芭拉·明托",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我懂金字塔原理，但自己的周报还是写不好。拿这段周报带我做一轮结构练习。",
+      "expected_behavior": "应激活 pyramid-structure-practice-coach，选择真实材料，诊断卡点，输出原文问题、结构图、重写和下一题。",
+      "notes": "训练型正例。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "别只帮我代写，我想边改边学：帮我找结构、看纵向横向关系，再安排一个练习。",
+      "expected_behavior": "应激活 pyramid-structure-practice-coach，按练习路线定位失败环节并安排下一题。",
+      "notes": "明确要训练能力。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队新人不会写咨询风格备忘录，我想用真实草稿做金字塔训练。",
+      "expected_behavior": "应激活 pyramid-structure-practice-coach，给出训练流程、反馈标准和训练日志。",
+      "notes": "团队训练场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这页 PPT 的图表标题改成能表达结论的标题。",
+      "expected_behavior": "不应激活本 skill，应激活 pyramid-slide-one-point-check。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "直接帮我写一版客户汇报，不要解释训练过程。",
+      "expected_behavior": "不应激活本 skill；更适合 conclusion-first-pyramid-report 或普通写作交付。",
+      "notes": "只要代写，不要训练。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我没有现成材料，但想练一下金字塔表达。",
+      "expected_behavior": "可弱触发；应先设计练习题或要求用户提供材料，不能声称已完成真实文档训练。",
+      "notes": "边界：无材料时只能做模拟训练。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含训练正例、单页诱饵、代写诱饵和无材料边界。"
+}

@@ -1,0 +1,16 @@
+{
+  "skill": "moving-bottleneck-red-light-loop",
+  "version": "0.1.0",
+  "source_book": "埃隆·马斯克传 — 沃尔特·艾萨克森",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"客服、研发和交付都说自己满负荷，但订单还是越积越多，帮我找真正瓶颈。","expected_behavior":"激活本 Skill，定义端到端结果并用等待量和周期时间定位一个主红灯。","notes":"典型多环节吞吐问题"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"我们优化了三处代码，发布周期完全没变，到底该先修哪里？","expected_behavior":"激活本 Skill，检查局部优化是否命中总流程限制。","notes":"局部指标与总结果脱节"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"Find the current bottleneck in this content production pipeline.","expected_behavior":"激活本 Skill，建立流转状态并要求现场观察。","notes":"英文触发"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"这个新功能设计完总给运维添麻烦，怎么让设计团队长期承担上线后的结果？","expected_behavior":"不激活本 Skill，应激活 design-production-responsibility-loop。","notes":"跨 Skill 混淆诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"帮我查一下 PostgreSQL 当前稳定版。","expected_behavior":"不激活，属于事实查询。","notes":"无关诱饵"},
+    {"id":"edge-01","type":"edge_case","prompt":"我写小说卡住了，哪个段落是瓶颈？","expected_behavior":"通常不激活；探索性创作没有稳定吞吐流程，除非用户明确建立了编辑流水线。","notes":"非确定性创作边界"}
+  ],
+  "minimum_pass_rate": 0.8
+}
+

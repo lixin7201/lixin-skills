@@ -1,0 +1,49 @@
+{
+  "skill": "stretch-zone-practice-loop",
+  "title": "舒适区边缘刻意练习",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "stretch-zone-practice-loop:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我练写作半年了，每天都写，但感觉只是重复，文章没有进步。",
+      "expected": "stretch-zone-practice-loop",
+      "rationale": "练习停滞且需要调难度。"
+    },
+    {
+      "id": "stretch-zone-practice-loop:trigger-02",
+      "type": "should_trigger",
+      "prompt": "我英语每天一小时，但一做真实表达就崩，想知道怎么设计训练。",
+      "expected": "stretch-zone-practice-loop",
+      "rationale": "技能训练难度失配。"
+    },
+    {
+      "id": "stretch-zone-practice-loop:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我做题只刷会的，一遇到稍难就跳过，成绩一直上不去。",
+      "expected": "stretch-zone-practice-loop",
+      "rationale": "舒适区重复。"
+    },
+    {
+      "id": "stretch-zone-practice-loop:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我学了很多产品知识，但从没做出东西给用户反馈。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "主要缺作品和反馈。"
+    },
+    {
+      "id": "stretch-zone-practice-loop:not-02",
+      "type": "should_not_trigger",
+      "prompt": "推荐几首适合新手的钢琴曲。",
+      "expected": "none",
+      "rationale": "资源推荐请求。"
+    },
+    {
+      "id": "stretch-zone-practice-loop:edge-01",
+      "type": "edge",
+      "prompt": "我膝盖痛还想通过加跑量逼自己进步，可以用舒适区边缘吗？",
+      "expected": "none",
+      "rationale": "身体风险触发停止。"
+    }
+  ]
+}

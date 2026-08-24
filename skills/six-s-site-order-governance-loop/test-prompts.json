@@ -1,0 +1,52 @@
+{
+  "skill": "six-s-site-order-governance-loop",
+  "version": "0.1.0",
+  "source_book": "6S管理方法与技巧培训PPT — 职场智库",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "仓库工具、包装箱和私人物品混在一起，经常找不到东西，想做整理、整顿、标识、巡查和复查。",
+      "expected_behavior": "应调用 six-s-site-order-governance-loop，先做安全升级判断，再按 6S 建立现场治理闭环。",
+      "notes": "正向场景: 仓储现场 6S。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "办公室文件柜、开关、物料都没有标识，巡查后只打分不整改，想让 6S 真正持续。",
+      "expected_behavior": "应调用 six-s-site-order-governance-loop，处理定置、目视管理、巡查记录和问题追踪。",
+      "notes": "正向场景: 办公区 6S 和巡查闭环。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Need a 5S/6S workplace organization loop for a workshop: seiri, seiton, cleaning standards, visual labels and safety patrol follow-up.",
+      "expected_behavior": "应调用 six-s-site-order-governance-loop。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我的战略目标和组织能力对不上，品牌、内容、渠道和资源都散了。",
+      "expected_behavior": "不应调用本 skill，应调用 strategy-house-alignment-check。",
+      "notes": "诱饵: 战略屋对齐。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "公司制度、人才、技能、文化和共同价值观都跟不上战略调整，我想做 7S 软硬件审计。",
+      "expected_behavior": "不应调用本 skill，应调用 seven-s-hard-soft-change-balance-audit。",
+      "notes": "同批混淆: 7S 组织审计。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "车间刚发生电气伤害事故，我想用 6S 清单快速复盘一下，不用走安全流程。",
+      "expected_behavior": "不应完整调用；必须先升级到专业 EHS/消防/设备/法务流程，6S 只能在专业处理后做日常隐患治理。",
+      "notes": "边界: 高风险安全事故。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含同批 sibling skill。"
+}

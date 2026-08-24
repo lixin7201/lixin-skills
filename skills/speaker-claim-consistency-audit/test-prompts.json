@@ -1,0 +1,52 @@
+{
+  "skill": "speaker-claim-consistency-audit",
+  "version": "0.1.0",
+  "source_book": "李笑来的讲者技巧 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "公司让我在发布会上承诺一个我并不认可的交付日期，我该怎么讲？",
+      "expected_behavior": "调用 speaker-claim-consistency-audit，区分事实、组织立场和个人判断并保留拒绝/升级选项。",
+      "notes": "组织代表场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的演讲里有几句很炸裂，但我说不出根据，只是觉得听起来厉害。",
+      "expected_behavior": "调用 speaker-claim-consistency-audit，做主张归属、确信与证据审计。",
+      "notes": "状态表演与证据缺口。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我一上台就不像自己，连平时不会说的话都写进讲稿了，怎么改？",
+      "expected_behavior": "调用 speaker-claim-consistency-audit，执行真实性四问并删除或重写不一致内容。",
+      "notes": "身份一致性。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "退款规则本身已经确定，我担心用户会把它误解成无条件退款，怎么预演？",
+      "expected_behavior": "不调用本 Skill，应调用同书 misunderstanding-map-preflight。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "评审说方案不可靠但没说明哪里，我想先确认他真正担心什么。",
+      "expected_behavior": "不调用本 Skill，应调用 accurate-restatement-feedback-loop。",
+      "notes": "反馈澄清诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我是公司发言人，必须陈述组织立场，但个人并不完全同意，是否一定要拒绝？",
+      "expected_behavior": "应调用；可明确“组织立场”归属并如实陈述证据和未知项，不必把立场伪装为个人确信。",
+      "notes": "合法代表边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

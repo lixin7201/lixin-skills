@@ -1,0 +1,16 @@
+{
+  "skill": "circle-of-competence-boundary-test",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"我是内容创业者，突然想做医疗 AI，但说不清监管和临床风险，帮我判断是不是在能力圈外。","expected_behavior":"应激活本 Skill，要求机制、预测、未知和三分流，并保留专业资格边界。","notes":"陌生高风险行业。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"供应商的风控模型是黑箱，我只能复述宣传，凭什么判断是否签三年合同？","expected_behavior":"应激活本 Skill，用无术语复述和可推翻预测检验理解。","notes":"黑箱与高承诺。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"我想扩大自己的能力圈，但不想靠自信宣布学会，能设计一个有预算的扩圈试验吗？","expected_behavior":"应激活本 Skill，先分流再设计可逆学习、证据和退出点。","notes":"能力圈可证扩张。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"这项业务我很熟，但部门只看各自指标，帮我做多模型交叉决策。","expected_behavior":"不应激活本 Skill，应激活 multidisciplinary-model-lattice-check。","notes":"跨 Skill 诱饵：多模型。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"数据库迁移我理解，但担心一次失败让系统出局，请做毁灭路径预检。","expected_behavior":"不应激活本 Skill，应激活 inversion-ruin-path-preflight。","notes":"跨 Skill 诱饵：已理解后的毁灭控制。"},
+    {"id":"edge-01","type":"edge_case","prompt":"我刚开始学摄影，想要一份入门课程表，这需要做能力圈边界审计吗？","expected_behavior":"不应启动完整审计；普通学习请求不涉及高影响结论或越界行动。","notes":"一般学习边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}

@@ -1,0 +1,49 @@
+{
+  "skill": "daily-reflection-awareness-loop",
+  "title": "每日反思觉知闭环",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "daily-reflection-awareness-loop:trigger-01",
+      "type": "should_trigger",
+      "prompt": "今天工作里有一件事很触动我，我想晚上复盘出明天能做的一步。",
+      "expected": "daily-reflection-awareness-loop",
+      "rationale": "日常触动转行动。"
+    },
+    {
+      "id": "daily-reflection-awareness-loop:trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想建立写作素材库，但希望素材来自自己的生活觉察。",
+      "expected": "daily-reflection-awareness-loop",
+      "rationale": "反思生成写作素材。"
+    },
+    {
+      "id": "daily-reflection-awareness-loop:trigger-03",
+      "type": "should_trigger",
+      "prompt": "同一个拖延问题反复发生，我想每天记录触发和原因。",
+      "expected": "daily-reflection-awareness-loop",
+      "rationale": "重复行为模式沉淀。"
+    },
+    {
+      "id": "daily-reflection-awareness-loop:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我现在被人批评后怒火很强，需要当下换几个视角。",
+      "expected": "multi-perspective-emotion-reframe",
+      "rationale": "当下情绪重构。"
+    },
+    {
+      "id": "daily-reflection-awareness-loop:not-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我写一篇旅行日记，要文笔好一点。",
+      "expected": "none",
+      "rationale": "写作代劳请求。"
+    },
+    {
+      "id": "daily-reflection-awareness-loop:edge-01",
+      "type": "edge",
+      "prompt": "反思让我越来越自责，晚上还睡不着，但我想继续深挖。",
+      "expected": "none",
+      "rationale": "反刍失眠触发停止。"
+    }
+  ]
+}

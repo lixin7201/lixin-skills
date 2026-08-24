@@ -1,0 +1,49 @@
+{
+  "skill": "mental-bandwidth-scarcity-triage",
+  "title": "心智带宽稀缺分诊",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "mental-bandwidth-scarcity-triage:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我最近缺睡、现金紧、任务又多，脑子像卡死了，还想今天决定要不要辞职。",
+      "expected": "mental-bandwidth-scarcity-triage",
+      "rationale": "低带宽重大决策。"
+    },
+    {
+      "id": "mental-bandwidth-scarcity-triage:trigger-02",
+      "type": "should_trigger",
+      "prompt": "项目延期后我越来越短视，只想先随便承诺客户，之后再说。",
+      "expected": "mental-bandwidth-scarcity-triage",
+      "rationale": "压力导致短视。"
+    },
+    {
+      "id": "mental-bandwidth-scarcity-triage:trigger-03",
+      "type": "should_trigger",
+      "prompt": "情绪上头时我想立刻投资一笔钱证明自己没输。",
+      "expected": "mental-bandwidth-scarcity-triage",
+      "rationale": "情绪峰值高代价决策。"
+    },
+    {
+      "id": "mental-bandwidth-scarcity-triage:not-01",
+      "type": "should_not_trigger",
+      "prompt": "别人批评我后，我想换几个角度理解这件事。",
+      "expected": "multi-perspective-emotion-reframe",
+      "rationale": "情绪重构更适合。"
+    },
+    {
+      "id": "mental-bandwidth-scarcity-triage:not-02",
+      "type": "should_not_trigger",
+      "prompt": "心智带宽在网络工程里是什么意思？",
+      "expected": "none",
+      "rationale": "词义解释请求。"
+    },
+    {
+      "id": "mental-bandwidth-scarcity-triage:edge-01",
+      "type": "edge",
+      "prompt": "我现金流已经断裂，明天就还不上款了，还能先做认知分诊吗？",
+      "expected": "none",
+      "rationale": "现实应急优先。"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "skill": "ethical-perception-to-action",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "怎样让用户更容易行动但不操纵",
+      "expected_behavior": "调用 ethical-perception-to-action；先执行“确认用户自有目标”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个行为设计是否合乎伦理",
+      "expected_behavior": "调用 ethical-perception-to-action；先执行“确认用户自有目标”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "从感知到行动怎么减少摩擦",
+      "expected_behavior": "调用 ethical-perception-to-action；先执行“确认用户自有目标”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 ethical-perception-to-action 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "客户为什么不复购",
+      "expected_behavior": "不调用 ethical-perception-to-action；应优先调用同书兄弟 Skill value-trust-repeat-flywheel",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "用倒计时和隐藏费用提高转化率",
+      "expected_behavior": "不调用 ethical-perception-to-action：这是利用压力和信息不对称，不属于伦理化助推",
+      "notes": "模糊边界"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "fixture_origin": "synthetic",
+  "synthetic": true,
+  "live_response": false,
+  "description": "Contract-derived empty responses for states that cannot be obtained safely from the live account.",
+  "cases": {
+    "optional_city_metadata_empty": {
+      "provenance": "synthetic",
+      "synthetic": true,
+      "live_response": false,
+      "method": "GET",
+      "path": "/service/rank/hot_search_city_list",
+      "n_a_reason": "Parameterless static metadata endpoint; no safe real empty state exists.",
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "default_city": "",
+          "list": []
+        }
+      }
+    },
+    "excluded_plan_list_empty": {
+      "provenance": "synthetic",
+      "synthetic": true,
+      "live_response": false,
+      "method": "POST",
+      "path": "/service/plan/list",
+      "n_a_reason": "The current account has a real plan; deletion, account switching, and blind parameter enumeration are forbidden.",
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": []
+      }
+    }
+  },
+  "parser_cases": {
+    "cy_list_normal": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "list": [
+            {
+              "name": "synthetic-city-entry",
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    "cy_list_empty": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "list": []
+        }
+      }
+    },
+    "cy_list_missing": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {}
+      }
+    },
+    "cy_list_wrong_type": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "list": "not-an-array"
+        }
+      }
+    },
+    "post_list_content": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "return_type": 1,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "c": "synthetic",
+          "cl": [],
+          "list": [
+            {
+              "unique_id": "synthetic-post-1",
+              "title": "[synthetic-title]",
+              "content": "[synthetic-content]",
+              "url": "https://example.invalid/synthetic-post-1"
+            }
+          ]
+        }
+      }
+    },
+    "post_list_empty": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "return_type": 1,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "c": "synthetic",
+          "cl": [],
+          "list": []
+        }
+      }
+    },
+    "post_list_summary": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "return_type": 2,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "total": 3,
+          "post_count": {
+            "all": 3
+          },
+          "c": "synthetic",
+          "cl": []
+        }
+      }
+    },
+    "post_list_missing": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "return_type": 1,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "c": "synthetic",
+          "cl": []
+        }
+      }
+    },
+    "post_list_wrong_type": {
+      "provenance": "synthetic",
+      "live_response": false,
+      "return_type": 1,
+      "response": {
+        "code": 0,
+        "message": "ok",
+        "data": {
+          "c": "synthetic",
+          "cl": [],
+          "list": "not-an-array"
+        }
+      }
+    }
+  }
+}

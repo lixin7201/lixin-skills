@@ -1,0 +1,52 @@
+{
+  "skill": "s-to-b-system-check",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的咨询业务每单都要我亲自做，收入不错但完全走不开，怎么系统化？",
+      "expected_behavior": "应激活本 skill，找本人依赖和最小系统。",
+      "notes": "典型 S 到 B。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想把写作训练营从手工带班变成可复制交付流程。",
+      "expected_behavior": "应激活本 skill，审计获客、交付、训练和质量。",
+      "notes": "内容业务系统化。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我准备招第一个助理，但不知道哪些流程能交出去。",
+      "expected_behavior": "应激活本 skill，先画链路再设 SOP。",
+      "notes": "团队前系统检查。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我适合做员工还是自由职业？",
+      "expected_behavior": "不应激活本 skill，应先用 cashflow-quadrant-income-map。",
+      "notes": "上游地图诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个网络营销公司说有成熟系统，值得加入吗？",
+      "expected_behavior": "不应激活本 skill，应激活 business-education-due-diligence。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我就是想做高端个人咨询，不想雇人。",
+      "expected_behavior": "可不调用或只轻量调用；应说明 S 型也可成立，重点改为定价和边界。",
+      "notes": "价值选择边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

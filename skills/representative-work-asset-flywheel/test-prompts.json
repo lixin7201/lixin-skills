@@ -1,0 +1,52 @@
+{
+  "skill": "representative-work-asset-flywheel",
+  "version": "0.1.0",
+  "source_book": "学会成长：爆发式成长的25个思维模型 — 粥左罗",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我做过很多项目，但主页和简历上没有能展示的代表作，怎么补？",
+      "expected_behavior": "应激活 representative-work-asset-flywheel，盘点能力证据并选择代表作形态。",
+      "notes": "正面场景：缺少代表作。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想做个人品牌，但不想空包装，怎么把经验变成内容产品？",
+      "expected_behavior": "应激活 representative-work-asset-flywheel，设计作品、发布入口和迭代飞轮。",
+      "notes": "正面场景：能力资产化。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我有几个企业内训案例，想沉淀成作品集和方法文章。",
+      "expected_behavior": "应激活 representative-work-asset-flywheel，处理案例公开程度、代表作形态和反馈入口。",
+      "notes": "正面场景：服务经验作品化。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经发布了3个作品，想知道读者和客户反馈是否说明我在进步。",
+      "expected_behavior": "不应激活本 skill，应激活 market-feedback-growth-loop。",
+      "notes": "跨 skill 诱饵：已有作品，进入反馈校正。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这篇文章改成方文山风格。",
+      "expected_behavior": "不应激活本 skill，应使用写作风格或对应创作 Skill。",
+      "notes": "诱饵：写作风格模仿，不是作品资产。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我的客户案例很强，但含商业秘密，能直接做代表作吗？",
+      "expected_behavior": "可激活本 skill，但必须先处理授权、匿名化和隐私边界。",
+      "notes": "边界：隐私和授权。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含作品飞轮与反馈回路混淆测试。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "pyramid-slide-one-point-check",
+  "version": "0.1.0",
+  "source_book": "金字塔原理：麦肯锡40年经典培训教材 — 芭芭拉·明托",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这页经营分析 PPT 标题是收入趋势，图上显示老客复购下降，帮我改成结论标题。",
+      "expected_behavior": "应激活 pyramid-slide-one-point-check，把主题词标题改为完整论点，并检查图表证据是否支撑。",
+      "notes": "典型图表标题改写。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "一页 PPT 上我放了三个结论、两张图和一堆 bullet，帮我判断要不要拆页。",
+      "expected_behavior": "应激活 pyramid-slide-one-point-check，提取页面主张并判断是否拆成多页。",
+      "notes": "一页多个论点。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "帮我检查这张图表页是不是 one point per slide，标题和证据是否匹配。",
+      "expected_behavior": "应激活 pyramid-slide-one-point-check，输出新标题、保留/删除内容和讲述顺序。",
+      "notes": "明确单页检查。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我把整份项目延期说明改成先说结论的两分钟汇报。",
+      "expected_behavior": "不应激活本 skill，应激活 conclusion-first-pyramid-report。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我检查这份数据表有没有缺失值和异常值。",
+      "expected_behavior": "不应激活本 skill，因为这是数据质量检查，不是 PPT 论点页检查。",
+      "notes": "无关数据诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这是附录页，目标是让管理层会后查明细，不是现场讲一个结论。",
+      "expected_behavior": "通常不应强制一页单论点；可建议添加查阅型标题和口径说明，但不按演示页标准硬改。",
+      "notes": "边界：附录/查阅页不同于演示页。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含单页正例、整份汇报诱饵和附录页边界。"
+}

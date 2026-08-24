@@ -1,0 +1,52 @@
+{
+  "skill": "presentation-action-change-brief",
+  "version": "0.1.0",
+  "source_book": "麦肯锡不外流的简报格式与说服技巧 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我下周给投资人路演，PPT已经有了，但不知道开场如何让他们采取下一步行动。",
+      "expected_behavior": "应激活 presentation-action-change-brief，定义投资人的A状态、B状态和目标行动。",
+      "notes": "正面场景：演示行动目标不清。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这场内部汇报我不想只是介绍数据，想让领导批准试点，怎么写目标？",
+      "expected_behavior": "应激活 presentation-action-change-brief，明确听众变化和批准行动。",
+      "notes": "正面场景：展示信息转推动决策。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我的销售演示结束后客户总说知道了，但没有下一步，怎么设计A到B？",
+      "expected_behavior": "应激活 presentation-action-change-brief，重写开场和收尾行动请求。",
+      "notes": "正面场景：听众无后续行动。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经知道要让领导批准预算，但不知道该讲风险预防还是理想收益。",
+      "expected_behavior": "不应激活本 skill，应激活 th-problem-type-story-routing。",
+      "notes": "跨 skill 诱饵：行动目标已清，需选故事类型。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我检查这一页PPT是不是一页一个论点。",
+      "expected_behavior": "不应激活本 skill，应激活 pyramid-slide-one-point-check。",
+      "notes": "诱饵：单页检查。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我这次是教学分享，不一定要听众马上行动，也需要A/B状态吗？",
+      "expected_behavior": "边界判断：不强制激活；若只是开放教学，可定义理解变化但不强推行动。",
+      "notes": "边界：非行动导向演示。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含TH路由和金字塔单页诱饵。"
+}

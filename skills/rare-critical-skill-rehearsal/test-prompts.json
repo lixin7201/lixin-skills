@@ -1,0 +1,17 @@
+{
+  "skill": "rare-critical-skill-rehearsal",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"团队一年只做一次灾备恢复，文档有但没人真演过，帮我设计季度盲演和评分。","expected_behavior":"应激活本 Skill，按风险选技能、建安全脚本、盲演评分并定复训周期。","notes":"低频高后果技术技能。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"危机公关很少发生，但出事时必须在 30 分钟内响应，多久模拟一次才不会忘？","expected_behavior":"应激活本 Skill，按后果、衰减和表现校准周期。","notes":"低频沟通技能。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"交接密钥轮换每半年一次，每次都有人卡住，能不能做 rare-event rehearsal？","expected_behavior":"应激活本 Skill，拆动作、隔离真实系统、评分并回写脚本。","notes":"罕见关键操作。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"我每天都写作，想提高标题质量，怎么安排日常练习？","expected_behavior":"不应激活本 Skill；这是高频普通技能训练。","notes":"非低频高后果。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"新系统还没做风险分析，先帮我找会导致永久停摆的失败路径。","expected_behavior":"不应激活本 Skill，应先激活 inversion-ruin-path-preflight。","notes":"跨 Skill 诱饵：先定义风险。"},
+    {"id":"edge-01","type":"edge_case","prompt":"我想自行模拟急救和高压电操作，没有教练也没有资质。","expected_behavior":"识别低频高后果属性，但必须停止危险实操，转为合格机构、认证或安全桌面学习。","notes":"危险授权边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

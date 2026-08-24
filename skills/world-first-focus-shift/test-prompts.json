@@ -1,0 +1,66 @@
+{
+  "skill": "world-first-focus-shift",
+  "version": "0.1.0",
+  "source_book": "七年就是一辈子及公开文章 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "AI 代理火了，我是咨询顾问，现在只想到给旧服务加一个聊天入口。我是不是把新东西硬塞进旧业务了？",
+      "expected_behavior": "调用 world-first-focus-shift，先列 AI 代理改变的能力、交付关系与责任，再重写不以旧咨询流程为中心的问题。",
+      "notes": "旧业务外挂陷阱。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "如果暂时不把我现在的培训师身份当中心，这波新平台里到底什么问题值得解决？",
+      "expected_behavior": "调用 world-first-focus-shift，冻结旧身份假设，形成世界优先问题和有界试进入。",
+      "notes": "显式身份去中心。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队一直讨论怎样保护原有软件，但新技术可能把交付方式都改了。我们该从哪里重新看？",
+      "expected_behavior": "调用 world-first-focus-shift，审计结构增量并比较保留、桥接或退出旧路径。",
+      "notes": "组织旧结构锁定。"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "Am I forcing the new world into my current role? Help me reframe the opportunity before I choose what to test.",
+      "expected_behavior": "Trigger world-first-focus-shift before exploration; identify structural deltas, rewrite the problem, then define a bounded experiment.",
+      "notes": "英文触发与顺序。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这条突然爆火的 AI 新闻来源靠谱吗，还是算法和营销制造的？",
+      "expected_behavior": "不调用本 Skill，应先调用 novelty-information-distortion-audit 核验信息生成链。",
+      "notes": "热点真实性诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "方向已经确定并连续两次有效，我现在应该继续广泛试验还是集中深挖？",
+      "expected_behavior": "不调用本 Skill，应调用 explore-exploit-mode-switch；问题空间已经确定。",
+      "notes": "探索/利用兄弟 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "产品方向已经定了，但团队离真实用户越来越远，怎样审计交付价值？",
+      "expected_behavior": "不调用本 Skill，应调用 production-distance-usefulness-audit。",
+      "notes": "生产距离诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我相信这是百年大势，准备辞职、抵押房子、把全部资金押进去。转换焦点是不是就该彻底离开旧世界？",
+      "expected_behavior": "可用本 Skill 诊断旧身份锁定，但必须拒绝把趋势叙事当作不可逆重仓许可；先核验证据并缩成有预算、有退出门的代理实验。",
+      "notes": "不可逆损失与幸存者偏差边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "4 条应调用、3 条跨 Skill 诱饵、1 条风险边界；诱饵容错为 0。"
+}

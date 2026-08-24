@@ -1,0 +1,48 @@
+{
+  "skill": "pain-list-guard-clause",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我又犯了同一个错",
+      "expected_behavior": "调用 pain-list-guard-clause；先执行“记录痛苦事件”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "把教训做成检查项",
+      "expected_behavior": "调用 pain-list-guard-clause；先执行“记录痛苦事件”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样在冲动前自动刹车",
+      "expected_behavior": "调用 pain-list-guard-clause；先执行“记录痛苦事件”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 pain-list-guard-clause 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我现在很冲动想立刻做",
+      "expected_behavior": "不调用 pain-list-guard-clause；应优先调用同书兄弟 Skill thought-observer-pause",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我第一次做这类项目，怕出错，列所有可能风险",
+      "expected_behavior": "不调用 pain-list-guard-clause：尚无经验时应先做风险识别，不应伪造痛苦清单",
+      "notes": "模糊边界"
+    }
+  ]
+}

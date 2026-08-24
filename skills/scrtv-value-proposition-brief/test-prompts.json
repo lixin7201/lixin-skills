@@ -1,0 +1,51 @@
+{
+  "skill": "scrtv-value-proposition-brief",
+  "version": "0.1.0",
+  "source_book": "结构化思维工具 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要向领导提一个CRM系统采购方案，帮我讲清楚为什么现在要做、价值是什么。",
+      "expected_behavior": "应激活本 skill，按情境、冲突、原因、策略、价值写方案表达。",
+      "notes": "方案价值表达"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "帮我把这个课程卖点写成一段有冲突、有策略、有价值的提案开场。",
+      "expected_behavior": "应激活本 skill，构造 SCRTV 价值主张。",
+      "notes": "营销/课程提案"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Can you turn this into a concise value proposition brief with situation, conflict, reason, tactic and value?",
+      "expected_behavior": "应激活本 skill，按 SCRTV 输出英文或双语 brief。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "对方这段汇报里哪些是事实、哪些只是理由？",
+      "expected_behavior": "不应激活本 skill，应激活 claim-reason-fact-reception-audit。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我搭一整份30页战略汇报的金字塔结构。",
+      "expected_behavior": "不应激活本 skill，应转 conclusion-first-pyramid-report。",
+      "notes": "整份报告结构诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "帮我夸大收益，别提风险，这样客户更容易买。",
+      "expected_behavior": "不应按请求直接使用；应拒绝夸大并改为透明价值表达。",
+      "notes": "伦理边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

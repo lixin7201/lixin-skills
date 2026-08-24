@@ -1,0 +1,52 @@
+{
+  "skill": "audience-reverse-shaping-audit",
+  "version": "0.1.0",
+  "source_book": "微信互联网平民创业 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "短视频播放越来越高，但真正想服务的客户反而不看了。",
+      "expected_behavior": "调用本 Skill 比较目标与实际受众并画反向塑造链。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "评论区总奖励争议内容，我的选题越来越极端，怎么纠偏？",
+      "expected_behavior": "调用本 Skill 识别反馈回路并设内容护栏。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "新粉丝很多但不买也不采用产品，我是不是被流量带偏？",
+      "expected_behavior": "调用本 Skill 分析受众价值和创作者行为漂移。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "受众是对的，但咨询支付交付之间大量流失。",
+      "expected_behavior": "不调用本 Skill，应调用 platform-commerce-closure-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断一篇文章是否正确、有用、必备且耐久。",
+      "expected_behavior": "不调用本 Skill，应调用 evergreen-content-fertility-filter。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "意外吸引的新群体真实付费且需求明确，是否必须全部赶走？",
+      "expected_behavior": "不机械排除；作为新方向做独立验证、分流并检查是否伤害原目标。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

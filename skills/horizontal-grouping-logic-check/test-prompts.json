@@ -1,0 +1,52 @@
+{
+  "skill": "horizontal-grouping-logic-check",
+  "version": "0.1.0",
+  "source_book": "金字塔原理：麦肯锡40年经典培训教材 — 芭芭拉·明托",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的复盘一页里同时写了原因、措施、教训和感受，帮我重新分组并检查逻辑顺序。",
+      "expected_behavior": "应激活 horizontal-grouping-logic-check，原子化要点、标注类型、拆组并写上层概括。",
+      "notes": "典型同层混杂。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这几个理由看起来都对，但我说不清它们是归纳还是演绎，帮我看横向逻辑。",
+      "expected_behavior": "应激活 horizontal-grouping-logic-check，判断归纳/演绎并修正混合结构。",
+      "notes": "明确横向关系检查。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想检查这个战略大纲是不是 MECE，有没有重复、遗漏或维度混用。",
+      "expected_behavior": "应激活 horizontal-grouping-logic-check，检查同类、顺序、遗漏和重复。",
+      "notes": "MECE/分组检查。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们用户增长下滑，到底应该先投放还是先改产品？帮我先定义问题。",
+      "expected_behavior": "不应激活本 skill，应激活 problem-definition-r1-r2-diagnostic-tree。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我把下面的中文段落翻译成英文。",
+      "expected_behavior": "不应激活本 skill，因为是翻译任务。",
+      "notes": "无关诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这是头脑风暴阶段的素材库，点子很多但还不想收敛，可以帮我分组吗？",
+      "expected_behavior": "应谨慎触发；可做低强度聚类，但不应用正式 MECE 和概括句作为完成标准。",
+      "notes": "边界：发散阶段不宜过早严格结构化。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含横向逻辑正例、问题界定诱饵和发散阶段边界。"
+}

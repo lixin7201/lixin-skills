@@ -1,0 +1,52 @@
+{
+  "skill": "meeting-contribution-obligation",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的48个工作习惯 — 户塚隆将",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我被拉进一个跨部门会，但不是主讲，怎么判断该不该去？",
+      "expected_behavior": "应激活 meeting-contribution-obligation，判断角色并准备一个事实/风险/问题/下一步贡献。",
+      "notes": "正面场景：非主讲参会贡献。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我开会总是全程沉默，怎么会前准备一个有价值的发言？",
+      "expected_behavior": "应激活 meeting-contribution-obligation，准备30秒贡献点和会后闭环。",
+      "notes": "正面场景：会议沉默。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这周会议太多，我想筛掉那些我不能贡献的会。",
+      "expected_behavior": "应激活 meeting-contribution-obligation，按贡献/学习/责任理由判断参会。",
+      "notes": "正面场景：会议投入筛选。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我要给这个会准备一份客户材料，怎么用3W组织资料？",
+      "expected_behavior": "不应激活本 skill，应激活 document-product-3w-storyboard。",
+      "notes": "跨 skill 诱饵：资料产品化。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个会到底是决策会、同步会还是头脑风暴，我还没搞清。",
+      "expected_behavior": "不应激活本 skill，应先使用 discussion-goal-routing。",
+      "notes": "诱饵：会议目标不明。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我是新人，被安排旁听一个战略会，不发言会不会等于缺席？",
+      "expected_behavior": "边界判断：可不激活或只轻量使用；若旁听学习身份明确，不强制发言。",
+      "notes": "边界：合理旁听。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含资料产品化和讨论目标诱饵。"
+}

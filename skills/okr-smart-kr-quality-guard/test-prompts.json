@@ -1,0 +1,52 @@
+{
+  "skill": "okr-smart-kr-quality-guard",
+  "version": "0.1.0",
+  "source_book": "OKR工作管理法培训PPT + SMART目标管理培训PPT — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "O: 提升客户体验。KR: 客服 6 分钟内处理所有问题。这个 OKR 好吗？怎么改？",
+      "expected_behavior": "应激活 okr-smart-kr-quality-guard，指出 O 太泛、KR 有挂断电话副作用，并补满意度/一次解决率等护栏。",
+      "notes": "资料中的核心反例迁移。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我的目标写的是加强团队服务意识，感觉太虚。帮我按 SMART 和 KR 的思路改成能验收的版本。",
+      "expected_behavior": "应激活本 skill，把模糊目标改写为对象、行为、指标、期限、相关性和验收口径。",
+      "notes": "SMART 清晰化目标质量。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个 KR 是每周开 3 次增长会、发 10 篇笔记、做 5 个活动，我觉得像任务清单，你帮我审一下。",
+      "expected_behavior": "应激活本 skill，区分 KR 和行动，把行动从 KR 中拆出并改成结果证据。",
+      "notes": "KR 被写成任务清单。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们客服团队到底适不适合导入 OKR？他们主要按标准流程处理工单。",
+      "expected_behavior": "不应激活本 skill，应激活 okr-fit-preflight。",
+      "notes": "跨 skill 混淆诱饵: 先判适用性。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经确定目标是下周交一版方案，帮我排每天的行动计划和时间块。",
+      "expected_behavior": "不应激活本 skill，应走行动计划/时间安排类 Skill。",
+      "notes": "诱饵: 行动计划，不是目标/KR 质量。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这是一个探索型新产品目标，我不知道该不该把 KR 定得很保守，怕完不成。",
+      "expected_behavior": "应触发本 skill 但先提示探索型目标允许挑战，需要风险预算、学习机制和非惩罚性复盘。",
+      "notes": "边界: SMART 可达成与 OKR 挑战性的张力。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 OKR 适用性预检作为同批诱饵。"
+}

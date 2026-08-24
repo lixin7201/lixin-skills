@@ -1,0 +1,16 @@
+{
+  "skill":"surge-mode-governor",
+  "version":"0.1.0",
+  "source_book":"埃隆·马斯克传 — 沃尔特·艾萨克森",
+  "darwin_compatible":true,
+  "test_cases":[
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"我们只剩三周现金，必须在十天内完成能收款的版本，要不要全员战时状态？","expected_behavior":"激活本 Skill，验证真实窗口、唯一里程碑、护栏与退出日。","notes":"生存窗口"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"迁移窗口只有周末六小时，五个团队要一起行动，帮我设计 war room。","expected_behavior":"激活本 Skill，同时要求依赖图、叫停权和系统验收。","notes":"跨团队硬窗口"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"The CEO wants permanent crunch mode because everything is urgent. Audit whether surge mode is justified.","expected_behavior":"激活本 Skill，并可能因无唯一窗口而拒绝启用。","notes":"英文边界触发"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"客服流程积压，但我们还不知道到底哪个环节限制总吞吐。","expected_behavior":"不直接启用狂飙，先激活 moving-bottleneck-red-light-loop。","notes":"跨 Skill 混淆诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"我想每天晚上多写半小时日记。","expected_behavior":"不激活，属于个人常规习惯。","notes":"无关诱饵"},
+    {"id":"edge-01","type":"edge_case","prompt":"产品没有用户，但我想用两周通宵把所有功能做完。","expected_behavior":"不启用狂飙；需求未验证，集中资源只会放大浪费。","notes":"虚假紧迫边界"}
+  ],
+  "minimum_pass_rate":0.8
+}
+

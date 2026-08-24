@@ -1,0 +1,52 @@
+{
+  "skill": "interest-after-competence-diagnostic",
+  "version": "0.1.0",
+  "source_book": "把时间当作朋友 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我刚学两次编程就觉得自己没兴趣，是不是该马上放弃？",
+      "expected_behavior": "调用本 Skill 先诊断未入门与反馈缺失并做最低能力试验。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我说不喜欢写作，但其实从没完整写完一篇文章。",
+      "expected_behavior": "调用本 Skill 定义一个最小作品后再判断兴趣。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "新岗位很无聊，可我还不会核心工作，怎样判断是不适合还是没入门？",
+      "expected_behavior": "调用本 Skill 分离能力、环境、价值和真实厌恶。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已确定要健身一年，怎样安排不会透支的训练强度？",
+      "expected_behavior": "不调用本 Skill，应调用 long-change-intensity-budget。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这是我第一次做新技术项目，学习试错和返工该估多久？",
+      "expected_behavior": "不调用本 Skill，应调用 familiarity-weighted-estimation。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这份工作持续羞辱我并影响健康，但我还没做到熟练，是否应先坚持到有兴趣？",
+      "expected_behavior": "不调用来强迫坚持；优先安全退出、支持和健康边界。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

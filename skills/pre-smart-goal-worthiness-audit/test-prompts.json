@@ -1,0 +1,52 @@
+{
+  "skill": "pre-smart-goal-worthiness-audit",
+  "version": "0.1.0",
+  "source_book": "工作计划目标管理培训 — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "老板给我一个目标：30天内每天发3条短视频，把线索数提升50%。目标看起来很SMART，但我觉得客户和资源都不确定。这个目标该不该直接接？",
+      "expected_behavior": "应激活 pre-smart-goal-worthiness-audit，先检查目标来源、客户/问题证据、价值、资源、权责、可控性和承诺边界，再决定承诺、修订、试点或取证。",
+      "notes": "正面场景：目标清晰但承诺前提不明。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想给今年写一个学习目标，但不想只是写成SMART句子。我想先判断这个目标是不是值得投入、是不是和成长方向匹配。",
+      "expected_behavior": "应激活 pre-smart-goal-worthiness-audit，用六导向和价值/资源/可控性预检判断目标是否值得承诺。",
+      "notes": "正面场景：个人学习目标的SMART前预检。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "客户要求我们两周上线一个功能，指标和期限都写清楚了，但我们没有权限改核心系统，也没有测试资源。怎么评估这个goal worthiness？",
+      "expected_behavior": "应激活 pre-smart-goal-worthiness-audit，重点检查权责、资源、依赖、可控因素和不可直接承诺时的协商/试点/风险记录。",
+      "notes": "正面场景：资源和权责不匹配。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经确定要做这个OKR了，请帮我检查O和KR是不是足够具体、可衡量、有期限，有没有坏指标。",
+      "expected_behavior": "不应激活本 skill，应优先激活 okr-smart-kr-quality-guard，因为目标承诺已成立，问题是OKR/SMART表达质量。",
+      "notes": "诱饵：应触发既有相邻 Skill。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们公司想推OKR，但不确定适不适合现在的组织阶段、节奏和管理方式。",
+      "expected_behavior": "不应激活本 skill，应优先激活 okr-fit-preflight，因为问题是是否导入OKR机制。",
+      "notes": "诱饵：应触发既有相邻 Skill。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "老板已经正式下达目标，我没有拒绝权，但资源确实不够。你帮我判断下怎么写回应。",
+      "expected_behavior": "可有限激活本 skill，用于记录目标风险、资源缺口和协商方案；不能假设用户可以完全拒绝或控制目标。",
+      "notes": "边界：强制目标和权力不对等。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含既有相邻 Skill 混淆测试。"
+}

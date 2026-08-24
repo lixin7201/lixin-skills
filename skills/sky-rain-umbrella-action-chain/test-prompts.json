@@ -1,0 +1,52 @@
+{
+  "skill": "sky-rain-umbrella-action-chain",
+  "version": "0.1.0",
+  "source_book": "麦肯锡工作法：个人竞争力提升50%的7堂课 — 大岛祥誉",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "竞品今天上线了低价套餐。请帮我按空雨伞写：事实是什么、说明什么、我们下一步怎么办。",
+      "expected_behavior": "应激活 sky-rain-umbrella-action-chain，输出空=事实、雨=意义、伞=行动，并用Why so列待验证点。",
+      "notes": "正面场景：单个市场信号转行动。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这周用户访谈里反复提到'设置太麻烦'，我想知道这说明什么，怎么转成产品行动。",
+      "expected_behavior": "应激活 sky-rain-umbrella-action-chain，把用户原话转成意义判断、证据回查和行动建议。",
+      "notes": "正面场景：用户反馈到行动。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我写周报时只有数据：打开率下降了5个百分点。帮我追问So what和Why so，不要只描述数据。",
+      "expected_behavior": "应激活 sky-rain-umbrella-action-chain，从事实追问影响、原因证据和下一步监测或实验。",
+      "notes": "正面场景：数据洞察写作。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "销售额下降可能和客群、渠道、价格、产品都有关系，帮我先画逻辑树并提出关键假设。",
+      "expected_behavior": "不应激活本 skill，应激活 issue-hypothesis-logic-tree-loop。",
+      "notes": "跨 skill 诱饵：复杂问题拆解。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想写一份完整汇报，先给结论，再按金字塔结构分组支撑。",
+      "expected_behavior": "不应激活本 skill，应激活 conclusion-first-pyramid-report。",
+      "notes": "诱饵：完整报告结构。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "朋友圈里看到一个行业截图，说某赛道融资暴涨。我能不能直接按空雨伞写行动建议？",
+      "expected_behavior": "不应直接行动；应先要求核验事实来源，优先 primary-source-fact-grounding，或只输出待验证的空雨伞草案。",
+      "notes": "边界：事实来源不可靠。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含 issue-hypothesis-logic-tree-loop 和金字塔报告诱饵。"
+}

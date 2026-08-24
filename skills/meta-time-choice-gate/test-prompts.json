@@ -1,0 +1,49 @@
+{
+  "skill": "meta-time-choice-gate",
+  "title": "元时间选择节点守门",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "meta-time-choice-gate:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我早上一睁眼就摸手机，本来想写作，结果半小时没了。",
+      "expected": "meta-time-choice-gate",
+      "rationale": "典型节点失守。"
+    },
+    {
+      "id": "meta-time-choice-gate:trigger-02",
+      "type": "should_trigger",
+      "prompt": "每次开工前我都会先点开微信，明明任务很明确。",
+      "expected": "meta-time-choice-gate",
+      "rationale": "启动前自动动作。"
+    },
+    {
+      "id": "meta-time-choice-gate:trigger-03",
+      "type": "should_trigger",
+      "prompt": "客户说话很冲，我想立刻回怼，怎么让自己先停一下？",
+      "expected": "meta-time-choice-gate",
+      "rationale": "冲动回复前需要守门。"
+    },
+    {
+      "id": "meta-time-choice-gate:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我现在因为愤怒想辞职，觉得脑子带宽不够，需要先判断能不能做决定。",
+      "expected": "mental-bandwidth-scarcity-triage",
+      "rationale": "情绪峰值的重大决定先做带宽分诊。"
+    },
+    {
+      "id": "meta-time-choice-gate:not-02",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我手机怎么设置勿扰模式。",
+      "expected": "none",
+      "rationale": "技术设置请求。"
+    },
+    {
+      "id": "meta-time-choice-gate:edge-01",
+      "type": "edge",
+      "prompt": "家人突然需要急救电话，我是不是也要先暂停几秒观察选择节点？",
+      "expected": "none",
+      "rationale": "紧急安全场景停止流程。"
+    }
+  ]
+}

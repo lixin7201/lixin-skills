@@ -1,0 +1,49 @@
+{
+  "skill": "record-over-checkin-motivation-guard",
+  "title": "记录替代打卡动机守卫",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "record-over-checkin-motivation-guard:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我背单词连续打卡90天，但最近只是为了不断签，质量越来越低。",
+      "expected": "record-over-checkin-motivation-guard",
+      "rationale": "打卡异化。"
+    },
+    {
+      "id": "record-over-checkin-motivation-guard:trigger-02",
+      "type": "should_trigger",
+      "prompt": "跑步断签一天后我就不想继续了，好像之前都白费。",
+      "expected": "record-over-checkin-motivation-guard",
+      "rationale": "连续天数绑架动机。"
+    },
+    {
+      "id": "record-over-checkin-motivation-guard:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我参加学习排行榜，排名一掉就焦虑，反而忘了为什么学。",
+      "expected": "record-over-checkin-motivation-guard",
+      "rationale": "外部评价替代内在目标。"
+    },
+    {
+      "id": "record-over-checkin-motivation-guard:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我想做一个每日反思模板，记录触动、原因和下一步。",
+      "expected": "daily-reflection-awareness-loop",
+      "rationale": "这是反思流程。"
+    },
+    {
+      "id": "record-over-checkin-motivation-guard:not-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我查询飞书考勤打卡记录。",
+      "expected": "none",
+      "rationale": "外部系统查询，不是个人成长方法。"
+    },
+    {
+      "id": "record-over-checkin-motivation-guard:edge-01",
+      "type": "edge",
+      "prompt": "公司合规要求每天打卡，我能用这个方法取消打卡吗？",
+      "expected": "none",
+      "rationale": "合规事项不适用。"
+    }
+  ]
+}

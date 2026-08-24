@@ -1,0 +1,52 @@
+{
+  "skill": "misunderstanding-map-preflight",
+  "version": "0.1.0",
+  "source_book": "李笑来的讲者技巧 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "新退款规则下周上线，我怕用户会理解成任何情况都能退，怎么在上线前测试？",
+      "expected_behavior": "调用 misunderstanding-map-preflight，选择小样本、收集复述并补正反定义。",
+      "notes": "规则发布预演。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我要讲一个陌生概念，怎样提前知道听众会把它和什么混淆？",
+      "expected_behavior": "调用 misunderstanding-map-preflight，用无提示复述建立概念替换地图。",
+      "notes": "新概念教学。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "读者总把我的建议扩大到我没说的范围，能系统修一下吗？",
+      "expected_behavior": "调用 misunderstanding-map-preflight，汇总范围漂移样本并回写非适用项。",
+      "notes": "写作反复误读。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "评审刚说方案不可靠，但我还不知道他具体指什么，先怎么回应？",
+      "expected_behavior": "不调用本 Skill，应调用同书 accurate-restatement-feedback-loop。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "讲稿里有几条我自己都不相信的承诺，是否应该保留？",
+      "expected_behavior": "不调用本 Skill，应调用 speaker-claim-consistency-audit。",
+      "notes": "主张一致性诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "只有三个非常熟悉规则的内部同事，低风险通知还需要完整误解地图吗？",
+      "expected_behavior": "可采用轻量复述抽检；风险低且群体同质时不必机械扩到大样本。",
+      "notes": "低风险规模边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

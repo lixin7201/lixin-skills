@@ -1,0 +1,52 @@
+{
+  "skill": "bad-debt-rolldown-plan",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我有3张信用卡和2个消费贷，每月都最低还款，想知道先还哪一个。",
+      "expected_behavior": "应激活本 skill，列清单并排序。",
+      "notes": "多笔不良债务。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "债务合并以后轻松了一点，但我怕又刷出来，怎么防止复发？",
+      "expected_behavior": "应激活本 skill，冻结新增和复盘现金流。",
+      "notes": "债务换壳风险。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想用一个固定流程把消费债清掉，每月怎么跟踪？",
+      "expected_behavior": "应激活本 skill，建立滚动复盘表。",
+      "notes": "执行程序。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我应该申请哪家银行的低息贷款？",
+      "expected_behavior": "不应激活本 skill；这是产品选择。",
+      "notes": "产品推荐诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我准备用贷款买设备，这算好债吗？",
+      "expected_behavior": "不应激活本 skill，应激活 good-bad-debt-screen。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我有一笔低息车贷和一笔高息信用卡，但车是工作必需。",
+      "expected_behavior": "应调用本 skill，先保工作现金流并优先处理高息/高风险债。",
+      "notes": "数学与生活约束冲突。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

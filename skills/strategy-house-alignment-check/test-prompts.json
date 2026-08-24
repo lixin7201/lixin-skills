@@ -1,0 +1,48 @@
+{
+  "skill": "strategy-house-alignment-check",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们公司今年又要做品牌升级，又要做抖音、小红书、私域，还要推新产品，但感觉目标、资源和团队能力完全对不上。帮我看看战略是不是散了。",
+      "expected_behavior": "应调用 strategy-house-alignment-check，按目标、主战场、制胜方式、保障机制找最大错位。",
+      "notes": "正向场景: 战略和资源不一致。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想给个人IP做一张战略屋，不是写口号，是想确认目标用户、内容阵地、产品线和交付能力能不能支撑起来。",
+      "expected_behavior": "应调用 strategy-house-alignment-check，并简化成目标-战场-能力对齐。",
+      "notes": "正向场景: 小团队/个人IP战略屋。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Our product, channel, content and team setup do not match the growth target. Can you do a strategy alignment check?",
+      "expected_behavior": "应调用 strategy-house-alignment-check，识别 strategy alignment / how to win 场景。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我把这个品牌口号润色得更有高级感，不需要看目标和资源。",
+      "expected_behavior": "不应调用；这是纯文案润色，最多转品牌定位或写作类 skill。",
+      "notes": "诱饵: 纯文案润色。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想知道小红书现在蒲公英和薯条怎么投，哪些规则更新了。",
+      "expected_behavior": "不应调用；应转 platform-playbook-currentness-audit 做平台时效核验。",
+      "notes": "同批/邻近混淆: 平台打法核验。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我有一个很大的愿景，但现在没有产品、用户、团队和预算信息，能不能直接给我做战略屋？",
+      "expected_behavior": "不应进入完整战略屋流程；应先判停并输出取证问题，不编完整战略。",
+      "notes": "边界: 信息不足，修订为拒绝完整调用。"
+    }
+  ]
+}

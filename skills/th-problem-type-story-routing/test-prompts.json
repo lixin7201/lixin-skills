@@ -1,0 +1,52 @@
+{
+  "skill": "th-problem-type-story-routing",
+  "version": "0.1.0",
+  "source_book": "麦肯锡不外流的简报格式与说服技巧 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要推动公司买昂贵的安全系统，应该讲理想效率还是潜在风险？",
+      "expected_behavior": "应激活 th-problem-type-story-routing，判断为预防潜在问题型并生成故事骨架。",
+      "notes": "正面场景：高成本风险预防提案。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "对方不觉得现状坏，我却准备了危机故事，怎么判断问题类型？",
+      "expected_behavior": "应激活 th-problem-type-story-routing，先校准听众认知并避免恢复原状型错位。",
+      "notes": "正面场景：听众认知错位。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个流程改革提案现状还行但能更好，故事应该按追求理想型来讲吗？",
+      "expected_behavior": "应激活 th-problem-type-story-routing，判断追求理想型并输出理想-差距-策略-行动。",
+      "notes": "正面场景：追求理想型。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我这场汇报还没想清楚希望听众从A状态到B状态，也不知道要他们做什么。",
+      "expected_behavior": "不应激活本 skill，应激活 presentation-action-change-brief。",
+      "notes": "跨 skill 诱饵：行动目标未定义。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "团队直接跳方案，R1/R2和根因都不清楚。",
+      "expected_behavior": "不应激活本 skill，应激活 problem-definition-r1-r2-diagnostic-tree。",
+      "notes": "诱饵：问题定义而不是演示故事。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "一个合规事件已经发生，但领导不承认严重性，能直接按恢复原状型讲吗？",
+      "expected_behavior": "可激活本 skill，但必须先校准听众认知；不能直接灾难化。",
+      "notes": "边界：问题已发生但共识不足。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含行动目标和问题定义诱饵。"
+}

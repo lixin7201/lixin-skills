@@ -1,0 +1,66 @@
+{
+  "skill": "problem-definition-r1-r2-diagnostic-tree",
+  "version": "0.2.0",
+  "source_book": "金字塔原理：麦肯锡40年经典培训教材 — 芭芭拉·明托；第15批问题分析与根因工具旧PPT包",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "用户增长下滑，团队吵着要不要加投放，帮我先定义 R1/R2，再决定该查什么。",
+      "expected_behavior": "应激活 problem-definition-r1-r2-diagnostic-tree，先定义 R1/R2 和主要疑问，再选择诊断框架。",
+      "notes": "典型先界定问题再诊断。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们流程经常出错，大家直接提了三个改造方案，但目标状态没对齐，怎么分析？",
+      "expected_behavior": "应激活 problem-definition-r1-r2-diagnostic-tree，停止方案比较，先对齐目标状态和约束。",
+      "notes": "R2 模糊时不能比较方案。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我要写咨询建议书，客户现状、目标和困扰都有，但不知道如何转成诊断逻辑树。",
+      "expected_behavior": "应激活 problem-definition-r1-r2-diagnostic-tree，产出问题定义卡、诊断框架和证据验证清单。",
+      "notes": "咨询诊断场景。"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "客服质量太差，所以要换系统。你先帮我把这个问题描述改成现状、目标和差距，不要夹带原因和方案。",
+      "expected_behavior": "应激活本 skill，删除原因和方案，重写对象、范围、当前状态、目标状态、差距和证据来源。",
+      "notes": "第十五批新增: 差距式问题陈述质量门。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这份报告开头怎么用背景、冲突、疑问、回答写得更自然？",
+      "expected_behavior": "不应激活本 skill，应激活 scqa-reader-question-introduction。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这张图表标题叫各地区利润份额，帮我改成结论标题。",
+      "expected_behavior": "不应激活本 skill，应激活 pyramid-slide-one-point-check。",
+      "notes": "单页图表诱饵。"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "问题已经写清楚：6月夜班客服首次响应均值8分钟，目标3分钟，影响新客咨询。请开鱼骨图找主要因。",
+      "expected_behavior": "不应激活本 skill，应激活 fishbone-major-cause-verification-workshop。",
+      "notes": "第十五批新增: 已完成问题定义，应交接下游根因 skill。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我只有一个很模糊的抱怨：公司效率不行，但没有数据和目标。",
+      "expected_behavior": "应谨慎触发；先要求补充业务领域、R1/R2 和约束，不能直接画诊断树。",
+      "notes": "边界：信息不足时不能制造空泛框架。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含问题定义正例、序言/图表诱饵和目标模糊边界。"
+}

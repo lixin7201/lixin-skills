@@ -1,0 +1,52 @@
+{
+  "skill": "evergreen-content-fertility-filter",
+  "version": "0.1.0",
+  "source_book": "自学是门手艺 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个工具突然爆火，我想写长教程，但怕三个月就过时，值得投入吗？",
+      "expected_behavior": "调用 evergreen-content-fertility-filter，分离耐久原理与易变步骤并回答五问。",
+      "notes": "热点教程。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我读了很多文章却没有产生任何作品或技能，怎么筛输入？",
+      "expected_behavior": "调用 evergreen-content-fertility-filter，用新视野、模式、技能和产出检查繁殖力。",
+      "notes": "被动输入。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这本书稿越写越大，怎样判断哪些内容必备、哪些十年后仍有用？",
+      "expected_behavior": "调用 evergreen-content-fertility-filter，用必备范围、耐久层和命名检查收缩。",
+      "notes": "书稿范围。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "官方文档和社区答案冲突，我要确定哪个来源更可靠。",
+      "expected_behavior": "不调用本 Skill，应调用同书 decentralized-teacher-source-ladder。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "API 文档存在大量过早引用，我要设计粗读和精读顺序。",
+      "expected_behavior": "不调用本 Skill，应调用 premature-reference-dual-speed-reading。",
+      "notes": "阅读协议诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我必须今天写一份只对本次事故有效的应急通知，它不耐久，还值得写吗？",
+      "expected_behavior": "不因不耐久否定；时效内容可写，但应明确受众、到期日和归档条件，不冒充常青内容。",
+      "notes": "时效内容边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

@@ -1,0 +1,48 @@
+{
+  "skill": "users-before-product",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "产品还没做，先去哪找用户",
+      "expected_behavior": "调用 users-before-product；先执行“圈定首批用户”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎样避免做完没人用",
+      "expected_behavior": "调用 users-before-product；先执行“圈定首批用户”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "先有用户还是先有产品",
+      "expected_behavior": "调用 users-before-product；先执行“圈定首批用户”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 users-before-product 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "第一桶金从哪里开始",
+      "expected_behavior": "不调用 users-before-product；应优先调用同书兄弟 Skill nearby-problem-income-loop",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "已有 500 个付费客户，下一版功能怎么排优先级",
+      "expected_behavior": "不调用 users-before-product：应做现有用户研究与产品优先级，而非从零准备用户",
+      "notes": "模糊边界"
+    }
+  ]
+}

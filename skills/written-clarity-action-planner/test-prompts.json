@@ -1,0 +1,49 @@
+{
+  "skill": "written-clarity-action-planner",
+  "title": "清晰力行动规划",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "written-clarity-action-planner:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我知道这周要做内容，但每天坐下都不知道先写什么，最后时间没了。",
+      "expected": "written-clarity-action-planner",
+      "rationale": "目标有但执行不清。"
+    },
+    {
+      "id": "written-clarity-action-planner:trigger-02",
+      "type": "should_trigger",
+      "prompt": "团队项目里大家都说要推进，但没人知道交付物和完成标准。",
+      "expected": "written-clarity-action-planner",
+      "rationale": "工作协作缺清晰标准。"
+    },
+    {
+      "id": "written-clarity-action-planner:trigger-03",
+      "type": "should_trigger",
+      "prompt": "我有晚上两小时自由时间，但每次都被零碎事情吃掉。",
+      "expected": "written-clarity-action-planner",
+      "rationale": "自由时间需要书面化。"
+    },
+    {
+      "id": "written-clarity-action-planner:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我开工前明明知道要写第一段，但手会自动点开微信。",
+      "expected": "meta-time-choice-gate",
+      "rationale": "节点失守。"
+    },
+    {
+      "id": "written-clarity-action-planner:not-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我查看今天日历上有什么会议。",
+      "expected": "none",
+      "rationale": "日历查询请求。"
+    },
+    {
+      "id": "written-clarity-action-planner:edge-01",
+      "type": "edge",
+      "prompt": "我对这个市场信息很少，不想写三个月详细计划，只想规划一周探索动作。",
+      "expected": "written-clarity-action-planner",
+      "rationale": "可触发，但只能规划探索动作。"
+    }
+  ]
+}

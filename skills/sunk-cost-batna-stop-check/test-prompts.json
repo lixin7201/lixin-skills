@@ -1,0 +1,52 @@
+{
+  "skill": "sunk-cost-batna-stop-check",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的谈判策略 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我和供应商谈了两个月，但新条件比换一家还差，还要继续吗？",
+      "expected_behavior": "应激活 sunk-cost-batna-stop-check，冻结过去投入并比较当前协议与B计划。",
+      "notes": "正面场景：谈久后条件变差。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "都谈这么久了，我不想让前面的时间和面子白费，所以想签。",
+      "expected_behavior": "应激活 sunk-cost-batna-stop-check，识别沉没成本并只比较未来结果。",
+      "notes": "正面场景：沉没成本话语。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "当前协议已经低于我的B计划，但团队说谈崩很难看。",
+      "expected_behavior": "应激活 sunk-cost-batna-stop-check，用B计划和当前协议决定停止或重设条件。",
+      "notes": "正面场景：面子延长坏协议。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我还没开始谈，想先准备目标、底线和谈崩后的替代方案。",
+      "expected_behavior": "不应激活本 skill，应激活 constructive-negotiation-preflight。",
+      "notes": "跨 skill 诱饵：谈判前准备。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我持有的基金亏了很多，不想承认亏损，要不要卖？",
+      "expected_behavior": "不应激活本 skill，应使用投资/持有相关 Skill，并提示金融风险。",
+      "notes": "诱饵：投资持仓不是谈判。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "当前协议略低于B计划，但对方愿意增加长期合作承诺，怎么判断？",
+      "expected_behavior": "可激活本 skill，但应把长期承诺量化为未来价值和风险后再比较。",
+      "notes": "边界：当前低但未来承诺。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含谈判准备和投资持仓诱饵。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "growth-option-standard-screen",
+  "version": "0.1.0",
+  "source_book": "学会成长：爆发式成长的25个思维模型 — 粥左罗",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想报一个AI课程，广告页很心动但我只有这一个选项，要不要买？",
+      "expected_behavior": "应激活 growth-option-standard-screen，先建立至少3个备选、准入线、淘汰线和最小验证。",
+      "notes": "正面场景：成长课程选择且缺少备选和标准。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "有个合作方说机会很好，我怕错过，但现在没有比较对象，怎么筛？",
+      "expected_behavior": "应激活 growth-option-standard-screen，要求补充选项池和淘汰标准后再决定。",
+      "notes": "正面场景：合作机会筛选。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想换成长方向，但现在每个方向都只是听别人推荐，怎么做 option screening？",
+      "expected_behavior": "应激活 growth-option-standard-screen，输出备选、成本、验证和退出条件。",
+      "notes": "正面场景：职业/学习方向筛选。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经确认这个项目是关键机会了，接下来两周要不要集中资源冲一把？",
+      "expected_behavior": "不应激活本 skill，应激活 asymmetric-opportunity-sprint。",
+      "notes": "跨 skill 诱饵：已筛出关键机会，应进入赛点冲刺。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我审一下这个理财顾问是不是靠谱，他推荐我买一款产品。",
+      "expected_behavior": "不应激活本 skill，应优先使用顾问/金融尽调类 Skill，并提示金融风险。",
+      "notes": "诱饵：顾问资质和投资风险不是普通成长选项筛选。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我已经有两个课程选项，但都缺少学员案例和作业反馈，还能比较吗？",
+      "expected_behavior": "可激活本 skill，但应先补第三个选项或补证据；不能直接二选一。",
+      "notes": "边界：选项不足且证据不足。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含3条应调用、2条诱饵和1条边界；诱饵含同书兄弟 skill。"
+}

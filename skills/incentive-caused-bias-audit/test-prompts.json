@@ -1,0 +1,17 @@
+{
+  "skill": "incentive-caused-bias-audit",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"内容团队奖金只看发文数量，结果大家拆稿、重复和灌水，帮我审计这个制度会怎么被玩坏。","expected_behavior":"应激活本 Skill，定义真实结果、画利益表、红队游戏指标并加护栏。","notes":"指标游戏。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"顾问按我购买的软件金额拿佣金，但他说贵方案真的是最适合我，怎么区分真诚信念和利益冲突？","expected_behavior":"应激活本 Skill，同时读建议、收益结构、风险承担和独立证据。","notes":"激励改变信念。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"销售总推提成高的旧产品，客户留存越来越差，KPI 还都达标，怎么重构？","expected_behavior":"应激活本 Skill，加入客户结果、长期护栏、坏消息通道和反游戏测试。","notes":"销售提成错配。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"报表利润很好但现金很差，先把收入确认和交付义务对账。","expected_behavior":"不应激活本 Skill，应激活 accounting-economic-reality-reconciliation。","notes":"跨 Skill 诱饵：账实对账。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"公司扩到 30 个城市后层级变多、决策变慢，规模红利是否已被吃掉？","expected_behavior":"不应激活本 Skill，应激活 scale-advantage-disease-audit。","notes":"跨 Skill 诱饵：规模净效应。"},
+    {"id":"edge-01","type":"edge_case","prompt":"请直接替我设计员工处罚和奖金合同，保证既合法又不会有人钻空子。","expected_behavior":"可用本 Skill做风险审计，但必须停止代替劳动法/薪酬专业设计，也不能保证零游戏。","notes":"专业与保证边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

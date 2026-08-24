@@ -1,0 +1,52 @@
+{
+  "skill": "decision-node-error-multiplier-audit",
+  "version": "0.1.0",
+  "source_book": "让时间陪你慢慢变富 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我的交易策略要连续判断入场、加仓、止盈、抄底，每步都挺合理却总执行坏。",
+      "expected_behavior": "调用本 Skill 枚举节点并审计联合脆弱性。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "审批流程加了十几个可选分支，单个都说有用但整体总出错。",
+      "expected_behavior": "调用本 Skill 删除或预承诺非必要节点。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "自动化发布每一步成功率都很高，为什么完整发布仍经常失败？",
+      "expected_behavior": "调用本 Skill 分析多节点相乘和高风险节点。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "这个方案缺少退款、交付和售后环节，怎样补齐？",
+      "expected_behavior": "不调用本 Skill，应调用 whole-action-chain-validity-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我因市场大涨想立刻重仓，需要先拦住情绪决策。",
+      "expected_behavior": "不调用本 Skill，应调用 investment-decision-firewall。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "安全检查让流程多一个节点，是否为了提高成功率应该删掉？",
+      "expected_behavior": "不删除；必要安全门应保留并通过自动化或防错降低成本。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

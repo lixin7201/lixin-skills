@@ -1,0 +1,16 @@
+{
+  "skill":"design-production-responsibility-loop",
+  "version":"0.1.0",
+  "source_book":"埃隆·马斯克传 — 沃尔特·艾萨克森",
+  "darwin_compatible":true,
+  "test_cases":[
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"产品经理把需求交给研发就不管了，结果每次上线运维都要熬夜救火。","expected_behavior":"激活本 Skill，追踪设计决策到运维成本并建立共同责任指标。","notes":"责任断点"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"我们的课程方案看起来很好，但每次交付都要老师做大量手工补丁。","expected_behavior":"激活本 Skill，让方案设计者接收交付反馈并修改设计。","notes":"非软件场景"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"How do we make the architects own production outcomes instead of throwing designs over the wall?","expected_behavior":"激活本 Skill，建立生命周期责任同环。","notes":"英文触发"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"订单处理有七个环节，大家都很忙但不知道当前卡在哪里。","expected_behavior":"不激活本 Skill，应激活 moving-bottleneck-red-light-loop。","notes":"跨 Skill 混淆诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"帮我润色这篇已经定稿的文章。","expected_behavior":"不激活，属于单次编辑。","notes":"无责任链"},
+    {"id":"edge-01","type":"edge_case","prompt":"我们把非核心客服完全外包了，要不要强行收回来？","expected_behavior":"不直接建议垂直整合；仅在设计方已失去关键反馈和结果责任时使用本 Skill，并保留外包执行。","notes":"外包边界"}
+  ],
+  "minimum_pass_rate":0.8
+}
+

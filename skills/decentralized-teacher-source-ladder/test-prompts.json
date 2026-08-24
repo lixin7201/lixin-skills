@@ -1,0 +1,52 @@
+{
+  "skill": "decentralized-teacher-source-ladder",
+  "version": "0.1.0",
+  "source_book": "自学是门手艺 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "没有课程系统教这个新框架，我应该从官方文档、开源实现还是专家开始？",
+      "expected_behavior": "调用 decentralized-teacher-source-ladder，定义问题并建立来源升级梯。",
+      "notes": "无单一老师。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "官方文档、两篇博客和一个大V给出的答案冲突，我该信谁？",
+      "expected_behavior": "调用 decentralized-teacher-source-ladder，按版本、一手证据和实验裁决并保留未决冲突。",
+      "notes": "来源冲突。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我搜索了很久仍复现不了这个错误，怎样准备一个不浪费专家时间的问题？",
+      "expected_behavior": "调用 decentralized-teacher-source-ladder，整理最小复现、环境、尝试和证据后求助。",
+      "notes": "结构化提问。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "同一份API规范前文反复引用后文术语，我第一遍该粗读还是精读？",
+      "expected_behavior": "不调用本 Skill，应调用同书 premature-reference-dual-speed-reading。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想判断一篇教程十年后是否仍值得读和写。",
+      "expected_behavior": "不调用本 Skill，应调用 evergreen-content-fertility-filter。",
+      "notes": "内容耐久诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我在处理可能危及生命的医疗问题，能否综合论坛观点自己裁决？",
+      "expected_behavior": "不自行裁决；来源阶梯必须升级到合格医疗专业人士和正式证据，论坛只可辅助提问。",
+      "notes": "高风险专业边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

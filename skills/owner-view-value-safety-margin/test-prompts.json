@@ -1,0 +1,48 @@
+{
+  "skill": "owner-view-value-safety-margin",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "把股票当公司看该怎么分析",
+      "expected_behavior": "调用 owner-view-value-safety-margin；先执行“理解业务”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这家公司值不值得长期拥有",
+      "expected_behavior": "调用 owner-view-value-safety-margin；先执行“理解业务”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样判断安全边际",
+      "expected_behavior": "调用 owner-view-value-safety-margin；先执行“理解业务”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 owner-view-value-safety-margin 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "怎样系统看懂一家公司",
+      "expected_behavior": "不调用 owner-view-value-safety-margin；应优先调用同书兄弟 Skill rider-horse-track-company-reading",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这只股票下周会不会涨？",
+      "expected_behavior": "不调用 owner-view-value-safety-margin：所有者视角不预测短期价格",
+      "notes": "模糊边界"
+    }
+  ]
+}

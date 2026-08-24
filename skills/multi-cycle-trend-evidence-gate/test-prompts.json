@@ -1,0 +1,52 @@
+{
+  "skill": "multi-cycle-trend-evidence-gate",
+  "version": "0.1.0",
+  "source_book": "让时间陪你慢慢变富 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这个行业连续三年增长，我能认定它会长期增长吗？",
+      "expected_behavior": "调用本 Skill 定义周期并检查至少两个周期和结构稳定性。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "某资产经历一次牛熊后恢复，是否足够支持长期持有？",
+      "expected_behavior": "调用本 Skill 降级单周期证据并列下一次推翻条件。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "旧商业模式历史上反复成功，但新技术改变了参与者，历史还能用吗？",
+      "expected_behavior": "调用本 Skill 重点做结构稳定性检查。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "趋势证据已经充分，但我每天仍想改持有策略。",
+      "expected_behavior": "不调用本 Skill，应调用 active-choice-passive-hold-protocol。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这家公司值多少钱、当前价格有安全边际吗？",
+      "expected_behavior": "不调用本 Skill，应调用 owner-view-value-safety-margin。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "一个新兴技术还没有两个完整周期，是否说明绝对不能试？",
+      "expected_behavior": "不作强趋势结论；可在损失可控下作为弱证据实验，明确数据缺口。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

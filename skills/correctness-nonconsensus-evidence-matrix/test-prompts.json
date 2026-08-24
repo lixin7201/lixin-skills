@@ -1,0 +1,52 @@
+{
+  "skill": "correctness-nonconsensus-evidence-matrix",
+  "version": "0.1.0",
+  "source_book": "财富自由之路 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队所有人都反对一个新产品，但我有一组用户数据支持，值得试吗？",
+      "expected_behavior": "调用 correctness-nonconsensus-evidence-matrix，拆开正确性与认同度并设计可逆实验。",
+      "notes": "产品非共识。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "行业都说必须这样做，可没人拿出一手证据，我怎么判断共识可能错了？",
+      "expected_behavior": "调用 correctness-nonconsensus-evidence-matrix，建立可证伪主张、基准率和反方表。",
+      "notes": "行业共识审计。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我觉得别人都没看懂这个机会，想重仓证明自己，帮我冷静验证。",
+      "expected_behavior": "调用 correctness-nonconsensus-evidence-matrix，但先计算错误代价并要求小额可逆验证与投资防火墙。",
+      "notes": "叛逆身份与高风险。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "一条行业消息刚上热搜，我想先检查是不是算法和营销放大的。",
+      "expected_behavior": "不调用本 Skill，应调用 novelty-information-distortion-audit。",
+      "notes": "信息失真诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经决定验证这个假设，但不知道该广泛试探还是深挖现有路线。",
+      "expected_behavior": "不调用本 Skill，应调用 explore-exploit-mode-switch。",
+      "notes": "同批兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "医疗团队多数不同意我的个人判断，我能用非共识优势绕过标准流程吗？",
+      "expected_behavior": "不能；高风险专业领域必须遵循证据、授权和安全标准，非共识不降低门槛。",
+      "notes": "医疗安全边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "audience-distance-conclusion-ordering",
+  "version": "0.1.0",
+  "source_book": "李笑来的讲者技巧 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要向强烈反对迁移的团队讲高风险方案，结论应该开门见山还是后说？",
+      "expected_behavior": "调用 audience-distance-conclusion-ordering，先分层观念距离并标记不可延迟风险。",
+      "notes": "反对者顺序设计。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "高管都熟悉项目背景，我的汇报还要从历史讲起吗？",
+      "expected_behavior": "调用 audience-distance-conclusion-ordering，距离近时采用结论—依据—行动并删无功能铺垫。",
+      "notes": "熟悉受众。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "同一场发布会里既有专家也有新手，我该怎么安排结论和证据？",
+      "expected_behavior": "调用 audience-distance-conclusion-ordering，做听众分层和摘要+分层材料。",
+      "notes": "混合受众。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "讲稿里的核心承诺我自己不相信，也没有可靠证据，先说还是后说？",
+      "expected_behavior": "不调用本 Skill，应先调用同书 speaker-claim-consistency-audit。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想在发布前收集用户会怎样错误复述退款规则。",
+      "expected_behavior": "不调用本 Skill，应调用 misunderstanding-map-preflight。",
+      "notes": "误解地图诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "听众很反对，但方案含有可能致命的安全风险，我能把风险放到最后再讲吗？",
+      "expected_behavior": "可调用排序但必须把安全风险列为不可延迟披露，不能为降低排斥后置。",
+      "notes": "安全披露边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

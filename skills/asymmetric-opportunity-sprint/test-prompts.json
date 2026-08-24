@@ -1,0 +1,52 @@
+{
+  "skill": "asymmetric-opportunity-sprint",
+  "version": "0.1.0",
+  "source_book": "学会成长：爆发式成长的25个思维模型 — 粥左罗",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个普通外包和一个能接触核心客户的短期项目冲突，我已经确认后者质量不错，要不要集中资源？",
+      "expected_behavior": "应激活 asymmetric-opportunity-sprint，判定长期赛点属性、资源集中期和退出复核。",
+      "notes": "正面场景：已筛选机会后的资源集中。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个内容合作可能打开一个新赛道，我是不是该两周 sprint，而不是平均做所有事？",
+      "expected_behavior": "应激活 asymmetric-opportunity-sprint，检查赛道、作品、客户、关系等长期指标。",
+      "notes": "正面场景：窗口期冲刺。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我怕错过这次大客户试点，但也怕All in太冲动，怎么设投入上限？",
+      "expected_behavior": "应激活 asymmetric-opportunity-sprint，输出投入上限、不可牺牲底线和复核日。",
+      "notes": "正面场景：赛点但需要边界。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我只看到一个创业营广告，没有其他备选，也不知道老师靠不靠谱，要不要报名？",
+      "expected_behavior": "不应激活本 skill，应激活 growth-option-standard-screen 或顾问审计。",
+      "notes": "跨 skill 诱饵：未筛选，不应赛点冲刺。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想借钱买币，感觉这是百倍机会。",
+      "expected_behavior": "不应激活本 skill；应提示金融高风险并转风险/投资边界。",
+      "notes": "诱饵：高风险投资不是成长机会冲刺。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这个机会可能很大，但收益主要靠平台给流量，我没有验证数据。",
+      "expected_behavior": "应谨慎边界判断；可先降级为小实验，不进入高强度冲刺。",
+      "notes": "边界：机会证据弱。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含跨 skill 混淆诱饵。"
+}

@@ -1,0 +1,16 @@
+{
+  "skill": "lollapalooza-bias-stack-audit",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"直播间有专家背书、万人晒单、倒计时、赠品和先付定金，我很想买高价课，帮我拆多种偏差叠加。","expected_behavior":"应激活本 Skill，先冷却环境，再列偏差栈、强化链和退出控制。","notes":"典型组合销售。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"会议里领导先表态，所有人快速附和，之前的公开承诺又让大家不愿回头，为什么会集体失控？","expected_behavior":"应激活本 Skill，分析权威、从众、一致性、压力和沉默的交互。","notes":"群体偏差栈。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"拍卖时我越竞价越不想输，还被现场掌声和稀缺提示推着走，怎么切断 Lollapalooza？","expected_behavior":"应激活本 Skill，用预设预算、离场冷却和独立证据切断组合。","notes":"拍卖极端行为。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"老板要求跳过备份直接迁移，我只想核验这条具体命令该不该执行。","expected_behavior":"不应激活本 Skill，应激活 authority-command-verification-gate。","notes":"跨 Skill 诱饵：单一权威指令。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"内容奖金只看篇数，团队开始灌水和拆稿，怎样重做指标？","expected_behavior":"不应激活本 Skill，应激活 incentive-caused-bias-audit。","notes":"跨 Skill 诱饵：奖励结构。"},
+    {"id":"edge-01","type":"edge_case","prompt":"我看到三个朋友都推荐同一家餐厅，这算 Lollapalooza 吗？","expected_behavior":"不应激活完整审计；只有单一社会认同且低损失，没有多个机制同向放大。","notes":"单偏差与低后果边界。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}

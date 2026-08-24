@@ -1,0 +1,52 @@
+{
+  "skill": "kgi-kpi-causal-tree-validity-check",
+  "version": "0.1.0",
+  "source_book": "分章节P1-06 组织团队管理 — 职场智库",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们今年的 KGI 是销售额增长 30%，但团队只列了一堆动作，帮我拆一棵 KPI 树，看哪些指标真的影响销售额。",
+      "expected_behavior": "应调用 kgi-kpi-causal-tree-validity-check，先确认 KGI 口径，再拆一阶因果公式并检查 KPI 有效性。",
+      "notes": "正向场景: 明确 KGI，需要 KPI 因果拆解。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "会员数没达成，我想知道到底是新客少、复购差、转化低，还是客单价的问题。",
+      "expected_behavior": "应调用 kgi-kpi-causal-tree-validity-check，用指标树定位 KGI 缺口来源。",
+      "notes": "正向场景: 目标未达成，需要定位 KPI 节点。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Need a causal metric tree for activation rate. I want to know which KPI is controllable and which metric is vanity.",
+      "expected_behavior": "应调用 kgi-kpi-causal-tree-validity-check，并检查因果、可控性、数据可得性和虚荣指标风险。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们要导入 OKR，但不确定研发这种探索型项目适不适合 KPI 管理。",
+      "expected_behavior": "不应调用本 skill，应优先调用 okr-fit-preflight。",
+      "notes": "诱饵: OKR/KPI 机制适用性。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "仓库工具乱放、找不到扳手，想做整理、定置、标识和巡查。",
+      "expected_behavior": "不应调用本 skill，应调用 six-s-site-order-governance-loop。",
+      "notes": "同批混淆: 6S 现场治理。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我刚开始做一个新产品，还不知道用户是谁，但想先把所有 KPI 定下来压团队执行。",
+      "expected_behavior": "不应完整调用；应指出 0-1 探索阶段不能过早 KPI 化，只能给少量学习指标或转 OKR/实验验证。",
+      "notes": "边界: 过早 KPI 化。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含同批 sibling skill。"
+}

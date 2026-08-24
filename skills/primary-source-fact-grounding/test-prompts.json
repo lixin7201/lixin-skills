@@ -1,0 +1,52 @@
+{
+  "skill": "primary-source-fact-grounding",
+  "version": "0.1.0",
+  "source_book": "麦肯锡工作法：个人竞争力提升50%的7堂课 — 大岛祥誉",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "AI总结说养老行业明年会爆发，我想据此写创业方案。先帮我确认原始材料和数据口径靠谱吗。",
+      "expected_behavior": "应激活 primary-source-fact-grounding，列关键判断、来源分层、原始材料清单、口径核对和限制声明。",
+      "notes": "正面场景：AI摘要降级为线索。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这份研报引用了'用户增长300%'，但没写样本和时间范围。我需要判断能不能放进融资BP。",
+      "expected_behavior": "应激活 primary-source-fact-grounding，核对原始报告、统计定义、样本、时间和可引用等级。",
+      "notes": "正面场景：二手研报口径不清。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "客户说仓库效率很低，但我们只有转述，没有现场数据。帮我设计一手资料采集和停止条件。",
+      "expected_behavior": "应激活 primary-source-fact-grounding，安排现场观察、访谈或原始记录核验，并写权限和成本边界。",
+      "notes": "正面场景：现场原始材料。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经确认竞品价格页是真的，帮我用空雨伞写这意味着什么和下一步行动。",
+      "expected_behavior": "不应激活本 skill，应激活 sky-rain-umbrella-action-chain。",
+      "notes": "跨 skill 诱饵：事实已核验后的行动链。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我知道销售额下降是真的，现在要拆客群、渠道、产品和价格，看哪个是假设优先级最高。",
+      "expected_behavior": "不应激活本 skill，应激活 issue-hypothesis-logic-tree-loop。",
+      "notes": "跨 skill 诱饵：复杂问题假设拆解。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想爬取竞争对手后台数据验证市场份额，但需要绕过登录权限，这样可以吗？",
+      "expected_behavior": "可激活本 skill 的边界判断，但必须拒绝越权采集，改用合法公开来源、客户访谈或替代样本。",
+      "notes": "边界：权限、隐私和合规。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含 sky-rain-umbrella-action-chain 与 issue-hypothesis-logic-tree-loop 的跨 skill 混淆诱饵。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "truth-seeking-after-action-review",
+  "version": "0.1.0",
+  "source_book": "复盘分享培训方法论汇总 — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们上周做了一场线下活动，目标是成交200单，最后成交260单，但团队现在只在争谁贡献最大。帮我设计一次复盘，把经验沉淀下来。",
+      "expected_behavior": "应激活 truth-seeking-after-action-review，先回顾原目标和实际结果，再分析差距原因、规律和下一次行动。",
+      "notes": "正面场景：团队活动结束后做目标-结果复盘。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个创业小项目失败了，复盘会上大家都在说市场不好、客户不懂、预算不够，没有人讲我们自己下次能改什么。",
+      "expected_behavior": "应激活 truth-seeking-after-action-review，并把外部因素、内部可控动作、流程资源权限和下一次规则分开。",
+      "notes": "正面场景：外因推卸式复盘。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "老板让今晚立刻复盘出责任人，可我担心大家只会互相甩锅，真正的问题反而没人说。怎么开这个 retrospective？",
+      "expected_behavior": "应激活 truth-seeking-after-action-review，先设定复盘护栏，说明正式追责需另行处理，再还原事实和行动改进。",
+      "notes": "正面场景：追责会风险，但仍是普通项目复盘。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我个人投资亏了很多钱，感觉自己很失败，想把这次错误变成学习，下次少犯同样的错。",
+      "expected_behavior": "不应激活本 skill，应优先激活 mistake-to-learning-review，因为这是个人错误/亏损后的学习复盘。",
+      "notes": "诱饵：应触发既有个人错误学习 Skill。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "客服漏回消息的问题已经连续三个月反复出现，我想用 PDCA 固化成 SOP，降低复发率。",
+      "expected_behavior": "不应激活本 skill，应优先激活 firefighting-to-standard-improvement-loop，因为这是稳定流程复发与 SOP 改进。",
+      "notes": "诱饵：应触发既有 PDCA 标准化 Skill。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "仓库发生了严重安全事故，公司要复盘原因和责任，最好今天就出结论。",
+      "expected_behavior": "可以辅助整理目标、事实、时间线和问题清单，但不应作为主方法直接给责任结论；应提示正式事故调查、合规和安全程序优先。",
+      "notes": "边界：高风险事故调查。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含既有相邻 skill 混淆测试。"
+}

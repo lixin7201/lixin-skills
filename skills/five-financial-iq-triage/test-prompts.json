@@ -1,0 +1,52 @@
+{
+  "skill": "five-financial-iq-triage",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我感觉自己财务很混乱，不知道是收入低、花太多还是投资信息太差。",
+      "expected_behavior": "应激活本 skill，做五类分诊。",
+      "notes": "典型财商分诊。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我创业现金流紧张，但不确定该先涨价、砍成本还是融资。",
+      "expected_behavior": "应激活本 skill，识别主财商缺口。",
+      "notes": "项目财务诊断。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我每次听专家建议都买错，是不是信息财商有问题？",
+      "expected_behavior": "应激活本 skill，并可能组合 advisor-source-quadrant-audit。",
+      "notes": "信息质量问题。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请总结一下富爸爸提高你的财商这本书。",
+      "expected_behavior": "不应激活本 skill；这是摘要请求。",
+      "notes": "书摘诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经确认是信用卡债太多，想安排还款顺序。",
+      "expected_behavior": "不应激活本 skill，应激活 bad-debt-rolldown-plan。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我收入很低但预算已经很省，还要继续压支出吗？",
+      "expected_behavior": "应调用本 skill 分诊，可能结论是主问题转为增收而非节流。",
+      "notes": "避免单一节俭。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

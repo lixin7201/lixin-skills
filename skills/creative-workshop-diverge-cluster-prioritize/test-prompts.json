@@ -1,0 +1,51 @@
+{
+  "skill": "creative-workshop-diverge-cluster-prioritize",
+  "version": "0.1.0",
+  "source_book": "分章节P1-03 创意和想象力 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "团队为新课程想卖点时一边发散一边否定，最后只剩老板喜欢的方案，帮我设计创意工作坊。",
+      "expected_behavior": "应激活本 skill，分离发散、归类、二次发散和筛选。",
+      "notes": "创意工作坊"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想用SCAMPER和KJ法把活动创意先发散再筛出优先级。",
+      "expected_behavior": "应激活本 skill，组合 SCAMPER/KJ/矩阵。",
+      "notes": "工具组合"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Run a diverge-cluster-prioritize creative workshop and end with testable ideas.",
+      "expected_behavior": "应激活本 skill，输出可实验创意。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我讲了三遍，对方还是没按我的意思执行。",
+      "expected_behavior": "不应激活本 skill，应激活 communication-understanding-execution-loop。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们已经有真实用户实验数据，只需要判断哪个方案赢了。",
+      "expected_behavior": "不应激活本 skill，应转证据/实验验证类 skill。",
+      "notes": "真实数据判断诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "还没有主题，也没有谁能拍板，但想开头脑风暴。",
+      "expected_behavior": "应先补主题、决策人和评价指标，否则停止工作坊。",
+      "notes": "工作坊前置条件"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

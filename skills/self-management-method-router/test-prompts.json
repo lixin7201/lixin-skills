@@ -1,0 +1,51 @@
+{
+  "skill": "self-management-method-router",
+  "version": "0.1.0",
+  "source_book": "分章节P2-07 自我管理 PPT",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我自我管理很差，清单乱、拖延、目标混乱、学习也没用，帮我先判断该用哪个方法。",
+      "expected_behavior": "应激活本 skill，先分流症状再选择一个首发方法。",
+      "notes": "自我管理分诊"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我不知道该用GTD、番茄、OKR、费曼还是情绪ABC，先帮我路由。",
+      "expected_behavior": "应激活本 skill，选择下游方法并说明暂缓项。",
+      "notes": "方法路由"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Route my self-management problem before applying a productivity method.",
+      "expected_behavior": "应激活本 skill，做 self-management router。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经确定就是收件箱和下一步行动混乱，帮我清空任务。",
+      "expected_behavior": "不应激活本 skill，应转 inbox-to-next-action-triage。",
+      "notes": "下游单模型诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我要判断新人能不能授权，不是我自己的效率问题。",
+      "expected_behavior": "不应激活本 skill，应激活 delegation-readiness-leadership-style-check。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我因为照护和公司人手不足每天爆满，但想用番茄法解决所有问题。",
+      "expected_behavior": "应激活边界逻辑，指出外部资源/照护负荷，不能个人效率化归因。",
+      "notes": "外部因素边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "negotiation-real-intent-listening",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的谈判策略 — 高杉尚孝",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "供应商坚持预付款，看似只是要钱，我该怎么问出背后的真实意图？",
+      "expected_behavior": "应激活 negotiation-real-intent-listening，复述要求并追问现金流、产能、风险和审批约束。",
+      "notes": "正面场景：表面条件背后利益。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "客户一直压交付期限，我不想直接反驳，想先听懂他真正担心什么。",
+      "expected_behavior": "应激活 negotiation-real-intent-listening，从期限要求追到风险、目标和内部压力。",
+      "notes": "正面场景：期限立场。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "对方只说预算不够，怎么区分是真没钱、内部审批还是想压价？",
+      "expected_behavior": "应激活 negotiation-real-intent-listening，设计中性追问并转替代方案。",
+      "notes": "正面场景：预算立场追问。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "对方说今天不签以后就没这个价，还要求我马上电话确认。",
+      "expected_behavior": "不应激活本 skill，应激活 malicious-negotiation-tactic-defuser。",
+      "notes": "跨 skill 诱饵：最后通牒和电话奇袭。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我还没进入谈判，只想先写目标、底线和B计划。",
+      "expected_behavior": "不应激活本 skill，应激活 constructive-negotiation-preflight。",
+      "notes": "跨 skill 诱饵：谈判前准备。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "对方坚持一个条件但拒绝解释原因，只催我答应。",
+      "expected_behavior": "可先尝试本 skill 的一次中性追问；若继续拒绝和施压，转战术反制或退出。",
+      "notes": "边界：可合作性不明。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含谈判准备和恶意战术诱饵。"
+}

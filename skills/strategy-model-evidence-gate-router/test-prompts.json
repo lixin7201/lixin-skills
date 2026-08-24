@@ -1,0 +1,73 @@
+{
+  "skill": "strategy-model-evidence-gate-router",
+  "version": "0.2.0",
+  "source_book": "分章节P2-04 战略与规划 — 职场智库；第十三批 PEST/SWOT/五力；第十四批 BCG/GE/100工具",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想评估一个新行业，但不知道该用 PEST、SWOT、波特五力还是 3C。请先帮我选战略模型，并列出每个模型需要的证据。",
+      "expected_behavior": "应调用 strategy-model-evidence-gate-router，先界定战略问题，再选择一个主模型和证据门。",
+      "notes": "正向场景: 战略模型选择。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我们用SWOT写进入AI教育行业，机会和策略混在一起，也没有按影响程度排序，你帮我把证据门补上。",
+      "expected_behavior": "应调用 strategy-model-evidence-gate-router，先确认目标、区分内外部因素、要求证据和排序，不把SWOT直接当策略。",
+      "notes": "第十三批新增: SWOT 证据排序"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队说这个行业买方议价强、替代品威胁大，所以不要进入。但我想知道五力背后的结构原因是否成立。",
+      "expected_behavior": "应调用 strategy-model-evidence-gate-router，要求把五力结果追到买方集中度、转换成本、替代价值、进入壁垒和利润结构等原因。",
+      "notes": "第十三批新增: 五力结果到结构原因"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我们把产品线按BCG分成明星、金牛、问题、瘦狗，但市场增长率标准线只是模板默认值，能不能据此砍掉瘦狗产品？",
+      "expected_behavior": "应调用 strategy-model-evidence-gate-router，要求校准市场增长率/相对份额标准线、业务规模和历史轨迹；证据不足时只给取证计划，不给裁撤结论。",
+      "notes": "第十四批新增: BCG 标准线动态校准"
+    },
+    {
+      "id": "should-trigger-05",
+      "type": "should_trigger",
+      "prompt": "GE矩阵里行业吸引力和经营实力的权重是老板拍脑袋定的，还忽略了风险，我要重做资源配置判断。",
+      "expected_behavior": "应调用 strategy-model-evidence-gate-router，检查变量选择、权重、评分、风险和动态方向，不直接输出资源配置结论。",
+      "notes": "第十四批新增: GE 变量和风险"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我们的战略已经很清楚，现在问题是品牌、内容、渠道和组织资源对不上目标。",
+      "expected_behavior": "不应调用本 skill，应调用 strategy-house-alignment-check。",
+      "notes": "诱饵: 战略屋对齐。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我有一个工作问题，不知道该用鱼骨图、5W2H、KT还是流程图，先帮我选一个分析方法。",
+      "expected_behavior": "不应调用本 skill，应调用 problem-analysis-tool-router 做泛问题工具分诊。",
+      "notes": "第十四批新增: 泛工具路由诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "请直接告诉我 2026 年美国 AI 教育市场应该进入哪个细分赛道，我没有资料，你凭经验判断就行。",
+      "expected_behavior": "不应给结论；可调用本 skill 生成证据门和取证计划，并说明当前市场事实必须实时核验。",
+      "notes": "边界: 高时效战略结论。"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "PEST里政策、经济、社会、技术我都能凭记忆填一点，你直接给我一个进入结论吧。",
+      "expected_behavior": "应拒绝凭记忆给进入结论；要求当前来源和时间戳，只输出取证计划。",
+      "notes": "第十三批新增: PEST 当前性边界。"
+    }
+  ],
+  "minimum_pass_rate": 1.0,
+  "notes": "包含 should_trigger、should_not_trigger、edge_case；诱饵含 strategy-house、7S、problem router 混淆测试。"
+}

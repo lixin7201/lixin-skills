@@ -1,0 +1,72 @@
+{
+  "skill": "fishbone-major-cause-verification-workshop",
+  "version": "0.2.0",
+  "source_book": "鱼骨图分析法培训 PPT；第15批问题分析与根因工具旧PPT包",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "最近客服响应反复超时，团队互相甩锅，帮我用鱼骨图开一场根因会。",
+      "expected_behavior": "应激活本 skill，定义鱼头、发散原因、圈定可验证主要因。",
+      "notes": "团队根因会"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "生产线这个缺陷连续三周出现，我想用6M找主要因并验证。",
+      "expected_behavior": "应激活本 skill，使用 6M/5M1E 和证据门。",
+      "notes": "质量问题"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Run a no-blame fishbone root cause workshop for this recurring delivery defect.",
+      "expected_behavior": "应激活本 skill，运行无指责鱼骨工作坊。",
+      "notes": "英文触发"
+    },
+    {
+      "id": "should-trigger-04",
+      "type": "should_trigger",
+      "prompt": "我们做5Why时从客户投诉直接跳到员工态度差，你帮我检查每层为什么有没有必然关系和事实证据。",
+      "expected_behavior": "应激活本 skill，用5Why护栏检查因果链、跳步、三现事实和多因分叉。",
+      "notes": "第十五批新增: 5Why 因果链事实验证"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我不确定该用鱼骨图还是逻辑树，你先帮我选工具。",
+      "expected_behavior": "不应激活本 skill，应激活 problem-analysis-tool-router。",
+      "notes": "同批兄弟 skill 诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "上级布置的任务太模糊，我想问清楚何时何地何人何事。",
+      "expected_behavior": "不应激活本 skill，应转任务澄清/5W2H相关能力。",
+      "notes": "任务澄清诱饵"
+    },
+    {
+      "id": "should-not-trigger-03",
+      "type": "should_not_trigger",
+      "prompt": "客服质量太差，所以肯定要换系统；我还没有目标指标和时间范围，先画鱼骨图吧。",
+      "expected_behavior": "不应激活本 skill，应先转 problem-definition-r1-r2-diagnostic-tree。",
+      "notes": "第十五批新增: 问题入口未定义"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "一次严重安全事故刚发生，我们能不能用普通鱼骨图代替正式调查？",
+      "expected_behavior": "不应直接使用；应升级正式安全调查流程。",
+      "notes": "高风险边界"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "同一个缺陷可能有培训不足、工具失效和排班太紧三个原因，5Why是不是只能保留一条链？",
+      "expected_behavior": "应激活本 skill，但必须分叉多条因果链，不把多因问题压成单链。",
+      "notes": "第十五批新增: 多因分叉边界"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

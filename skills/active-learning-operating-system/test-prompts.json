@@ -1,0 +1,48 @@
+{
+  "skill": "active-learning-operating-system",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "没人教我怎么学会这个",
+      "expected_behavior": "调用 active-learning-operating-system；先执行“定义真实输出”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我学了很多却不会做",
+      "expected_behavior": "调用 active-learning-operating-system；先执行“定义真实输出”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "帮我设计边做边学的闭环",
+      "expected_behavior": "调用 active-learning-operating-system；先执行“定义真实输出”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 active-learning-operating-system 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "一小时内看懂这本书值不值得读",
+      "expected_behavior": "不调用 active-learning-operating-system；应优先调用同书兄弟 Skill rapid-book-survey",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "中国的首都是哪里？",
+      "expected_behavior": "不调用 active-learning-operating-system：这是单一事实查询，不需要学习操作系统",
+      "notes": "模糊边界"
+    }
+  ]
+}

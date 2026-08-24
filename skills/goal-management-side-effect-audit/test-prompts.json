@@ -1,0 +1,52 @@
+{
+  "skill": "goal-management-side-effect-audit",
+  "version": "0.1.0",
+  "source_book": "工作计划目标管理培训 — 作者未标注",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们准备把客服KPI改成每人每天必须回复200条，月底按数量排名发奖金。短期可能会提速，但我担心客户投诉和质量下降。帮我审计副作用。",
+      "expected_behavior": "应激活 goal-management-side-effect-audit，检查短期化、奖惩公正幻觉、质量护栏、协作影响、可控性和试点反馈机制。",
+      "notes": "正面场景：KPI和奖金绑定可能扭曲行为。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "销售、运营、客服每个部门都完成了自己的目标，但整体交付变慢，客户体验变差。是不是目标管理助长了本位主义？",
+      "expected_behavior": "应激活 goal-management-side-effect-audit，审计局部目标、整体目标、跨部门护栏和本位主义预警。",
+      "notes": "正面场景：部门局部最优伤害整体。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我们月度目标一直完成，但大家都只做短期指标，培训、复盘、系统改进没人管。这个目标制度要怎么改？",
+      "expected_behavior": "应激活 goal-management-side-effect-audit，识别短期目标吞噬长期发展，并补长期能力/质量/复盘护栏。",
+      "notes": "正面场景：短期化副作用。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我有一个北极星指标，想拆成KGI和KPI因果树，看看每个KPI是不是能解释最终结果。",
+      "expected_behavior": "不应激活本 skill，应优先激活 kgi-kpi-causal-tree-validity-check，因为问题是指标因果解释力。",
+      "notes": "诱饵：应触发既有指标因果 Skill。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "老板给了一个具体目标，我现在不确定该不该承诺，因为资源、权限和可控性都不清楚。",
+      "expected_behavior": "不应优先激活本 skill，应优先激活 pre-smart-goal-worthiness-audit，因为这是目标承诺前提审计。",
+      "notes": "诱饵：应触发同批另一个 Skill。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "公司要把绩效排名和裁员挂钩，我想知道这样合法吗，也想设计一套规则。",
+      "expected_behavior": "只能有限用于列风险和待核查问题；不应给法律结论或代设计正式薪酬/裁员制度，应提示劳动合规和专业咨询优先。",
+      "notes": "边界：劳动关系和高风险制度设计。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含 3 条 should_trigger、2 条 should_not_trigger、1 条 edge_case；诱饵含同批 Skill 和既有 Skill 混淆测试。"
+}

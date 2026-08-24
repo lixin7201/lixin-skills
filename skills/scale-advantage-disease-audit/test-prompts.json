@@ -1,0 +1,17 @@
+{
+  "skill": "scale-advantage-disease-audit",
+  "version": "0.1.0",
+  "source_book": "《穷查理宝典（珍藏版）（1+2册）》— 查理·芒格",
+  "darwin_compatible": true,
+  "test_cases": [
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"区域家政公司准备从 3 城扩到 30 城，采购和品牌会变强，但投诉和管理层级也会增加，帮我算规模双向账。","expected_behavior":"应激活本 Skill，分别量化规模红利、规模病和下一单位扩张净效应。","notes":"典型扩张。"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"团队从 20 人涨到 200 人，单位成本下降但决策慢了一倍，怎样判断继续扩还是拆成模块？","expected_behavior":"应激活本 Skill，检查时延、责任、本地自治和边际净效应。","notes":"组织规模病。"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"内容工厂产量翻五倍，品牌覆盖增加，但事实错误和坏消息上报变慢，规模优势还成立吗？","expected_behavior":"应激活本 Skill，把质量、反馈和责任成本纳入规模账。","notes":"写作生产扩张。"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"AI 转写降低 60% 成本，但竞争者也会跟进，这些收益最终归谁？","expected_behavior":"不应激活本 Skill，应激活 technology-value-capture-second-step。","notes":"跨 Skill 诱饵：价值捕获。"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"奖金只看城市开店数，团队开始开低质门店来冲指标。","expected_behavior":"不应以本 Skill 为主，应激活 incentive-caused-bias-audit。","notes":"跨 Skill 诱饵：指标游戏。"},
+    {"id":"edge-01","type":"edge_case","prompt":"我们只有 8 个人，是不是因为团队小就一定没有规模病？","expected_behavior":"可用边界原则简答，但不能按人数下结论；若无扩张决策和机制证据，不启动完整审计。","notes":"防止人数贴标签。"}
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为 0。"
+}
+

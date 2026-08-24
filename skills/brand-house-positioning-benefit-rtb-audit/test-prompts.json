@@ -1,0 +1,48 @@
+{
+  "skill": "brand-house-positioning-benefit-rtb-audit",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想重新定位我的咨询服务，现在有一堆卖点，但说不清为谁、带来什么利益、凭什么相信。",
+      "expected_behavior": "应调用 brand-house-positioning-benefit-rtb-audit，输出定位句和利益-RTB 表。",
+      "notes": "正向场景: 定位和证据脱节。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "帮我审一下这个产品品牌屋：目标人群、情感利益点、RTB 和产品系列是不是对得上。",
+      "expected_behavior": "应调用 brand-house-positioning-benefit-rtb-audit，审计品牌屋字段。",
+      "notes": "正向场景: 明确品牌屋。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Need a brand positioning audit: who am I for, what benefit do I offer, and what is the reason to believe?",
+      "expected_behavior": "应调用 brand-house-positioning-benefit-rtb-audit，识别 brand positioning / RTB。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经有清楚定位了，帮我用 SCRTV 写一段给客户看的方案开场。",
+      "expected_behavior": "不应调用；应转 scrtv-value-proposition-brief。",
+      "notes": "邻近混淆: 表达生成。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我们做了半年投放，复购低、投诉高、渗透率也低，想判断品牌健康问题。",
+      "expected_behavior": "不应调用；应转 brand-health-penetration-loyalty-diagnosis。",
+      "notes": "同批混淆: 品牌健康诊断。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想说自己是行业第一、效果翻倍，但手里没有案例和数据，可以直接写进定位吗？",
+      "expected_behavior": "应调用或部分调用审计边界，判停并要求删除或补 RTB，不应帮助夸大。",
+      "notes": "边界: 无证据承诺。"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "skill": "reasoned-threshold-action",
+  "title": "有理有据阈值行动",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "reasoned-threshold-action:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我用了一个写作训练方法5天没涨粉，想马上换课，但这个方法看起来有逻辑。",
+      "expected": "reasoned-threshold-action",
+      "rationale": "合理方法过早放弃。"
+    },
+    {
+      "id": "reasoned-threshold-action:trigger-02",
+      "type": "should_trigger",
+      "prompt": "我学习编程总是三天换一个教程，从没做满一轮。",
+      "expected": "reasoned-threshold-action",
+      "rationale": "频繁换方法缺阈值。"
+    },
+    {
+      "id": "reasoned-threshold-action:trigger-03",
+      "type": "should_trigger",
+      "prompt": "产品原型前几次访谈反馈一般，团队想放弃，我想先设验证周期。",
+      "expected": "reasoned-threshold-action",
+      "rationale": "创业验证需要阈值。"
+    },
+    {
+      "id": "reasoned-threshold-action:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我听懂了复利这个道理，但不知道如何转成每天动作。",
+      "expected": "cognition-as-skill-transfer",
+      "rationale": "认知技能化。"
+    },
+    {
+      "id": "reasoned-threshold-action:not-02",
+      "type": "should_not_trigger",
+      "prompt": "这个项目法律风险很大，但我想坚持到有结果再说。",
+      "expected": "none",
+      "rationale": "高风险不可用。"
+    },
+    {
+      "id": "reasoned-threshold-action:edge-01",
+      "type": "edge",
+      "prompt": "这个行动成本很高且几乎不可逆，我只有一个成功案例作为依据。",
+      "expected": "none",
+      "rationale": "证据不足且代价过高。"
+    }
+  ]
+}

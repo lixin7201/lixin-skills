@@ -1,0 +1,48 @@
+{
+  "skill": "multi-view-truth-filter",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "大家都这么说但我不放心",
+      "expected_behavior": "调用 multi-view-truth-filter；先执行“拆分主张”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "帮我找反方证据",
+      "expected_behavior": "调用 multi-view-truth-filter；先执行“拆分主张”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样避免被单一观点带偏",
+      "expected_behavior": "调用 multi-view-truth-filter；先执行“拆分主张”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 multi-view-truth-filter 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "有什么成功做法可以先模仿",
+      "expected_behavior": "不调用 multi-view-truth-filter；应优先调用同书兄弟 Skill proven-pattern-transfer",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "三家权威机构都给出同一温度读数，我还要找第四个反对者吗？",
+      "expected_behavior": "不调用 multi-view-truth-filter：独立测量一致时应检查仪器与来源，不必为异议而制造异议",
+      "notes": "模糊边界"
+    }
+  ]
+}

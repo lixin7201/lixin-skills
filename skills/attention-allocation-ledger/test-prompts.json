@@ -1,0 +1,52 @@
+{
+  "skill": "attention-allocation-ledger",
+  "version": "0.1.0",
+  "source_book": "专注的真相 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我一整天都在回消息和开会，真正重要的事情没做，帮我算算注意力账。",
+      "expected_behavior": "调用 attention-allocation-ledger，记录主动、被动和交换性支出并结算价值收益。",
+      "notes": "典型注意力配置。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这个免费社区每天占我两小时，但我不确定换回了什么，值得继续吗？",
+      "expected_behavior": "调用 attention-allocation-ledger，还原注意力交换、收益证据和退出阈值。",
+      "notes": "免费产品注意力交易。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "网上有人点名反驳我，热度很高，我要不要花一天回应？",
+      "expected_behavior": "调用 attention-allocation-ledger，核算机会成本、长期价值与权利职责例外。",
+      "notes": "争论注意力预算。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "一个行业消息突然爆火，我担心它是算法和营销制造的，怎么验证？",
+      "expected_behavior": "不调用本 Skill，应调用同批 novelty-information-distortion-audit。",
+      "notes": "同批兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "团队做了很多功能但没有用户使用，怎样判断离有效生产多远？",
+      "expected_behavior": "不调用本 Skill，应调用 production-distance-usefulness-audit。",
+      "notes": "价值链诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "家人突发急病会打断我今天最重要的工作，是否应该保护专注不回应？",
+      "expected_behavior": "不按常规账本拒绝，触发强制例外并优先照护与安全。",
+      "notes": "紧急照护边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

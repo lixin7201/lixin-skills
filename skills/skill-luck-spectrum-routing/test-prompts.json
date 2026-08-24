@@ -1,0 +1,52 @@
+{
+  "skill": "skill-luck-spectrum-routing",
+  "version": "0.1.0",
+  "source_book": "让时间陪你慢慢变富 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "创业第一单成功了，我怎么判断是能力还是碰巧？",
+      "expected_behavior": "调用本 Skill 用重复性和外部因素定位并扩大样本。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "竞技比赛里努力和签位都重要，我该把资源放训练还是多参赛？",
+      "expected_behavior": "调用本 Skill 定位混合区并配置训练与样本。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "一个高波动机会可能暴富，我要怎么决定押注大小？",
+      "expected_behavior": "调用本 Skill 识别运气权重并缩押注留失败空间。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "流程有十个判断点导致连续执行失败，怎么简化？",
+      "expected_behavior": "不调用本 Skill，应调用 decision-node-error-multiplier-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个非共识判断有没有足够证据值得小额试验？",
+      "expected_behavior": "不调用本 Skill，应调用 correctness-nonconsensus-evidence-matrix。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我考试没及格，可以直接说全是运气不好吗？",
+      "expected_behavior": "不可直接归因；先检查可训练行为、题目分布和多次表现。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

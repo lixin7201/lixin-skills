@@ -1,0 +1,52 @@
+{
+  "skill": "whole-action-chain-validity-audit",
+  "version": "0.1.0",
+  "source_book": "让时间陪你慢慢变富 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我买对一次高点低点，能说明整套交易策略有效吗？",
+      "expected_behavior": "调用本 Skill 检查识别进入退出容量和复现链。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "项目有获客方案，却没人写交付、退款和失败恢复。",
+      "expected_behavior": "调用本 Skill 从结果反推必要动作链。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "跨团队流程每个部门单看都完成，整体却交不出去。",
+      "expected_behavior": "调用本 Skill 检查衔接、下游接收和无主环节。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "完整流程判断点太多，怎样删除非必要动作？",
+      "expected_behavior": "不调用本 Skill，应调用 decision-node-error-multiplier-audit。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我只想审计平台从流量到支付售后的商业闭环。",
+      "expected_behavior": "不调用本 Skill，应调用 platform-commerce-closure-audit。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "还在验证需求的第一天，是否必须先建完整售后系统？",
+      "expected_behavior": "不建全规模系统；设计最小完整试验和明确的手工履约/退款边界。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

@@ -1,0 +1,52 @@
+{
+  "skill": "proactive-hypothesis-upward-report",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的48个工作习惯 — 户塚隆将",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "方案只有七成，我怕做完方向错，要不要先找老板同步假设和风险？",
+      "expected_behavior": "应激活 proactive-hypothesis-upward-report，输出六行假设汇报和需上级校准点。",
+      "notes": "正面场景：70%中期汇报。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "老板老是突然问我进度，我想在他问之前主动报告、联系、商量。",
+      "expected_behavior": "应激活 proactive-hypothesis-upward-report，提前同步事实、假设、风险和下一步。",
+      "notes": "正面场景：上级追问前同步。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个项目可能有风险，但证据还没完全齐，我怎么做 hypothesis update？",
+      "expected_behavior": "应激活 proactive-hypothesis-upward-report，标假设、证据缺口和下一步验证。",
+      "notes": "正面场景：假设性风险汇报。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "老板刚交代任务但没说输出格式，我要先确认哪些信息？",
+      "expected_behavior": "不应激活本 skill，应激活 task-brief-5min-start-loop。",
+      "notes": "跨 skill 诱饵：任务刚进入。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我和同事在头脑风暴一个想法，没有上下级关系。",
+      "expected_behavior": "不应激活本 skill，应使用讨论目标或共创方法。",
+      "notes": "诱饵：无向上汇报关系。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我只有一点点进展，但有个重大风险，是否也要先汇报？",
+      "expected_behavior": "应倾向激活本 skill；重大风险比完成度更优先同步。",
+      "notes": "边界：低完成度但高风险。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含任务入口混淆测试。"
+}

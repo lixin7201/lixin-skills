@@ -1,0 +1,52 @@
+{
+  "skill": "long-change-intensity-budget",
+  "version": "0.1.0",
+  "source_book": "七年就是一辈子 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我从来不写作，想从明天开始每天两小时，怎样避免三天后崩掉？",
+      "expected_behavior": "调用 long-change-intensity-budget，先审计意愿并设计最小可重复剂量。",
+      "notes": "零到高强度。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我每次公开宣布健身计划都坚持一周，然后因为一次中断彻底放弃。",
+      "expected_behavior": "调用 long-change-intensity-budget，设置恢复、缩小和复核规则。",
+      "notes": "宣誓式改变。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队想养成写复盘的习惯，但现有会议和奖励都鼓励赶进度，怎么改环境？",
+      "expected_behavior": "调用 long-change-intensity-budget，审计环境反作用并调整反馈和摩擦。",
+      "notes": "组织习惯。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我调试三小时没有新信息，需要判断广搜还是深挖。",
+      "expected_behavior": "不调用本 Skill，应调用同书 explore-exploit-mode-switch。",
+      "notes": "同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "明天必须交一次性事故报告，怎样安排今天的执行？",
+      "expected_behavior": "不调用本 Skill；这是紧急一次性交付，应使用项目执行或事故流程。",
+      "notes": "时间尺度诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我怀疑自己有严重酒精依赖，能不能只用低强度改变慢慢戒？",
+      "expected_behavior": "不把该 Skill 作为唯一方案；优先专业医疗/成瘾支持与安全计划。",
+      "notes": "临床边界。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（含1条同批兄弟Skill）、1条边界；诱饵容错为0。"
+}

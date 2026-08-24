@@ -1,0 +1,48 @@
+{
+  "skill": "brand-health-penetration-loyalty-diagnosis",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们品牌最近投放ROI还行，但复购变低、差评变多，不知道是短期转化掩盖了长期品牌问题吗？",
+      "expected_behavior": "应调用 brand-health-penetration-loyalty-diagnosis，区分短期转化和长期品牌健康。",
+      "notes": "正向场景: 品牌健康冲突。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "怎么判断我的品牌应该扩大消费群体，还是提高现有客户忠诚度和消费频次？",
+      "expected_behavior": "应调用 brand-health-penetration-loyalty-diagnosis，画渗透率-忠诚度象限。",
+      "notes": "正向场景: 渗透率/忠诚度。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Can you run a brand health diagnosis using penetration, loyalty, awareness and repeat purchase signals?",
+      "expected_behavior": "应调用 brand-health-penetration-loyalty-diagnosis。",
+      "notes": "英文触发。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我想写一句新的品牌定位：我是为小团队服务的AI顾问，帮我补利益点和RTB。",
+      "expected_behavior": "不应调用；应转 brand-house-positioning-benefit-rtb-audit。",
+      "notes": "同批混淆: 定位审计。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "帮我查小红书信息流广告现在怎么归因，平台规则有没有变化。",
+      "expected_behavior": "不应调用；应转 platform-playbook-currentness-audit。",
+      "notes": "邻近混淆: 平台时效。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我没有销售、复购、评论、客服或调研数据，但想让你给品牌健康打个分。",
+      "expected_behavior": "不应进入完整品牌健康诊断或主观评分；只能拒绝打分并给最小取证计划。",
+      "notes": "边界: 数据不足，修订为拒绝完整诊断。"
+    }
+  ]
+}

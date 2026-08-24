@@ -1,0 +1,52 @@
+{
+  "skill": "conclusion-first-pyramid-report",
+  "version": "0.1.0",
+  "source_book": "金字塔原理：麦肯锡40年经典培训教材 — 芭芭拉·明托",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "老板只给我两分钟听项目延期说明，我现在有一堆原因和补救措施，帮我组织成汇报。",
+      "expected_behavior": "应激活 conclusion-first-pyramid-report，先定位读者问题，再输出顶端结论、2-4个关键理由和证据层。",
+      "notes": "典型短时管理汇报，需要结论先行。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这段周报像流水账，能不能帮我改成先说结论的 executive summary？",
+      "expected_behavior": "应激活 conclusion-first-pyramid-report，把流水账改为结论句加同类支撑要点。",
+      "notes": "用户明确要求先说结论和摘要。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我有客户访谈、数据、竞品截图，想写一个方案建议，但不知道第一屏的顶端结论和关键句要点怎么搭。",
+      "expected_behavior": "应激活 conclusion-first-pyramid-report；先确定顶端结论，再组织2-4个关键句要点；若证据不足，应标注暂定结论并补证据。",
+      "notes": "修订：原话术写成“第一段”容易与 SCQA 序言混淆；本例聚焦整份方案的顶端答案和关键句结构。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下 Python requests 的 timeout 参数怎么写。",
+      "expected_behavior": "不应激活本 skill，因为这是纯信息查询，不是汇报结构重构。",
+      "notes": "无关技术查询诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这页 PPT 的标题现在叫收入趋势，帮我改成能直接表达图表结论的标题。",
+      "expected_behavior": "不应激活本 skill，应激活 pyramid-slide-one-point-check。",
+      "notes": "跨 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我还没有结论，只是想把调研材料先整理一下，看看可能说明什么。",
+      "expected_behavior": "应谨慎处理；不直接套结论先行，应先做自下而上分组或建议用户补证据。",
+      "notes": "边界：材料整理期不能伪造结论。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "包含正例、无关诱饵、同书兄弟 skill 诱饵和探索期边界。"
+}

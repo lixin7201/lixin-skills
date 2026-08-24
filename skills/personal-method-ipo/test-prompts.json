@@ -1,0 +1,48 @@
+{
+  "skill": "personal-method-ipo",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这次做成了，怎么沉淀成方法",
+      "expected_behavior": "调用 personal-method-ipo；先执行“锁定输出”，并给出完成标准",
+      "notes": "正向触发：1"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "把我的经验变成 SOP",
+      "expected_behavior": "调用 personal-method-ipo；先执行“锁定输出”，并给出完成标准",
+      "notes": "正向触发：2"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "怎样让别人复现我的能力",
+      "expected_behavior": "调用 personal-method-ipo；先执行“锁定输出”，并给出完成标准",
+      "notes": "正向触发：3"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请告诉我《价值心法》的作者、出版社和出版时间。",
+      "expected_behavior": "纯信息查询，不调用 personal-method-ipo 或其他方法论 Skill",
+      "notes": "无关信息查询诱饵"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "笔记很多但用不起来",
+      "expected_behavior": "不调用 personal-method-ipo；应优先调用同书兄弟 Skill atomic-output-recomposition",
+      "notes": "跨 Skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "帮我把现成流程图画得好看一些",
+      "expected_behavior": "不调用 personal-method-ipo：已有方法只需视觉整理，不需要提取隐性函数",
+      "notes": "模糊边界"
+    }
+  ]
+}

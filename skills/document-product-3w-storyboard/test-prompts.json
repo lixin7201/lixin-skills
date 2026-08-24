@@ -1,0 +1,52 @@
+{
+  "skill": "document-product-3w-storyboard",
+  "version": "0.1.0",
+  "source_book": "麦肯锡精英的48个工作习惯 — 户塚隆将",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要给客户发项目周报，内容很多，怎么避免只是堆信息？",
+      "expected_behavior": "应激活 document-product-3w-storyboard，先写Who/Why/What再排连环画路径。",
+      "notes": "正面场景：客户资料产品化。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这份方案读者看完不知道下一步，我想把资料当产品重做。",
+      "expected_behavior": "应激活 document-product-3w-storyboard，检查读者、目的、主路径和质检。",
+      "notes": "正面场景：资料无读者价值。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "PPT有二十页，但没有故事线，能不能按3W和storyboard重新排？",
+      "expected_behavior": "应激活 document-product-3w-storyboard，输出整份资料的读者路径。",
+      "notes": "正面场景：整份资料故事线。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我只想检查这一页PPT标题是不是一个明确论点，图表是否支撑它。",
+      "expected_behavior": "不应激活本 skill，应激活 pyramid-slide-one-point-check。",
+      "notes": "跨 skill 诱饵：单页论点检查。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我被拉进客户复盘会，不是主讲，只想判断要不要参加以及我该贡献什么。",
+      "expected_behavior": "不应激活本 skill，应激活 meeting-contribution-obligation。",
+      "notes": "跨 skill 混淆诱饵：同书的会议贡献判断。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "资料需要披露很多法律风险，顺读性会变差，可以删掉吗？",
+      "expected_behavior": "可激活本 skill 的边界判断，但必须保留关键风险，不为顺读删披露。",
+      "notes": "边界：风险披露。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "含金字塔单页和演示目标诱饵。"
+}

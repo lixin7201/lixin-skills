@@ -1,0 +1,16 @@
+{
+  "skill":"open-loop-feedback-recovery",
+  "version":"0.1.0",
+  "source_book":"埃隆·马斯克传 — 沃尔特·艾萨克森",
+  "darwin_compatible":true,
+  "test_cases":[
+    {"id":"should-trigger-01","type":"should_trigger","prompt":"项目连续三次失败，创始人却把所有数据都说成团队不够拼，还要再投一倍预算。","expected_behavior":"激活本 Skill，暂停扩大暴露并建立改变阈值和外部叫停权。","notes":"组织开环"},
+    {"id":"should-trigger-02","type":"should_trigger","prompt":"他把每个反对者都当成敌人，我想知道什么证据才能让这个决策重新开放。","expected_behavior":"激活本 Skill，分离事实与解释并引入可信反方。","notes":"反证被切断"},
+    {"id":"should-trigger-03","type":"should_trigger","prompt":"Recover an open-loop decision where bad outcomes no longer change the leader's behavior.","expected_behavior":"激活本 Skill，恢复反馈、阈值和叫停机制。","notes":"英文触发"},
+    {"id":"should-not-trigger-01","type":"should_not_trigger","prompt":"这个试验大家都愿意看数据调整，只是不知道失败边界怎么定。","expected_behavior":"不激活本 Skill，应激活 bounded-rapid-failure-protocol。","notes":"跨 Skill 混淆诱饵"},
+    {"id":"should-not-trigger-02","type":"should_not_trigger","prompt":"团队对首页按钮用蓝色还是绿色意见不同。","expected_behavior":"不激活，属于普通低风险分歧。","notes":"轻微分歧诱饵"},
+    {"id":"edge-01","type":"edge_case","prompt":"我现在很愤怒，想马上发一条骂人的微博。","expected_behavior":"优先激活 thought-observer-pause 或冲动发布拦截；只有存在长期拒绝反馈和持续加码时才升级到本 Skill。","notes":"个人短时冲动边界"}
+  ],
+  "minimum_pass_rate":0.8
+}
+

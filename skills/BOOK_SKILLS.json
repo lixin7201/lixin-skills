@@ -1,0 +1,614 @@
+[
+  {
+    "source": "6s-guan-li-fang-fa-yu-ji-qiao-ppt",
+    "skill": "six-s-site-order-governance-loop"
+  },
+  {
+    "source": "ba-shi-jian-dang-zuo-peng-you",
+    "skill": "familiarity-weighted-estimation"
+  },
+  {
+    "source": "ba-shi-jian-dang-zuo-peng-you",
+    "skill": "interest-after-competence-diagnostic"
+  },
+  {
+    "source": "ba-shi-jian-dang-zuo-peng-you",
+    "skill": "reality-constraint-premise-audit"
+  },
+  {
+    "source": "cai-fu-de-zhen-xiang",
+    "skill": "production-distance-usefulness-audit"
+  },
+  {
+    "source": "cai-fu-zi-you-zhi-lu",
+    "skill": "correctness-nonconsensus-evidence-matrix"
+  },
+  {
+    "source": "elon-musk-zhuan",
+    "skill": "bounded-rapid-failure-protocol"
+  },
+  {
+    "source": "elon-musk-zhuan",
+    "skill": "design-production-responsibility-loop"
+  },
+  {
+    "source": "elon-musk-zhuan",
+    "skill": "moving-bottleneck-red-light-loop"
+  },
+  {
+    "source": "elon-musk-zhuan",
+    "skill": "open-loop-feedback-recovery"
+  },
+  {
+    "source": "elon-musk-zhuan",
+    "skill": "surge-mode-governor"
+  },
+  {
+    "source": "fen-zhang-p1-03-chuang-yi-he-xiang-xiang-li-ppt",
+    "skill": "creative-workshop-diverge-cluster-prioritize"
+  },
+  {
+    "source": "fen-zhang-p1-04-shi-chang-ying-xiao-zhan-lue-ppt",
+    "skill": "customer-journey-touchpoint-diagnosis"
+  },
+  {
+    "source": "fen-zhang-p1-06-zu-zhi-tuan-dui-guan-li-ppt",
+    "skill": "kgi-kpi-causal-tree-validity-check"
+  },
+  {
+    "source": "fen-zhang-p1-06-zu-zhi-tuan-dui-guan-li-ppt",
+    "skill": "seven-s-hard-soft-change-balance-audit"
+  },
+  {
+    "source": "fen-zhang-p2-02-fen-xi-jie-jue-wen-ti-ppt",
+    "skill": "problem-analysis-tool-router"
+  },
+  {
+    "source": "fen-zhang-p2-03-gou-tong-neng-li-ppt",
+    "skill": "communication-understanding-execution-loop"
+  },
+  {
+    "source": "fen-zhang-p2-04-zhan-lue-yu-gui-hua-ppt",
+    "skill": "strategy-model-evidence-gate-router"
+  },
+  {
+    "source": "fen-zhang-p2-05-ling-dao-li-he-zhi-xing-li-ppt",
+    "skill": "delegation-readiness-leadership-style-check"
+  },
+  {
+    "source": "fen-zhang-p2-07-zi-wo-guan-li-ppt",
+    "skill": "self-management-method-router"
+  },
+  {
+    "source": "fen-zhang-p3-01-zhan-lue-wu-he-pin-pai-wu-ppt",
+    "skill": "brand-house-positioning-benefit-rtb-audit"
+  },
+  {
+    "source": "fen-zhang-p3-01-zhan-lue-wu-he-pin-pai-wu-ppt",
+    "skill": "strategy-house-alignment-check"
+  },
+  {
+    "source": "fen-zhang-p3-02-ying-xiao-zhan-lue-mo-xing-ppt",
+    "skill": "platform-playbook-currentness-audit"
+  },
+  {
+    "source": "fen-zhang-p3-03-pin-pai-xiang-guan-mo-xing-ppt",
+    "skill": "brand-health-penetration-loyalty-diagnosis"
+  },
+  {
+    "source": "fen-zhang-p3-05-xin-mei-ti-yun-ying-mo-xing-ppt",
+    "skill": "content-library-minimum-structure-builder"
+  },
+  {
+    "source": "fen-zhang-p3-05-xin-mei-ti-yun-ying-mo-xing-ppt",
+    "skill": "new-media-channel-fit-stop-rule"
+  },
+  {
+    "source": "fen-zhang-p3-06-si-yu-yun-ying-ppt",
+    "skill": "private-domain-fit-boundary-audit"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "advisor-source-quadrant-audit"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "asset-liability-cashflow-audit"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "bad-debt-rolldown-plan"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "business-education-due-diligence"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "cashflow-quadrant-income-map"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "control-prior-leverage-check"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "financial-freedom-runway-check"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "five-financial-iq-triage"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "good-bad-debt-screen"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "mistake-to-learning-review"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "s-to-b-system-check"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "sales-marketing-second-skill"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "surplus-budget-pay-yourself-first"
+  },
+  {
+    "source": "fu-ba-ba-tao-zhuang-5ce",
+    "skill": "work-to-learn-skill-stack"
+  },
+  {
+    "source": "fu-pan-fen-xiang-pei-xun-fang-fa-lun-hui-zong-ppt",
+    "skill": "truth-seeking-after-action-review"
+  },
+  {
+    "source": "gong-zuo-ji-hua-mu-biao-guan-li-pei-xun-ppt",
+    "skill": "goal-management-side-effect-audit"
+  },
+  {
+    "source": "gong-zuo-ji-hua-mu-biao-guan-li-pei-xun-ppt",
+    "skill": "pre-smart-goal-worthiness-audit"
+  },
+  {
+    "source": "gtd-shi-jian-guan-li-an-li-ppt",
+    "skill": "inbox-to-next-action-triage"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "active-learning-operating-system"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "atomic-output-recomposition"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "case-to-method-pattern"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "compound-direction-canvas"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "end-first-minimum-loop"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "ethical-perception-to-action"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "investment-decision-firewall"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "multi-view-truth-filter"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "nearby-problem-income-loop"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "needs-wants-scene-research"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "owner-view-value-safety-margin"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "pain-list-guard-clause"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "personal-method-ipo"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "proven-pattern-transfer"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "rapid-book-survey"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "rider-horse-track-company-reading"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "risk-budgeted-asset-allocation"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "second-skill-stacking"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "self-investment-flywheel"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "thought-observer-pause"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "users-before-product"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "valuation-triangulation"
+  },
+  {
+    "source": "jia-zhi-xin-fa",
+    "skill": "value-trust-repeat-flywheel"
+  },
+  {
+    "source": "jie-gou-hua-si-wei-gong-ju-ppt",
+    "skill": "scrtv-value-proposition-brief"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li",
+    "skill": "conclusion-first-pyramid-report"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li",
+    "skill": "horizontal-grouping-logic-check"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li",
+    "skill": "problem-definition-r1-r2-diagnostic-tree"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li",
+    "skill": "pyramid-slide-one-point-check"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li",
+    "skill": "scqa-reader-question-introduction"
+  },
+  {
+    "source": "jin-zi-ta-yuan-li-2-shi-zhan-pian",
+    "skill": "pyramid-structure-practice-coach"
+  },
+  {
+    "source": "jiu-cai-de-zi-wo-xiu-yang",
+    "skill": "extreme-price-volume-hindsight-audit"
+  },
+  {
+    "source": "li-xiao-lai-de-jiang-zhe-ji-qiao",
+    "skill": "accurate-restatement-feedback-loop"
+  },
+  {
+    "source": "li-xiao-lai-de-jiang-zhe-ji-qiao",
+    "skill": "audience-distance-conclusion-ordering"
+  },
+  {
+    "source": "li-xiao-lai-de-jiang-zhe-ji-qiao",
+    "skill": "misunderstanding-map-preflight"
+  },
+  {
+    "source": "li-xiao-lai-de-jiang-zhe-ji-qiao",
+    "skill": "speaker-claim-consistency-audit"
+  },
+  {
+    "source": "mai-ken-xi-48-ge-gong-zuo-xi-guan",
+    "skill": "document-product-3w-storyboard"
+  },
+  {
+    "source": "mai-ken-xi-48-ge-gong-zuo-xi-guan",
+    "skill": "meeting-contribution-obligation"
+  },
+  {
+    "source": "mai-ken-xi-48-ge-gong-zuo-xi-guan",
+    "skill": "proactive-hypothesis-upward-report"
+  },
+  {
+    "source": "mai-ken-xi-48-ge-gong-zuo-xi-guan",
+    "skill": "task-brief-5min-start-loop"
+  },
+  {
+    "source": "mai-ken-xi-gong-zuo-fa",
+    "skill": "issue-hypothesis-logic-tree-loop"
+  },
+  {
+    "source": "mai-ken-xi-gong-zuo-fa",
+    "skill": "primary-source-fact-grounding"
+  },
+  {
+    "source": "mai-ken-xi-gong-zuo-fa",
+    "skill": "sky-rain-umbrella-action-chain"
+  },
+  {
+    "source": "mai-ken-xi-jian-bao-shuo-fu-ji-qiao",
+    "skill": "presentation-action-change-brief"
+  },
+  {
+    "source": "mai-ken-xi-jian-bao-shuo-fu-ji-qiao",
+    "skill": "th-problem-type-story-routing"
+  },
+  {
+    "source": "mai-ken-xi-si-kao-xi-guan",
+    "skill": "must-to-preferable-stress-reframe"
+  },
+  {
+    "source": "mai-ken-xi-si-kao-xi-guan",
+    "skill": "negative-emotion-action-routing"
+  },
+  {
+    "source": "mai-ken-xi-tan-pan-ce-lue",
+    "skill": "constructive-negotiation-preflight"
+  },
+  {
+    "source": "mai-ken-xi-tan-pan-ce-lue",
+    "skill": "malicious-negotiation-tactic-defuser"
+  },
+  {
+    "source": "mai-ken-xi-tan-pan-ce-lue",
+    "skill": "negotiation-real-intent-listening"
+  },
+  {
+    "source": "mai-ken-xi-tan-pan-ce-lue",
+    "skill": "sunk-cost-batna-stop-check"
+  },
+  {
+    "source": "okr-gong-zuo-guan-li-fa-ppt",
+    "skill": "okr-fit-preflight"
+  },
+  {
+    "source": "okr-gong-zuo-guan-li-fa-ppt",
+    "skill": "okr-smart-kr-quality-guard"
+  },
+  {
+    "source": "pdca-xun-huan-gong-zuo-fang-fa-ppt",
+    "skill": "firefighting-to-standard-improvement-loop"
+  },
+  {
+    "source": "qi-nian-jiu-shi-yi-bei-zi",
+    "skill": "discussion-goal-routing"
+  },
+  {
+    "source": "qi-nian-jiu-shi-yi-bei-zi",
+    "skill": "explore-exploit-mode-switch"
+  },
+  {
+    "source": "qi-nian-jiu-shi-yi-bei-zi",
+    "skill": "long-change-intensity-budget"
+  },
+  {
+    "source": "qi-nian-jiu-shi-yi-bei-zi",
+    "skill": "problem-ownership-routing"
+  },
+  {
+    "source": "qi-nian-jiu-shi-yi-bei-zi",
+    "skill": "world-first-focus-shift"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "accounting-economic-reality-reconciliation"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "authority-command-verification-gate"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "circle-of-competence-boundary-test"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "fixed-baseline-drift-check"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "incentive-caused-bias-audit"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "inversion-ruin-path-preflight"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "lollapalooza-bias-stack-audit"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "multidisciplinary-model-lattice-check"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "rare-critical-skill-rehearsal"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "scale-advantage-disease-audit"
+  },
+  {
+    "source": "qiong-cha-li-bao-dian-zhen-cang-ban-1-2",
+    "skill": "technology-value-capture-second-step"
+  },
+  {
+    "source": "rang-shi-jian-pei-ni-man-man-bian-fu",
+    "skill": "active-choice-passive-hold-protocol"
+  },
+  {
+    "source": "rang-shi-jian-pei-ni-man-man-bian-fu",
+    "skill": "decision-node-error-multiplier-audit"
+  },
+  {
+    "source": "rang-shi-jian-pei-ni-man-man-bian-fu",
+    "skill": "multi-cycle-trend-evidence-gate"
+  },
+  {
+    "source": "rang-shi-jian-pei-ni-man-man-bian-fu",
+    "skill": "skill-luck-spectrum-routing"
+  },
+  {
+    "source": "rang-shi-jian-pei-ni-man-man-bian-fu",
+    "skill": "whole-action-chain-validity-audit"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "ambiguity-to-clarity-decomposition"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "anxiety-desire-ability-triage"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "cognition-as-skill-transfer"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "daily-reflection-awareness-loop"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "felt-trigger-association-learning"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "focus-rest-energy-cycle"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "gameful-motivation-transfer"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "mental-bandwidth-scarcity-triage"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "meta-time-choice-gate"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "multi-perspective-emotion-reframe"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "output-feedback-learning-loop"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "reasoned-threshold-action"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "record-over-checkin-motivation-guard"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "stretch-zone-practice-loop"
+  },
+  {
+    "source": "ren-zhi-jue-xing-zhou-ling",
+    "skill": "written-clarity-action-planner"
+  },
+  {
+    "source": "shi-jian-guan-li-fang-fa-ji-qiao-pei-xun-ppt",
+    "skill": "interruption-buffer-priority-reset"
+  },
+  {
+    "source": "si-wei-mo-xing-batch-20260720",
+    "skill": "influence-circle-action-router"
+  },
+  {
+    "source": "si-wei-mo-xing-batch-20260720",
+    "skill": "pomodoro-single-task-interruption-loop"
+  },
+  {
+    "source": "wei-xin-hu-lian-wang-ping-min-chuang-ye",
+    "skill": "audience-reverse-shaping-audit"
+  },
+  {
+    "source": "wei-xin-hu-lian-wang-ping-min-chuang-ye",
+    "skill": "instruction-coaching-responsibility-split"
+  },
+  {
+    "source": "wei-xin-hu-lian-wang-ping-min-chuang-ye",
+    "skill": "platform-commerce-closure-audit"
+  },
+  {
+    "source": "xi-tong-chuang-xin-si-wei-pei-xun-ppt",
+    "skill": "sit-constraint-surgery-validation-gate"
+  },
+  {
+    "source": "xue-hui-cheng-zhang",
+    "skill": "asymmetric-opportunity-sprint"
+  },
+  {
+    "source": "xue-hui-cheng-zhang",
+    "skill": "growth-option-standard-screen"
+  },
+  {
+    "source": "xue-hui-cheng-zhang",
+    "skill": "market-feedback-growth-loop"
+  },
+  {
+    "source": "xue-hui-cheng-zhang",
+    "skill": "representative-work-asset-flywheel"
+  },
+  {
+    "source": "xue-hui-cheng-zhang",
+    "skill": "variable-competition-design"
+  },
+  {
+    "source": "you-xiao-xun-lian-jie-gou-hua-si-wei-ppt",
+    "skill": "claim-reason-fact-reception-audit"
+  },
+  {
+    "source": "yu-gu-tu-fen-xi-fa-pei-xun-ppt",
+    "skill": "fishbone-major-cause-verification-workshop"
+  },
+  {
+    "source": "zhuan-zhu-de-zhen-xiang",
+    "skill": "attention-allocation-ledger"
+  },
+  {
+    "source": "zhuan-zhu-de-zhen-xiang",
+    "skill": "novelty-information-distortion-audit"
+  },
+  {
+    "source": "zi-xue-shi-men-shou-yi",
+    "skill": "decentralized-teacher-source-ladder"
+  },
+  {
+    "source": "zi-xue-shi-men-shou-yi",
+    "skill": "evergreen-content-fertility-filter"
+  },
+  {
+    "source": "zi-xue-shi-men-shou-yi",
+    "skill": "premature-reference-dual-speed-reading"
+  }
+]

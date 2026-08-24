@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>ai.openclaw.earthquake-wolfx</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/REPLACE_ME/.local/bin/node</string>
+    <string>/Users/REPLACE_ME/.openclaw/workspace/earthquake-patrol/scripts/wolfx-listener.js</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>/Users/REPLACE_ME/.openclaw/workspace/earthquake-patrol</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>HOME</key>
+    <string>/Users/REPLACE_ME</string>
+    <key>PATH</key>
+    <string>/Users/REPLACE_ME/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>EARTHQUAKE_PATROL_PYTHON</key>
+    <string>/usr/bin/python3</string>
+    <key>WOLFX_PUBLISH_ENABLED</key>
+    <string>1</string>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+  </dict>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>ThrottleInterval</key>
+  <integer>10</integer>
+  <key>ProcessType</key>
+  <string>Background</string>
+  <key>ExitTimeOut</key>
+  <integer>10</integer>
+  <key>StandardOutPath</key>
+  <string>/Users/REPLACE_ME/.openclaw/workspace/earthquake-patrol/logs/wolfx-listener.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/REPLACE_ME/.openclaw/workspace/earthquake-patrol/logs/wolfx-listener.err.log</string>
+</dict>
+</plist>

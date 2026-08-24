@@ -1,0 +1,49 @@
+{
+  "skill": "output-feedback-learning-loop",
+  "title": "作品反馈学习闭环",
+  "source_book": "认知觉醒：开启自我改变的原动力",
+  "cases": [
+    {
+      "id": "output-feedback-learning-loop:trigger-01",
+      "type": "should_trigger",
+      "prompt": "我学产品课一个月了，笔记很多，但还没有做出任何东西给人看。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "输入多但无产出反馈。"
+    },
+    {
+      "id": "output-feedback-learning-loop:trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想验证一个创业想法，但一直停留在脑子里，没有用户反馈。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "创业想法需要最小反馈闭环。"
+    },
+    {
+      "id": "output-feedback-learning-loop:trigger-03",
+      "type": "should_trigger",
+      "prompt": "文章在本地改了十版，我不敢给目标读者看，也不知道哪里不好。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "写作缺目标读者反馈。"
+    },
+    {
+      "id": "output-feedback-learning-loop:not-01",
+      "type": "should_not_trigger",
+      "prompt": "我读书时刚被一句话触动，还不知道它关联了我的哪个问题。",
+      "expected": "felt-trigger-association-learning",
+      "rationale": "先做触动关联。"
+    },
+    {
+      "id": "output-feedback-learning-loop:not-02",
+      "type": "should_not_trigger",
+      "prompt": "请直接帮我润色这篇文章。",
+      "expected": "none",
+      "rationale": "执行润色请求，不是调用学习闭环。"
+    },
+    {
+      "id": "output-feedback-learning-loop:edge-01",
+      "type": "edge",
+      "prompt": "这个案例涉及客户隐私，我不能公开，但想在脱敏或内部小范围里收反馈。",
+      "expected": "output-feedback-learning-loop",
+      "rationale": "可触发闭环，但只能脱敏或小范围。"
+    }
+  ]
+}

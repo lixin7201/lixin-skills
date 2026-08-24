@@ -1,0 +1,52 @@
+{
+  "skill": "active-choice-passive-hold-protocol",
+  "version": "0.1.0",
+  "source_book": "让时间陪你慢慢变富 — 李笑来",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我研究后决定长期配置，但每天看行情都想换策略。",
+      "expected_behavior": "调用本 Skill 写论文、窗口和重开条件并减少噪声干预。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "公司战略每逢热点就改方向，怎样既主动选择又保持耐心？",
+      "expected_behavior": "调用本 Skill 冻结证据、复核周期和改向触发器。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我想长期持有，但担心把坚持变成死扛，如何设退出？",
+      "expected_behavior": "调用本 Skill 定义论文破裂和风险预算触发器。",
+      "notes": "正面触发场景。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "只有一轮上涨数据，我能把它认定为长期趋势吗？",
+      "expected_behavior": "不调用本 Skill，应调用 multi-cycle-trend-evidence-gate。",
+      "notes": "相邻 Skill 诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我还没做资金资格检查，就因暴涨想马上重仓。",
+      "expected_behavior": "不调用本 Skill，应调用 investment-decision-firewall。",
+      "notes": "同批/同书兄弟 Skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "持有标的突然被监管禁止交易，我能等下个季度复核吗？",
+      "expected_behavior": "不等待；法律和流动性触发器要求立即重开并采取合规行动。",
+      "notes": "边界场景。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3条应调用、2条诱饵（至少1条同批/同书兄弟Skill）、1条边界；诱饵容错为0。"
+}

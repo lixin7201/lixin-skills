@@ -1,0 +1,52 @@
+{
+  "skill": "asset-liability-cashflow-audit",
+  "version": "0.1.0",
+  "source_book": "富爸爸套装五册 — 〔美〕罗伯特·清崎；〔美〕莎伦·莱希特等",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我想买一个副业账号，卖家说它是资产，但现在每月还要我贴钱运营，帮我判断。",
+      "expected_behavior": "应激活本 skill，先画现金流再分类。",
+      "notes": "用户在判断对象是否为资产。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我收入涨了但存不下钱，房贷车贷会员课一堆，我到底哪里出问题？",
+      "expected_behavior": "应激活本 skill，审计现金流流向和负债项。",
+      "notes": "收入增加但自由下降。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这台设备能帮我做内容，我想知道它是不是值得投资。",
+      "expected_behavior": "应激活本 skill，列出投入、维护、产出和退出。",
+      "notes": "工具投入需要资产负债判定。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "富爸爸穷爸爸里资产和负债这句话原文是什么？",
+      "expected_behavior": "不应激活本 skill；这是查书摘，不是行动审计。",
+      "notes": "纯信息查询诱饵。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我有三张信用卡债，想按顺序还清，应该怎么排？",
+      "expected_behavior": "不应激活本 skill，应激活 bad-debt-rolldown-plan。",
+      "notes": "兄弟 skill 混淆诱饵。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想买一套自住房，现金流是负的，但能改善家人生活。",
+      "expected_behavior": "可调用本 skill 做现金流标注，但必须说明这可能是生活选择，不应被强行包装成资产。",
+      "notes": "现金流与生活价值冲突。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "至少 3 条 should_trigger + 2 条 should_not_trigger + 1 条 edge_case；全部 should_not_trigger 必须通过，其中至少 1 条是同书兄弟 skill 场景。"
+}

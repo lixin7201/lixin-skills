@@ -1,0 +1,183 @@
+{
+  "cases": 3,
+  "passed": 3,
+  "failed": 0,
+  "ai_trace_hits_before": 13,
+  "ai_trace_hits_after": 0,
+  "facts_preserved": true,
+  "numbers_preserved": true,
+  "original_flavor_non_decreasing": true,
+  "source_leakage_zero": true,
+  "non_impersonation": 10,
+  "status": "PASS",
+  "results": [
+    {
+      "id": "deai-01-tools",
+      "pass": true,
+      "ai_trace_hits_before": [
+        "在当今.{0,12}时代",
+        "值得注意的是",
+        "首先.{0,20}其次.{0,20}最后",
+        "综上所述",
+        "根据你提供的素材",
+        "未来.{0,4}可期",
+        "拥抱变化"
+      ],
+      "ai_trace_hits_after": [],
+      "facts": [
+        {
+          "pattern": "6 款 AI 工具",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "14 天",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "客户满意度数据.{0,6}没有|没有.{0,6}客户满意度数据",
+          "pre": true,
+          "post": true
+        }
+      ],
+      "numbers_before": [
+        "6",
+        "14"
+      ],
+      "numbers_after": [
+        "6",
+        "14"
+      ],
+      "metrics_before": {
+        "chars": 152,
+        "paragraphs": 1,
+        "median_paragraph_chars": 152,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 0
+      },
+      "metrics_after": {
+        "chars": 154,
+        "paragraphs": 3,
+        "median_paragraph_chars": 55,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 1
+      },
+      "original_flavor_before": 3,
+      "original_flavor_after": 10,
+      "source_leakage_after": [],
+      "non_impersonation_after": 10
+    },
+    {
+      "id": "deai-02-pilot",
+      "pass": true,
+      "ai_trace_hits_before": [
+        "本文将",
+        "首先.{0,20}其次.{0,20}最后",
+        "希望.{0,10}(启发|帮助)",
+        "业内普遍认为"
+      ],
+      "ai_trace_hits_after": [],
+      "facts": [
+        {
+          "pattern": "4 周",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "负责人",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "未确认预算|不愿确认预算|没有预算",
+          "pre": true,
+          "post": true
+        }
+      ],
+      "numbers_before": [
+        "4"
+      ],
+      "numbers_after": [
+        "4",
+        "4"
+      ],
+      "metrics_before": {
+        "chars": 126,
+        "paragraphs": 1,
+        "median_paragraph_chars": 126,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 0
+      },
+      "metrics_after": {
+        "chars": 162,
+        "paragraphs": 3,
+        "median_paragraph_chars": 69,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 1
+      },
+      "original_flavor_before": 4,
+      "original_flavor_after": 10,
+      "source_leakage_after": [],
+      "non_impersonation_after": 10
+    },
+    {
+      "id": "deai-03-industry",
+      "pass": true,
+      "ai_trace_hits_before": [
+        "长期主义",
+        "系统性分析"
+      ],
+      "ai_trace_hits_after": [],
+      "facts": [
+        {
+          "pattern": "30%",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "没有.{0,8}付费交付|还没有.{0,8}付费交付",
+          "pre": true,
+          "post": true
+        },
+        {
+          "pattern": "3 个月无收入",
+          "pre": true,
+          "post": true
+        }
+      ],
+      "numbers_before": [
+        "30%",
+        "3"
+      ],
+      "numbers_after": [
+        "30%",
+        "3"
+      ],
+      "metrics_before": {
+        "chars": 138,
+        "paragraphs": 1,
+        "median_paragraph_chars": 138,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 0
+      },
+      "metrics_after": {
+        "chars": 165,
+        "paragraphs": 3,
+        "median_paragraph_chars": 60,
+        "le20_ratio": 0.0,
+        "max_consecutive_le20": 0,
+        "question_marks": 1
+      },
+      "original_flavor_before": 4,
+      "original_flavor_after": 10,
+      "source_leakage_after": [],
+      "non_impersonation_after": 10
+    }
+  ]
+}

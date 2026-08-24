@@ -1,0 +1,59 @@
+{
+  "skill": "choice-basis-three-question-audit",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "一个工作高薪异地，一个低薪本地能照顾家人。我该怎么基于自己的条件选择？",
+      "expected_behavior": "应激活本 skill，审计依据、该不该、能不能、爱不爱和取舍。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我该嫁给喜欢的还是合适的？我怕自己连喜欢和合适都没定义清楚。",
+      "expected_behavior": "应激活本 skill，先定义依据，不替用户决定价值排序。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "别人靠转行成功了，我是不是也该照着做？请检查这条选择是否匹配我的条件。",
+      "expected_behavior": "应激活本 skill，检查能力、责任、意愿与不可复制条件。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "午饭吃面还是吃饭？",
+      "expected_behavior": "不应激活；日常低成本选择无需完整审计。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这个行业十年后的终局是什么，怎样让未来选项变多？",
+      "expected_behavior": "不应主激活本 skill；应使用 cycle-endgame-optionality-map。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "你别问我任何信息，直接替我选一个工作。",
+      "expected_behavior": "应拒绝无依据拍板，列最少必要信息和可逆验证。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我很爱这个选择，所以法律责任和对家人的影响都可以忽略吗？",
+      "expected_behavior": "明确爱不爱不能覆盖该不该，排除伤害或违规路径。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

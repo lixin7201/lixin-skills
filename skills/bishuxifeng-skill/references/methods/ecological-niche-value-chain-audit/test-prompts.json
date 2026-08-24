@@ -1,0 +1,59 @@
+{
+  "skill": "ecological-niche-value-chain-audit",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "这个行业整体增长很快，为什么我所在岗位工资低、还容易被替代？",
+      "expected_behavior": "应激活本 skill，定位价值链、利润、议价和替代。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "AI开始自动化我的工作。我应该继续卷工具熟练度，还是迁移到更靠近问题定义的位置？",
+      "expected_behavior": "应激活本 skill，审计生态位蚀损和邻近迁移。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我在乙方做技术，考虑去甲方。怎样比较两个位置能调动的资源和服务对象？",
+      "expected_behavior": "应激活本 skill，比较上下游位置、资源调用和可见度。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请列出今年中国增长最快的十个行业并给最新数据。",
+      "expected_behavior": "不应直接用本 skill；先做时效数据研究。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我会设计，怎样验证谁愿意付费以及什么时候加杠杆？",
+      "expected_behavior": "不应主激活本 skill；应使用 ability-demand-leverage-path。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我在公益机构工作，利润不是主要目标，还能做生态位分析吗？",
+      "expected_behavior": "可分析资源、替代和服务关系，但不得用利润单一衡量公共价值。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "只知道职位名称，不知道具体职责和上下游，请判断这个生态位好不好。",
+      "expected_behavior": "应要求补充职责、价值流和替代信息，不凭标签判断。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

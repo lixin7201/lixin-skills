@@ -1,0 +1,10 @@
+{
+  "required_reference_files": 23,
+  "test_prompts": 22,
+  "train_articles": 101,
+  "holdout_used": 0,
+  "ocr_used": 0,
+  "holdout_id_hits": [],
+  "failures": [],
+  "status": "PASS"
+}

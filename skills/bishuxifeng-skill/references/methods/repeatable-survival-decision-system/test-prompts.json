@@ -1,0 +1,59 @@
+{
+  "skill": "repeatable-survival-decision-system",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我发现一个可能爆发的AI创业方向，想直接辞职把积蓄全押进去。帮我设计一下，押错了也不至于彻底出局。",
+      "expected_behavior": "应激活本 skill，定义出局线、暴露规模、最小实验、退出和复盘规则。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我连续五次投资都赚了，准备加三倍杠杆。你帮我判断这套打法到底是不是可重复的系统。",
+      "expected_behavior": "应激活本 skill，区分热手归因、仓位、流动性和模型适用域。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这个月亏了一次，我想把原来的交易规则全部反过来。到底该根据什么证据改规则？",
+      "expected_behavior": "应激活本 skill，区分单局噪声、执行错误和模型失配。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查一下今天沪深300收盘点位。",
+      "expected_behavior": "不应激活；这是当前事实查询。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我想知道十年后这个行业还有没有前途，以及现在怎样把路走宽。",
+      "expected_behavior": "不应主激活本 skill；应优先 cycle-endgame-optionality-map。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "明天婚礼下雨概率很高，要不要把户外仪式改到室内？",
+      "expected_behavior": "可做普通风险预案，但无需加载完整重复决策系统，除非成本和不可逆风险很高。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "一种手术只有一次机会，我想用多试几次积累经验的方式决策。",
+      "expected_behavior": "不得套用重复试错；指出不可逆医疗边界并建议专业决策。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

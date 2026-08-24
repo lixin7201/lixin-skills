@@ -1,0 +1,277 @@
+{
+  "judges": [
+    "holdout-v3-judge-1",
+    "holdout-v3-judge-2"
+  ],
+  "judge_mode": "blind_full_test",
+  "items": 10,
+  "comparisons": 20,
+  "system_means": {
+    "skill": {
+      "title_similarity": 8.6,
+      "opening_similarity": 8.725,
+      "body_structure_similarity": 8.85,
+      "structure_metric_similarity": 8.68,
+      "language_rhythm_similarity": 8.72,
+      "material_use_similarity": 8.895,
+      "viewpoint_organization_similarity": 8.975,
+      "writing_process_similarity": 8.885,
+      "original_flavor_fingerprint": 8.89,
+      "non_template_variation": 8.905,
+      "de_ai_preservation": 8.97,
+      "paragraph_structure_regression": 8.645,
+      "transition_similarity": 8.775,
+      "ending_similarity": 8.91,
+      "overall_reading_feel": 8.86,
+      "fact_reliability": 9.84,
+      "non_impersonation": 10.0
+    },
+    "baseline": {
+      "title_similarity": 7.87,
+      "opening_similarity": 7.9,
+      "body_structure_similarity": 8.01,
+      "structure_metric_similarity": 4.125,
+      "language_rhythm_similarity": 6.975,
+      "material_use_similarity": 8.535,
+      "viewpoint_organization_similarity": 8.445,
+      "writing_process_similarity": 8.405,
+      "original_flavor_fingerprint": 7.36,
+      "non_template_variation": 7.795,
+      "de_ai_preservation": 7.745,
+      "paragraph_structure_regression": 4.04,
+      "transition_similarity": 8.035,
+      "ending_similarity": 8.18,
+      "overall_reading_feel": 7.715,
+      "fact_reliability": 9.85,
+      "non_impersonation": 10.0
+    }
+  },
+  "system_overall": {
+    "skill": 8.949,
+    "baseline": 7.705
+  },
+  "preferences": {
+    "skill": 20,
+    "baseline": 0,
+    "tie": 0
+  },
+  "skill_preference_rate_excluding_ties": 1.0,
+  "per_article": [
+    {
+      "article_id": "BXSF-025-20221005",
+      "skill_overall": 8.926,
+      "baseline_overall": 7.794,
+      "delta": 1.132
+    },
+    {
+      "article_id": "BXSF-029-20221112",
+      "skill_overall": 8.918,
+      "baseline_overall": 7.644,
+      "delta": 1.274
+    },
+    {
+      "article_id": "BXSF-038-20230311",
+      "skill_overall": 8.956,
+      "baseline_overall": 7.782,
+      "delta": 1.174
+    },
+    {
+      "article_id": "BXSF-047-20230701",
+      "skill_overall": 8.924,
+      "baseline_overall": 7.685,
+      "delta": 1.238
+    },
+    {
+      "article_id": "BXSF-060-20240112",
+      "skill_overall": 8.915,
+      "baseline_overall": 7.615,
+      "delta": 1.3
+    },
+    {
+      "article_id": "BXSF-075-20240820",
+      "skill_overall": 8.962,
+      "baseline_overall": 7.782,
+      "delta": 1.179
+    },
+    {
+      "article_id": "BXSF-097-20250711",
+      "skill_overall": 9.009,
+      "baseline_overall": 7.912,
+      "delta": 1.097
+    },
+    {
+      "article_id": "BXSF-106-20251123",
+      "skill_overall": 9.041,
+      "baseline_overall": 7.653,
+      "delta": 1.388
+    },
+    {
+      "article_id": "BXSF-111-20260206",
+      "skill_overall": 8.926,
+      "baseline_overall": 7.582,
+      "delta": 1.344
+    },
+    {
+      "article_id": "BXSF-119-20260618",
+      "skill_overall": 8.909,
+      "baseline_overall": 7.6,
+      "delta": 1.309
+    }
+  ],
+  "ready_checks": {
+    "holdout_average>=8.0": true,
+    "title>=7.5": true,
+    "opening>=7.5": true,
+    "body_structure>=7.5": true,
+    "language>=7.5": true,
+    "material>=7.5": true,
+    "paragraph_structure>=7.5": true,
+    "original_flavor>=8.5": true,
+    "non_template>=7.5": true,
+    "blind_preference>=80%": true,
+    "fact_reliability>=9.5": true,
+    "non_impersonation=10": true,
+    "leakage_zero": true,
+    "de_ai_regression": true
+  },
+  "ready": true,
+  "strong": false,
+  "high_fidelity_95_checks": {
+    "holdout_average>=9.5": false,
+    "core_dimensions>=9.0": false,
+    "paragraph>=9.0": false,
+    "fingerprint>=9.2": false,
+    "non_template>=9.0": false,
+    "no_item<8.8": true,
+    "preference>=80%": true,
+    "fact>=9.8": true,
+    "non_impersonation=10": true,
+    "leakage_zero": true,
+    "de_ai_pass": true
+  },
+  "high_fidelity_95_certified": false,
+  "failures": [],
+  "status": "PASS",
+  "blind_judge_records": [
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-025-20221005",
+      "preferred": "skill",
+      "reason": "B在同样完整的事实框架上，更好复现了反问推进、动态风险判断和读者自我反转，段落密度也明显更贴近参照。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-029-20221112",
+      "preferred": "skill",
+      "reason": "B既保留资源约束的冷峻判断，又用跨尺度案例和短段推进形成更鲜明的原味指纹。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-038-20230311",
+      "preferred": "skill",
+      "reason": "A把消费与收益的对照贯穿全文，并用更贴近参照的段落节奏持续追问证据和家庭责任。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-047-20230701",
+      "preferred": "skill",
+      "reason": "A在不物化任何人的前提下，更完整地呈现组合配置、幸存偏差、照护成本和财富保全的连续判断。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-060-20240112",
+      "preferred": "skill",
+      "reason": "B的短段推进、设问和从系统回到人的动态能力的收束，更接近参照的阅读节奏与核心指纹。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-075-20240820",
+      "preferred": "skill",
+      "reason": "B兼具人物主轴、阶段升级、主动降温和可恢复行动，且段落与反问的阅读质感更贴近参照。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-097-20250711",
+      "preferred": "skill",
+      "reason": "B的双轴结构、反问密度、宏观到个人现金流的连续转译都更接近预期指纹。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-106-20251123",
+      "preferred": "skill",
+      "reason": "A不仅覆盖任务，还把问题发现、权限、流程阻力和是否继续学习写成连续判断，原味指纹更完整。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-111-20260206",
+      "preferred": "skill",
+      "reason": "A在安全边界内更好呈现了从被看见、被拒绝、试做到逐级扩大权限的连续机制。"
+    },
+    {
+      "judge": "holdout-v3-judge-1",
+      "article_id": "BXSF-119-20260618",
+      "preferred": "skill",
+      "reason": "A的段落节奏、问题推进和从知识到受控探索的收束更具辨识度，同时完整保留AI核验与健康伦理边界。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-025-20221005",
+      "preferred": "skill",
+      "reason": "B在同等事实与安全质量下，更完整复现了拒绝伪精确、逐层显影变量和收尾反转的节奏，段落结构也显著更接近参考。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-029-20221112",
+      "preferred": "skill",
+      "reason": "B既保留了资源约束与组织重组的深层机制，又通过节奏和问题链呈现原味，阅读上明显不只是框架摘要。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-038-20230311",
+      "preferred": "skill",
+      "reason": "A在材料覆盖相当的情况下，更贴近消费审计、职业现场倒推和责任回到家庭的指纹，段落回归也更好。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-047-20230701",
+      "preferred": "skill",
+      "reason": "A更好地完成了从合作配置到风险归属再到代际教育的自然转场，同时避免物化和幸存者偏差。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-060-20240112",
+      "preferred": "skill",
+      "reason": "B把框架写成了有推进力的判断过程，尤其是从可复制系统转到个人不可替代能力的高点，更接近参考核心。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-075-20240820",
+      "preferred": "skill",
+      "reason": "B更接近人物主轴、阶段升级和主动反驳一战成名的组合指纹，且保留可恢复试验的安全底线。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-097-20250711",
+      "preferred": "skill",
+      "reason": "B的双轴推演更鲜明，能够从宏观必要性转到执行激励再回个人现金流，原味和可用性同时领先。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-106-20251123",
+      "preferred": "skill",
+      "reason": "A更能把知识转化写成亲自进入现场、主动形成题目并用证据决定下一步的过程，风格与结构均明显更贴近参考。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-111-20260206",
+      "preferred": "skill",
+      "reason": "A在不夸大和不操纵的前提下，更完整呈现了信号、试做、合理拒绝、权限扩大和损失控制的递进机制。"
+    },
+    {
+      "judge": "holdout-v3-judge-2",
+      "article_id": "BXSF-119-20260618",
+      "preferred": "skill",
+      "reason": "A更好地把多类场景纳入同一学习模型，并以短段、设问和自主核验保持了目标的判断力度与非模板感。"
+    }
+  ]
+}

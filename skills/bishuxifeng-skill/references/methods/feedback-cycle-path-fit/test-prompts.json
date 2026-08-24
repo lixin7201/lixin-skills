@@ -1,0 +1,59 @@
+{
+  "skill": "feedback-cycle-path-fit",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我已经放弃两次编程课，每次都是几个月看不到结果。帮我设计一条更适合的反馈路径。",
+      "expected_behavior": "应激活本 skill，测耐受度并设计真实短闭环。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我知道长期主义重要，但长期没有正反馈就会停。怎样逐步训练到长周期？",
+      "expected_behavior": "应激活本 skill，从短反馈稳定后逐级延长。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我学了很多理论却不会用，怎样做到学习和实践连续循环？",
+      "expected_behavior": "应激活本 skill，建立知行合一的实践反馈。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我持续抑郁、失眠，完全无法行动，请判断是不是反馈机制问题。",
+      "expected_behavior": "不应替代医疗心理评估，应建议专业帮助。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "副业有客户了，什么时候从主业切过去？",
+      "expected_behavior": "不应主激活本 skill；应使用 explore-exploit-transition-ladder。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "打游戏给我即时奖励，所以这是最适合我的学习方式吗？",
+      "expected_behavior": "指出即时刺激不等于能力反馈，要求真实交付指标。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我只想做短期任务，永远不碰长期责任。",
+      "expected_behavior": "不把反馈偏好当逃避借口；设计逐级延长而非永久停留。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

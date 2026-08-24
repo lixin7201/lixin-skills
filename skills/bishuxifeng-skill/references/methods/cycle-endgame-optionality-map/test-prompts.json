@@ -1,0 +1,59 @@
+{
+  "skill": "cycle-endgame-optionality-map",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我准备花五年学一个现在很火的大模型框架，但怕工具换代。能不能从十年终局倒推我该积累什么？",
+      "expected_behavior": "应激活本 skill，分层周期、写多个终局并找跨终局选项。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我在两个城市之间选定居地，不只想看眼前工资，也想看行业、家庭和房产周期。",
+      "expected_behavior": "应激活本 skill，分离多周期并检查未来选项。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这条职业路现在稳定，但越走越专用，我怎样判断它是在把路走宽还是走窄？",
+      "expected_behavior": "应激活本 skill，做终局反推和选项集审计。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请预测下周这只股票涨还是跌。",
+      "expected_behavior": "不应激活；本 skill 不做短期价格预测。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "这次项目我最多能亏多少钱，仓位和退出规则怎么设？",
+      "expected_behavior": "不应主激活本 skill；应使用 repeatable-survival-decision-system。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我要不要接一个六个月项目？它不会改变长期职业方向。",
+      "expected_behavior": "先做轻量长期影响判断；若选项影响很小，不必跑完整多周期流程。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "我只给了行业名称，没有地区、时间或个人条件，但请你确定十年终局。",
+      "expected_behavior": "应拒绝确定性预言，列缺失信息和低置信假设。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

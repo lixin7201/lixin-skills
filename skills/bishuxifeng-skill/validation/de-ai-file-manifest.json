@@ -1,0 +1,980 @@
+{
+  "layer": "writing-style-distiller target-specific de-AI preservation",
+  "pre_root": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/unified/pre-deai/bishuxifeng-skill",
+  "post_root": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/unified/post-deai/bishuxifeng-skill",
+  "files_processed": 114,
+  "human_readable_reviewed": 83,
+  "machine_readable_regressed": 31,
+  "patched_files": 0,
+  "reviewed_no_change": 83,
+  "active_ai_trace_hits_after": 0,
+  "protected_regression_failures": [],
+  "status": "PASS",
+  "records": [
+    {
+      "path": "PACKAGE.md",
+      "kind": "human_readable",
+      "pre_sha256": "96c4e85bac8f05de24b1e7a2a3e9dade2bcb8dc842f9b028533f1c66faa53c5f",
+      "post_sha256": "96c4e85bac8f05de24b1e7a2a3e9dade2bcb8dc842f9b028533f1c66faa53c5f",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "9f5754ba0584b4705a7b13bb3200659558992cacca2a82346e22048569cdbdc0",
+      "post_sha256": "9f5754ba0584b4705a7b13bb3200659558992cacca2a82346e22048569cdbdc0",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/PHASE2_SYNTHESIS.md",
+      "kind": "human_readable",
+      "pre_sha256": "33f22ce40b944dc9978bc1d1ac62b40666fa71527677b9fbe7509da49f198108",
+      "post_sha256": "33f22ce40b944dc9978bc1d1ac62b40666fa71527677b9fbe7509da49f198108",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/cognition-core.md",
+      "kind": "human_readable",
+      "pre_sha256": "24df48885a326ae1e94050e84e91877a983c0c245f9efe83c2b8446200ea2ff6",
+      "post_sha256": "24df48885a326ae1e94050e84e91877a983c0c245f9efe83c2b8446200ea2ff6",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/01-writings.md",
+      "kind": "human_readable",
+      "pre_sha256": "5050bcff577e567953a727ea39f0263555a9b894ff1edab6bc07c95abf4a8f30",
+      "post_sha256": "5050bcff577e567953a727ea39f0263555a9b894ff1edab6bc07c95abf4a8f30",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/02-conversations.md",
+      "kind": "human_readable",
+      "pre_sha256": "354bf5f03844988205624cf296e57a400ed4b491c3883e9380d54e96bd20e9cc",
+      "post_sha256": "354bf5f03844988205624cf296e57a400ed4b491c3883e9380d54e96bd20e9cc",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/03-expression-dna.md",
+      "kind": "human_readable",
+      "pre_sha256": "400b2e854d53150e8749b60f99120bfb4136c4161322e27853b3675383793c53",
+      "post_sha256": "400b2e854d53150e8749b60f99120bfb4136c4161322e27853b3675383793c53",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/04-external-views.md",
+      "kind": "human_readable",
+      "pre_sha256": "43fc0853a90459ef6e26d1a6e629dbfe95b4051cf063c8a9006a6e54220a085f",
+      "post_sha256": "43fc0853a90459ef6e26d1a6e629dbfe95b4051cf063c8a9006a6e54220a085f",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/05-decisions.md",
+      "kind": "human_readable",
+      "pre_sha256": "2b54eeed9b8f26499f6d058c751cbad719de28a84296d55dc645a40d5d34a4c8",
+      "post_sha256": "2b54eeed9b8f26499f6d058c751cbad719de28a84296d55dc645a40d5d34a4c8",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/cognition/research/06-timeline.md",
+      "kind": "human_readable",
+      "pre_sha256": "a77b99147fcc4e7376e331892859ba07751546620eb8beaad94cfb78f45b82db",
+      "post_sha256": "a77b99147fcc4e7376e331892859ba07751546620eb8beaad94cfb78f45b82db",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/BOOK_OVERVIEW.md",
+      "kind": "human_readable",
+      "pre_sha256": "203e049ad2a0399b8dc9dffaae9f52072117dd787808f8015d7074dba4b4e2a5",
+      "post_sha256": "203e049ad2a0399b8dc9dffaae9f52072117dd787808f8015d7074dba4b4e2a5",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/DIGEST.md",
+      "kind": "human_readable",
+      "pre_sha256": "1e6e02d59473a8440c56815f4951254979f77ca62a8004a97cb27e9a7063a22b",
+      "post_sha256": "1e6e02d59473a8440c56815f4951254979f77ca62a8004a97cb27e9a7063a22b",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/GLOSSARY.md",
+      "kind": "human_readable",
+      "pre_sha256": "8b91cf1a081ed56556adfa6a3b8e55fde47b8626926d99d788e8258fe3b9820a",
+      "post_sha256": "8b91cf1a081ed56556adfa6a3b8e55fde47b8626926d99d788e8258fe3b9820a",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/INDEX.md",
+      "kind": "human_readable",
+      "pre_sha256": "d8db5206090caf762764a01c71bdec81dff17700ff049490c9182723b55abfb2",
+      "post_sha256": "d8db5206090caf762764a01c71bdec81dff17700ff049490c9182723b55abfb2",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "449d8ea1f3430c65bdf61a00a3ba4352f19624a1ac32b13829e515d3e7561fd9",
+      "post_sha256": "449d8ea1f3430c65bdf61a00a3ba4352f19624a1ac32b13829e515d3e7561fd9",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "e2b58e02f847fdb76c748af8edabd5e48e297d40ac83bc69e2ec39e124402e20",
+      "post_sha256": "e2b58e02f847fdb76c748af8edabd5e48e297d40ac83bc69e2ec39e124402e20",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "4614a982a680a3dc515c565c8441d669527a6d2efa3b8d81e65abef8dc63d8ed",
+      "post_sha256": "4614a982a680a3dc515c565c8441d669527a6d2efa3b8d81e65abef8dc63d8ed",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "b632678f0934e6194995466940619f316e3df5c96078304186b85b85f7815d98",
+      "post_sha256": "b632678f0934e6194995466940619f316e3df5c96078304186b85b85f7815d98",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "9983bedc1b7538baed8e22c6cb72bce7785dde2036b90c242a38cfb46e77e191",
+      "post_sha256": "9983bedc1b7538baed8e22c6cb72bce7785dde2036b90c242a38cfb46e77e191",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "8c77f8356c3230c850668100dd37d39fb3a7c841a38d6a237200f45e3dd53ee4",
+      "post_sha256": "8c77f8356c3230c850668100dd37d39fb3a7c841a38d6a237200f45e3dd53ee4",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/candidates/cases.md",
+      "kind": "human_readable",
+      "pre_sha256": "d9c20f423ad185132704ad8a800e0498d7d833eb528347ee447d37691f9729e0",
+      "post_sha256": "d9c20f423ad185132704ad8a800e0498d7d833eb528347ee447d37691f9729e0",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/candidates/counter-examples.md",
+      "kind": "human_readable",
+      "pre_sha256": "698e117371f316ce4c1d5576618928f18928ae44794bb07be3e28a75af6b57c0",
+      "post_sha256": "698e117371f316ce4c1d5576618928f18928ae44794bb07be3e28a75af6b57c0",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/candidates/frameworks.md",
+      "kind": "human_readable",
+      "pre_sha256": "fa2e10ae2b35a12b81c32443c8a9d5e61c86e9752e425ea7101e88cd6ffb9f14",
+      "post_sha256": "fa2e10ae2b35a12b81c32443c8a9d5e61c86e9752e425ea7101e88cd6ffb9f14",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/candidates/glossary.md",
+      "kind": "human_readable",
+      "pre_sha256": "f1950fbc74f3784d35ff3e9fdbcdd154bb7b843f6f94d5ec4b7fcc0d5906ec6e",
+      "post_sha256": "f1950fbc74f3784d35ff3e9fdbcdd154bb7b843f6f94d5ec4b7fcc0d5906ec6e",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/candidates/principles.md",
+      "kind": "human_readable",
+      "pre_sha256": "181a83b2915b930bdbc13abb63f21aa37b63e283a7128dab5f0b86c52c2a88c5",
+      "post_sha256": "181a83b2915b930bdbc13abb63f21aa37b63e283a7128dab5f0b86c52c2a88c5",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "0c2e7ce0d1cddf17e6177a7490563259a3adc75b45fcc90bb85692b00e3ad918",
+      "post_sha256": "0c2e7ce0d1cddf17e6177a7490563259a3adc75b45fcc90bb85692b00e3ad918",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "9535bb752e330d4936039dbde7f3ee7261faefbc3ee0c7112b5a18e9c60d1e28",
+      "post_sha256": "9535bb752e330d4936039dbde7f3ee7261faefbc3ee0c7112b5a18e9c60d1e28",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "26242055c2342111b53adeab4485af122da63bed0b5dcbfb6174cb24718540f7",
+      "post_sha256": "26242055c2342111b53adeab4485af122da63bed0b5dcbfb6174cb24718540f7",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "31e2a143161c7cc621a734e1778aa1144586410eb6f449cd626acdd7fba3137d",
+      "post_sha256": "31e2a143161c7cc621a734e1778aa1144586410eb6f449cd626acdd7fba3137d",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "a647b79edb2d157ba4388eb87487d718c37b82b0d356e309363913f8c0f47907",
+      "post_sha256": "a647b79edb2d157ba4388eb87487d718c37b82b0d356e309363913f8c0f47907",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "ca4f140b2dfbf11c8fe69e1dc3dc09ae3ef203fd288fa15f275466e18ac7a2a2",
+      "post_sha256": "ca4f140b2dfbf11c8fe69e1dc3dc09ae3ef203fd288fa15f275466e18ac7a2a2",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "c6c2376b134fa2a301e24bd063893adc77c03280ce5d579f3e41fd7df26ef2dc",
+      "post_sha256": "c6c2376b134fa2a301e24bd063893adc77c03280ce5d579f3e41fd7df26ef2dc",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "53fb7c28d877aa07236951744a4723a161c2771d52f4139e7edf0a9ff65815ad",
+      "post_sha256": "53fb7c28d877aa07236951744a4723a161c2771d52f4139e7edf0a9ff65815ad",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "c824e8ee453f914618086cbea7be10b0a9c8020dc716217dc5a0000938fcb0ff",
+      "post_sha256": "c824e8ee453f914618086cbea7be10b0a9c8020dc716217dc5a0000938fcb0ff",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "ecf404c9e860301ed8a548ab34e309ce76436c6e000a2a405f7746f2fe71a768",
+      "post_sha256": "ecf404c9e860301ed8a548ab34e309ce76436c6e000a2a405f7746f2fe71a768",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "64b083c2d72f2f0b11aaae4fcee89c3d9aacd11f5236760c49b43efa9419c31c",
+      "post_sha256": "64b083c2d72f2f0b11aaae4fcee89c3d9aacd11f5236760c49b43efa9419c31c",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "861d026165f12a3716c9df90c21642409b73c6f5750812e1fd0306045fc39c1d",
+      "post_sha256": "861d026165f12a3716c9df90c21642409b73c6f5750812e1fd0306045fc39c1d",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "def05cc3e902ef352609d4c75ceb0ca455b4b9f356e8c4983dcd3e6d11930e38",
+      "post_sha256": "def05cc3e902ef352609d4c75ceb0ca455b4b9f356e8c4983dcd3e6d11930e38",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "23f85004ff641cd1989084390dc5e17db8e78b279c4121a4997de943267864e3",
+      "post_sha256": "23f85004ff641cd1989084390dc5e17db8e78b279c4121a4997de943267864e3",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "a2e677cd8312a983ffd8e82068fd1438adf3450c7ddaf4861bb6abfa46e14bc4",
+      "post_sha256": "a2e677cd8312a983ffd8e82068fd1438adf3450c7ddaf4861bb6abfa46e14bc4",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "dd24beafd55d22b8de36bd1131c25d96f15f21874a14535f3cd4fe3f611e7176",
+      "post_sha256": "dd24beafd55d22b8de36bd1131c25d96f15f21874a14535f3cd4fe3f611e7176",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "f4a44e1eed2cca859961b587d514f3b0bdc082b84b19dd69734b5a0ebec55dfe",
+      "post_sha256": "f4a44e1eed2cca859961b587d514f3b0bdc082b84b19dd69734b5a0ebec55dfe",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "513cb0ff0eeedccd0d2993631725bc5a58af4097cb224ff8b9b98570d3bacbd3",
+      "post_sha256": "513cb0ff0eeedccd0d2993631725bc5a58af4097cb224ff8b9b98570d3bacbd3",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rejected/r01-impossible-triangle.md",
+      "kind": "human_readable",
+      "pre_sha256": "ef58cd4c6171930d4b1fb47e6993996a8e12ceec1ed94902ee39fe9185607def",
+      "post_sha256": "ef58cd4c6171930d4b1fb47e6993996a8e12ceec1ed94902ee39fe9185607def",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rejected/r02-extreme-scenario-intersection.md",
+      "kind": "human_readable",
+      "pre_sha256": "5ce4fc58482fdcd737abba7438f1afead99d2acb9cdbc7d1f2838c5e53af6ba0",
+      "post_sha256": "5ce4fc58482fdcd737abba7438f1afead99d2acb9cdbc7d1f2838c5e53af6ba0",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rejected/r03-five-layer-life-design.md",
+      "kind": "human_readable",
+      "pre_sha256": "71c3577f9921c20217b71edbf5dfd9236e5d5a2e4c5395edd0d7841c95f6f8cf",
+      "post_sha256": "71c3577f9921c20217b71edbf5dfd9236e5d5a2e4c5395edd0d7841c95f6f8cf",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rejected/r04-principal-agent.md",
+      "kind": "human_readable",
+      "pre_sha256": "2346c2934120ed5ca31b160c2f8757d5a5f853d65805894885e8c1e1b46247ed",
+      "post_sha256": "2346c2934120ed5ca31b160c2f8757d5a5f853d65805894885e8c1e1b46247ed",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rejected/r05-model-domain-stress-test.md",
+      "kind": "human_readable",
+      "pre_sha256": "417af699c2e9d1c85e3c0614b11b8b1179ceeb617fc6e16dd3fa496ee909d8f6",
+      "post_sha256": "417af699c2e9d1c85e3c0614b11b8b1179ceeb617fc6e16dd3fa496ee909d8f6",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "b8a32f7397107eccae9d24b1dc8fd118a8f180f8c83b49786bcd326e46ba8728",
+      "post_sha256": "b8a32f7397107eccae9d24b1dc8fd118a8f180f8c83b49786bcd326e46ba8728",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "d8fac4366488d122f459dd1412b508dd76077b41b2b2dfd430e197add90cf254",
+      "post_sha256": "d8fac4366488d122f459dd1412b508dd76077b41b2b2dfd430e197add90cf254",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "4f77584c2949e0fc52ee5841c22c5ca05cdd1714f787be1619c93ba704be2408",
+      "post_sha256": "4f77584c2949e0fc52ee5841c22c5ca05cdd1714f787be1619c93ba704be2408",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "dc8c737207736ac4f517d4ff3c000717bc27301f4ebc58044ac017a233f74e7f",
+      "post_sha256": "dc8c737207736ac4f517d4ff3c000717bc27301f4ebc58044ac017a233f74e7f",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "e4d83e463f1493e94c18258d999c8449ee4c2a3f29d6de4eab767bacc399e435",
+      "post_sha256": "e4d83e463f1493e94c18258d999c8449ee4c2a3f29d6de4eab767bacc399e435",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "1a29d3f58e716d0ac5dcc1fd58ac659eeec39e137f8bd6c5cb5d96a417d0ed23",
+      "post_sha256": "1a29d3f58e716d0ac5dcc1fd58ac659eeec39e137f8bd6c5cb5d96a417d0ed23",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/SKILL.md",
+      "kind": "human_readable",
+      "pre_sha256": "c30beb583bf21be79593fe88070674997856217ed1e7be8b170382acb68671af",
+      "post_sha256": "c30beb583bf21be79593fe88070674997856217ed1e7be8b170382acb68671af",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "6da1056e8db541f87f604a5645f03c47fab2ca3c5dba391fab002f4872783b75",
+      "post_sha256": "6da1056e8db541f87f604a5645f03c47fab2ca3c5dba391fab002f4872783b75",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/test-results.md",
+      "kind": "human_readable",
+      "pre_sha256": "09c280ebb0c14cd1e9f3d8a88736f70724cb74823a03f13715e09464ce0dd889",
+      "post_sha256": "09c280ebb0c14cd1e9f3d8a88736f70724cb74823a03f13715e09464ce0dd889",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/stage1.5-merge-map.md",
+      "kind": "human_readable",
+      "pre_sha256": "28e047d1e03f48b0e123d1bff2cac42fcadc002aa5048c73b7297a39304277e6",
+      "post_sha256": "28e047d1e03f48b0e123d1bff2cac42fcadc002aa5048c73b7297a39304277e6",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/methods/verified.md",
+      "kind": "human_readable",
+      "pre_sha256": "187e78d5953a5508a25b0d0ace0cd939511befeb5dcd9d372cd524553ca0baf4",
+      "post_sha256": "187e78d5953a5508a25b0d0ace0cd939511befeb5dcd9d372cd524553ca0baf4",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/Writing-DNA.md",
+      "kind": "human_readable",
+      "pre_sha256": "2264bba2d741e2fafd88316289c2af1128124ac975aeb8079b9d2be3808a86a6",
+      "post_sha256": "2264bba2d741e2fafd88316289c2af1128124ac975aeb8079b9d2be3808a86a6",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/structure-metrics.json",
+      "kind": "machine_readable",
+      "pre_sha256": "6f9671f8fc87157367b232129175c3c77071a557a4a05411576b5af08001c5bd",
+      "post_sha256": "6f9671f8fc87157367b232129175c3c77071a557a4a05411576b5af08001c5bd",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "references/writing/structure-metrics.md",
+      "kind": "human_readable",
+      "pre_sha256": "084ade399abf93c2a32e4b276b1ccd9fe54c6936d27aeccba1052b597c7aba56",
+      "post_sha256": "084ade399abf93c2a32e4b276b1ccd9fe54c6936d27aeccba1052b597c7aba56",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/像不像判别器.md",
+      "kind": "human_readable",
+      "pre_sha256": "44722700e89fa3ff9d5972fd1182aa88749f2a292fcf364ff0765ae724ab96bb",
+      "post_sha256": "44722700e89fa3ff9d5972fd1182aa88749f2a292fcf364ff0765ae724ab96bb",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/像不像对照样本.md",
+      "kind": "human_readable",
+      "pre_sha256": "aa2572b0eb52f3da50f3c58d6003d9d44c19e52a57985a2125b9f060f2d7a0e3",
+      "post_sha256": "aa2572b0eb52f3da50f3c58d6003d9d44c19e52a57985a2125b9f060f2d7a0e3",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/内容价值观.md",
+      "kind": "human_readable",
+      "pre_sha256": "746fa4ed02f904edf6573b0bdfdd39abb6bf497185f6cd4354fe2c031b078056",
+      "post_sha256": "746fa4ed02f904edf6573b0bdfdd39abb6bf497185f6cd4354fe2c031b078056",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/写稿判断框架.md",
+      "kind": "human_readable",
+      "pre_sha256": "ebe580b0a48bf28e542d998a8e2ccf7fca8b003ed4d54485acfebc6fdce01c09",
+      "post_sha256": "ebe580b0a48bf28e542d998a8e2ccf7fca8b003ed4d54485acfebc6fdce01c09",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/写稿流程操作手册.md",
+      "kind": "human_readable",
+      "pre_sha256": "67a3221f6c2f541bd127b371c08f7c47706b66cebaaa168658023519c5afecb8",
+      "post_sha256": "67a3221f6c2f541bd127b371c08f7c47706b66cebaaa168658023519c5afecb8",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/原味指纹.md",
+      "kind": "human_readable",
+      "pre_sha256": "ea626def0157fe08b8e258a9b15a31d9ecd630e30fa3cfa6a2edf8442ffbc057",
+      "post_sha256": "ea626def0157fe08b8e258a9b15a31d9ecd630e30fa3cfa6a2edf8442ffbc057",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/原味语料分层.md",
+      "kind": "human_readable",
+      "pre_sha256": "ac549f2723cadee4116606687759746ee7ccb0fcf0a5e61c8509c60106de0682",
+      "post_sha256": "ac549f2723cadee4116606687759746ee7ccb0fcf0a5e61c8509c60106de0682",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/反模式与诚实边界.md",
+      "kind": "human_readable",
+      "pre_sha256": "793ca9ba2cadd56cad0c26671144bfc53c02beee947be4035f8bd3000bc06c12",
+      "post_sha256": "793ca9ba2cadd56cad0c26671144bfc53c02beee947be4035f8bd3000bc06c12",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/开头模板.md",
+      "kind": "human_readable",
+      "pre_sha256": "aa49d13d7b2f6df713ebbedf4164db683f5b9435d4b9c3559d2967be9f130a30",
+      "post_sha256": "aa49d13d7b2f6df713ebbedf4164db683f5b9435d4b9c3559d2967be9f130a30",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/标题DNA.md",
+      "kind": "human_readable",
+      "pre_sha256": "87e28ee630db3396226123490094f2cf00d7e7ee8e2ee2c383e078bfe59f78d7",
+      "post_sha256": "87e28ee630db3396226123490094f2cf00d7e7ee8e2ee2c383e078bfe59f78d7",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/正文结构模板.md",
+      "kind": "human_readable",
+      "pre_sha256": "5e20f81653194964072e7d8f4088c5236c6685a7ac74b56e749cba3527b9f165",
+      "post_sha256": "5e20f81653194964072e7d8f4088c5236c6685a7ac74b56e749cba3527b9f165",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/素材使用规则.md",
+      "kind": "human_readable",
+      "pre_sha256": "5b9f211942a711986cd57788f73e8b05d9e0bc99dede4ac8faad6aab50c7ca8a",
+      "post_sha256": "5b9f211942a711986cd57788f73e8b05d9e0bc99dede4ac8faad6aab50c7ca8a",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/结尾模板.md",
+      "kind": "human_readable",
+      "pre_sha256": "79a6130778fbaa28d8cb6c9eaa622b9972fb0db86121424586f7a9f501e50a10",
+      "post_sha256": "79a6130778fbaa28d8cb6c9eaa622b9972fb0db86121424586f7a9f501e50a10",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/视觉风格指南.md",
+      "kind": "human_readable",
+      "pre_sha256": "2f7af4066bcc13e7b8ed856441ac3adc945bc662dbb82261405275ec2d938d7f",
+      "post_sha256": "2f7af4066bcc13e7b8ed856441ac3adc945bc662dbb82261405275ec2d938d7f",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/证据索引.md",
+      "kind": "human_readable",
+      "pre_sha256": "7fb47032bf5ac8d072ff49ed498e9d783a86f8b6a7cfbb68f38e65289baee0b9",
+      "post_sha256": "7fb47032bf5ac8d072ff49ed498e9d783a86f8b6a7cfbb68f38e65289baee0b9",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/语言DNA.md",
+      "kind": "human_readable",
+      "pre_sha256": "5e733fe52d76e8d25c4bf3f6efa4d21f9c566b02a0921214ba3c01f678689ae8",
+      "post_sha256": "5e733fe52d76e8d25c4bf3f6efa4d21f9c566b02a0921214ba3c01f678689ae8",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/读者画像与默认立场.md",
+      "kind": "human_readable",
+      "pre_sha256": "59ff33e4a7ad07112caa90deef6bee4cea98aad1a6d4baca5db0d711677ade9a",
+      "post_sha256": "59ff33e4a7ad07112caa90deef6bee4cea98aad1a6d4baca5db0d711677ade9a",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/转折与推进规则.md",
+      "kind": "human_readable",
+      "pre_sha256": "1c14c3e84b10218fab9d1fc92d40f9eaaed4bdc4531c145fa269191b4a369c17",
+      "post_sha256": "1c14c3e84b10218fab9d1fc92d40f9eaaed4bdc4531c145fa269191b4a369c17",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "references/writing/选题判断清单.md",
+      "kind": "human_readable",
+      "pre_sha256": "838276d513bc89d27ffd402e4207491a855698766ca988f77726cff9508c55fc",
+      "post_sha256": "838276d513bc89d27ffd402e4207491a855698766ca988f77726cff9508c55fc",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/VALIDATION-SUMMARY.md",
+      "kind": "human_readable",
+      "pre_sha256": "e811daf90709fb46b4ea9b65000c4404620a97ac44b5d531d008992531607156",
+      "post_sha256": "e811daf90709fb46b4ea9b65000c4404620a97ac44b5d531d008992531607156",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/ablation-report.json",
+      "kind": "machine_readable",
+      "pre_sha256": "0c628ce6e0a7e7ade3568321208859121ce621ae8efec773b769b8e79a4b062f",
+      "post_sha256": "0c628ce6e0a7e7ade3568321208859121ce621ae8efec773b769b8e79a4b062f",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/ablation-report.md",
+      "kind": "human_readable",
+      "pre_sha256": "b6deb4dd6227ccc210bddb72c387551849b56c6e1ac19c95d191e4c756916f1d",
+      "post_sha256": "b6deb4dd6227ccc210bddb72c387551849b56c6e1ac19c95d191e4c756916f1d",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/cognition-refined-grade.json",
+      "kind": "machine_readable",
+      "pre_sha256": "3a988d5f66c7132adc80afbc8ffead666d0a2bbab812b177d51c4b3f5c7136af",
+      "post_sha256": "3a988d5f66c7132adc80afbc8ffead666d0a2bbab812b177d51c4b3f5c7136af",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/cognition-source-verification.json",
+      "kind": "machine_readable",
+      "pre_sha256": "8702808a521e1ef9e7bc4d8cec3296e501d7c644920a04aacf94cb57cfa90836",
+      "post_sha256": "8702808a521e1ef9e7bc4d8cec3296e501d7c644920a04aacf94cb57cfa90836",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/content-contamination-report.md",
+      "kind": "human_readable",
+      "pre_sha256": "3b26436cf26fb17c93535fdbdb9d6a6261d9a924155000a641727deaf702aeaf",
+      "post_sha256": "3b26436cf26fb17c93535fdbdb9d6a6261d9a924155000a641727deaf702aeaf",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/darwin-final-static-v4.json",
+      "kind": "machine_readable",
+      "pre_sha256": "44e1227c6eafe3a1bcbf705442cb30878c0b3c5c65a2eccf296bbcec3fd94050",
+      "post_sha256": "44e1227c6eafe3a1bcbf705442cb30878c0b3c5c65a2eccf296bbcec3fd94050",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/darwin-final-static-v5-resolution.json",
+      "kind": "machine_readable",
+      "pre_sha256": "7a793c1ad6ea676382ec24b0ffdd0f9a8cfc887a19bea9d3ef9a95ddd90c6807",
+      "post_sha256": "7a793c1ad6ea676382ec24b0ffdd0f9a8cfc887a19bea9d3ef9a95ddd90c6807",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/darwin-optimization-log.md",
+      "kind": "human_readable",
+      "pre_sha256": "b45b21aecaccfc1840cbedbc50b5ed007a382932c863697b7250c7e4f58f729e",
+      "post_sha256": "b45b21aecaccfc1840cbedbc50b5ed007a382932c863697b7250c7e4f58f729e",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/darwin-scorecard.json",
+      "kind": "machine_readable",
+      "pre_sha256": "34cf9c15658a8b56232729e3cf5d26b2e4723bc7dc4362de6dea69a004bd2b76",
+      "post_sha256": "34cf9c15658a8b56232729e3cf5d26b2e4723bc7dc4362de6dea69a004bd2b76",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/darwin-scorecard.md",
+      "kind": "human_readable",
+      "pre_sha256": "dbc13eba2aeeb82671e179aee7d88a65f5a4f92d7f2c1f2bf8df92c85033d4e8",
+      "post_sha256": "dbc13eba2aeeb82671e179aee7d88a65f5a4f92d7f2c1f2bf8df92c85033d4e8",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/de-ai-regression-report.json",
+      "kind": "machine_readable",
+      "pre_sha256": "2e17722757bc143634c2300bebd9765d3d49ff3a2b5b68e0b3aa8fa4c01d86f2",
+      "post_sha256": "2e17722757bc143634c2300bebd9765d3d49ff3a2b5b68e0b3aa8fa4c01d86f2",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/de-ai-regression-report.md",
+      "kind": "human_readable",
+      "pre_sha256": "1950b11250bf8131fc18a05df18ebaaa0b8a6aa6667565786691e79112dec9e3",
+      "post_sha256": "1950b11250bf8131fc18a05df18ebaaa0b8a6aa6667565786691e79112dec9e3",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/final-artifact-deai-audit.md",
+      "kind": "human_readable",
+      "pre_sha256": "10483bf691d14efc243e2b2bd7289139efa254d8bc1239a23ab3a923d9db8569",
+      "post_sha256": "10483bf691d14efc243e2b2bd7289139efa254d8bc1239a23ab3a923d9db8569",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/final-candidate-lock-v5.json",
+      "kind": "machine_readable",
+      "pre_sha256": "797c4b902cd795b6dab8b68df635bc0b9c70d71aa783497e63820a216c3aa4f2",
+      "post_sha256": "797c4b902cd795b6dab8b68df635bc0b9c70d71aa783497e63820a216c3aa4f2",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/freeze-summary.json",
+      "kind": "machine_readable",
+      "pre_sha256": "7ead52701c9b59b63ff90ca370d2f60d04e3267896030c1926ba787a16ed76d8",
+      "post_sha256": "7ead52701c9b59b63ff90ca370d2f60d04e3267896030c1926ba787a16ed76d8",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/freeze-verification.json",
+      "kind": "machine_readable",
+      "pre_sha256": "2c960233667a33547b2c1eb58573858865cbd090e2c2b52ae585b19427645fef",
+      "post_sha256": "2c960233667a33547b2c1eb58573858865cbd090e2c2b52ae585b19427645fef",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/holdout-comparison-report.json",
+      "kind": "machine_readable",
+      "pre_sha256": "42aff8ab49b442e323aa77f6daf50bf2f07c3d98ea41bb54c1297eed0b894681",
+      "post_sha256": "42aff8ab49b442e323aa77f6daf50bf2f07c3d98ea41bb54c1297eed0b894681",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/holdout-comparison-report.md",
+      "kind": "human_readable",
+      "pre_sha256": "b323d3637ec0857101eac6d99d06830f0e24016db31747d7ccd17f874a11503b",
+      "post_sha256": "b323d3637ec0857101eac6d99d06830f0e24016db31747d7ccd17f874a11503b",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/holdout-eval-list.md",
+      "kind": "human_readable",
+      "pre_sha256": "885b89640307d7a6afb328df8bd3822e4c76e94eefcf8b934c1e3a3a4e74bac4",
+      "post_sha256": "885b89640307d7a6afb328df8bd3822e4c76e94eefcf8b934c1e3a3a4e74bac4",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/holdout-generated-output-leakage.json",
+      "kind": "machine_readable",
+      "pre_sha256": "1f9e327f6e25a3929d1ea50a0ee6b789cd5c9f8cc86e0a4ff59089e81e9febe8",
+      "post_sha256": "1f9e327f6e25a3929d1ea50a0ee6b789cd5c9f8cc86e0a4ff59089e81e9febe8",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/holdout-leakage-log.md",
+      "kind": "human_readable",
+      "pre_sha256": "bf3ede34bec21b188868a352fbe2d34da49c46d4d551dfdbacc8ec3f0bf5eddf",
+      "post_sha256": "bf3ede34bec21b188868a352fbe2d34da49c46d4d551dfdbacc8ec3f0bf5eddf",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/holdout-prompt-leakage.json",
+      "kind": "machine_readable",
+      "pre_sha256": "115f3c7ee543a0dbb61289e3032992b20751038e03608bb7c4df590bdf6abd78",
+      "post_sha256": "115f3c7ee543a0dbb61289e3032992b20751038e03608bb7c4df590bdf6abd78",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/method-package-verification.json",
+      "kind": "machine_readable",
+      "pre_sha256": "0b842cb4ba9f77ec7a482e79eb8a9228f243163124ad7730f81b5aa7cff2eff5",
+      "post_sha256": "0b842cb4ba9f77ec7a482e79eb8a9228f243163124ad7730f81b5aa7cff2eff5",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/method-routing-grade.json",
+      "kind": "machine_readable",
+      "pre_sha256": "e89bc1366e29378c07ce2d7060b1803b9a8449bd97814459597218da006be00d",
+      "post_sha256": "e89bc1366e29378c07ce2d7060b1803b9a8449bd97814459597218da006be00d",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/ocr-quarantine-report.json",
+      "kind": "machine_readable",
+      "pre_sha256": "6bfda369c8a1b0be32a5b320903f4ed1b21fe6a2ad6aeb7881961b10c4d05117",
+      "post_sha256": "6bfda369c8a1b0be32a5b320903f4ed1b21fe6a2ad6aeb7881961b10c4d05117",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/openclaw-smoke-test.md",
+      "kind": "human_readable",
+      "pre_sha256": "2bf58ce6d6e967f38ac4650e79482d783e47e7c7706c081c1cae0364a6e94fb1",
+      "post_sha256": "2bf58ce6d6e967f38ac4650e79482d783e47e7c7706c081c1cae0364a6e94fb1",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/test-prompts.json",
+      "kind": "machine_readable",
+      "pre_sha256": "6ff76df1f8e9ff60d8ca47ebf8e411b99e457636c6237e0fcf5220407efaca40",
+      "post_sha256": "6ff76df1f8e9ff60d8ca47ebf8e411b99e457636c6237e0fcf5220407efaca40",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/writing-core-verification.json",
+      "kind": "machine_readable",
+      "pre_sha256": "f9e0523efa109df9b0810ba937b2797efd829ebab77df9bcfaa19300d4363d3a",
+      "post_sha256": "f9e0523efa109df9b0810ba937b2797efd829ebab77df9bcfaa19300d4363d3a",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/候选规则优化记录.md",
+      "kind": "human_readable",
+      "pre_sha256": "7aca22abd287a67724eb26aa4a169cd23d04f103a73268a0e917019ad2090e88",
+      "post_sha256": "7aca22abd287a67724eb26aa4a169cd23d04f103a73268a0e917019ad2090e88",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "validation/原文差距矩阵.csv",
+      "kind": "machine_readable",
+      "pre_sha256": "2aba8f026322fc9709fdfdbaff17ff4ee7cc095f569ee459689f4c7c5c89f9fb",
+      "post_sha256": "2aba8f026322fc9709fdfdbaff17ff4ee7cc095f569ee459689f4c7c5c89f9fb",
+      "status": "semantic_regression_only"
+    },
+    {
+      "path": "validation/盲测评分记录.md",
+      "kind": "human_readable",
+      "pre_sha256": "0bb5da24dee123455fa5c4337035e9f012840107d2b1c01f9d425291ae8a8ef5",
+      "post_sha256": "0bb5da24dee123455fa5c4337035e9f012840107d2b1c01f9d425291ae8a8ef5",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    },
+    {
+      "path": "去AI味保真补丁.md",
+      "kind": "human_readable",
+      "pre_sha256": "848527902bb50e726d41de69b432bd46ed418e197a6538bd05a337ecaacdfa20",
+      "post_sha256": "848527902bb50e726d41de69b432bd46ed418e197a6538bd05a337ecaacdfa20",
+      "active_ai_trace_hits_before": [],
+      "active_ai_trace_hits_after": [],
+      "status": "reviewed_no_change"
+    }
+  ],
+  "note": "Intentional anti-example phrases inside tables, quotes, lists, headings, code, and de-AI instructions are documentation, not active output traces."
+}

@@ -1,0 +1,75 @@
+{
+  "judges": [
+    "J1",
+    "J2"
+  ],
+  "mode": "blind full test",
+  "system_means": {
+    "baseline": {
+      "problem_solving": 9.283,
+      "author_style_judgment": 8.45,
+      "style_proximity": 8.233,
+      "fact_reliability": 9.75,
+      "non_template_variation": 7.933,
+      "non_impersonation": 9.9
+    },
+    "method_only": {
+      "problem_solving": 9.1,
+      "author_style_judgment": 8.717,
+      "style_proximity": 8.45,
+      "fact_reliability": 9.7,
+      "non_template_variation": 8.1,
+      "non_impersonation": 9.883
+    },
+    "expression_only": {
+      "problem_solving": 9.6,
+      "author_style_judgment": 9.35,
+      "style_proximity": 9.333,
+      "fact_reliability": 9.867,
+      "non_template_variation": 9.283,
+      "non_impersonation": 9.867
+    },
+    "full_fusion": {
+      "problem_solving": 9.517,
+      "author_style_judgment": 9.183,
+      "style_proximity": 9.167,
+      "fact_reliability": 9.75,
+      "non_template_variation": 9.067,
+      "non_impersonation": 9.85
+    }
+  },
+  "primary_target_score": {
+    "baseline": 8.655,
+    "method_only": 8.756,
+    "expression_only": 9.428,
+    "full_fusion": 9.289
+  },
+  "best_rank_counts": {
+    "expression_only": 6
+  },
+  "full_fusion_best_on_primary_target": false,
+  "full_fusion_beats_baseline_on_primary_target": true,
+  "full_fusion_pareto_safe_vs_baseline": true,
+  "deai_means": {
+    "pre": {
+      "ai_trace_level": 9.45,
+      "fact_preservation": 8.783,
+      "target_voice_preservation": 1.767,
+      "argument_preservation": 2.683,
+      "non_impersonation": 9.75
+    },
+    "post": {
+      "ai_trace_level": 1.033,
+      "fact_preservation": 9.933,
+      "target_voice_preservation": 9.517,
+      "argument_preservation": 9.533,
+      "non_impersonation": 9.85
+    }
+  },
+  "deai_post_preferred": 6,
+  "deai_comparisons": 6,
+  "deai_post_preference_rate": 1.0,
+  "deai_pass": true,
+  "failures": [],
+  "status": "PASS"
+}

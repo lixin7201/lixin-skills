@@ -1,0 +1,121 @@
+{
+  "engine": "macOS Vision VNRecognizeTextRequest accurate zh-Hans+en-US",
+  "items": [
+    {
+      "article_id": "BXSF-086-20250131",
+      "date": "2025-01-31",
+      "title": "过年的四个重磅话题，家家都不想面对",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-1-31过年的四个重磅话题，家家都不想面对.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-086-20250131__2025-01-31.ocr.txt",
+      "ocr_chars": 20880,
+      "pages": 33,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-087-20250214",
+      "date": "2025-02-14",
+      "title": "错过了互联网错过了房地产，我不想错过AI，该怎么办",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-2-14错过了互联网错过了房地产，我不想错过AI，该怎么办.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-087-20250214__2025-02-14.ocr.txt",
+      "ocr_chars": 20952,
+      "pages": 35,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-088-20250301",
+      "date": "2025-03-01",
+      "title": "嫁给喜欢的？还是合适的？",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-3-1嫁给喜欢的？还是合适的？.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-088-20250301__2025-03-01.ocr.txt",
+      "ocr_chars": 20998,
+      "pages": 35,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-089-20250314",
+      "date": "2025-03-14",
+      "title": "东升西降，风向转弯，如何熬到最后，成为通吃的那个？",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-3-14东升西降，风向转弯，如何熬到最后，成为通吃的那个？.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-089-20250314__2025-03-14.ocr.txt",
+      "ocr_chars": 21681,
+      "pages": 35,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-090-20250330",
+      "date": "2025-03-30",
+      "title": "财富的真相与人类社会的底层逻辑",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-3-30财富的真相与人类社会的底层逻辑.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-090-20250330__2025-03-30.ocr.txt",
+      "ocr_chars": 19456,
+      "pages": 40,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-091-20250411",
+      "date": "2025-04-11",
+      "title": "一个大时代终结了，我们该如何自处？",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-4-11 一个大时代终结了，我们该如何自处？ .pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-091-20250411__2025-04-11.ocr.txt",
+      "ocr_chars": 20427,
+      "pages": 33,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-092-20250428",
+      "date": "2025-04-28",
+      "title": "女人这辈子，究竟在逃离什么？",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-4-28 女人这辈子，究竟在逃离什么？.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-092-20250428__2025-04-28.ocr.txt",
+      "ocr_chars": 18667,
+      "pages": 34,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": true,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-094-20250527",
+      "date": "2025-05-27",
+      "title": "今年的行业该咋选？今年的志愿该咋填？",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-5-27 今年的行业该咋选？今年的志愿该咋填？.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-094-20250527__2025-05-27.ocr.txt",
+      "ocr_chars": 22254,
+      "pages": 49,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": false,
+      "status": "ocr_quarantine_pending_quality_review"
+    },
+    {
+      "article_id": "BXSF-096-20250627",
+      "date": "2025-06-27",
+      "title": "按照这七步做，回报率比你跳槽、转行、深造都大得多",
+      "source": "/Users/REPLACE_ME/Documents/学习/书籍/碧树西风/记忆承载豪华版 2026.07.16更新/PDF版本/25-6-27 按照这七步做，回报率比你跳槽、转行、深造都大得多.pdf",
+      "output": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/corpus/ocr-quarantine/results/BXSF-096-20250627__2025-06-27.ocr.txt",
+      "ocr_chars": 20026,
+      "pages": 43,
+      "title_prefix_found": true,
+      "explicit_bishuxifeng_byline_found": false,
+      "status": "ocr_quarantine_pending_quality_review"
+    }
+  ],
+  "counts": {
+    "files": 9,
+    "pages": 337,
+    "chars": 185341,
+    "title_prefix_found": 9,
+    "explicit_bishuxifeng_byline_found": 7
+  },
+  "promotion_status": "NONE; quality reviewed on 2026-07-21; all OCR remains quarantined"
+}

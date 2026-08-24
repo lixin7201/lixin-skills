@@ -1,0 +1,185 @@
+{
+  "contract": {
+    "source": "synthetic train-derived task classes only",
+    "holdout_prose_used": false,
+    "tests": 22
+  },
+  "tests": [
+    {
+      "id": "t01-new-draft",
+      "prompt": "写一篇 1200 字文章：团队买了很多 AI 工具，交付速度却没有提高。",
+      "input_materials": "只有主题，不得编造公司数据。",
+      "expected_style_traits": ["现实损益", "瓶颈重定义", "最小验证", "条件边界"],
+      "forbidden_outputs": ["虚构数据", "空泛 AI 赞歌", "冒充作者"],
+      "scoring_focus": ["angle", "structure", "facts", "ending"]
+    },
+    {
+      "id": "t02-rewrite",
+      "prompt": "把一篇充满‘拥抱变化、持续成长’的职场稿改成该写法，事实不变。",
+      "input_materials": "某团队培训三个月；交付周期仍为 14 天；没有客户满意度数据。",
+      "expected_style_traits": ["冻结事实", "删除空话", "反馈与交付链"],
+      "forbidden_outputs": ["新增满意度", "假第一人称"],
+      "scoring_focus": ["rewrite", "fact preservation", "voice"]
+    },
+    {
+      "id": "t03-title",
+      "prompt": "为‘副业何时能转主业’给 8 个不同结构标题。",
+      "input_materials": "无具体收入数据。",
+      "expected_style_traits": ["损益问题", "结构变化", "不过度承诺"],
+      "forbidden_outputs": ["8 个同形问句", "财富自由保证"],
+      "scoring_focus": ["title", "variation"]
+    },
+    {
+      "id": "t04-opening",
+      "prompt": "优化一篇‘免费试点要不要接’文章的开头。",
+      "input_materials": "对方未给预算，但愿意指定业务负责人。",
+      "expected_style_traits": ["角色换位", "暂定判断", "竞争解释"],
+      "forbidden_outputs": ["断言对方占便宜", "内部消息"],
+      "scoring_focus": ["opening", "epistemic boundary"]
+    },
+    {
+      "id": "t05-ending",
+      "prompt": "给‘是否裸辞做 AI 服务’文章写一个结尾。",
+      "input_materials": "没有现金流和客户数据。",
+      "expected_style_traits": ["根据地", "验证窗口", "停止条件"],
+      "forbidden_outputs": ["建议立刻裸辞", "空泛升华"],
+      "scoring_focus": ["ending", "risk"]
+    },
+    {
+      "id": "t06-diagnosis",
+      "prompt": "诊断一篇稿子哪里不像：它每段一句、每节三点、结尾‘未来可期’。",
+      "input_materials": "不提供原文，只依据所述症状。",
+      "expected_style_traits": ["具体差距", "可执行修法", "版式指标"],
+      "forbidden_outputs": ["只说不自然", "要求复制口癖"],
+      "scoring_focus": ["diagnosis"]
+    },
+    {
+      "id": "t07-expansion",
+      "prompt": "把‘行业增长不等于个人机会’扩成 800 字。",
+      "input_materials": "无当前行业数据。",
+      "expected_style_traits": ["价值链", "个人位置", "新例子", "条件"],
+      "forbidden_outputs": ["编行业增速", "重复同一句"],
+      "scoring_focus": ["expansion", "material use"]
+    },
+    {
+      "id": "t08-compression",
+      "prompt": "把一篇 3000 字‘忙而无结果’文章压成 300 字。",
+      "input_materials": "核心事实：活动 12 场，成交 0；没有漏斗数据。",
+      "expected_style_traits": ["保留事实", "瓶颈", "证据缺口", "最小动作"],
+      "forbidden_outputs": ["新增原因", "只剩鸡汤"],
+      "scoring_focus": ["compression", "facts"]
+    },
+    {
+      "id": "t09-insufficient",
+      "prompt": "替我写‘这家公司一定会成功’，不要问材料。",
+      "input_materials": "无公司名、无数据。",
+      "expected_style_traits": ["材料门", "最多三个问题", "拒绝确定性"],
+      "forbidden_outputs": ["一定成功", "虚构财报"],
+      "scoring_focus": ["routing", "honesty"]
+    },
+    {
+      "id": "t10-sensitive-facts",
+      "prompt": "写一篇关于今天某城市房价触底的文章。",
+      "input_materials": "未提供日期、城市分区、房型或数据源。",
+      "expected_style_traits": ["当前事实研究门", "口径", "多情景"],
+      "forbidden_outputs": ["确认触底", "投资指令"],
+      "scoring_focus": ["fact reliability", "risk"]
+    },
+    {
+      "id": "t11-two-angles",
+      "prompt": "同一材料写两个不同角度的大纲：AI 客服上线后响应更快，但退款率未变。",
+      "input_materials": "只有响应速度和退款率方向，无绝对数。",
+      "expected_style_traits": ["瓶颈角度", "价值链/需求角度", "结构不同"],
+      "forbidden_outputs": ["两份只换标题", "新增数字"],
+      "scoring_focus": ["angle variation"]
+    },
+    {
+      "id": "t12-where-unlike",
+      "prompt": "这段哪里不像：‘在数字化浪潮下，我们应当提升认知，拥抱机遇，共创美好未来。’",
+      "input_materials": "仅此一句。",
+      "expected_style_traits": ["指出空背景", "缺变量", "给修订句"],
+      "forbidden_outputs": ["仅换成更口语", "加入作者口癖"],
+      "scoring_focus": ["diagnosis alignment"]
+    },
+    {
+      "id": "t13-positive-control",
+      "prompt": "根据强材料写 600 字分析。",
+      "input_materials": "产品试点 8 周；20 家接触、6 家付费、2 家复购；单位交付毛利为正；数据截至 2026-07-15。",
+      "expected_style_traits": ["正确使用数据", "最小交付", "加码阈值"],
+      "forbidden_outputs": ["篡改数字", "保证成功"],
+      "scoring_focus": ["material priority", "facts"]
+    },
+    {
+      "id": "t14-baseline",
+      "prompt": "用同一材料各写一版普通说明和目标写法，匿名标 A/B。",
+      "input_materials": "内容营销阅读量上涨 40%，合格商机数不变。",
+      "expected_style_traits": ["可盲比", "目标版有变量重定义"],
+      "forbidden_outputs": ["说明哪版是 Skill", "新增成交数据"],
+      "scoring_focus": ["blind preference"]
+    },
+    {
+      "id": "t15-leakage",
+      "prompt": "写一个新类比解释‘反馈周期’，不得使用训练文章里的餐厅、交易或文学人物。",
+      "input_materials": "纯概念题。",
+      "expected_style_traits": ["新鲜类比", "映射与失配"],
+      "forbidden_outputs": ["复用训练独有比喻", "复制原句"],
+      "scoring_focus": ["memorization", "generalization"]
+    },
+    {
+      "id": "t16-blind-ab",
+      "prompt": "为盲测生成同主题 Skill 版与 no-skill 版，隐藏标签。",
+      "input_materials": "团队很忙但续费下降，缺少流失访谈。",
+      "expected_style_traits": ["匿名", "事实一致", "结构差异"],
+      "forbidden_outputs": ["标签泄露", "假访谈"],
+      "scoring_focus": ["blind A/B"]
+    },
+    {
+      "id": "t17-cross-topic",
+      "prompt": "分析‘家庭要不要把全部照护工作外包’，不得只用时薪算价值。",
+      "input_materials": "无具体家庭信息。",
+      "expected_style_traits": ["责任边界", "关系价值", "信息门"],
+      "forbidden_outputs": ["把人完全市场化", "性别刻板化"],
+      "scoring_focus": ["cross-topic transfer"]
+    },
+    {
+      "id": "t18-anti-template",
+      "prompt": "分别为宏观事件、职业转型、合作试点设计三种不同正文骨架。",
+      "input_materials": "只需骨架。",
+      "expected_style_traits": ["周期路由", "根据地路由", "角色路由"],
+      "forbidden_outputs": ["三个相同七段模板"],
+      "scoring_focus": ["non-template variation"]
+    },
+    {
+      "id": "t19-de-ai",
+      "prompt": "对一篇有‘在当今时代、值得注意的是、综上所述、未来可期’的目标风格稿做去 AI 保真。",
+      "input_materials": "要求保留原有事实、递进问句、短段、必要重述和停止条件。",
+      "expected_style_traits": ["AI 痕迹下降", "DNA 保留", "前后回归"],
+      "forbidden_outputs": ["统一成长文段", "改变事实"],
+      "scoring_focus": ["de-AI preservation"]
+    },
+    {
+      "id": "t20-original-contrast",
+      "prompt": "从四段合成样本中识别目标式、通用 AI 式、过度精修式、过拟合式，并说明理由。",
+      "input_materials": "使用 references/像不像对照样本.md 的合成样本。",
+      "expected_style_traits": ["识别角度与判断链", "拒绝过拟合"],
+      "forbidden_outputs": ["把口癖最多者判最佳"],
+      "scoring_focus": ["original flavor contrast"]
+    },
+    {
+      "id": "t21-thinking-transfer",
+      "prompt": "同一材料先做角度和素材层级判断，再写 400 字。",
+      "input_materials": "一所培训机构报名人数上涨，结课项目通过率下降；无原因调查。",
+      "expected_style_traits": ["结果冲突", "反馈链", "竞争解释", "不编原因"],
+      "forbidden_outputs": ["归因学员不努力"],
+      "scoring_focus": ["thinking frame"]
+    },
+    {
+      "id": "t22-protected-quirk",
+      "prompt": "把过度顺滑的稿件恢复目标原味，只恢复有证据的粗粝。",
+      "input_materials": "稿件事实完整，但所有段落 100 字以上、无追问、结尾空泛。",
+      "expected_style_traits": ["恢复功能短段", "递进问句", "不对称节奏", "边界"],
+      "forbidden_outputs": ["添加审核戏法", "添加虚构经历", "机械一句一段"],
+      "scoring_focus": ["protected quirks"]
+    }
+  ]
+}

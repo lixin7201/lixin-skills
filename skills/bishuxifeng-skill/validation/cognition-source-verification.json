@@ -1,0 +1,59 @@
+{
+  "research_files": 6,
+  "train_articles_available": 101,
+  "unique_train_ids_referenced": 76,
+  "holdout_ids_referenced": 0,
+  "ocr_ids_referenced": 0,
+  "files": [
+    {
+      "file": "01-writings.md",
+      "chars": 14216,
+      "train_ids_referenced": 40,
+      "mentions_primary": true,
+      "mentions_inference": true,
+      "mentions_limitations": true
+    },
+    {
+      "file": "02-conversations.md",
+      "chars": 9267,
+      "train_ids_referenced": 22,
+      "mentions_primary": true,
+      "mentions_inference": true,
+      "mentions_limitations": true
+    },
+    {
+      "file": "03-expression-dna.md",
+      "chars": 8879,
+      "train_ids_referenced": 15,
+      "mentions_primary": true,
+      "mentions_inference": false,
+      "mentions_limitations": true
+    },
+    {
+      "file": "04-external-views.md",
+      "chars": 12029,
+      "train_ids_referenced": 16,
+      "mentions_primary": false,
+      "mentions_inference": true,
+      "mentions_limitations": true
+    },
+    {
+      "file": "05-decisions.md",
+      "chars": 14025,
+      "train_ids_referenced": 0,
+      "mentions_primary": false,
+      "mentions_inference": true,
+      "mentions_limitations": true
+    },
+    {
+      "file": "06-timeline.md",
+      "chars": 11686,
+      "train_ids_referenced": 49,
+      "mentions_primary": false,
+      "mentions_inference": true,
+      "mentions_limitations": true
+    }
+  ],
+  "failures": [],
+  "status": "PASS"
+}

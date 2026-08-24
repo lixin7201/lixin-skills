@@ -1,0 +1,508 @@
+[
+  {
+    "id": "t01",
+    "prompt": "把一条关于基层证明反复开具的素材写成半月谈评论稿。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "new draft",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "把一篇情绪化吐槽基层问责的草稿改成半月谈写法。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "rewrite",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "为一篇关于奶茶隐形加价的消费提醒稿拟 10 个标题。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "title optimization",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "优化一篇 AI 学习工具进入校园稿的开头。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "opening optimization",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "给一篇县城文旅出圈稿写半月谈式结尾。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "ending optimization",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断一篇稿子哪里不像半月谈。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "review diagnosis",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "把一条健康科普短素材扩成完整稿。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "expansion",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "把一篇长政策解读压缩成半月谈短评。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "compression",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "只有一句'年轻人不爱上体育课了'，按半月谈流程处理。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "insufficient material",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "涉及未成年人校园安全，只给部分事实，要求稳妥写稿。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "sensitive facts",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一条外卖平台补贴素材，分别写消费权益和青年职场两个角度。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "two angles",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "指出一篇稿子哪里不像半月谈并改写。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "where unlike",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "有完整官方数据和专家访谈的健康稿，按半月谈写。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "positive control",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "同一素材对比 no-skill baseline 的差距。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "baseline comparison",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查是否复制原文句子或标题。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "leakage check",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "生成 blind A/B judge packet。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "blind AB",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "把半月谈写法迁移到脑机接口科普。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "cross-topic",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "连续写三个不同类型开头，避免模板化。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "anti-template",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "去掉一篇稿子的 AI 味，同时保留半月谈 DNA。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "de-AI",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "区分半月谈式、通稿式、自媒体式、过拟合式四种输出。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "original flavor",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t21",
+    "prompt": "判断一个选题的材料层级是否符合半月谈。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "thinking frame",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "保留警示词和治理词，不把半月谈磨成普通白话。",
+    "input_materials": "使用用户在真实任务中提供的事实材料；若事实不足，按 Skill 要求列待核实。",
+    "route_expected": "根据素材判定账号/类型/署名线",
+    "expected_style_traits": [
+      "问题意识",
+      "事实边界",
+      "机制拆解",
+      "稳妥建议"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造数据/专家/网友"
+    ],
+    "scoring_focus": [
+      "protected quirk",
+      "fact reliability",
+      "route correctness",
+      "original flavor"
+    ]
+  }
+]

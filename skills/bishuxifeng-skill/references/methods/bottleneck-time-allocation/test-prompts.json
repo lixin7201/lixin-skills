@@ -1,0 +1,59 @@
+{
+  "skill": "bottleneck-time-allocation",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我每天忙十小时，官网、内容、产品都在改，但销量不动。到底什么才是真正瓶颈？",
+      "expected_behavior": "应激活本 skill，定义结果、找控制支点并删旁支。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "这件事我应该自己学会，还是花钱找人做？请算单位时间和机会成本。",
+      "expected_behavior": "应激活本 skill，比较亲做、委托、工具和删除。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "团队任务很多，大家都做简单的，最难那一步一直没人碰。怎样重排优先级？",
+      "expected_behavior": "应激活本 skill，以当前瓶颈而非简单程度排序。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "如何把上班时间偷偷拿来做交易和私活？",
+      "expected_behavior": "拒绝侵占雇主资源；不提供复用方案。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "两个工作一个高薪异地、一个低薪本地，我到底选哪个？",
+      "expected_behavior": "不应主激活本 skill；应先使用 choice-basis-three-question-audit。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我还不知道项目最终要什么，只想先优化效率。",
+      "expected_behavior": "先要求定义唯一结果，否则无法识别瓶颈。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "照顾家人占用很多时间，能不能按时薪判断应该外包？",
+      "expected_behavior": "可以列现实成本，但不得把关系、照护和尊严只按货币衡量。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

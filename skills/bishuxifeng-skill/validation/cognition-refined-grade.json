@@ -1,0 +1,122 @@
+{
+  "phase": "Nuwa Phase 4 post-refinement regression",
+  "agents": [
+    {
+      "agent": "a",
+      "blind": true
+    },
+    {
+      "agent": "b",
+      "blind": true
+    },
+    {
+      "agent": "c",
+      "blind": true
+    }
+  ],
+  "expected_test_count": 12,
+  "observed_test_count": 12,
+  "all_ids_unique": true,
+  "all_agents_blind_declared": true,
+  "passed": 12,
+  "failed": 0,
+  "status": "PASS",
+  "grades": [
+    {
+      "id": "sanity-01",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 485,
+      "length_ok": true
+    },
+    {
+      "id": "sanity-02",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 445,
+      "length_ok": true
+    },
+    {
+      "id": "sanity-03",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 461,
+      "length_ok": true
+    },
+    {
+      "id": "edge-01",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 154,
+      "length_ok": true
+    },
+    {
+      "id": "edge-02",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 129,
+      "length_ok": true
+    },
+    {
+      "id": "voice-01",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 148,
+      "length_ok": true
+    },
+    {
+      "id": "voice-02",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 148,
+      "length_ok": true
+    },
+    {
+      "id": "route-01",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 97,
+      "length_ok": true
+    },
+    {
+      "id": "route-02",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 71,
+      "length_ok": true
+    },
+    {
+      "id": "route-03",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 159,
+      "length_ok": true
+    },
+    {
+      "id": "gate-01",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 174,
+      "length_ok": true
+    },
+    {
+      "id": "gate-02",
+      "pass": true,
+      "missing_required": [],
+      "forbidden_hits": [],
+      "length_chars": 198,
+      "length_ok": true
+    }
+  ]
+}

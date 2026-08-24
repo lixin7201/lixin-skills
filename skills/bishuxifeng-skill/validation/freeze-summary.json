@@ -1,0 +1,47 @@
+{
+  "frozen_at": "2026-07-21T11:57:25+08:00",
+  "target": "碧树西风 / 记忆承载作者与账号簇",
+  "output_path": "/Users/REPLACE_ME/.openclaw/workspace/skills/bishuxifeng-skill",
+  "article_count": 120,
+  "split_counts": {
+    "train": 101,
+    "holdout": 10,
+    "ocr_quarantine": 9
+  },
+  "source_counts": {
+    "epub": 83,
+    "individual_pdf": 37
+  },
+  "holdout_dates": [
+    "2022-10-05",
+    "2022-11-12",
+    "2023-03-11",
+    "2023-07-01",
+    "2024-01-12",
+    "2024-08-20",
+    "2025-07-11",
+    "2025-11-23",
+    "2026-02-06",
+    "2026-06-18"
+  ],
+  "acceptance": {
+    "holdout_average_min": 8.0,
+    "darwin_score_min": 85,
+    "fact_reliability_min": 9.5,
+    "non_impersonation": 10.0,
+    "original_flavor_fingerprint_min": 8.5,
+    "blind_ab_preference_min": 0.8,
+    "holdout_leakage": 0,
+    "de_ai_core_regression": 0
+  },
+  "freeze_revision": 2,
+  "revised_at": "2026-07-21T12:03:13+08:00",
+  "source_governance_changes": [
+    {
+      "article_id": "BXSF-110-20260123",
+      "action": "quarantine_posthoc_summary_from_training_copy",
+      "reason": "疑似整理者或AI后加总结；与正文声线和叙述身份不一致，已从训练正文隔离。",
+      "source_files_modified": false
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "comparisons": 20,
+  "comparisons_with_24_char_overlap": 0,
+  "status": "PASS",
+  "details": [
+    {
+      "article_id": "BXSF-025-20221005",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-025-20221005",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-029-20221112",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-029-20221112",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-038-20230311",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-038-20230311",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-047-20230701",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-047-20230701",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-060-20240112",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-060-20240112",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-075-20240820",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-075-20240820",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-097-20250711",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-097-20250711",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-106-20251123",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-106-20251123",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-111-20260206",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-111-20260206",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-119-20260618",
+      "system": "skill",
+      "24_char_overlap_count": 0,
+      "samples": []
+    },
+    {
+      "article_id": "BXSF-119-20260618",
+      "system": "baseline",
+      "24_char_overlap_count": 0,
+      "samples": []
+    }
+  ]
+}

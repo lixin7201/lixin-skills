@@ -1,0 +1,57 @@
+{
+  "items": 10,
+  "items_with_20_char_overlap": 0,
+  "status": "PASS",
+  "details": [
+    {
+      "article_id": "BXSF-025-20221005",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-029-20221112",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-038-20230311",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-047-20230701",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-060-20240112",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-075-20240820",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-097-20250711",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-106-20251123",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-111-20260206",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    },
+    {
+      "article_id": "BXSF-119-20260618",
+      "20_char_overlap_count": 0,
+      "overlap_samples": []
+    }
+  ]
+}

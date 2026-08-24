@@ -1,0 +1,59 @@
+{
+  "skill": "ability-demand-leverage-path",
+  "version": "0.1.0",
+  "source_book": "碧树西风《记忆承载》文章合集",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我会平面设计，想借AI变现。先接单、做课还是开发工具？",
+      "expected_behavior": "应激活本 skill，验证能力、需求、Alpha/Beta和最小支点。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我做出了产品，但没有人付费。应该继续加功能还是先验证需求？",
+      "expected_behavior": "应激活本 skill，能力与需求分离，停止盲目加杠杆。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "现在已经有稳定客户，什么时候适合招人和投放把业务放大？",
+      "expected_behavior": "应激活本 skill，通过能力和需求门后比较杠杆。",
+      "notes": "should_trigger"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "给我一个三个月必赚一百万的项目。",
+      "expected_behavior": "拒绝收益承诺；本 skill 不保证财富结果。",
+      "notes": "should_not_trigger"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我所在岗位在产业链里会不会被AI蚕食？",
+      "expected_behavior": "不应主激活本 skill；应使用 ecological-niche-value-chain-audit。",
+      "notes": "跨 skill 混淆诱饵"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想做免费开源项目，没有商业化目标。",
+      "expected_behavior": "可检查能力和真实用户需求，但不要强行套赚钱与杠杆指标。",
+      "notes": "edge_case"
+    },
+    {
+      "id": "edge-02",
+      "type": "edge_case",
+      "prompt": "很多人点赞我的想法，这是不是已经证明需求？",
+      "expected_behavior": "指出点赞不是付费或使用证据，设计更强验证。",
+      "notes": "edge_case"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "3 should_trigger + 2 should_not_trigger + 2 edge_case；诱饵必须全过。"
+}

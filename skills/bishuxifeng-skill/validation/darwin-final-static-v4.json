@@ -1,0 +1,217 @@
+{
+  "reviewer": "final-static-v4",
+  "review_type": "independent_static_only",
+  "independent": true,
+  "candidate": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/unified/post-deai/bishuxifeng-skill/",
+  "scope": {
+    "read": [
+      "SKILL.md",
+      "PACKAGE.md",
+      "去AI味保真补丁.md",
+      "references/",
+      "validation/ 中的基础验证文件"
+    ],
+    "not_read": [
+      "evaluation/ 中的既有评审材料",
+      "frozen lock",
+      "prior judge",
+      "holdout",
+      "ablation",
+      "scorecard"
+    ],
+    "generation_tests_run": false
+  },
+  "dimensions": [
+    {
+      "id": 1,
+      "name": "Frontmatter质量",
+      "weight": 7,
+      "score": 9.7,
+      "evidence": [
+        "根 SKILL.md frontmatter 可由 YAML 解析；name=bishuxifeng-skill，符合小写连字符命名规范。",
+        "description 共 319 字，低于 1024 字；同时编码能力、触发语、正向适用、负向路由、当前事实门和非冒充边界。",
+        "认知入口与 11 个方法引用 Skill 的 frontmatter 也全部可解析；name 均符合规范。"
+      ],
+      "deductions": [
+        "description 信息密度很高，虽仍清晰，但单段较长，快速扫描成本略高。"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "工作流清晰度",
+      "weight": 12,
+      "score": 9.6,
+      "evidence": [
+        "SKILL.md 以任务与事实门、认知入口、最窄方法、形成判断、按任务表达五步推进，顺序稳定。",
+        "第一步明确最小底稿输入；第四步明确默认输出；第五步按分析、新稿/改稿、短稿回归和哪里不像分路。",
+        "认知路由表把 7 类决定性问题映射到认知入口，方法入口列出 11 个方法且规定默认只取 1 个主方法、必要时 1 个辅助方法。",
+        "纯写作任务明确只把模型作为内部选角，不向成稿泄漏方法标签。"
+      ],
+      "deductions": [
+        "frontmatter 写最窄的 1–3 个方法，正文默认 1 主加 1 辅；三方法的例外条件没有像三认知入口那样单独写清。"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "失败模式编码",
+      "weight": 12,
+      "score": 9.8,
+      "evidence": [
+        "SKILL.md 的失败恢复采用触发条件/一线处理/仍失败时三段式表，覆盖资源缺失、事实冲突、用户拒答、外部去 AI 不可用和保真下降。",
+        "当前事实门规定无法联网、来源冲突或资料过旧时停止现实结论，退回条件式情景和证据清单。",
+        "去 AI 处理下降时要求定位并回滚；无法定位则回到去 AI 前完整版本，不交付混合状态。",
+        "11 个方法正文均包含判停/转向、不要使用、失败模式、证据局限和统一安全边界。"
+      ],
+      "deductions": [
+        "根入口对 8 个短文件名引用失败没有专门的解析兜底；现有总兜底可回到 Writing-DNA，但会损失细分能力。"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "检查点设计",
+      "weight": 6,
+      "score": 9.8,
+      "evidence": [
+        "SKILL.md 使用显式的“🔴 CHECKPOINT · 持续授权与重新确认”标题。",
+        "检查点区分本地可回滚分析/写作/验证与不可逆外部行动、第三方发布、重大高风险操作、删除覆盖数据、实质扩权。",
+        "信息不足只回到事实门，不误触发反复确认，既限制自主失控又不阻塞正常流程。"
+      ],
+      "deductions": [
+        "检查点以单段规则呈现，没有再给一组正反例；不过触发范围已足够明确。"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "可执行具体性",
+      "weight": 17,
+      "score": 9.3,
+      "evidence": [
+        "事实门给出最多 2 个假设、最多 3 个问题、关键事实原则上双源核验等操作参数。",
+        "默认输出要求当前判断、主方法、事实/推断/假设、最多 3 个关键问题、带窗口与阈值的最小验证、停止信号。",
+        "600–900 字短稿给出 14–24 段、段长中位 25–55 字、短段占比 15%–35%、连续短段不超过 5 等回归指标，并明确这些不是机械配额。",
+        "哪里不像任务要求输出 3 个最高影响差距、段落功能、修改动作和修订稿。",
+        "目标专属去 AI 补丁明确保护项、允许处理项、6 步处理顺序、回滚条件与总体验收。"
+      ],
+      "deductions": [
+        "根入口第 76 行的 8 个细分写作文件只写文件名，没有统一写成 references/writing/ 下的完整相对路径。",
+        "方法数量在 frontmatter 的 1–3 与正文默认 1 主 1 辅之间有轻微口径松动。"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "资源整合度",
+      "weight": 4,
+      "score": 8.5,
+      "evidence": [
+        "候选包共有 89 个文件：70 个 Markdown、19 个 JSON；包含 11 个方法 Skill。",
+        "全包 70 个 Markdown 中检查到 31 个 Markdown 相对链接，缺失数为 0。",
+        "19 个 JSON 全部解析成功；根 SKILL、认知入口与 11 个方法 Skill 的 YAML frontmatter 全部解析成功。",
+        "包内 basename 为 去AI味保真补丁.md 的文件恰好 1 个，Writing-DNA 通过 ../../去AI味保真补丁.md 指向该 canonical 文件。",
+        "外部 de-ai-preserve-voice 不可发现或绝对路径不可读时，根入口与失败恢复表均明确转用包内补丁。"
+      ],
+      "deductions": [
+        "SKILL.md 第 76 行的 标题DNA.md、开头模板.md、正文结构模板.md、语言DNA.md、素材使用规则.md、转折与推进规则.md、结尾模板.md、视觉风格指南.md 对根目录严格解析时不可达；实际文件都在 references/writing/，属可推断但不够稳的资源引用。"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "整体架构",
+      "weight": 12,
+      "score": 9.4,
+      "evidence": [
+        "131 行根入口保持为编排核，认知、方法、写作和去 AI 细节分别下沉到 references 与单一补丁，符合渐进加载。",
+        "认知核、11 个原子方法和写作核职责分离；题材路由负责组合，纯写作任务明确不暴露内部模型。",
+        "PACKAGE.md 单独说明语料归属、隔离范围、运行方式与认证边界，没有把安装说明混入执行协议。",
+        "顶层反冒充、时效事实门、方法边界、写作原味边界和去 AI 回滚形成一致的安全链。",
+        "静态扫描未在执行性正文中发现说白了、换句话说、首先、其次、综上等冗余 AI 腔路标；去 AI 补丁中的命中只作为应删除的反例。"
+      ],
+      "deductions": [
+        "根入口同时摘要去 AI 规则并链接完整补丁，存在少量维护双点；两处当前一致，且只有一份 canonical 补丁。",
+        "第 76 行短路径问题略削弱严格 runtime 下的渐进加载可靠性。"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "实测表现",
+      "weight": 23,
+      "score": null,
+      "status": "pending_full_test",
+      "evidence": [
+        "本次任务被限定为 independent_static_only，未运行生成测试，也未读取 holdout、ablation、prior judge 或 scorecard。"
+      ],
+      "deductions": [
+        "dim8 必须由独立 full_test 结果补齐；不得从基础验证文件或静态结构外推分数。"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "反例与黑名单",
+      "weight": 6,
+      "score": 9.8,
+      "evidence": [
+        "SKILL.md 有独立“🛑 反例黑名单”章节，明确禁止预言、读心、类比充证据、行业到个人机会直推、伪造瓶颈、身份戏法和破坏保真的通用去 AI。",
+        "原味与非模板边界另行禁止作者第一人称表演、专属经历、刺激性稀缺戏法、刻板化、固定标题/小标题和跨题材模板复用。",
+        "references/writing/反模式与诚实边界.md 按认识论、表达、伦理、时效、风格保真继续细化风险动作。",
+        "11 个方法各有不要使用、语料失败模式和统一安全边界。"
+      ],
+      "deductions": [
+        "根黑名单为单段密集列举，若改为触发/风险/替代动作表会更易逐项执行；现有细化参考已部分补足。"
+      ]
+    }
+  ],
+  "runtime_gate": {
+    "status": "PASS",
+    "runtime_red_flag_hits": 0,
+    "evidence": [
+      "Darwin runtime 红灯表达扫描命中 0。",
+      "PACKAGE.md 先声明任意兼容 Agent Skills 的 runtime 可通过 skills 搜索路径或直接加载 SKILL.md 使用。",
+      "本机 OpenClaw 安装路径和外部 de-AI 绝对路径都被明确标成当前机器入口，不是唯一运行条件。",
+      "外部 de-AI Skill 不可发现或路径不可读时，工作流无条件回退包根目录的 canonical 去 AI 补丁。"
+    ],
+    "warnings": [
+      "PACKAGE.md 和 SKILL.md 保留本机 OpenClaw 绝对路径；因同时提供 runtime-neutral 入口与包内 fallback，本项不构成 gate 失败。"
+    ]
+  },
+  "resource_check": {
+    "status": "PASS_WITH_WARNING",
+    "files_total": 89,
+    "markdown_files": 70,
+    "json_files": 19,
+    "method_skills": 11,
+    "markdown_relative_links_checked": 31,
+    "markdown_relative_links_missing": 0,
+    "json_parse_failures": 0,
+    "frontmatter_parse_failures": 0,
+    "canonical_de_ai_patch_count": 1,
+    "external_de_ai_fallback_present": true,
+    "warnings": [
+      {
+        "severity": "non_blocking",
+        "location": "SKILL.md:76",
+        "issue": "8 个细分写作文件使用文件名短引用；文件存在于 references/writing/，但从根 SKILL.md 严格解析时不是有效路径。",
+        "affected": [
+          "标题DNA.md",
+          "开头模板.md",
+          "正文结构模板.md",
+          "语言DNA.md",
+          "素材使用规则.md",
+          "转折与推进规则.md",
+          "结尾模板.md",
+          "视觉风格指南.md"
+        ]
+      }
+    ]
+  },
+  "static_normalized_score_excluding_dim8": 95.16,
+  "score_calculation": "sum(score * weight) for dimensions 1-7 and 9 / (76 * 10) * 100",
+  "failures": [
+    {
+      "severity": "warning",
+      "blocking": false,
+      "code": "ROOT_SHORTHAND_WRITING_PATHS",
+      "location": "SKILL.md:76",
+      "message": "8 个资源短引用对严格根目录解析器不稳定；Markdown 相对链接本身全部可达。"
+    }
+  ],
+  "status": "PASS_WITH_WARNING"
+}

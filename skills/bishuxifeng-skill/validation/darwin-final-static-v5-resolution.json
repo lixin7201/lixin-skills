@@ -1,0 +1,9 @@
+{
+  "candidate": "v5",
+  "basis": "independent final-static-v4 warning",
+  "change": "expanded eight writing reference short names to package-relative paths",
+  "markdown_relative_links_checked": 31,
+  "missing_links": [],
+  "canonical_deai_patch_count": 1,
+  "status": "PASS"
+}

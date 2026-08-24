@@ -1,0 +1,429 @@
+{
+  "candidate_root": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/unified/post-deai/bishuxifeng-skill",
+  "scope": "SKILL.md, PACKAGE.md, top-level de-AI patch, and all references; validation outputs excluded",
+  "files": 82,
+  "bytes": 621310,
+  "tree_sha256": "bb1f8fb91db5548edff24bf6d94af56f0edcd4053d36ec22b074c876bd255ad9",
+  "baseline_candidate_v1_lock": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/frozen/final-candidate-lock-v1.json",
+  "static_repair_candidate_v2_lock": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/frozen/final-candidate-lock-v2.json",
+  "aggregate_structure_candidate_v3_lock": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/frozen/final-candidate-lock-v3.json",
+  "canonical_deai_candidate_v4_lock": "/Users/REPLACE_ME/.openclaw/workspace/.distillation-work/bishuxifeng-20260721/frozen/final-candidate-lock-v4.json",
+  "holdout_opened_before_v1_lock": false,
+  "v5_patch_basis": [
+    "final independent static audit",
+    "expand eight writing reference paths"
+  ],
+  "holdout_original_prose_used_for_v5_patch": false,
+  "items": [
+    {
+      "path": "PACKAGE.md",
+      "sha256": "96c4e85bac8f05de24b1e7a2a3e9dade2bcb8dc842f9b028533f1c66faa53c5f",
+      "bytes": 1936
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "9f5754ba0584b4705a7b13bb3200659558992cacca2a82346e22048569cdbdc0",
+      "bytes": 11221
+    },
+    {
+      "path": "references/cognition/PHASE2_SYNTHESIS.md",
+      "sha256": "33f22ce40b944dc9978bc1d1ac62b40666fa71527677b9fbe7509da49f198108",
+      "bytes": 12214
+    },
+    {
+      "path": "references/cognition/cognition-core.md",
+      "sha256": "24df48885a326ae1e94050e84e91877a983c0c245f9efe83c2b8446200ea2ff6",
+      "bytes": 16020
+    },
+    {
+      "path": "references/cognition/research/01-writings.md",
+      "sha256": "5050bcff577e567953a727ea39f0263555a9b894ff1edab6bc07c95abf4a8f30",
+      "bytes": 32848
+    },
+    {
+      "path": "references/cognition/research/02-conversations.md",
+      "sha256": "354bf5f03844988205624cf296e57a400ed4b491c3883e9380d54e96bd20e9cc",
+      "bytes": 21903
+    },
+    {
+      "path": "references/cognition/research/03-expression-dna.md",
+      "sha256": "400b2e854d53150e8749b60f99120bfb4136c4161322e27853b3675383793c53",
+      "bytes": 19979
+    },
+    {
+      "path": "references/cognition/research/04-external-views.md",
+      "sha256": "43fc0853a90459ef6e26d1a6e629dbfe95b4051cf063c8a9006a6e54220a085f",
+      "bytes": 26971
+    },
+    {
+      "path": "references/cognition/research/05-decisions.md",
+      "sha256": "2b54eeed9b8f26499f6d058c751cbad719de28a84296d55dc645a40d5d34a4c8",
+      "bytes": 34393
+    },
+    {
+      "path": "references/cognition/research/06-timeline.md",
+      "sha256": "a77b99147fcc4e7376e331892859ba07751546620eb8beaad94cfb78f45b82db",
+      "bytes": 25352
+    },
+    {
+      "path": "references/methods/BOOK_OVERVIEW.md",
+      "sha256": "203e049ad2a0399b8dc9dffaae9f52072117dd787808f8015d7074dba4b4e2a5",
+      "bytes": 13850
+    },
+    {
+      "path": "references/methods/DIGEST.md",
+      "sha256": "1e6e02d59473a8440c56815f4951254979f77ca62a8004a97cb27e9a7063a22b",
+      "bytes": 27799
+    },
+    {
+      "path": "references/methods/GLOSSARY.md",
+      "sha256": "8b91cf1a081ed56556adfa6a3b8e55fde47b8626926d99d788e8258fe3b9820a",
+      "bytes": 13244
+    },
+    {
+      "path": "references/methods/INDEX.md",
+      "sha256": "d8db5206090caf762764a01c71bdec81dff17700ff049490c9182723b55abfb2",
+      "bytes": 4147
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/SKILL.md",
+      "sha256": "449d8ea1f3430c65bdf61a00a3ba4352f19624a1ac32b13829e515d3e7561fd9",
+      "bytes": 5629
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/test-prompts.json",
+      "sha256": "e2b58e02f847fdb76c748af8edabd5e48e297d40ac83bc69e2ec39e124402e20",
+      "bytes": 2358
+    },
+    {
+      "path": "references/methods/ability-demand-leverage-path/test-results.md",
+      "sha256": "4614a982a680a3dc515c565c8441d669527a6d2efa3b8d81e65abef8dc63d8ed",
+      "bytes": 1785
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/SKILL.md",
+      "sha256": "b632678f0934e6194995466940619f316e3df5c96078304186b85b85f7815d98",
+      "bytes": 5545
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/test-prompts.json",
+      "sha256": "9983bedc1b7538baed8e22c6cb72bce7785dde2036b90c242a38cfb46e77e191",
+      "bytes": 2442
+    },
+    {
+      "path": "references/methods/bottleneck-time-allocation/test-results.md",
+      "sha256": "8c77f8356c3230c850668100dd37d39fb3a7c841a38d6a237200f45e3dd53ee4",
+      "bytes": 1976
+    },
+    {
+      "path": "references/methods/candidates/cases.md",
+      "sha256": "d9c20f423ad185132704ad8a800e0498d7d833eb528347ee447d37691f9729e0",
+      "bytes": 26849
+    },
+    {
+      "path": "references/methods/candidates/counter-examples.md",
+      "sha256": "698e117371f316ce4c1d5576618928f18928ae44794bb07be3e28a75af6b57c0",
+      "bytes": 29815
+    },
+    {
+      "path": "references/methods/candidates/frameworks.md",
+      "sha256": "fa2e10ae2b35a12b81c32443c8a9d5e61c86e9752e425ea7101e88cd6ffb9f14",
+      "bytes": 23850
+    },
+    {
+      "path": "references/methods/candidates/glossary.md",
+      "sha256": "f1950fbc74f3784d35ff3e9fdbcdd154bb7b843f6f94d5ec4b7fcc0d5906ec6e",
+      "bytes": 12943
+    },
+    {
+      "path": "references/methods/candidates/principles.md",
+      "sha256": "181a83b2915b930bdbc13abb63f21aa37b63e283a7128dab5f0b86c52c2a88c5",
+      "bytes": 24431
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/SKILL.md",
+      "sha256": "0c2e7ce0d1cddf17e6177a7490563259a3adc75b45fcc90bb85692b00e3ad918",
+      "bytes": 5267
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/test-prompts.json",
+      "sha256": "9535bb752e330d4936039dbde7f3ee7261faefbc3ee0c7112b5a18e9c60d1e28",
+      "bytes": 2451
+    },
+    {
+      "path": "references/methods/choice-basis-three-question-audit/test-results.md",
+      "sha256": "26242055c2342111b53adeab4485af122da63bed0b5dcbfb6174cb24718540f7",
+      "bytes": 1932
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/SKILL.md",
+      "sha256": "31e2a143161c7cc621a734e1778aa1144586410eb6f449cd626acdd7fba3137d",
+      "bytes": 6427
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/test-prompts.json",
+      "sha256": "a647b79edb2d157ba4388eb87487d718c37b82b0d356e309363913f8c0f47907",
+      "bytes": 2517
+    },
+    {
+      "path": "references/methods/cycle-endgame-optionality-map/test-results.md",
+      "sha256": "ca4f140b2dfbf11c8fe69e1dc3dc09ae3ef203fd288fa15f275466e18ac7a2a2",
+      "bytes": 1945
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/SKILL.md",
+      "sha256": "c6c2376b134fa2a301e24bd063893adc77c03280ce5d579f3e41fd7df26ef2dc",
+      "bytes": 5524
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/test-prompts.json",
+      "sha256": "53fb7c28d877aa07236951744a4723a161c2771d52f4139e7edf0a9ff65815ad",
+      "bytes": 2531
+    },
+    {
+      "path": "references/methods/ecological-niche-value-chain-audit/test-results.md",
+      "sha256": "c824e8ee453f914618086cbea7be10b0a9c8020dc716217dc5a0000938fcb0ff",
+      "bytes": 1782
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/SKILL.md",
+      "sha256": "ecf404c9e860301ed8a548ab34e309ce76436c6e000a2a405f7746f2fe71a768",
+      "bytes": 5856
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/test-prompts.json",
+      "sha256": "64b083c2d72f2f0b11aaae4fcee89c3d9aacd11f5236760c49b43efa9419c31c",
+      "bytes": 2363
+    },
+    {
+      "path": "references/methods/explore-exploit-transition-ladder/test-results.md",
+      "sha256": "861d026165f12a3716c9df90c21642409b73c6f5750812e1fd0306045fc39c1d",
+      "bytes": 1636
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/SKILL.md",
+      "sha256": "def05cc3e902ef352609d4c75ceb0ca455b4b9f356e8c4983dcd3e6d11930e38",
+      "bytes": 5335
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/test-prompts.json",
+      "sha256": "23f85004ff641cd1989084390dc5e17db8e78b279c4121a4997de943267864e3",
+      "bytes": 2424
+    },
+    {
+      "path": "references/methods/feedback-cycle-path-fit/test-results.md",
+      "sha256": "a2e677cd8312a983ffd8e82068fd1438adf3450c7ddaf4861bb6abfa46e14bc4",
+      "bytes": 1940
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/SKILL.md",
+      "sha256": "dd24beafd55d22b8de36bd1131c25d96f15f21874a14535f3cd4fe3f611e7176",
+      "bytes": 5368
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/test-prompts.json",
+      "sha256": "f4a44e1eed2cca859961b587d514f3b0bdc082b84b19dd69734b5a0ebec55dfe",
+      "bytes": 2458
+    },
+    {
+      "path": "references/methods/future-value-expectation-boundary/test-results.md",
+      "sha256": "513cb0ff0eeedccd0d2993631725bc5a58af4097cb224ff8b9b98570d3bacbd3",
+      "bytes": 1872
+    },
+    {
+      "path": "references/methods/rejected/r01-impossible-triangle.md",
+      "sha256": "ef58cd4c6171930d4b1fb47e6993996a8e12ceec1ed94902ee39fe9185607def",
+      "bytes": 488
+    },
+    {
+      "path": "references/methods/rejected/r02-extreme-scenario-intersection.md",
+      "sha256": "5ce4fc58482fdcd737abba7438f1afead99d2acb9cdbc7d1f2838c5e53af6ba0",
+      "bytes": 595
+    },
+    {
+      "path": "references/methods/rejected/r03-five-layer-life-design.md",
+      "sha256": "71c3577f9921c20217b71edbf5dfd9236e5d5a2e4c5395edd0d7841c95f6f8cf",
+      "bytes": 509
+    },
+    {
+      "path": "references/methods/rejected/r04-principal-agent.md",
+      "sha256": "2346c2934120ed5ca31b160c2f8757d5a5f853d65805894885e8c1e1b46247ed",
+      "bytes": 494
+    },
+    {
+      "path": "references/methods/rejected/r05-model-domain-stress-test.md",
+      "sha256": "417af699c2e9d1c85e3c0614b11b8b1179ceeb617fc6e16dd3fa496ee909d8f6",
+      "bytes": 457
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/SKILL.md",
+      "sha256": "b8a32f7397107eccae9d24b1dc8fd118a8f180f8c83b49786bcd326e46ba8728",
+      "bytes": 5862
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/test-prompts.json",
+      "sha256": "d8fac4366488d122f459dd1412b508dd76077b41b2b2dfd430e197add90cf254",
+      "bytes": 2629
+    },
+    {
+      "path": "references/methods/repeatable-survival-decision-system/test-results.md",
+      "sha256": "4f77584c2949e0fc52ee5841c22c5ca05cdd1714f787be1619c93ba704be2408",
+      "bytes": 1844
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/SKILL.md",
+      "sha256": "dc8c737207736ac4f517d4ff3c000717bc27301f4ebc58044ac017a233f74e7f",
+      "bytes": 5423
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/test-prompts.json",
+      "sha256": "e4d83e463f1493e94c18258d999c8449ee4c2a3f29d6de4eab767bacc399e435",
+      "bytes": 2524
+    },
+    {
+      "path": "references/methods/role-incentive-hidden-information-audit/test-results.md",
+      "sha256": "1a29d3f58e716d0ac5dcc1fd58ac659eeec39e137f8bd6c5cb5d96a417d0ed23",
+      "bytes": 1887
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/SKILL.md",
+      "sha256": "c30beb583bf21be79593fe88070674997856217ed1e7be8b170382acb68671af",
+      "bytes": 5696
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/test-prompts.json",
+      "sha256": "6da1056e8db541f87f604a5645f03c47fab2ca3c5dba391fab002f4872783b75",
+      "bytes": 2397
+    },
+    {
+      "path": "references/methods/rules-player-to-game-designer/test-results.md",
+      "sha256": "09c280ebb0c14cd1e9f3d8a88736f70724cb74823a03f13715e09464ce0dd889",
+      "bytes": 1696
+    },
+    {
+      "path": "references/methods/stage1.5-merge-map.md",
+      "sha256": "28e047d1e03f48b0e123d1bff2cac42fcadc002aa5048c73b7297a39304277e6",
+      "bytes": 3370
+    },
+    {
+      "path": "references/methods/verified.md",
+      "sha256": "187e78d5953a5508a25b0d0ace0cd939511befeb5dcd9d372cd524553ca0baf4",
+      "bytes": 14665
+    },
+    {
+      "path": "references/writing/Writing-DNA.md",
+      "sha256": "2264bba2d741e2fafd88316289c2af1128124ac975aeb8079b9d2be3808a86a6",
+      "bytes": 5045
+    },
+    {
+      "path": "references/writing/structure-metrics.json",
+      "sha256": "6f9671f8fc87157367b232129175c3c77071a557a4a05411576b5af08001c5bd",
+      "bytes": 58290
+    },
+    {
+      "path": "references/writing/structure-metrics.md",
+      "sha256": "084ade399abf93c2a32e4b276b1ccd9fe54c6936d27aeccba1052b597c7aba56",
+      "bytes": 2210
+    },
+    {
+      "path": "references/writing/像不像判别器.md",
+      "sha256": "44722700e89fa3ff9d5972fd1182aa88749f2a292fcf364ff0765ae724ab96bb",
+      "bytes": 2298
+    },
+    {
+      "path": "references/writing/像不像对照样本.md",
+      "sha256": "aa2572b0eb52f3da50f3c58d6003d9d44c19e52a57985a2125b9f060f2d7a0e3",
+      "bytes": 2373
+    },
+    {
+      "path": "references/writing/内容价值观.md",
+      "sha256": "746fa4ed02f904edf6573b0bdfdd39abb6bf497185f6cd4354fe2c031b078056",
+      "bytes": 1216
+    },
+    {
+      "path": "references/writing/写稿判断框架.md",
+      "sha256": "ebe580b0a48bf28e542d998a8e2ccf7fca8b003ed4d54485acfebc6fdce01c09",
+      "bytes": 1936
+    },
+    {
+      "path": "references/writing/写稿流程操作手册.md",
+      "sha256": "67a3221f6c2f541bd127b371c08f7c47706b66cebaaa168658023519c5afecb8",
+      "bytes": 2336
+    },
+    {
+      "path": "references/writing/原味指纹.md",
+      "sha256": "ea626def0157fe08b8e258a9b15a31d9ecd630e30fa3cfa6a2edf8442ffbc057",
+      "bytes": 3213
+    },
+    {
+      "path": "references/writing/原味语料分层.md",
+      "sha256": "ac549f2723cadee4116606687759746ee7ccb0fcf0a5e61c8509c60106de0682",
+      "bytes": 2538
+    },
+    {
+      "path": "references/writing/反模式与诚实边界.md",
+      "sha256": "793ca9ba2cadd56cad0c26671144bfc53c02beee947be4035f8bd3000bc06c12",
+      "bytes": 1636
+    },
+    {
+      "path": "references/writing/开头模板.md",
+      "sha256": "aa49d13d7b2f6df713ebbedf4164db683f5b9435d4b9c3559d2967be9f130a30",
+      "bytes": 3114
+    },
+    {
+      "path": "references/writing/标题DNA.md",
+      "sha256": "87e28ee630db3396226123490094f2cf00d7e7ee8e2ee2c383e078bfe59f78d7",
+      "bytes": 3342
+    },
+    {
+      "path": "references/writing/正文结构模板.md",
+      "sha256": "5e20f81653194964072e7d8f4088c5236c6685a7ac74b56e749cba3527b9f165",
+      "bytes": 3879
+    },
+    {
+      "path": "references/writing/素材使用规则.md",
+      "sha256": "5b9f211942a711986cd57788f73e8b05d9e0bc99dede4ac8faad6aab50c7ca8a",
+      "bytes": 2336
+    },
+    {
+      "path": "references/writing/结尾模板.md",
+      "sha256": "79a6130778fbaa28d8cb6c9eaa622b9972fb0db86121424586f7a9f501e50a10",
+      "bytes": 1612
+    },
+    {
+      "path": "references/writing/视觉风格指南.md",
+      "sha256": "2f7af4066bcc13e7b8ed856441ac3adc945bc662dbb82261405275ec2d938d7f",
+      "bytes": 1814
+    },
+    {
+      "path": "references/writing/证据索引.md",
+      "sha256": "7fb47032bf5ac8d072ff49ed498e9d783a86f8b6a7cfbb68f38e65289baee0b9",
+      "bytes": 1853
+    },
+    {
+      "path": "references/writing/语言DNA.md",
+      "sha256": "5e733fe52d76e8d25c4bf3f6efa4d21f9c566b02a0921214ba3c01f678689ae8",
+      "bytes": 3208
+    },
+    {
+      "path": "references/writing/读者画像与默认立场.md",
+      "sha256": "59ff33e4a7ad07112caa90deef6bee4cea98aad1a6d4baca5db0d711677ade9a",
+      "bytes": 1369
+    },
+    {
+      "path": "references/writing/转折与推进规则.md",
+      "sha256": "1c14c3e84b10218fab9d1fc92d40f9eaaed4bdc4531c145fa269191b4a369c17",
+      "bytes": 2061
+    },
+    {
+      "path": "references/writing/选题判断清单.md",
+      "sha256": "838276d513bc89d27ffd402e4207491a855698766ca988f77726cff9508c55fc",
+      "bytes": 1622
+    },
+    {
+      "path": "去AI味保真补丁.md",
+      "sha256": "848527902bb50e726d41de69b432bd46ed418e197a6538bd05a337ecaacdfa20",
+      "bytes": 2345
+    }
+  ]
+}

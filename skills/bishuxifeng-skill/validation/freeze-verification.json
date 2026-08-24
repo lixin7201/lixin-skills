@@ -1,0 +1,14 @@
+{
+  "manifest_items": 120,
+  "split_counts": {
+    "train": 101,
+    "holdout": 10,
+    "ocr_quarantine": 9
+  },
+  "source_hashes_verified": 122,
+  "exact_holdout_train_hash_overlap": 0,
+  "holdout_shingle_leak_items": 0,
+  "downstream_holdout_shingle_leak_items": 0,
+  "failures": [],
+  "status": "PASS"
+}

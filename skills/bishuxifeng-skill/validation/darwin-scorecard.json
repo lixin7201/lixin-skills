@@ -1,0 +1,128 @@
+{
+  "mode": "two independent static reviews + holdout/ablation full tests",
+  "static_reviewers": [
+    null,
+    null
+  ],
+  "dimensions": {
+    "dim1": {
+      "weight": 7,
+      "score": 9.75
+    },
+    "dim2": {
+      "weight": 12,
+      "score": 9.5
+    },
+    "dim3": {
+      "weight": 12,
+      "score": 9.75
+    },
+    "dim4": {
+      "weight": 6,
+      "score": 10.0
+    },
+    "dim5": {
+      "weight": 17,
+      "score": 9.4
+    },
+    "dim6": {
+      "weight": 4,
+      "score": 8.25
+    },
+    "dim7": {
+      "weight": 12,
+      "score": 9.0
+    },
+    "dim8": {
+      "weight": 23,
+      "score": 8.161
+    },
+    "dim9": {
+      "weight": 6,
+      "score": 9.75
+    }
+  },
+  "dim8_evidence": {
+    "holdout_skill": 8.949,
+    "holdout_baseline": 7.705,
+    "blind_preference": 1.0,
+    "ablation_full_fusion": 9.289,
+    "eval_mode": "full_test"
+  },
+  "darwin_raw_points_out_of_99": 90.625,
+  "darwin_normalized_score": 91.54,
+  "gate_85": true,
+  "dry_run_ratio": 0,
+  "runtime_gates": [
+    {
+      "status": "pass_with_warning",
+      "runtime_neutral": true,
+      "darwin_red_flag_matches": [],
+      "warnings": [
+        "SKILL.md 的终稿去 AI 段包含本机 OpenClaw 绝对路径 /Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md。该路径不是通用入口，但同句先按 Skill 名发现，并在不可发现或不可读时回退包内补丁，因此不构成阻断 gate。",
+        "PACKAGE.md 另列本机 OpenClaw 安装位置，但同时明确支持任意兼容 Agent Skills 的 runtime；这是部署说明而非单 runtime 限定。"
+      ],
+      "portable_fallback": "去AI味保真补丁.md"
+    },
+    {
+      "status": "pass",
+      "hard_single_runtime_dependency": false,
+      "evidence": [
+        "No Claude Code-only, Cursor-only, Codex-only, plugin-install-only, or ~/.claude/skills hard-binding phrase was found in the root or runtime-loaded resources.",
+        "SKILL.md:92 invokes the external de-AI capability by skill name first and treats the OpenClaw absolute path only as a verified local locator.",
+        "SKILL.md:92/101 falls back to the package-relative 去AI味保真补丁.md, so the workflow remains executable when the external skill and local path are unavailable."
+      ],
+      "notes": [
+        "The explicit OpenClaw absolute locator is runtime-specific wording but is not a gate failure because it is optional, labeled as local, and backed by a package-relative fallback."
+      ]
+    }
+  ],
+  "resource_checks": [
+    {
+      "status": "pass_with_warnings",
+      "explicit_relative_targets_checked": 28,
+      "explicit_relative_targets_existing": 28,
+      "markdown_relative_links_checked": 31,
+      "markdown_relative_links_missing": [],
+      "ambiguous_or_unresolved_as_written": [
+        {
+          "source": "SKILL.md",
+          "references": [
+            "标题DNA.md",
+            "开头模板.md",
+            "正文结构模板.md",
+            "语言DNA.md",
+            "素材使用规则.md",
+            "转折与推进规则.md",
+            "结尾模板.md",
+            "视觉风格指南.md"
+          ],
+          "actual_prefix": "references/writing/",
+          "impact": "文件存在且上下文可推断，但从主入口目录按字面相对路径解析失败。"
+        }
+      ],
+      "external_optional_resource": {
+        "reference": "/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md",
+        "checked": false,
+        "reason": "超出本次只读范围；包内 fallback 已核验存在。"
+      },
+      "excluded_from_content_reading": [
+        "validation/",
+        "references/methods/*/test-results.md",
+        "references/methods/*/test-prompts.json"
+      ]
+    },
+    {
+      "status": "pass_with_deduction",
+      "direct_declared_resources_checked": 27,
+      "missing_resources": [],
+      "external_optional_resource_present_on_review_machine": true,
+      "relative_fallback_present": true,
+      "concerns": [
+        "Two non-identical de-AI patch files share the same basename at the package root and references/writing; their callers resolve to different versions.",
+        "The external absolute locator is portable only because the name-first lookup and bundled relative fallback are both explicit."
+      ]
+    }
+  ],
+  "status": "PASS"
+}

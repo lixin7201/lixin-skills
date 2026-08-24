@@ -1,0 +1,4 @@
+interface:
+  display_name: "李笑来公开认知与写作模型"
+  short_description: "用公开作品中的认知模型、方法与写作 DNA 分析、决策和写作"
+  default_prompt: "Use $li-xiaolai-skill to analyze this problem with the public cognitive model, route the narrowest methods, and preserve non-impersonation boundaries."

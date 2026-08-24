@@ -437,5 +437,144 @@
       "APP comment action",
       "non-template variation"
     ]
+  },
+  {
+    "id": "t21",
+    "prompt": "使用 app-skill，按馋猫0a6路线写一条关于宜宾某商圈人行道长期被车辆占用的 APP 稿。素材含现场时间、具体路段、通行影响和另一个城市设置隔离桩的公开案例。",
+    "input_materials": "只使用用户给出的现场事实和公开案例；不得虚构自己去过或看过评论区。",
+    "route_expected": "城建交通更新 + 馋猫0a6 + 写稿思路",
+    "expected_style_traits": [
+      "真实触发",
+      "普通人后果",
+      "明确立场",
+      "具体设施建议",
+      "定向评论邀请"
+    ],
+    "forbidden_outputs": [
+      "假装亲历",
+      "空泛加强管理",
+      "混入练团长或流浪啊路线",
+      "编造事实"
+    ],
+    "scoring_focus": [
+      "thinking-route fidelity",
+      "human voice",
+      "fact reliability",
+      "editor route correctness"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "使用 app-skill，按馋猫0a6路线诊断一篇过度工整的宜宾消费提醒为什么没有人味，并给改后稿。原稿事实完整，但每段同长度、没有作者立场、结尾只写共同期待。",
+    "input_materials": "模拟稿，不含任何 holdout 原文。",
+    "route_expected": "馋猫0a6 + 哪里不像 + 改稿",
+    "expected_style_traits": [
+      "指出缺少真实触发和普通人后果",
+      "恢复有依据的立场",
+      "保留自然段落起伏",
+      "给具体评论口"
+    ],
+    "forbidden_outputs": [
+      "只加方言和感叹号",
+      "伪造第一人称经历",
+      "把正文改成投诉模板"
+    ],
+    "scoring_focus": [
+      "diagnosis precision",
+      "revision quality",
+      "de-AI preservation",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t23",
+    "prompt": "同一份宜宾新商业体素材，分别说明馋猫0a6和酒言酒语久久久会怎么选角度、排材料和组织结构，只给两份提纲，不写正文。",
+    "input_materials": "事实卡包含位置、体量、交通、周边居民反馈和三项公开消费数据。",
+    "route_expected": "馋猫0a6 vs 酒言酒语久久久，禁止混写",
+    "expected_style_traits": [
+      "馋猫从普通人体验和具体建议切入",
+      "酒言从数据矛盾和系统账本切入",
+      "两条结构明显不同"
+    ],
+    "forbidden_outputs": [
+      "两份同模板提纲",
+      "混合两位小编",
+      "复制原文观点"
+    ],
+    "scoring_focus": [
+      "route separation",
+      "thinking-frame transfer",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t24",
+    "prompt": "使用 app-skill，按酒言酒语久久久路线写一篇宜宾周末游客多但过夜率低的旅游商业深评。只允许使用事实卡中的客流、床位、交通时间和游客访谈摘要。",
+    "input_materials": "完整事实卡；所有数字有来源标签；不得自行推算未给出的收入或岗位。",
+    "route_expected": "本地生活文旅 + 酒言酒语久久久 prototype",
+    "expected_style_traits": [
+      "数字反差切入",
+      "普通人账本",
+      "问题机制",
+      "外地案例可比性",
+      "分组方案"
+    ],
+    "forbidden_outputs": [
+      "无来源数字",
+      "把估算写成事实",
+      "机械复刻固定标题",
+      "假装专家或记者"
+    ],
+    "scoring_focus": [
+      "prototype route fidelity",
+      "fact reliability",
+      "structure metrics",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t25",
+    "prompt": "使用 app-skill 给一篇馋猫0a6路线初稿去 AI 味。初稿事实正确，但含首先其次综上、连续同形短段和空泛升华。",
+    "input_materials": "模拟初稿，不含 holdout 原文；保留具体宜宾地点、作者已确认的现场观察和行动建议。",
+    "route_expected": "馋猫0a6 + 去AI味保真",
+    "expected_style_traits": [
+      "删除报告腔",
+      "保留明确立场",
+      "保留地方细节和自然口语",
+      "不伪造新经历"
+    ],
+    "forbidden_outputs": [
+      "抹平为通用自然中文",
+      "删除具体办法",
+      "增加网络流行梗",
+      "改变事实"
+    ],
+    "scoring_focus": [
+      "de-AI preservation",
+      "human voice",
+      "fact reliability",
+      "paragraph rhythm"
+    ]
+  },
+  {
+    "id": "t26",
+    "prompt": "使用 app-skill 判断一份只有旅游口号、没有数据和案例的素材能否使用酒言酒语久久久路线。",
+    "input_materials": "素材只有宜宾文旅很有潜力、欢迎游客两句口号。",
+    "route_expected": "拒绝酒言酒语久久久 prototype，回退账号基线或补材料",
+    "expected_style_traits": [
+      "指出缺少数据和案例",
+      "列最小补采清单",
+      "不硬写长评"
+    ],
+    "forbidden_outputs": [
+      "编造 GDP 客流收入",
+      "照套深评结构",
+      "冒充作者"
+    ],
+    "scoring_focus": [
+      "failure handling",
+      "route safety",
+      "fact reliability"
+    ]
   }
 ]

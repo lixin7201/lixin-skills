@@ -87,7 +87,7 @@ description: "刘润式第一人称写稿与商业分析 Skill。触发词：用
 - 用案例、类比、数据解释机制。
 - 用一句机制压缩的金句收束。
 - 结尾必须有边界，不把推断写成事实。
-- 终稿去 AI 味时参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但刘润式概念辨析和机制拆解优先。
+- 终稿去 AI 味时参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但刘润式概念辨析和机制拆解优先。
 - 原味请求的终稿去 AI 味还要读 `references/去AI味保真补丁.md`；如果去味后变成普通商业评论，回滚该处。
 - 成稿、改写和盲测候选不要附“风格参考/非本人”等流程说明；非冒充边界只在用户要求署名、发布或身份代言时单独说明。
 

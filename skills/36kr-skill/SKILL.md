@@ -33,7 +33,7 @@ description: 36氪skill：按 36氪公众号写稿、改稿、标题优化、哪
 - 综合商业观察：`references/文稿类型/综合商业观察DNA.md`
 - 指定作者线：读取 `references/小编风格/<作者名>-DNA.md`；找不到则读取 `references/小编风格/小编样本不足.md` 并降级。
 - 图文排版：读取 `references/视觉风格指南.md`。
-- 终稿去 AI 味：读取 `references/去AI味保真补丁.md`，必要时再参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`。
+- 终稿去 AI 味：读取 `references/去AI味保真补丁.md`，必要时再参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`。
 
 ## 事实与身份红线
 

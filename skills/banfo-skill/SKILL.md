@@ -15,7 +15,7 @@ description: 半佛仙人公开文章写法参考 Skill。用于半佛 skill、�
 2. `references/写稿流程操作手册.md`
 3. `references/反模式与诚实边界.md`
 4. 原味请求：`references/原味指纹.md`、`references/像不像对照样本.md`、`data/原味语料分层.md`
-5. 终稿去 AI 味：`references/去AI味保真补丁.md`，必要时再参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
+5. 终稿去 AI 味：`references/去AI味保真补丁.md`，必要时再参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
 
 按任务再读：
 

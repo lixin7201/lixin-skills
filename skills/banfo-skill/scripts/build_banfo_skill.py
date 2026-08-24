@@ -12,8 +12,8 @@ from pathlib import Path
 from statistics import mean, median
 
 
-CORPUS_ROOT = Path("/Users/lixin/Documents/学习/重点学习公众号/半佛仙人/半佛仙人")
-OUT_DIR = Path("/Users/lixin/.openclaw/workspace/skills/banfo-skill")
+CORPUS_ROOT = Path("/Users/REPLACE_ME/Documents/学习/重点学习公众号/半佛仙人/半佛仙人")
+OUT_DIR = Path("/Users/REPLACE_ME/.openclaw/workspace/skills/banfo-skill")
 NOW = "2026-07-05"
 
 

@@ -30,7 +30,7 @@ description: 槽值 skill：按“槽值”公众号写稿、改稿、标题优�
 - 公共教育/事件纪念：`references/文稿类型/公共教育_事件纪念DNA.md`
 - 怀旧文化/IP解读：`references/文稿类型/怀旧文化_IP解读DNA.md`
 - 图文排版：读 `references/账号排版规范.md` 和 `references/视觉风格指南.md`
-- 终稿去 AI 味：读 `references/去AI味保真补丁.md`，必要时再执行 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
+- 终稿去 AI 味：读 `references/去AI味保真补丁.md`，必要时再执行 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
 
 ## 作者与事实红线
 

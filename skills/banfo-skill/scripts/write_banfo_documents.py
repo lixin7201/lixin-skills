@@ -7,7 +7,7 @@ from pathlib import Path
 from textwrap import dedent
 
 
-OUT = Path("/Users/lixin/.openclaw/workspace/skills/banfo-skill")
+OUT = Path("/Users/REPLACE_ME/.openclaw/workspace/skills/banfo-skill")
 TODAY = "2026-07-05"
 
 

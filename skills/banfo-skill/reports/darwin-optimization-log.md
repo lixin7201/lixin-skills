@@ -56,7 +56,7 @@
 
 改动：
 
-- 重写真实稿件：`/Users/lixin/AI code/openclaw/drafts/wechat/2026-07-05-ai-learning-penalty-banfo-style.md`。
+- 重写真实稿件：`/Users/REPLACE_ME/AI code/openclaw/drafts/wechat/2026-07-05-ai-learning-penalty-banfo-style.md`。
 - `references/语言DNA.md` 增加 `AI 腔硬禁区`。
 - `references/写稿流程操作手册.md` 增加 `去 AI 腔`。
 - `references/像不像判别器.md` 增加 `AI 感专项诊断`。

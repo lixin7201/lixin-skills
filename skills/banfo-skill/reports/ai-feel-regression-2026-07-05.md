@@ -21,7 +21,7 @@
 
 ## 修复
 
-- 重写稿件：`/Users/lixin/AI code/openclaw/drafts/wechat/2026-07-05-ai-learning-penalty-banfo-style.md`
+- 重写稿件：`/Users/REPLACE_ME/AI code/openclaw/drafts/wechat/2026-07-05-ai-learning-penalty-banfo-style.md`
 - 主物件改为：作业本、红笔、月考卷、PPT 答辩。
 - 标题改为：`AI 写作业，最邪门的是作业本开始会化妆了`
 - 删除“不是 A，而是 B”连续模板。

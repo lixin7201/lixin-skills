@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 
 
-ROOT = Path("/Users/lixin/.openclaw/workspace/skills/banfo-skill")
+ROOT = Path("/Users/REPLACE_ME/.openclaw/workspace/skills/banfo-skill")
 TODAY = "2026-07-05"
 
 

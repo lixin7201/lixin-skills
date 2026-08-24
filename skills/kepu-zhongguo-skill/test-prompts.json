@@ -1,0 +1,552 @@
+[
+  {
+    "id": "t01",
+    "prompt": "写一篇关于夏天泡发木耳食品安全的科普中国稿",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 食品营养与生活安全DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "把一篇关于睡前刷手机危害的普通科普稿改成科普中国口吻",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 健康医学与疾病提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "给'空调开一整天还是随用随开更省电'做10个标题",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 日常生活方式与消费避坑DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "优化一篇科技突破稿的开头：国产高纯硅为什么难做",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 科技产业与硬核工程DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "给一篇台风避险稿补结尾",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 公共应急与灾害提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断这段文字哪里不像科普中国",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "把200字素材扩成可发布清单稿",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 食品营养与生活安全DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "把3000字稿压缩成公众号短科普",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 健康医学与疾病提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "只有一句'红心甘蔗能不能吃'，请处理",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 食品营养与生活安全DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "敏感医学事实不足时如何写",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 健康医学与疾病提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "同样素材分别写家庭提醒角度和科学解释角度",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 食品营养与生活安全DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "哪里不像：标题很吓人但正文没证据",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "强素材正控：有指南、专家、数据，写完整稿",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 健康医学与疾病提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "无 skill baseline 对照",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查是否复用了原文句子",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "blind A/B judge comparison",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "跨主题：从食品稿迁移到科技产业稿",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 科技产业与硬核工程DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "反模板：三篇稿不能都是同一骨架",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "去 AI 味但保留科普中国口吻",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 健康医学与疾病提醒DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "原味对照：区分科普中国、泛 AI、过度营销、过度学术",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t21",
+    "prompt": "思维框架迁移：先误区再机制再建议",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 食品营养与生活安全DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "保护短段、提醒语和清单闭环",
+    "input_materials": "由用户提供事实；缺事实时按事实边界处理，不补专家和数据。",
+    "route_expected": "账号总风格 + 综合知识解释DNA",
+    "expected_style_traits": [
+      "生活钩子",
+      "机制解释",
+      "具体建议",
+      "事实边界",
+      "科普中国口语提醒"
+    ],
+    "forbidden_outputs": [
+      "冒充官方",
+      "复制原文",
+      "编造专家数据",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "route correctness",
+      "original flavor",
+      "fact reliability",
+      "non-template variation"
+    ]
+  }
+]

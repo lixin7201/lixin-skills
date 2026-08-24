@@ -130,7 +130,7 @@ description: "大土豆式公众号写稿 Skill。用于按北京大土豆 / BJ�
 
 ## 终稿去 AI 味保真补丁
 
-成稿最后执行 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但大土豆式写稿 DNA、事实边界和用户提供材料优先。
+成稿最后执行 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但大土豆式写稿 DNA、事实边界和用户提供材料优先。
 
 - 只处理明显 AI 痕迹：路标句、空泛总结、机械对比、假第一人称、来源泄漏、连续短段。
 - 保留现实账本、北京坐标、中年自嘲、克制悲观和一家之言边界。

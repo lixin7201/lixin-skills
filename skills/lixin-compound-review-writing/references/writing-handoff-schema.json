@@ -1,0 +1,15 @@
+{
+  "title": "PersonaFreeWritingHandoff",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["problem", "facts", "unknowns", "mechanisms", "counterevidence", "boundary", "action"],
+  "properties": {
+    "problem": {"type": "string"},
+    "facts": {"type": "array", "items": {"type": "string"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "mechanisms": {"type": "array", "items": {"type": "string"}, "maxItems": 3},
+    "counterevidence": {"type": "array", "items": {"type": "string"}},
+    "boundary": {"type": "string"},
+    "action": {"type": "string"}
+  }
+}

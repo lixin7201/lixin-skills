@@ -1,0 +1,18 @@
+[
+  {"id":"r01","prompt":"我学了很多但没用起来，怎么把学习变成复利？","expected_main":"li-xiaolai-skill","expected_counter":"munger-perspective"},
+  {"id":"r02","prompt":"个人复盘内容怎么形成信任和副业机会？","expected_main":"liu-siyi-business-content-perspective","expected_counter":null},
+  {"id":"r03","prompt":"一个 AI Demo 看起来很强，真实工作里为什么不可靠？","expected_main":"andrej-karpathy-perspective","expected_counter":"feynman-perspective"},
+  {"id":"r04","prompt":"这个流程越来越复杂，怎样从第一性原理删步骤？","expected_main":"elon-musk-perspective","expected_counter":null},
+  {"id":"r05","prompt":"我是不是只记住了一个概念名，却没有真正理解？","expected_main":"feynman-perspective","expected_counter":null},
+  {"id":"r06","prompt":"这个 AI 研究方向长期有没有价值，安全边界是什么？","expected_main":"ilya-sutskever-perspective","expected_counter":"andrej-karpathy-perspective"},
+  {"id":"r07","prompt":"这篇公众号的标题和第一屏为什么没有人继续看？","expected_main":"mrbeast-perspective","expected_counter":null},
+  {"id":"r08","prompt":"我是不是被成功案例和短期奖励同时带偏了？","expected_main":"munger-perspective","expected_counter":null},
+  {"id":"r09","prompt":"哪类副业能积累特定知识、媒体杠杆和复利？","expected_main":"naval-perspective","expected_counter":"taleb-perspective"},
+  {"id":"r10","prompt":"我应该做一个自己需要的产品，还是继续研究大市场？","expected_main":"paul-graham-perspective","expected_counter":null},
+  {"id":"r11","prompt":"复杂工具为什么输给简单入口，产品该砍什么？","expected_main":"steve-jobs-perspective","expected_counter":"feynman-perspective"},
+  {"id":"r12","prompt":"这个项目依赖单一平台，出现封号就整体归零，怎么判断？","expected_main":"taleb-perspective","expected_counter":null},
+  {"id":"r13","prompt":"每日语音、知识库、Todo 和发布结果怎样形成数据飞轮？","expected_main":"zhang-yiming-perspective","expected_counter":null},
+  {"id":"r14","prompt":"普通上班族选副业，应该看极端成功还是中位数结果？","expected_main":"zhangxuefeng-perspective","expected_counter":"naval-perspective"},
+  {"id":"r15","prompt":"一个热点怎样获得注意力，同时识别碰瓷和叙事操纵风险？","expected_main":"sun-yuchen-perspective","expected_counter":"munger-perspective","expected_mode":"risk_audit","restricted":true},
+  {"id":"r16","prompt":"谈合作时怎样设置锚点并识别权力结构？","expected_main":"trump-perspective","expected_counter":"munger-perspective","expected_mode":"pressure_test","restricted":true}
+]

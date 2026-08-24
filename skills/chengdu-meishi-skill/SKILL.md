@@ -15,7 +15,9 @@ description: 成都美食 skill：按“成都美食”公众号写稿、改稿�
 2. `references/账号总风格.md`
 3. `references/账号选题判断框架.md`
 4. `references/账号语言底线.md`
-5. 终稿去 AI 味时参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
+5. `references/像不像判别器.md`
+6. 原味/高保真请求时读 `references/原味指纹.md`
+7. 终稿去 AI 味时先读 `references/去AI味保真补丁.md`，必要时再参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
 
 按任务再读：
 

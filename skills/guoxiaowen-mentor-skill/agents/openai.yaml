@@ -1,0 +1,4 @@
+interface:
+  display_name: "郭晓文赛博导师"
+  short_description: "用公开经历拆解创业与项目问题，给出低成本可验证建议"
+  default_prompt: "使用 $guoxiaowen-mentor-skill，分析我当前的创业问题并给出有边界、可验证的下一步。"

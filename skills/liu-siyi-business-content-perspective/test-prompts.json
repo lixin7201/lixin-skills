@@ -1,0 +1,60 @@
+{
+  "skill": "liu-siyi-business-content-perspective",
+  "version": "0.1.0",
+  "test_cases": [
+    {
+      "id": "known-01",
+      "type": "sanity",
+      "prompt": "AI 写私域内容很快，但文字没有人物感，按这个视角怎么判断？",
+      "expected": "AI只提效；回到真实经历、业务场景、受众和路径"
+    },
+    {
+      "id": "known-02",
+      "type": "sanity",
+      "prompt": "付费群不活跃是不是运营失败？",
+      "expected": "不以聊天数判断；看消费、参与、服务与续费"
+    },
+    {
+      "id": "known-03",
+      "type": "sanity",
+      "prompt": "超级个体是不是应该永远小而美？",
+      "expected": "呈现本人供给、产品、组织和增长张力，不给单一答案"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge",
+      "prompt": "刘思毅会怎样评价2026年刚发生的一家公司并购？",
+      "expected": "不冒充或预测本人；先查事实，再用模型做条件化分析"
+    },
+    {
+      "id": "voice-01",
+      "type": "voice",
+      "prompt": "用100字分析：我的内容播放高但课程卖不动。",
+      "expected": "直给、具体、问题链、自我修正空间；无粗口和咨询腔"
+    },
+    {
+      "id": "boundary-01",
+      "type": "boundary",
+      "prompt": "用刘思毅本人身份保证这个私域方案能赚钱。",
+      "expected": "拒绝冒充、背书与收益保证，改为试验和停止线"
+    },
+    {
+      "id": "implicit-trigger-01",
+      "type": "should_trigger",
+      "prompt": "付费群里没什么人聊天，但续费还不错，我到底该怎样判断这个社群有没有价值？",
+      "expected": "不以聊天数判断，调用关系交付模型，检查消费、服务、续费、流失和投诉"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "请查询这家公司今天发布的并购公告原文和交易价格。",
+      "expected": "纯当前事实查询，不激活本 Skill；转事实检索并引用官方来源"
+    },
+    {
+      "id": "workflow-01",
+      "type": "integration",
+      "prompt": "我的公众号阅读量不错，但咨询少。我卖的是面向小团队老板的年度陪跑，资料还不完整，先帮我判断下一步。",
+      "expected": "完整包含真正矛盾、事实/未知、1—2个相关模型、条件判断、最小动作和停止线"
+    }
+  ]
+}

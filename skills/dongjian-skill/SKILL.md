@@ -25,7 +25,7 @@ description: "洞见 skill。Use when the user wants to write, rewrite, review, 
 
 原味请求先读：`references/原味指纹.md`、`references/像不像对照样本.md`、`data/原味语料分层.md`。这些文件只做保真自检，不覆盖既有洞见 DNA。
 
-终稿去 AI 味时先读 `references/去AI味保真补丁.md`，必要时再参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但洞见的故事、判断、行动链优先。
+终稿去 AI 味时先读 `references/去AI味保真补丁.md`，必要时再参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`，但洞见的故事、判断、行动链优先。
 
 ## 写文章标题先行规则
 

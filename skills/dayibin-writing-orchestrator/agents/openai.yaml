@@ -1,0 +1,4 @@
+interface:
+  display_name: "大宜宾写作总控"
+  short_description: "组合人物选题、唯一主笔、保真软审校和最终发布审稿的公众号写作总控"
+  default_prompt: "Use $dayibin-writing-orchestrator to route my local source material through topic selection, one writer, soft audit, and publication review."

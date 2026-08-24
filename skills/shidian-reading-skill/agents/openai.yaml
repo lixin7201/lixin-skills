@@ -1,0 +1,4 @@
+interface:
+  display_name: "十点读书 skill"
+  short_description: "高保真十点读书式公众号选题、写稿、改稿、诊断与去AI保真"
+  default_prompt: "使用 $shidian-reading-skill 把我的素材写成一篇有事实边界、故事推进和原味节奏的公众号稿。"

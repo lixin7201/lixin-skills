@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Writing 软审校"
+  short_description: "为既有写稿 Skill 做事实、材料与段落推进的保真软审校"
+  default_prompt: "Use $human-writing-soft-audit to audit this draft without replacing its original writing Skill."

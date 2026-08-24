@@ -1,0 +1,530 @@
+[
+  {
+    "id": "t01",
+    "prompt": "给一个县城老师的人物线索，写《人物》式开头和大纲。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "new draft writing",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t02",
+    "prompt": "把一段通稿式人物介绍改成《人物》写法。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "rewrite",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t03",
+    "prompt": "为一篇关于返乡年轻人的人物稿起 10 个标题。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "title optimization",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t04",
+    "prompt": "优化一个从履历开始的开头，让它从场景进入。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "opening optimization",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t05",
+    "prompt": "把鸡汤式结尾改成《人物》式余波。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "ending optimization",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断一篇稿子哪里不像《人物》。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "review diagnosis",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t07",
+    "prompt": "把 600 字人物短稿扩成 1500 字结构提纲。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "expansion",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t08",
+    "prompt": "把长材料压成 800 字人物小稿。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "compression",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t09",
+    "prompt": "只有人物名和一句经历，判断能不能写。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "insufficient material",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t10",
+    "prompt": "涉及医疗和司法事实，要求事实边界。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "sensitive facts",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一素材分别写女性家庭角度和社会公共事件角度。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "same material two angles",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t12",
+    "prompt": "指出一段稿子哪里不像《人物》并改写。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "where unlike",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t13",
+    "prompt": "给完整采访材料，写开头、结构和节选。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "strong material positive control",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t14",
+    "prompt": "比较普通公众号写法和《人物》写法。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "baseline comparison",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查是否复制原文或过拟合标题。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "style leakage",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t16",
+    "prompt": "给 A/B 两段，判断哪段更像《人物》。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "blind A/B judge",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t17",
+    "prompt": "把商业科技人物写成《人物》而不是商业分析。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "cross-topic generalization",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t18",
+    "prompt": "同一人物材料生成两种不同结构。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "anti-template variation",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t19",
+    "prompt": "去 AI 味但保留《人物》长段叙事。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "de-AI preservation",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t20",
+    "prompt": "区分目标式、AI式、过度抒情和过拟合。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "original-flavor contrast",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t21",
+    "prompt": "判断角度是否符合《人物》的选题逻辑。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "thinking-frame transfer",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  },
+  {
+    "id": "t22",
+    "prompt": "恢复被过度打磨掉的迟疑、关系和细节。",
+    "input_materials": "使用用户提供材料；没有材料时只做框架/诊断/采访问题，不编造事实。",
+    "route_expected": "account baseline + inferred article type + optional editor DNA",
+    "expected_style_traits": [
+      "场景进入",
+      "人物关系",
+      "克制判断",
+      "事实边界"
+    ],
+    "forbidden_outputs": [
+      "冒充真实记者",
+      "复制原文",
+      "编造采访",
+      "AI路线图句"
+    ],
+    "scoring_focus": [
+      "protected-quirk preservation",
+      "fact reliability",
+      "original flavor",
+      "non-impersonation"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "title": "InternalThinkingMemo",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["main_skill", "mode", "problem", "facts", "unknowns", "mechanisms", "counterevidence", "boundary", "action"],
+  "properties": {
+    "main_skill": {"type": "string"},
+    "counter_skill": {"type": ["string", "null"]},
+    "mode": {"enum": ["standard", "risk_audit", "pressure_test"]},
+    "problem": {"type": "string"},
+    "facts": {"type": "array", "items": {"type": "string"}},
+    "unknowns": {"type": "array", "items": {"type": "string"}},
+    "mechanisms": {"type": "array", "items": {"type": "string"}, "maxItems": 3},
+    "counterevidence": {"type": "array", "items": {"type": "string"}},
+    "boundary": {"type": "string"},
+    "action": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"main_skill": {"const": "sun-yuchen-perspective"}}, "required": ["main_skill"]},
+      "then": {"properties": {"mode": {"const": "risk_audit"}}}
+    },
+    {
+      "if": {"properties": {"main_skill": {"const": "trump-perspective"}}, "required": ["main_skill"]},
+      "then": {"properties": {"mode": {"const": "pressure_test"}}}
+    }
+  ],
+  "forbidden_in_article": [
+    "main_skill",
+    "counter_skill",
+    "source_person_name",
+    "roleplay_first_person",
+    "source_catchphrase",
+    "political_position",
+    "identity_attack"
+  ]
+}

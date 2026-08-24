@@ -1,0 +1,4 @@
+interface:
+  display_name: "李鑫复利复盘写作"
+  short_description: "从飞书读取每日素材，候选入库、选题并按专属DNA写公众号复盘"
+  default_prompt: "使用 $lixin-compound-review-writing，通过狐狸狐狸机器人读取《每日语音输入与感悟》里今天的内容；同步到每日候选库，先选出唯一角度，再写成一篇标题有点击力、像我本人、低 AI 感的公众号复盘稿。"

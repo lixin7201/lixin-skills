@@ -20,7 +20,7 @@
 
 ## Ready Gates
 
-- OpenClaw 目录发现：通过，`SKILL.md` 位于 `/Users/lixin/.openclaw/workspace/skills/chengdu-meishi-skill`
+- OpenClaw 目录发现：通过，`SKILL.md` 位于 `/Users/REPLACE_ME/.openclaw/workspace/skills/chengdu-meishi-skill`
 - Darwin final score >= 85：通过，87.7/100 dry_run
 - Holdout average >= 8.0：通过，8.56/10 dry_run
 - fact reliability >= 9.5：通过，9.8/10

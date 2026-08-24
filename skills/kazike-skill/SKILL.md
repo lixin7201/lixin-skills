@@ -17,7 +17,7 @@ description: "卡兹克式 AI 公众号写稿 Skill。用于数字生命卡兹�
 4. `references/像不像判别器.md`
 5. `references/原味指纹.md`
 6. `references/去AI味保真补丁.md`
-7. 终稿去 AI 味时参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
+7. 终稿去 AI 味时参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`
 
 按任务再读：
 

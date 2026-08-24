@@ -1,0 +1,7 @@
+interface:
+  display_name: "大宜宾选题角度引擎"
+  short_description: "从真实素材生成爆款标题、创新角度阐述与唯一写稿交接卡"
+  default_prompt: "Use $dayibin-topic-angle-engine to turn this source material into ranked headline-and-angle cards, then hand the winner to one writing skill."
+
+policy:
+  allow_implicit_invocation: true

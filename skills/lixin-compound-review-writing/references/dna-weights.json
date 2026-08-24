@@ -1,0 +1,31 @@
+{
+  "version": "2.2.0-feishu-daily-inbox",
+  "global_sources": {
+    "lixin_oral": 30,
+    "liurun": 25,
+    "banfo": 20,
+    "liu_siyi": 15,
+    "36kr": 10
+  },
+  "dimensions": {
+    "title": {"lixin_oral": 20, "liurun": 15, "banfo": 25, "liu_siyi": 20, "36kr": 20},
+    "angle": {"lixin_oral": 25, "liurun": 35, "banfo": 10, "liu_siyi": 20, "36kr": 10},
+    "opening": {"lixin_oral": 25, "liurun": 10, "banfo": 25, "liu_siyi": 30, "36kr": 10},
+    "structure": {"lixin_oral": 15, "liurun": 30, "banfo": 10, "liu_siyi": 25, "36kr": 20},
+    "language_rhythm": {"lixin_oral": 45, "liurun": 10, "banfo": 20, "liu_siyi": 20, "36kr": 5},
+    "humor": {"lixin_oral": 25, "liurun": 5, "banfo": 55, "liu_siyi": 15, "36kr": 0},
+    "facts_materials": {"lixin_oral": 25, "liurun": 15, "banfo": 5, "liu_siyi": 20, "36kr": 35},
+    "ending": {"lixin_oral": 35, "liurun": 20, "banfo": 10, "liu_siyi": 30, "36kr": 5}
+  },
+  "hard_constraints": [
+    "feishu_daily_input_uses_pinned_fox_bot_and_current_date_only",
+    "daily_batch_requires_one_locked_angle_before_writing",
+    "title_promise_must_be_supported_by_locked_angle_and_facts",
+    "thinking_perspective_never_changes_final_voice",
+    "facts_and_privacy_outrank_style",
+    "no_sequential_author_rewrites",
+    "no_fixed_article_skeleton_across_topics",
+    "no_source_author_impersonation",
+    "lixin_oral_owns_first_person_and_final_language"
+  ]
+}

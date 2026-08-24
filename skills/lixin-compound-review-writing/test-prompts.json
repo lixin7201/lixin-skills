@@ -1,0 +1,266 @@
+[
+  {
+    "id": "t01",
+    "prompt": "把今天的语音整理成一篇每日创业思考公众号稿。",
+    "input_materials": "我今天检查本机 Skill，发现有效 SKILL.md 有 1242 个、唯一名称 397 个。但真正开始写个人公众号时，我还是不知道该选哪个。我意识到收集工具和使用工具不是一回事。明天只用一个固定写作流程写出第一篇。",
+    "expected_style_traits": ["具体结果冷开场", "解释选择过载与执行反馈机制", "真实改判", "轻微自嘲", "落到明日动作"],
+    "forbidden_outputs": ["冒充成功导师", "把 Skill 数量写成个人成就", "连续段子", "虚构读者反馈"],
+    "scoring_focus": ["思考深度", "真实感", "幽默克制", "唯一主张"]
+  },
+  {
+    "id": "t02",
+    "prompt": "把这段普通复盘改成我的专属文风。",
+    "input_materials": "今天学了很多内容。我觉得执行很重要。以后我要坚持，持续做有复利的事情。",
+    "expected_style_traits": ["识别材料不足", "不补故事", "缩成短复盘或追问一个动作"],
+    "forbidden_outputs": ["凭空增加学习内容", "泛励志长文"],
+    "scoring_focus": ["材料门", "事实可靠", "篇幅降级"]
+  },
+  {
+    "id": "t03",
+    "prompt": "只给这篇文章优化标题。",
+    "input_materials": "主题：工具越多，行动反而越分散；作者决定以后每天只选三个关键 Todo。",
+    "expected_style_traits": ["内部跨角度发散12个", "只交付最强5个", "推荐1个", "具体对象或动作前置"],
+    "forbidden_outputs": ["刘润式", "半佛式", "夸张收益", "假数字"],
+    "scoring_focus": ["具体性", "反差", "点击理由"]
+  },
+  {
+    "id": "t04",
+    "prompt": "优化这篇复盘的开头，不改正文。",
+    "input_materials": "原开头：在这个快速变化的时代，AI 工具越来越多，每个人都应该提升自己的执行力。事实：我今天盘点了 397 个唯一 Skill，但一个都没真正用来发稿。",
+    "expected_style_traits": ["用具体数字或动作冷开场", "保留事实", "不宏大"],
+    "forbidden_outputs": ["时代背景", "虚构心理"],
+    "scoring_focus": ["开头信息增量", "真实感"]
+  },
+  {
+    "id": "t05",
+    "prompt": "只优化结尾，让它更像我的专属文风。",
+    "input_materials": "原结尾：让我们一起拥抱变化，坚持长期主义，创造属于自己的美好未来。正文结论：明天只验证固定流程能否让我完成一篇稿。",
+    "expected_style_traits": ["删除励志升华", "落到明日验证", "保留边界"],
+    "forbidden_outputs": ["一起加油", "美好未来"],
+    "scoring_focus": ["行动落点", "克制"]
+  },
+  {
+    "id": "t06",
+    "prompt": "诊断这篇文章哪里不像我，并给修改稿。",
+    "input_materials": "稿子全文都在讲创业者必须长期主义、打造个人品牌、构建增长闭环，没有任何当天动作、结果或个人改判。",
+    "expected_style_traits": ["硬门判断", "分项评分", "指出缺真实动作", "不靠润色补事实"],
+    "forbidden_outputs": ["只说不够真实", "直接编完整故事"],
+    "scoring_focus": ["诊断具体性", "事实边界"]
+  },
+  {
+    "id": "t07",
+    "prompt": "把这段扩写到适合公众号发布。",
+    "input_materials": "今天第一次把口才训练改成可勾选任务：录三分钟复盘、回听、找三处口头禅。以前写的是‘提升表达能力’，每天都不知道什么时候算完成。",
+    "expected_style_traits": ["围绕可验收任务机制扩写", "保留一个主张", "轻幽默"],
+    "forbidden_outputs": ["新增训练成果", "凑到1800字"],
+    "scoring_focus": ["机制", "材料利用", "中素材篇幅"]
+  },
+  {
+    "id": "t08",
+    "prompt": "把这篇1800字复盘压缩成500字短稿。",
+    "input_materials": "必须保留：今天只完成一个30分钟副业验证；原先计划七项；删到一项后反而完成；结论只在任务清晰且当天可验收时成立。",
+    "expected_style_traits": ["保留事实、机制、边界、下一步", "删除旁枝"],
+    "forbidden_outputs": ["压成鸡汤", "改变结论范围"],
+    "scoring_focus": ["压缩保真", "短稿完整度"]
+  },
+  {
+    "id": "t09",
+    "prompt": "今天没什么事，只觉得日更很重要，帮我写长文。",
+    "input_materials": "没有动作、结果、阅读笔记或具体触动。",
+    "expected_style_traits": ["拒绝强写长文", "只问一个关键问题或给空白提纲"],
+    "forbidden_outputs": ["编造一天", "泛谈日更价值"],
+    "scoring_focus": ["材料不足处理"]
+  },
+  {
+    "id": "t10",
+    "prompt": "把今天的大宜宾工作复盘写得冲突一点。",
+    "input_materials": "材料包含未公开工资、领导原话、同事姓名和内部使用数据；公开可用事实只有：我做的复杂工具使用率不如一个简单入口，我因此重新思考产品价值。",
+    "expected_style_traits": ["只用公开事实", "写产品采用机制", "标记发布前边界"],
+    "forbidden_outputs": ["工资", "领导原话", "同事姓名", "未公开数据"],
+    "scoring_focus": ["隐私安全", "冲突替代"]
+  },
+  {
+    "id": "t11",
+    "prompt": "同一份素材给我两个不同角度。",
+    "input_materials": "我建立了每日生财内容整理定时任务，但连续几天个人事实库的每日输入仍是空白。",
+    "expected_style_traits": ["角度一关注自动化与真实输入", "角度二关注反馈设计与执行", "事实一致"],
+    "forbidden_outputs": ["两个角度只是换标题", "虚构定时任务失败原因"],
+    "scoring_focus": ["角度差异", "非模板变化"]
+  },
+  {
+    "id": "t12",
+    "prompt": "指出这段为什么不像我的专属文风。",
+    "input_materials": "最近，有同学问我，执行力的本质是什么？这是个好问题。执行力不是行动，而是一个人的底层操作系统。记住一句话：认知决定行动，行动决定命运。",
+    "expected_style_traits": ["识别刘润模板过重", "识别假读者", "识别空机制", "给具体修法"],
+    "forbidden_outputs": ["只改几个词"],
+    "scoring_focus": ["来源作者泄漏", "个人身份"]
+  },
+  {
+    "id": "t13",
+    "prompt": "用我的专属文风写完整稿。",
+    "input_materials": "今天我把一个模糊 Todo‘研究公众号’改成‘用一段真实语音写出一篇700字复盘，并在晚上9点前保存草稿’。过去一周这个任务每天都被顺延，改写后当天完成。还不能证明方法长期有效，准备连续验证7天。",
+    "expected_style_traits": ["强材料完整利用", "任务可验收机制", "不夸大一次结果", "下一步7天验证"],
+    "forbidden_outputs": ["宣称彻底解决半途而废", "成功学"],
+    "scoring_focus": ["正向控制", "边界"]
+  },
+  {
+    "id": "t14",
+    "prompt": "请写一篇关于执行力的公众号文章。",
+    "input_materials": "仅提供主题，不加载本 Skill。",
+    "expected_style_traits": ["作为无 Skill 基线留档"],
+    "forbidden_outputs": [],
+    "scoring_focus": ["与带 Skill 输出比较"]
+  },
+  {
+    "id": "t15",
+    "prompt": "检查这篇稿子有没有复制来源作者或泄漏训练文本。",
+    "input_materials": "稿子含连续刘润固定开场、半佛标志性句式和一段疑似原文长句。",
+    "expected_style_traits": ["识别高风险相似", "要求原创重写", "保留事实不保留句式"],
+    "forbidden_outputs": ["继续润色疑似复制段落"],
+    "scoring_focus": ["泄漏安全", "非冒充"]
+  },
+  {
+    "id": "t16",
+    "prompt": "对同一材料生成 A/B 稿，隐藏哪个用了 Skill，交给盲评。",
+    "input_materials": "素材：学了很多但没行动；今天只完成一项可验收任务；准备再验证7天。",
+    "expected_style_traits": ["A/B材料与长度一致", "标签随机", "不向评委泄漏"],
+    "forbidden_outputs": ["告诉评委预期赢家"],
+    "scoring_focus": ["盲测完整性"]
+  },
+  {
+    "id": "t17",
+    "prompt": "用我的专属文风写一个非 AI 题材。",
+    "input_materials": "今天独自散步时临时换了一条陌生路线，发现自己喜欢的不是打卡景点，而是可以自己决定时间和方向。这个体验让我重新理解自由。",
+    "expected_style_traits": ["跨题材保持真实改判", "不强行商业化", "轻思考"],
+    "forbidden_outputs": ["硬套创业闭环", "编造旅行故事"],
+    "scoring_focus": ["跨题材泛化", "身份一致"]
+  },
+  {
+    "id": "t18",
+    "prompt": "连续写三篇同主题日更，避免模板复读。",
+    "input_materials": "三天主题都与半途而废有关：第一天是任务模糊，第二天是没有短反馈，第三天是平台资产不可控。",
+    "expected_style_traits": ["三种开头", "三种机制", "三种结尾动作"],
+    "forbidden_outputs": ["重复标题骨架", "固定三段建议"],
+    "scoring_focus": ["非模板变化"]
+  },
+  {
+    "id": "t19",
+    "prompt": "去掉这篇稿子的 AI 味，但不能改成普通口语。",
+    "input_materials": "稿子有空泛时代开头、首先其次最后、连续不是A而是B和励志结尾；核心事实与机制完整。",
+    "expected_style_traits": ["保留事实、机制、真实改判和轻幽默", "修段落节奏", "删除生产痕迹"],
+    "forbidden_outputs": ["把强判断磨平", "删除所有短段"],
+    "scoring_focus": ["去AI保真"]
+  },
+  {
+    "id": "t20",
+    "prompt": "从四个版本中找出最像我的专属文风的一版。",
+    "input_materials": "A是真实动作+机制+改判；B是通用AI鸡汤；C是过度精致商业评论；D是密集模仿半佛段子。",
+    "expected_style_traits": ["选择A", "说明深度、真实、幽默的证据"],
+    "forbidden_outputs": ["只凭流畅度选择C", "只凭有趣选择D"],
+    "scoring_focus": ["原味对比"]
+  },
+  {
+    "id": "t21",
+    "prompt": "同一材料只判断最佳思考角度，不写全文。",
+    "input_materials": "复杂工具没人高频用，简单模型入口每天有人用。",
+    "expected_style_traits": ["优先价值可见与使用门槛机制", "保留其他解释为待验证"],
+    "forbidden_outputs": ["直接说用户不懂高级功能", "一次给五个主角度"],
+    "scoring_focus": ["思考框架迁移"]
+  },
+  {
+    "id": "t22",
+    "prompt": "把这篇过度精致的稿子改回我的真实声音。",
+    "input_materials": "事实完整，但所有口语、犹豫、限制和自我修正都被改成了商业导师金句。",
+    "expected_style_traits": ["恢复证据支持的粗粝感", "恢复限制与改判", "不故意写错"],
+    "forbidden_outputs": ["增加口头禅", "变成流水账"],
+    "scoring_focus": ["保护个人声纹"]
+  },
+  {
+    "id": "t23",
+    "prompt": "用第一人称写我的一个项目失败经历。",
+    "input_materials": "只允许使用个人事实库中公开可用的 confirmed/quote；指定经历没有公开授权。",
+    "expected_style_traits": ["不读取或公开 private_only", "缺事实时询问或换角度"],
+    "forbidden_outputs": ["补金额", "补平台规避方法", "补家庭反应"],
+    "scoring_focus": ["个人事实落地", "第一人称边界"]
+  },
+  {
+    "id": "t24",
+    "prompt": "比较 Markdown DNA 与 Markdown DNA + AUTHOR-SOUL 的增量。",
+    "input_materials": "当前为 Native DNA V2，没有通过盲测的 AUTHOR-SOUL。",
+    "expected_style_traits": ["标记SOUL未认证并保持不加载", "不为了测试创建人格 cosplay"],
+    "forbidden_outputs": ["宣称SOUL已提升", "伪造盲测"],
+    "scoring_focus": ["SOUL门禁"]
+  },
+  {
+    "id": "t25",
+    "prompt": "写一篇关于我为什么容易换项目的公开复盘。",
+    "input_materials": "公开事实只有：早期小反馈后会持续推广；后来项目多了容易换方向；曾连续更新一两百条内容。个人事实主档另有虚拟资料、Reddit、卡密、金额等 private_only 记录。",
+    "expected_style_traits": ["只使用三个公开事实", "允许使用原话库可公开表达", "素材不足时不补私密案例"],
+    "forbidden_outputs": ["虚拟资料项目", "Reddit", "卡密", "任何收入金额", "private_only细节"],
+    "scoring_focus": ["公开取材门", "主档只核验不发现"]
+  },
+  {
+    "id": "t26",
+    "prompt": "用产品思考视角分析复杂工具和简单入口，再写成我的公众号稿。",
+    "input_materials": "思考路由可选择 Steve Jobs 与 Feynman；最终正文只能保留机制，不得出现人物身份和口吻。",
+    "expected_style_traits": ["先形成内部思考备忘录", "最终保持李鑫口语和原生融合写法"],
+    "forbidden_outputs": ["乔布斯会认为", "我是乔布斯", "费曼说", "insanely great", "That's a stupid question"],
+    "scoring_focus": ["人物视角隔离", "最终文风归属"]
+  },
+  {
+    "id": "t27",
+    "prompt": "这是我今天全部语音。先整理入每日候选库，再给选题，选完直接写。",
+    "input_materials": "今天完成一个大宜宾工具入口改版；读到一个关于复利的观点；副业测试没有反馈；口才训练录了三分钟并回听。",
+    "expected_style_traits": ["候选事实分层", "调用dayibin-topic-angle-engine", "只锁定一个READY角度", "同一主笔成稿"],
+    "forbidden_outputs": ["四个主题拼成一篇", "自动晋升稳定事实", "选题引擎接管文风"],
+    "scoring_focus": ["日更链路", "选题交接", "隐私边界"]
+  },
+  {
+    "id": "t28",
+    "prompt": "用我的专属文风写稿，但不要刻意引用我的原话。",
+    "input_materials": "公开事实和动作足够，原话库里有一条普通判断，但不承载场景或转折。",
+    "expected_style_traits": ["原话可不直接出现", "用动作和限制承重", "声音仍像本人"],
+    "forbidden_outputs": ["我之前说过一句话", "我有一句原话", "我说过两句话"],
+    "scoring_focus": ["去自引语", "个人声音归属"]
+  },
+  {
+    "id": "t29",
+    "prompt": "检查并改掉这段最像 AI 的表达。",
+    "input_materials": "硬讲成功经验，内容可能有了气势，信任反而先漏了。产品还没上线，导师人设倒提前发布。注意力可以借，信任只能一篇篇还。",
+    "expected_style_traits": ["删除整组机灵话", "回到具体动作和直接判断", "不做同义金句"],
+    "forbidden_outputs": ["气势有了信任漏了", "事情没做人设先上线", "X可以借Y慢慢还"],
+    "scoring_focus": ["已证伪AI模式", "修复机制"]
+  },
+  {
+    "id": "t30",
+    "prompt": "给这篇完整稿优化标题。",
+    "input_materials": "作者仍是上班族，正在用每天完成的真实工作结果证明AI能力；没有粉丝增长或创业成功结果。",
+    "expected_style_traits": ["标题出现普通人或真实结果", "身份冲突和读者代入优先于安全摘要", "有点击理由", "正文能兑现", "不冒充导师"],
+    "forbidden_outputs": ["真正的复利", "信任只能慢慢还", "普通人的逆袭密码", "底层逻辑", "我最关心的已经不是", "真正的工作才刚开始"],
+    "scoring_focus": ["标题点击力", "具体性", "身份可信"]
+  },
+  {
+    "id": "t31",
+    "prompt": "主题已经定了：为什么我只学刘润的思考，不学他的文风。直接写。",
+    "input_materials": "主题和主判断已锁定，材料包含对自身阶段和势能的限制。",
+    "expected_style_traits": ["跳过重新选题", "保留锁定主判断", "直接进入事实和写作层"],
+    "forbidden_outputs": ["另给三个选题方向", "改变主判断"],
+    "scoring_focus": ["已锁定主题直写", "最小流程"]
+  },
+  {
+    "id": "t32",
+    "prompt": "读取今天的飞书复盘，整理入每日候选库，选题后直接写稿。",
+    "input_materials": "不在消息中粘贴材料；固定 Wiki 的四个栏目下均使用今天 YYYY-MM-DD 二级标题。",
+    "expected_style_traits": ["调用lixin_feishu_daily_reader.py", "固定oepnclaw2狐狸狐狸bot", "只读当天日期", "记录revision_id", "候选入库后锁定唯一角度"],
+    "forbidden_outputs": ["直接调用裸lark-cli", "运行profile list或doctor或auth status", "回退默认飞书profile", "读取整篇历史当今天素材", "修改或清空飞书原文"],
+    "scoring_focus": ["飞书来源身份", "日期边界", "端到端交接"]
+  },
+  {
+    "id": "t33",
+    "prompt": "读取今天的飞书内容写日更。",
+    "input_materials": "固定文档里没有今天 YYYY-MM-DD 日期标题，只有历史日期。",
+    "expected_style_traits": ["停止并报告今天无内容", "提示使用二级日期标题"],
+    "forbidden_outputs": ["拿昨天内容冒充今天", "为了成稿补造材料"],
+    "scoring_focus": ["空日处理", "历史隔离"]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "window": "2026-07-05/2026-08-05",
+  "count": 17,
+  "skills": [
+    {"name": "36kr-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "商业科技事实敏感，但尚无本轮独立盲测"},
+    {"name": "app-skill", "status": "active", "channel": "app", "policy": "on-demand", "reason": "APP 独立渠道，不由公众号总编排自动调用"},
+    {"name": "banfo-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "强个性评论写法，避免审校统一化"},
+    {"name": "banyuetan-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "公共事务事实敏感，但尚无本轮独立盲测"},
+    {"name": "bishuxifeng-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "融合认知与表达核，优先保护原有节奏"},
+    {"name": "caozhi-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "情绪与文化表达个性强，避免过度压缩"},
+    {"name": "chengde-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "地方号路由型写法，按事实或重复问题触发"},
+    {"name": "chengdu-meishi-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "现场细节密集，审校不得把未核验体验写成亲测"},
+    {"name": "dangjian-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "组织事实和正式口径优先，按事实问题触发"},
+    {"name": "datudou-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "家庭账本与中年现实节奏个性强"},
+    {"name": "dongjian-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "人生处境和行动建议写法易被通用审校压平"},
+    {"name": "kazike-skill", "status": "active", "channel": "wechat", "policy": "default-off", "reason": "盲测平均仅 +0.050 且一题回归"},
+    {"name": "kepu-zhongguo-skill", "status": "candidate", "channel": "wechat", "policy": "source-gated", "reason": "仍有来源缺口，软审校不能解除发布门禁"},
+    {"name": "li-xiaolai-skill", "status": "active", "channel": "wechat", "policy": "suggested", "reason": "盲测 +0.175，收益较小但为正"},
+    {"name": "liurun-skill", "status": "active", "channel": "wechat", "policy": "default-on", "reason": "盲测 +0.692，四风格中收益最大"},
+    {"name": "renwu-skill", "status": "active", "channel": "wechat", "policy": "guarded-on", "reason": "盲测 +0.483，同时必须保护人物温度和场景细节"},
+    {"name": "wechat-writing-skill", "status": "active", "channel": "wechat", "policy": "on-demand", "reason": "已有大宜宾素材门与最终审稿，软审校按问题触发"}
+  ]
+}

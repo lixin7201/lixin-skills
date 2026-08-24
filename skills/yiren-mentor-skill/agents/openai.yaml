@@ -1,0 +1,4 @@
+interface:
+  display_name: "亦仁决策模型"
+  short_description: "基于亦仁公开材料的创业判断与写作模型"
+  default_prompt: "Use $yiren-mentor-skill to answer with the non-impersonating decision model distilled from Yiren's public materials. Separate decision, writing, facts, and identity safety; verify current facts or downgrade."

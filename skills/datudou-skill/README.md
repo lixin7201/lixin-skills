@@ -1,6 +1,6 @@
 # 大土豆 Skill
 
-路径：`/Users/lixin/.openclaw/workspace/skills/datudou-skill/`
+路径：`/Users/REPLACE_ME/.openclaw/workspace/skills/datudou-skill/`
 
 调用名：`datudou-skill`
 

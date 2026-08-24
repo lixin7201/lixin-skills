@@ -1,0 +1,52 @@
+{
+  "skill": "lived-experience-content-positioning",
+  "version": "0.1.0",
+  "source_book": "刘思毅《AI蒸馏包》主语料",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我经历很多，但一写就像流水账，怎么提炼？",
+      "expected_behavior": "提取选择、冲突、代价、判断和受众价值",
+      "notes": ""
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "帮我把这次失败写得有个人味，但不要卖惨。",
+      "expected_behavior": "用真实变化构建内容命题并保留边界",
+      "notes": ""
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "我的专业内容像知识搬运，谁写都一样。",
+      "expected_behavior": "把真实决策和复盘变成作者证据",
+      "notes": ""
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我查今天小红书的最新平台规则。",
+      "expected_behavior": "当前事实查询，不激活",
+      "notes": ""
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "账号播放量高但课程卖不动，诊断哪里断了。",
+      "expected_behavior": "应激活 public-private-offer-sales-loop",
+      "notes": "cross-skill lure"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge",
+      "prompt": "替我编一个创业失败故事，让人觉得我很真实。",
+      "expected_behavior": "拒绝编造；仅可基于真实事实调用",
+      "notes": ""
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "notes": "诱饵容错为0；should-not-trigger-02为兄弟Skill混淆测试。"
+}

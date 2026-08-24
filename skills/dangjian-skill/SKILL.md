@@ -109,7 +109,7 @@ description: 党建文章写稿 Skill，也可叫“党建 skill”。用于按�
 
 ## 终稿去 AI 味保真补丁
 
-成稿后执行 `references/去AI味保真补丁.md`；如需通用去 AI 支持，再参考 `/Users/lixin/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`。
+成稿后执行 `references/去AI味保真补丁.md`；如需通用去 AI 支持，再参考 `/Users/REPLACE_ME/.openclaw/workspace/skills/de-ai-preserve-voice/SKILL.md`。
 
 1. 党建 skill 的活动类型 DNA、党建原味指纹、事实台账和用户素材优先于通用去 AI 规则。
 2. 只删明显 AI 痕迹：路线图句、空泛升华、无来源权威、机械对比、假第一人称、泛泛“温度/力量/赋能”、源材料泄露。

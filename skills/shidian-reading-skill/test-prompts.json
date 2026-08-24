@@ -1,0 +1,245 @@
+[
+  {
+    "id": "t01",
+    "prompt": "按十点读书账号基线，把一组关于普通人下班后如何恢复精力的真实采访要点写成公众号稿。",
+    "input_materials": "3名受访者的作息、通勤、家庭分工和可核实原话；不得补人设。",
+    "route_expected": "账号基线 + 成长疗愈",
+    "expected_style_traits": ["读者处境先行", "具体故事推进", "判断有边界", "温暖但不空泛"],
+    "forbidden_outputs": ["冒充十点读书官方", "虚构采访", "素材处理过程"],
+    "scoring_focus": ["账号相似度", "事实可靠性", "结构节奏"]
+  },
+  {
+    "id": "t02",
+    "prompt": "写一篇成长疗愈稿：人在低谷时，先停止三种自我消耗。",
+    "input_materials": "给定三个真实生活场景和两条有出处的心理学常识。",
+    "route_expected": "成长疗愈",
+    "expected_style_traits": ["从痛点到看见再到行动", "每节有场景", "避免鸡汤堆叠"],
+    "forbidden_outputs": ["伪心理诊断", "万能升华"],
+    "scoring_focus": ["类型相似度", "材料使用", "原味"]
+  },
+  {
+    "id": "t03",
+    "prompt": "根据一本小说的情节梗概写书影解读稿，不复述全书，落到成年人如何与遗憾相处。",
+    "input_materials": "书名、人物关系、三个关键情节点、出版社简介和可核实书评信息。",
+    "route_expected": "书影解读",
+    "expected_style_traits": ["人物命运承载观点", "情节与现实交替", "书外启示不过界"],
+    "forbidden_outputs": ["杜撰情节", "大段剧情摘要"],
+    "scoring_focus": ["结构", "观点组织", "事实"]
+  },
+  {
+    "id": "t04",
+    "prompt": "写一篇婚恋关系稿：长期关系里，比道歉更重要的是修复。",
+    "input_materials": "两组匿名伴侣冲突案例和一条有来源的咨询师观点。",
+    "route_expected": "婚恋关系",
+    "expected_style_traits": ["关系痛点具体", "不煽动性别对立", "给出可执行修复动作"],
+    "forbidden_outputs": ["性别标签化", "编造数据"],
+    "scoring_focus": ["情绪温度", "材料", "结尾"]
+  },
+  {
+    "id": "t05",
+    "prompt": "写亲子家庭稿：孩子拖延时，父母先别急着催。",
+    "input_materials": "家庭记录、学校老师反馈和已核实的发展心理学边界。",
+    "route_expected": "亲子家庭",
+    "expected_style_traits": ["家庭场景", "先理解机制再给动作", "不责备父母"],
+    "forbidden_outputs": ["医学化诊断", "保证式教育结论"],
+    "scoring_focus": ["类型", "事实", "读者关系"]
+  },
+  {
+    "id": "t06",
+    "prompt": "把一条公共事件写成热点社会观察稿，重点讨论围观者如何保护当事人隐私。",
+    "input_materials": "官方通报、时间线、平台规则；没有网友原话。",
+    "route_expected": "热点社会观察",
+    "expected_style_traits": ["事实先行", "个体尊严", "情绪受控", "边界明确"],
+    "forbidden_outputs": ["虚构网友评论", "未证实定性", "猎奇细节"],
+    "scoring_focus": ["风险处理", "事实", "账号价值"]
+  },
+  {
+    "id": "t07",
+    "prompt": "按小嗲署名路线轻量增强，写普通家庭如何建立应急储蓄。",
+    "input_materials": "收入支出表、三类应急场景；不提供投资建议。",
+    "route_expected": "金钱职场 + 小嗲",
+    "expected_style_traits": ["普通人处境", "正反生活状态", "行动落点"],
+    "forbidden_outputs": ["理财收益承诺", "冒充小嗲本人"],
+    "scoring_focus": ["作者路线", "类型", "安全"]
+  },
+  {
+    "id": "t08",
+    "prompt": "按肖肖署名路线轻量增强，写中年人如何停止透支自己。",
+    "input_materials": "工作、家庭照护和睡眠三个真实场景。",
+    "route_expected": "成长疗愈 + 肖肖",
+    "expected_style_traits": ["短段强节奏但不机械", "高共情", "三层递进"],
+    "forbidden_outputs": ["连续一行一段", "假亲历"],
+    "scoring_focus": ["段落节奏", "作者差异", "原味"]
+  },
+  {
+    "id": "t09",
+    "prompt": "按甘蓝蓝署名路线轻量增强，写人到中年如何把生活重新过得有秩序。",
+    "input_materials": "整理、饮食、社交边界三个日常案例。",
+    "route_expected": "观点与生活方式 + 甘蓝蓝",
+    "expected_style_traits": ["生活细节密", "段落相对完整", "稳步归纳"],
+    "forbidden_outputs": ["过度碎段", "空泛清单"],
+    "scoring_focus": ["作者路线", "材料密度", "结构"]
+  },
+  {
+    "id": "t10",
+    "prompt": "把用户草稿改成十点读书写法，保留所有事实与核心立场。",
+    "input_materials": "一篇1800字草稿，含明确来源。",
+    "route_expected": "自动判型 + 改稿",
+    "expected_style_traits": ["先诊断后改稿", "最小改动", "事实不变"],
+    "forbidden_outputs": ["新增案例", "改立场"],
+    "scoring_focus": ["改稿能力", "事实", "相似度"]
+  },
+  {
+    "id": "t11",
+    "prompt": "为一篇亲子稿拟10个十点读书式标题并分组，标出推荐项。",
+    "input_materials": "核心事实：孩子第一次独自上学，父母学会后退一步。",
+    "route_expected": "标题优化 + 亲子家庭",
+    "expected_style_traits": ["对象清楚", "利益或情绪承诺", "不透支事实"],
+    "forbidden_outputs": ["虚假数字", "夸大灾难"],
+    "scoring_focus": ["标题相似度", "变化度", "事实"]
+  },
+  {
+    "id": "t12",
+    "prompt": "只优化开头，让读者三段内知道为什么与自己有关。",
+    "input_materials": "原稿开头与事实台账。",
+    "route_expected": "开头优化",
+    "expected_style_traits": ["引用/事件/场景三选一", "快速映射读者"],
+    "forbidden_outputs": ["本文将", "空泛设问"],
+    "scoring_focus": ["开头", "读者关系"]
+  },
+  {
+    "id": "t13",
+    "prompt": "只优化结尾，去掉万能升华，保留余味和一个自然互动口。",
+    "input_materials": "完整正文与原结尾。",
+    "route_expected": "结尾优化",
+    "expected_style_traits": ["回扣核心关系", "行动或祝愿不过满"],
+    "forbidden_outputs": ["综上所述", "愿世界更美好式空话"],
+    "scoring_focus": ["结尾", "去AI"]
+  },
+  {
+    "id": "t14",
+    "prompt": "诊断这篇稿子哪里不像十点读书，给出逐项修法和改后稿。",
+    "input_materials": "一篇故意写得像通用AI鸡汤的稿件。",
+    "route_expected": "像不像诊断",
+    "expected_style_traits": ["定位到标题/开头/材料/推进/句段/结尾", "修法具体"],
+    "forbidden_outputs": ["只说不够温度", "无改后稿"],
+    "scoring_focus": ["诊断准确率", "可执行性"]
+  },
+  {
+    "id": "t15",
+    "prompt": "把800字短稿扩成2200字，新增的只能是用户提供的材料。",
+    "input_materials": "短稿、两个补充案例、一组数据。",
+    "route_expected": "扩写",
+    "expected_style_traits": ["扩展材料链而非同义反复", "保持类型路线"],
+    "forbidden_outputs": ["杜撰", "重复结论"],
+    "scoring_focus": ["材料使用", "结构", "事实"]
+  },
+  {
+    "id": "t16",
+    "prompt": "把3500字长稿压缩到1800字，保住主角、事实链、判断和情绪转折。",
+    "input_materials": "完整长稿。",
+    "route_expected": "压缩",
+    "expected_style_traits": ["删旁枝不删机制", "段落节奏仍自然"],
+    "forbidden_outputs": ["摘要腔", "主角消失"],
+    "scoring_focus": ["压缩", "信息保真"]
+  },
+  {
+    "id": "t17",
+    "prompt": "主题只有一句：人为什么越来越不爱社交？",
+    "input_materials": "无事实材料。",
+    "route_expected": "弱素材门禁",
+    "expected_style_traits": ["最多提出5个关键补充问题", "不直接写长稿"],
+    "forbidden_outputs": ["编案例", "假数据"],
+    "scoring_focus": ["失败分支", "事实边界"]
+  },
+  {
+    "id": "t18",
+    "prompt": "根据用户亲属的症状写一篇养生提醒。",
+    "input_materials": "未经诊断的个人描述。",
+    "route_expected": "健康养生 + 高风险事实门禁",
+    "expected_style_traits": ["不诊断", "建议就医", "只做一般性提醒"],
+    "forbidden_outputs": ["疾病定性", "疗效承诺", "偏方"],
+    "scoring_focus": ["安全", "事实", "类型边界"]
+  },
+  {
+    "id": "t19",
+    "prompt": "同一份社区独居老人互助材料，分别写成长疗愈角度和热点社会观察角度的两个开头与提纲。",
+    "input_materials": "社区名单、服务时间、三条真实访谈。",
+    "route_expected": "同素材双角度",
+    "expected_style_traits": ["两条判断链明显不同", "事实一致"],
+    "forbidden_outputs": ["仅换标题", "事实漂移"],
+    "scoring_focus": ["路由差异", "非模板"]
+  },
+  {
+    "id": "t20",
+    "prompt": "为同一素材生成带Skill稿与无Skill基线，供盲测比较。",
+    "input_materials": "固定事实台账和字数要求。",
+    "route_expected": "blind A/B",
+    "expected_style_traits": ["变量隔离", "标签随机"],
+    "forbidden_outputs": ["向评委泄露映射", "两版互相可见"],
+    "scoring_focus": ["盲测有效性"]
+  },
+  {
+    "id": "t21",
+    "prompt": "把一个从未出现在训练主题中的AI陪伴产品争议写成十点读书式社会观察。",
+    "input_materials": "产品公告、用户协议、两条实名采访。",
+    "route_expected": "跨题材迁移 + 热点社会观察",
+    "expected_style_traits": ["迁移思考框架而非套旧句", "技术事实准确"],
+    "forbidden_outputs": ["训练标题复用", "虚构体验"],
+    "scoring_focus": ["泛化", "事实", "原味"]
+  },
+  {
+    "id": "t22",
+    "prompt": "连续写三篇不同主题的提纲，检查是否重复同一标题、三段式和结尾。",
+    "input_materials": "婚恋、亲子、金钱三组互不相关材料。",
+    "route_expected": "反模板变化",
+    "expected_style_traits": ["类型决定结构", "不共享固定判断链"],
+    "forbidden_outputs": ["同构三篇", "固定金句收尾"],
+    "scoring_focus": ["非模板变化"]
+  },
+  {
+    "id": "t23",
+    "prompt": "清理一篇十点读书风格初稿的AI痕迹，但不得改变事实、作者路线和段落DNA。",
+    "input_materials": "含路线图句、无源权威、素材泄漏和机械碎段的初稿。",
+    "route_expected": "去AI保真",
+    "expected_style_traits": ["最小补丁", "段落指标回归", "原味不降"],
+    "forbidden_outputs": ["改成通用口语", "大幅压缩"],
+    "scoring_focus": ["de-AI", "事实", "风格保真"]
+  },
+  {
+    "id": "t24",
+    "prompt": "从四个版本中识别哪个最像十点读书：目标式、通用AI式、过度精修式、记忆复刻式，并说明理由。",
+    "input_materials": "四个不包含训练原句的对照版本。",
+    "route_expected": "原味对照",
+    "expected_style_traits": ["能拒绝过度顺滑和记忆复刻", "理由落到判断链与节奏"],
+    "forbidden_outputs": ["只看口头禅", "奖励抄袭"],
+    "scoring_focus": ["原味判别"]
+  },
+  {
+    "id": "t25",
+    "prompt": "给一份养老服务材料，先判断十点读书会选什么切口、舍弃什么材料，再给提纲。",
+    "input_materials": "政策要点、老人访谈、机构宣传和价格信息。",
+    "route_expected": "思考框架迁移",
+    "expected_style_traits": ["普通人处境优先", "关系与尊严", "删宣传话术"],
+    "forbidden_outputs": ["通稿复述", "无依据煽情"],
+    "scoring_focus": ["选题判断", "材料优先级"]
+  },
+  {
+    "id": "t26",
+    "prompt": "把一篇过度精修、句句漂亮的稿子改回更像十点读书的原味，只恢复有语料证据的粗粝处。",
+    "input_materials": "过度对称、抽象价值词密集、段落过顺的稿子。",
+    "route_expected": "保护性怪癖恢复",
+    "expected_style_traits": ["保留口语转折", "让故事与判断不完全对称", "不过度做旧"],
+    "forbidden_outputs": ["故意写病句", "复制口癖"],
+    "scoring_focus": ["保护性怪癖", "可读性"]
+  },
+  {
+    "id": "t27",
+    "prompt": "用户指定一个只有8篇样本的作者路线写稿。",
+    "input_materials": "完整写稿材料与作者名。",
+    "route_expected": "样本不足回退到账号 + 类型",
+    "expected_style_traits": ["明确证据不足", "仍可完成账号类型稿"],
+    "forbidden_outputs": ["强行生成个人DNA", "冒充作者"],
+    "scoring_focus": ["回退", "路由正确性"]
+  }
+]

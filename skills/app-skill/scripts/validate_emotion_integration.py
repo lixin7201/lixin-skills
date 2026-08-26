@@ -41,11 +41,11 @@ EDITORS = (
     "酒言酒语久久久",
 )
 EMOTION_ONLY_MARKERS = (
-    "【情感讨论·虚构情境】",
     "情感故事长文",
     "700–1600",
     "一对夫妻、一对情侣",
 )
+FORBIDDEN_PUBLIC_LABEL = "【情感讨论·虚构情境】"
 
 
 def require(condition: bool, message: str) -> None:
@@ -60,6 +60,14 @@ def main() -> None:
 
     for phrase in ("情感故事长文", "180–500", "700–1600", "非情感任务禁止读取"):
         require(phrase in main_skill, f"main route missing: {phrase}")
+
+    emotion_texts = {
+        name: (TYPE_DIR / name).read_text(encoding="utf-8")
+        for name in EMOTION_FILES
+    }
+    require(FORBIDDEN_PUBLIC_LABEL not in main_skill, "fixed virtual label leaked into main skill")
+    for name, text in emotion_texts.items():
+        require(FORBIDDEN_PUBLIC_LABEL not in text, f"fixed virtual label leaked: {name}")
 
     for type_name in NON_EMOTION_TYPES:
         if type_name != "体育赛事服务":
@@ -79,8 +87,14 @@ def main() -> None:
     require(len(tests) >= 37, "emotion regression tests missing")
     require(sum("情感" in item["route_expected"] for item in tests) >= 8, "emotion routes under-tested")
     require(sum("非情感" in item["route_expected"] for item in tests) >= 2, "non-emotion guards under-tested")
+    label_contract = next((item for item in tests if item["id"] == "t38"), None)
+    require(label_contract is not None, "public-label regression contract missing")
+    require(
+        FORBIDDEN_PUBLIC_LABEL in label_contract["forbidden_outputs"],
+        "public-label regression does not forbid the fixed label",
+    )
 
-    runtime_text = "\n".join((TYPE_DIR / name).read_text(encoding="utf-8") for name in EMOTION_FILES)
+    runtime_text = "\n".join(emotion_texts.values())
     require("/Users/" not in runtime_text, "private source path leaked")
     require("Documents/" not in runtime_text, "private document path leaked")
     require(".docx" not in runtime_text.lower(), "source document leaked")

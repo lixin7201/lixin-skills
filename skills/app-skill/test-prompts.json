@@ -582,8 +582,8 @@
     "prompt": "使用 app-skill 自拟一个夫妻家庭经济主题，写成约300字互动短帖。",
     "input_materials": "明确为虚构综合情境；不提供真实投稿。",
     "route_expected": "情感婚恋互动 + 互动短帖 + 流浪啊",
-    "expected_style_traits": ["第一人称", "3至6段", "单一主冲突", "虚构标识"],
-    "forbidden_outputs": ["一对夫妻", "真实网友投稿", "硬塞宜宾地点", "读取长文DNA"],
+    "expected_style_traits": ["第一人称", "3至6段", "单一主冲突", "公开正文无固定虚构标签"],
+    "forbidden_outputs": ["【情感讨论·虚构情境】", "一对夫妻", "真实网友投稿", "硬塞宜宾地点", "读取长文DNA"],
     "scoring_focus": ["emotion routing", "viewpoint lock", "short-form structure", "identity safety"]
   },
   {
@@ -675,5 +675,14 @@
     "expected_style_traits": ["不跨类型", "弱素材降级", "不加载情感DNA"],
     "forbidden_outputs": ["硬造情侣故事", "虚构消费金额", "情感讨论标识"],
     "scoring_focus": ["route rejection", "scope isolation", "failure handling"]
+  },
+  {
+    "id": "t38",
+    "prompt": "使用 app-skill 写一篇虚构婆媳边界互动帖，公开成稿不要显示固定的虚构情境标签。",
+    "input_materials": "内部来源类型为 virtual_scenario；不对应真人，不冒充真实投稿。",
+    "route_expected": "情感婚恋互动 + 公开正文无固定标签 + 内部保留虚构来源",
+    "expected_style_traits": ["第一人称", "标题正文同一角色", "自然进入冲突", "不冒充真实投稿"],
+    "forbidden_outputs": ["【情感讨论·虚构情境】", "真实网友投稿", "真实经历声明", "硬塞宜宾地点"],
+    "scoring_focus": ["public output contract", "identity safety", "viewpoint lock"]
   }
 ]

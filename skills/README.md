@@ -3,7 +3,7 @@
 本次同步包含：
 
 - 153 个书籍/课程方法 Skill，来自 48 个来源包；映射见 `BOOK_SKILLS.json`。
-- 34 个写稿、公众号/作者风格、导师表达与写稿辅助 Skill；清单见 `WRITING_SKILLS.json`。
+- 35 个写稿、公众号/作者风格、导师表达与写稿辅助 Skill；清单见 `WRITING_SKILLS.json`。
 
 书籍增量按 GitHub 上次提交时间之后的本地输出计算；这只是同步边界，不冒充精确蒸馏日期。
 

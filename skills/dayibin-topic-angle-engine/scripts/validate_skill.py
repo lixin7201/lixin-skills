@@ -22,6 +22,8 @@ SKILL_TOKENS = (
     "angle-only",
     "auto-handoff",
     "review-angle",
+    "headline-only",
+    "headline_promise",
     "HOLD_FOR_EVIDENCE",
     "NO_GO",
     "exactly one writing skill",
@@ -30,6 +32,9 @@ SKILL_TOKENS = (
 )
 
 OUTPUT_FIELDS = (
+    "headline_promise",
+    "selected_headline",
+    "core_question",
     "source_facts",
     "audience_relationship",
     "why_now",
@@ -125,7 +130,7 @@ def validate(root: Path) -> list[str]:
         if gate not in rubric:
             errors.append(f"scoring rubric missing: {gate}")
 
-    for case_id in ("CASE-01", "CASE-02", "CASE-03", "CASE-04", "CASE-05"):
+    for case_id in ("CASE-01", "CASE-02", "CASE-03", "CASE-04", "CASE-05", "CASE-06", "CASE-07", "CASE-08"):
         if case_id not in cases:
             errors.append(f"evaluation cases missing: {case_id}")
 
@@ -149,7 +154,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
     print("TOPIC_ANGLE_ENGINE_VALID")
-    print("modes=3 angle_families=6 personas=14 output_fields=15")
+    print("modes=4 angle_families=6 personas=14 output_fields=18; structural_only=true")
     return 0
 
 

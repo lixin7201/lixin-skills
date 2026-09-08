@@ -1,134 +1,72 @@
-# 输出契约
+# 输出契约：先给可选择的标题
 
-默认先给人类可读的编辑结论，再给结构化卡片。字段名保持稳定，便于后续写稿 Skill 直接接收。没有的信息填 `unknown` 或空数组，不得编造。
+## angle-only
 
-## 第一屏编辑结论
+先一句说明平台和力度（已有上下文可省）。默认4—6个真正不同的角度；明确要求数量则尽量满足，材料不成立不能凑数。
 
-```text
-【状态】READY / HOLD_FOR_EVIDENCE / NO_GO
-【推荐角度】一句话
-【首选标题】一句话
-【为什么是它】2—4 句，明确读者关系、观点增量和证据强度
-【写稿去向】angle-only 停止 / auto-handoff → <唯一写稿 Skill>
-```
+每题：
 
-## 赢家角度卡
+**1. 推荐标题**
+- 另一个钩子：一条标题备选。
+- 怎么展开：2—4句，说清要写什么、新在哪里，避免把标题扩写一遍。
+- 读者为什么想看：一个具体理由，可含能贡献的经验或选择。
+- 依据/待做：一句。若待采访/实测，标“策划标题，待执行”。
+
+不把推荐标题与“更大胆”固定绑定成两个强弱级别；大胆且能兑现的标题放推荐位。推荐第一题，必要时另指出值得补采的一题，不锁唯一选题。没有材料给5条就给更少，不堆低质陪跑。
+
+## headline-only
+
+“选题已锁定：……”一句；随后5个完整标题按推荐顺序排列，第一条标推荐。
+
+标题在同一角度内分别尝试不同关注点，不能重选题。不要求固定数量的问句、数字、情绪词；不要5个近义句。最后用1—2句说明第一条为什么最值得点、资料是否能兑现；用户只要标题时不额外展开。
+
+## review-angle
+
+先给改好的角度＋标题，再简述旧稿最主要的问题。只改标题请求按headline-only，不回头换主张。
+
+## 兼容交接卡（选定/自动写稿/请求结构化时才展示）
 
 ```yaml
 angle_card:
-  angle_id: "A1"
-  status: "READY | HOLD_FOR_EVIDENCE | NO_GO"
-  source_facts:
-    - claim: "已确认事实"
-      source: "原始来源或用户材料"
-      freshness: "时间"
-  audience_relationship:
-    audience: "具体读者"
-    scene: "他们在什么场景遇到这件事"
-    consequence: "对他们的具体影响"
-  why_now: "为什么是现在，而不是任何时候都能写"
-  core_tension: "变化/冲突/成本/机会/风险"
-  non_obvious_judgment: "全文要证明的唯一主判断"
-  explicit_exclusions:
-    - "这篇不写什么、不声称什么"
-  evidence_and_gaps:
-    supporting: ["支撑主判断的证据"]
-    unknown: ["待核实信息及其影响"]
-    forbidden_claims: ["无证据不得使用的说法"]
-  strongest_counterargument:
-    argument: "最强反方，不做稻草人"
-    response_or_boundary: "回应或承认适用边界"
-  reader_payoff: "读完获得的理解、决定、行动或情绪价值"
-  comment_share_trigger:
-    comment: "读者可以贡献的真实经验或分歧"
-    share: "会转给哪一类具体对象以及为什么"
-  risk_boundary:
-    level: "low | medium | high"
-    controls: ["核验、匿名、降级或措辞边界"]
+  angle_id: A1
+  locked_angle_id: A1
+  idea_value: strong
+  status: READY # 或 HOLD_FOR_EVIDENCE / NO_GO
+  source_facts: [] # 带来源与时间
+  audience_relationship: {audience: '', scene: '', consequence: ''}
+  why_now: '' # 普通常青题可说明真实需求；不编热点
+  core_tension: '' # 也可为发现、期待、参与机会，不硬造冲突
+  non_obvious_judgment: null # 探索题可空，不能强定反常识结论
+  core_question: ''
+  explicit_exclusions: []
+  evidence_and_gaps: {supporting: [], unknown: [], forbidden_claims: []}
+  strongest_counterargument: null # 服务/记忆可不适用；争议题填替代解释
+  reader_payoff: ''
+  comment_share_trigger: {comment: '', share: ''} # 预期动机，不冒充实际评论
+  risk_boundary: {level: low, controls: []}
   headline_options:
-    headline_primary: "信息明确型；推荐"
-    headline_alt_change: "变化/张力型"
-    headline_alt_scene: "人物/场景型"
-    rejected_clickbait: "更猛但因越界被拒的示例或 none"
-  angle_exposition: |
-    150—300 字。说明常见写法是什么、本角度新在哪里、围绕哪些事实展开、
-    如何把读者带入、核心判断怎样一步步成立，以及文章不该滑向哪里。
-    这不是摘要，更不是正文开头。
-  suggested_structure:
-    - section: "进入"
-      job: "用事实变化或读者场景建立问题"
-      evidence: ["可用事实"]
-    - section: "展开"
-      job: "解释机制、代价或人的处境"
-      evidence: ["可用事实"]
-    - section: "落点"
-      job: "兑现主判断并给行动/讨论入口"
-      evidence: ["可用事实"]
-  score:
-    total: 0
-    breakdown: {}
-    deductions: []
+    headline_primary: ''
+    headline_alt_change: '' # 不适用可null
+    headline_alt_scene: '' # 不适用可null
+  selected_headline: ''
+  headline_promise:
+    reader_expects: ''
+    pay_off_with: [] # 支撑标题承诺的材料或正文段落任务
+    necessary_conditions: []
+    unresolved: []
+  angle_exposition: ''
+  suggested_structure: [] # 按素材自然展开，不固定三段
+  score: {total: null, breakdown: {angle_value: strong, headline_pull: strong}, deductions: []}
   writer_handoff:
-    locked_angle_id: "A1"
-    selected_writing_skill: "exact-skill-name | undecided"
-    article_type: "建议稿型"
-    channel: "大宜宾公众号或用户指定平台"
-    target_length: "由写稿 Skill 和素材强度决定"
-    must_preserve:
-      - "non_obvious_judgment"
-      - "事实状态与读者关系"
-      - "strongest_counterargument 的公平边界"
-    may_optimize:
-      - "标题措辞"
-      - "段落节奏"
-      - "开头场景（不得虚构）"
-    must_not_do:
-      - "重新选题"
-      - "增加无来源事实"
-      - "调用第二写稿人混合文风"
+    locked_angle_id: A1
+    selected_writing_skill: undecided
+    article_type: ''
+    channel: ''
+    must_preserve: [核心问题, selected_headline的主钩子, headline_promise, 事实状态]
+    may_optimize: [标题顺句, 段落节奏]
+    must_not_do: [重新选题, 添加无来源事实, 第二写稿人混写, 为了稳妥抹掉已成立的标题钩子]
 ```
 
-## 备选角度卡
+未选择角度时locked_angle_id为空，writer_handoff不启动。选定但证据不足时作者保持undecided。
 
-至少展示 3 个通过初筛的备选；素材确实不足时如实减少并解释。
-
-```yaml
-alternatives:
-  - angle_id: "A2"
-    angle_family: "六类家族之一"
-    one_line_angle: "核心问题 + 非显然判断"
-    headline: "一个能兑现的标题"
-    angle_exposition: "80—150 字，写清如何展开，不是标题释义"
-    score: 0
-    lost_because: "为什么没赢"
-    upgrade_needed: "补什么才可能反超"
-```
-
-## 淘汰与人物挑战记录
-
-```yaml
-editorial_trace:
-  mother_topic: "母题"
-  history_dedup: "已检查的范围，或 not_checked"
-  persona_lenses_used:
-    - persona: "最多三位；可为空"
-      challenge: "提出了什么反证问题"
-      change_made: "候选因此如何改变"
-  knocked_out:
-    - angle_id: "A6"
-      gate: "K1—K7"
-      reason: "具体原因"
-```
-
-## 写稿交接提示词
-
-把以下块连同完整 `angle_card` 原样交给唯一写稿 Skill：
-
-```text
-你是本稿唯一正文作者。选题已经锁定，不得重新选题或引入第二写稿人。
-围绕 locked_angle_id 和 non_obvious_judgment 成稿。
-只使用 source_facts；INFERENCE 必须写成推断；UNKNOWN 不得补写。
-标题可在 headline_options 内优化，但不得超过事实承诺。
-必须保留 must_preserve，遵守 risk_boundary 和 explicit_exclusions。
-如素材不足以支撑建议篇幅，降级为短稿/提纲并列补采清单，不得注水。
-```
+交接指令：你是唯一正文作者，保留已选角度和标题承诺，用现有事实兑现钩子；本卡覆盖默认重新选题及标题固定分组。允许优化措辞，不允许换主钩子或假造体验；兑付不了时退回改标题/补采。不得把内部方法、状态或字段写进公开正文。
